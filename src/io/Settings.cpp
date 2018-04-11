@@ -1,6 +1,6 @@
 /**
 	\file
-	\brief Ù‡ÈÎ  Œœ»—¿Õ»≈___.
+	\brief Ù‡ÈÎ  ((O__O)).
 	\author SavaLione
 */
 #include <Windows.h>
@@ -12,7 +12,7 @@ template <typename T>
 bool check_file(T filename);
 
 int get_settings(char* ch_block, char* ch_value) {
-	int i_ret = yenot::values::i_return;
+	int i_ret = yenot::i_return;
 	GetPrivateProfileInt (
 		ch_block,
 		ch_value,
@@ -23,9 +23,9 @@ int get_settings(char* ch_block, char* ch_value) {
 }
 
 int get_settings(char* ch_value) {
-	int i_ret = yenot::values::i_return;
+	int i_ret = yenot::i_return;
 	GetPrivateProfileInt(
-		yenot::values::ch_default_block,
+		yenot::ch_default_block,
 		ch_value,
 		i_ret,
 		yenot::settings_file_name
