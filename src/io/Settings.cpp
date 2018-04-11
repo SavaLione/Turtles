@@ -8,4 +8,5 @@ int get_settings(char* ch_block, char* ch_value) {
 		i_ret,
 		"turtle.ini"
 	);
+	return i_ret;
 }
