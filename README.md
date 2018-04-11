@@ -1,6 +1,8 @@
 Yenot
 =====
->randomenotpic.png
+<p align="center">
+<img width="625" height="400" src="https://cdn-images-1.medium.com/max/1600/1*R2LMOGWg3BlVCeMR-Y9Dhw.jpeg">
+</p>
 
 Что это?
 --------
