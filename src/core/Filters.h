@@ -3,9 +3,11 @@
     \brief Описание
 	\author SavaLione
 */
-#ifndef BILATERAL_H
-#define BILATERAL_H
+#ifndef FILTERS_H
+#define FILTERS_H
 
 cv::Mat mat_bilateral(char* ch_image);
 
-#endif // BILATERAL_H
+cv::Mat mat_gaussianblur(char* ch_image);
+
+#endif // FILTERS_H

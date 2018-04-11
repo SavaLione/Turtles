@@ -51,11 +51,11 @@ link_directories(${OPENCV_LIB_LINK})
 # ===================================================
 set(CORE_SOURCES
 		src/core/Main.cpp
-		src/core/Bilateral.cpp
+		src/core/Filters.cpp
 )
 set(CORE_HEADERS
 		src/core/Yenot.h
-		src/core/Bilateral.h
+		src/core/Filters.h
 )
 set (YENOT_CORE ${CORE_SOURCES} ${CORE_HEADERS})
 
@@ -63,10 +63,12 @@ set (YENOT_CORE ${CORE_SOURCES} ${CORE_HEADERS})
 # ===================================================
 set(IO_SOURCES
 		src/io/Settings.cpp
+		src/io/Logger.cpp
 )
 
 set(IO_HEADERS
 		src/io/Settings.h
+		src/io/Logger.h
 )
 
 set (YENOT_IO ${IO_SOURCES} ${IO_HEADERS})

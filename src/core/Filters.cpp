@@ -30,3 +30,15 @@ Mat mat_bilateral(char* ch_image) {
 
     return dst;
 }
+
+Mat mat_gaussianblur(char* ch_image) {
+	// Load the source image
+	Mat src = imread(ch_image, 1);
+
+	// Create a destination Mat object
+	Mat dst;
+
+	GaussianBlur(src, dst, Size(yenot::gaussianblur, yenot::gaussianblur), 0, 0);
+
+	return dst;
+}
