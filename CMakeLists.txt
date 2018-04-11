@@ -34,7 +34,7 @@ set_property( GLOBAL PROPERTY USE_FOLDERS ON )
 
 set( CMAKE_SUPPRESS_REGENERATION true)
 set( CMAKE_BUILD_TYPE RELEASE )
-set( CMAKE_CONFIGURATION_TYPES "Release;Debug" )
+set( CMAKE_CONFIGURATION_TYPES "Release" )
 
 # Lib
 # ===================================================
