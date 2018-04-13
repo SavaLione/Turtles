@@ -50,12 +50,12 @@ link_directories(${OPENCV_LIB_LINK})
 # Core
 # ===================================================
 set(CORE_SOURCES
-		src/core/Main.cpp
-		src/core/Filters.cpp
+		src/core/Yenot.cpp
+		src/core/Core.cpp
 )
 set(CORE_HEADERS
 		src/core/Yenot.h
-		src/core/Filters.h
+		src/core/Core.h
 )
 set (YENOT_CORE ${CORE_SOURCES} ${CORE_HEADERS})
 

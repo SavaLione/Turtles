@@ -29,6 +29,21 @@ namespace yenot {
 	const char ch_default_value[] = "Default";
 
 	const int buffer_size = 128;
+
+	///////////////////////////////////////////////////////////////////////////////
+	//	Core
+	///////////////////////////////////////////////////////////////////////////////
+	const char settings_block_core[] = "Core";
+	const char settings_value_fastmode[] = "fastmode";
+	const char settings_value_noiseReduction[] = "noiseReduction";
+	const char settings_value_machineLearning[] = "machineLearning";
+
+	///////////////////////////////////////////////////////////////////////////////
+	//	Logger
+	///////////////////////////////////////////////////////////////////////////////
+	const char settings_block_logger[] = "Logger";
+	const char settings_value_log[] = "log";
+	const char settings_value_logTime[] = "logTime";
 }
 
 #endif // YENOT_H

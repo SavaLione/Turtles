@@ -6,6 +6,6 @@
 #ifndef LOGGER_H
 #define LOGGER_H
 
-void log(std::string message);
+void logger(char *level, char *text);
 
 #endif // LOGGER_H
