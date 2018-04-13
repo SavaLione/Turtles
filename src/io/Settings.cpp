@@ -48,22 +48,3 @@ void settings_initialization() {
 		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_value_logTime, "1");
 	}
 }
-
-
-
-/*
-template <typename T>
-std::string getSettingsString(T const &block, T const &value) {
-char text[yenot::buffer_size];
-GetPrivateProfileString(block, value, yenot::ch_default_value, text, yenot::buffer_size, yenot::settings_file_name);
-return text;
-}
-
-
-//return GetPrivateProfileInt(block, value, yenot::i_return, yenot::settings_file_name);
-
-template <typename T>
-int getSettingsInt(T const block) {
-return T;
-}
-*/
