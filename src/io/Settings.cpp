@@ -1,10 +1,11 @@
 /**
 	\file
-	\brief פאיכ  ((O__O)).
+	\brief פאיכ  (((O__O))).
 	\author SavaLione
 */
 #include <Windows.h>
 #include <fstream>
+#include <string>
 
 #include "..\core\Yenot.h"
 #include "Settings.h"
@@ -12,28 +13,21 @@
 template <typename T>
 bool check_file(T filename);
 
-template <typename T>
-int get_settings(T block, T value) {
-	int i_ret = yenot::i_return;
-	GetPrivateProfileInt (
-		block,
-		value,
-		i_ret,
-		yenot::settings_file_name
-	);
+
+
+std::string getSettingsString(char *block, char *value) {
+	char text[yenot::buffer_size];
+	GetPrivateProfileString(block, value, yenot::ch_default_value, text, yenot::buffer_size, yenot::settings_file_name);
+	return text;
+}
+int getSettingsInt(char *block, char *value) {
+	int i_ret = GetPrivateProfileInt(block, value, yenot::i_return, yenot::settings_file_name);;
 	return i_ret;
 }
 
-template <typename T>
-int get_settings(T value) {
-	int i_ret = yenot::i_return;
-	GetPrivateProfileInt(
-		yenot::ch_default_block,
-		value,
-		i_ret,
-		yenot::settings_file_name
-	);
-	return i_ret;
+
+void setSettings(char *block, char *value, char *text) {
+	WritePrivateProfileString(block, value, text, yenot::settings_file_name);
 }
 
 template <typename T>
@@ -49,8 +43,6 @@ bool check_file(T filename) {
 
 void settings_initialization() {
 	if (!check_file(yenot::settings_file_name)) {
-		std::ofstream fout(yenot::settings_file_name);
-		fout << "";
-		fout.close();
+		setSettings("General", "initialization", "done");
 	}
 }

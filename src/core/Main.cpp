@@ -20,11 +20,14 @@ using namespace std;
 int main(int argc, char* argv[]) {
 	settings_initialization();
 
-	CvFileStorage * fs = cvOpenFileStorage("kernel.xml", 0, CV_STORAGE_WRITE);
-	cvWriteInt(fs, "name", 128);
-	cvReleaseFileStorage(&fs);
+	string s = getSettingsString("General", "default");
 
-	cout << cvReadInt()
+	int i = getSettingsInt("General", "int");
+	cout << i << endl << endl;
+
+	cout << s << endl;
+
+	setSettings("Yenot", "Inportant", "SoCool");
 
 	system("pause");
     return 0;

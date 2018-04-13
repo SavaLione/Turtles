@@ -7,7 +7,7 @@
 #define YENOT_H
 
 namespace yenot {
-	const char settings_file_name[] = "Yenot.ini";
+	const char settings_file_name[] = "./config.ini";
 	const char logger_file_name[] = "Yenot.log";
 
 	const int i_return = -1;
@@ -25,6 +25,10 @@ namespace yenot {
 	const int sigmaSpace = 40;
 
 	const int gaussianblur = 20;
+
+	const char ch_default_value[] = "Default";
+
+	const int buffer_size = 128;
 }
 
 #endif // YENOT_H
