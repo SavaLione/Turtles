@@ -10,17 +10,9 @@ std::string getSettingsString(char *block, char *value);
 
 int getSettings(char *block, char *value);
 
-
-
-
-
-template <typename T, typename U, typename V>
-void setSettings(T const block, U const  value, V const text);
-template <>
 void setSettings(char *block, char *value, char *text);
 
-template <typename T>
-bool check_file(T const &filename);
+bool check_file(char *filename);
 
 void settings_initialization();
 

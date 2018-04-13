@@ -15,7 +15,7 @@ using namespace std;
 int main(int argc, char* argv[]) {
 	settings_initialization();
 
-	logger((char*)"", (char*)"");
+	logger((char*)"some", (char*)"some");
 
 	system("pause");
     return 0;
