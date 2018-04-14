@@ -45,3 +45,14 @@ void logger(char *level, char *text) {
 		}
 	}
 }
+
+void logger_xy(int x, int y) {
+	if (getSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_value_log)) {
+		std::ofstream fout(yenot::logger_file_name, std::ios_base::app);
+		char ch_x[1024], ch_y[1024];
+		itoa(x, ch_x, 10);
+		itoa(y, ch_y, 10);
+		fout << ch_x << " " << ch_y << "\n";
+ 		fout.close();
+	}
+}
