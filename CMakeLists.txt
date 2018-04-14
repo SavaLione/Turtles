@@ -62,12 +62,10 @@ set (YENOT_CORE ${CORE_SOURCES} ${CORE_HEADERS})
 # IO
 # ===================================================
 set(IO_SOURCES
-		src/io/Settings.cpp
 		src/io/Logger.cpp
 )
 
 set(IO_HEADERS
-		src/io/Settings.h
 		src/io/Logger.h
 )
 

@@ -6,8 +6,21 @@
 #ifndef CORE_H
 #define CORE_H
 
-cv::Mat mat_bilateral(char* ch_image);
+#include <opencv2/opencv.hpp>
 
+///////////////////////////////////////////////////////////////////////////////
+//	Filters
+///////////////////////////////////////////////////////////////////////////////
+cv::Mat mat_bilateral(char* ch_image);
 cv::Mat mat_gaussianblur(char* ch_image);
+
+///////////////////////////////////////////////////////////////////////////////
+//	Settings
+///////////////////////////////////////////////////////////////////////////////
+std::string getSettingsString(char *block, char *value);
+int getSettings(char *block, char *value);
+void setSettings(char *block, char *value, char *text);
+bool check_file(char *filename);
+void settings_initialization();
 
 #endif // CORE_H

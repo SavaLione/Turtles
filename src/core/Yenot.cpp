@@ -7,7 +7,7 @@
 #include <Windows.h>
 
 #include "Yenot.h"
-#include "..\io\Settings.h"
+#include "..\core\Core.h"
 #include "..\io\Logger.h"
 
 using namespace std;

@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 #include "..\core\Yenot.h"
-#include "Settings.h"
+#include "..\core\Core.h"
 
 void logger(char *level, char *text) {
 	if (getSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_value_log)) {
