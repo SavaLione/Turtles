@@ -19,12 +19,14 @@ using namespace std;
 
 void v_test_3_1(int i2);
 void v_test();
+void v_test_sum();
 
 
 int main(int argc, char* argv[]) {
 	settings_initialization();
 
-	v_test();
+	//v_test();
+	v_test_sum();
 
     return 0;
 }
@@ -43,6 +45,21 @@ void v_test() {
 }
 void v_test_3_1(int i2) {
 	for (int i = 1; i <= i2; i++) {
-		cv::Mat dst = mat_blur("a.png");
+		cv::Mat dst = mat_fastNoiseRemovalGrey("a.png");
+	}
+}
+
+void v_test_sum() {
+	for (int i = 1; i <= 8192; i++) {
+		unsigned int start_time = clock(); // начальное время
+
+		cv::Mat dst = mat_gaussianblur("a.png");
+
+		unsigned int end_time = clock(); // конечное время
+		unsigned int search_time = end_time - start_time; // искомое время
+
+		double d = (double)search_time / 1000.0;
+
+		logger_xy(d, i);
 	}
 }
