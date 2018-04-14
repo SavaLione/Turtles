@@ -24,8 +24,6 @@ namespace yenot {
 	// sigmaSpace – Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace.
 	const int sigmaSpace = 40;
 
-	const int gaussianblur = 20;
-
 	const char ch_default_value[] = "Default";
 
 	const int buffer_size = 128;
@@ -37,6 +35,9 @@ namespace yenot {
 	const char settings_value_fastmode[] = "fastmode";
 	const char settings_value_noiseReduction[] = "noiseReduction";
 	const char settings_value_machineLearning[] = "machineLearning";
+
+	const int gaussianblur_kernel_x = 5; //odd
+	const int gaussianblur_kernel_y = 5; //odd
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Logger

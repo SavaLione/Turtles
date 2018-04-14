@@ -15,10 +15,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
 ///////////////////////////////////////////////////////////////////////////////
-cv::Mat mat_bilateral(char* ch_image) {
+cv::Mat mat_bilateral(char* source) {
 
 	// Load the source image
-	cv::Mat src = cv::imread(ch_image, 1);
+	cv::Mat src = cv::imread(source, 1);
 
 	// Create a destination Mat object
 	cv::Mat dst;
@@ -35,18 +35,27 @@ cv::Mat mat_bilateral(char* ch_image) {
 	return dst;
 }
 
-cv::Mat mat_gaussianblur(char* ch_image) {
+cv::Mat mat_gaussianblur(char* source) {
 	// Load the source image
-	cv::Mat src = cv::imread(ch_image, 1);
+	cv::Mat src = cv::imread(source, 1);
 
 	// Create a destination Mat object
 	cv::Mat dst;
 
-	cv::GaussianBlur(src, dst, cv::Size(yenot::gaussianblur, yenot::gaussianblur), 0, 0);
+	//cv::GaussianBlur(src, dst, cv::Size(yenot::gaussianblur, yenot::gaussianblur), 0, 0);
+	//cv::GaussianBlur(src, dst, cv::Size(yenot::gaussianblur, yenot::gaussianblur), yenot::gaussianblur, 0, 0);
+	//cv::GaussianBlur(src, dst, cv::Size(5, 5), 0, 0);
+	cv::GaussianBlur(src, dst, cv::Size(yenot::gaussianblur_kernel_x, yenot::gaussianblur_kernel_y), 0, 0);
 
 	return dst;
 }
 
+cv::Mat mat_fastNoiseRemoval(char* source) {
+	cv::Mat dst = cv::imread(source, 1); // цвет
+	//cv::Mat dst = cv::imread(source, 0); // серое
+	cv::fastNlMeansDenoising(dst, dst, 3.0f, 7, 21);
+	return dst;
+}
 ///////////////////////////////////////////////////////////////////////////////
 //	Settings
 ///////////////////////////////////////////////////////////////////////////////
