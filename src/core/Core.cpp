@@ -86,3 +86,16 @@ void settings_initialization() {
 		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_value_logTime, "1");
 	}
 }
+
+///////////////////////////////////////////////////////////////////////////////
+//	Line detector
+///////////////////////////////////////////////////////////////////////////////
+
+cv::Mat mat_canny(char* ch_image) {
+	cv::Mat src1 = cv::imread(ch_image, CV_LOAD_IMAGE_COLOR);
+	cv::Mat gray, edge, draw;
+	cvtColor(src1, gray, CV_BGR2GRAY);
+	Canny(gray, edge, 50, 150, 3);
+	edge.convertTo(draw, CV_8U);
+	return draw;
+}
