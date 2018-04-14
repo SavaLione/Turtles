@@ -21,7 +21,11 @@ void v_test_1(int i2);
 void v_test_1_1(int i2);
 void v_test_2_1(int i2);
 void v_test_3_1(int i2);
+void v_test_10_1();
 void v_test();
+void v_test_one_bil();
+void v_test_one_gaus();
+void v_test_one_fast();
 
 int main(int argc, char* argv[]) {
 	settings_initialization();
@@ -34,8 +38,10 @@ int main(int argc, char* argv[]) {
 	//imwrite("fast.png", mat_fastNoiseRemoval(img_source));
 
 	//imwrite("canny.png", mat_canny("fast.png"));
+	//v_test_10_1();
+	//v_test();
 
-	v_test();
+	v_test_one_fast();
 
 	//char name[256], png[256] = ".png";
 	//strcat(name, png);
@@ -48,21 +54,12 @@ int main(int argc, char* argv[]) {
 void v_test() {
 	for (int i = 1; i <= 64; i++) {
 		unsigned int start_time = clock(); // начальное время
-		//v_test_1(i);
-		//v_test_1_1(i);
-		//v_test_2_1(i);
 		v_test_3_1(i);
 		unsigned int end_time = clock(); // конечное время
 		unsigned int search_time = end_time - start_time; // искомое время
 		char ch[1024];
 		itoa(search_time, ch, 10);
-		//logger("TIME", "===================================");
-		//char cycle[128];
-		//itoa(i, cycle, 10);
-		//logger("TIME", cycle);
-		//logger("TIME", ch);
-		logger_xy(i, search_time);
-		//logger("TIME", "===================================");
+		logger_xy(search_time, i);
 	}
 }
 void v_test_1(int i2) {
@@ -70,7 +67,6 @@ void v_test_1(int i2) {
 	for (int i = 1; i <= i2; i++) {
 		char name[256], png[256] = ".png";
 		itoa(i, name, 10);
-		//name[1] = i + '0';
 		strcat(name, png);
 		imwrite(name, mat_bilateral(img_source));
 	}
@@ -89,4 +85,47 @@ void v_test_3_1(int i2) {
 	for (int i = 1; i <= i2; i++) {
 		cv::Mat dst = mat_fastNoiseRemoval("a.png");
 	}
+}
+
+void v_test_10_1() {
+	cv::Mat dst = mat_bilateral("a.png");
+	imwrite("Done.png", dst);
+}
+
+
+
+void v_test_one_bil() {
+	unsigned int start_time = clock(); // начальное время
+	
+	cv::Mat dst = mat_bilateral("a.png");
+
+	unsigned int end_time = clock(); // конечное время
+	unsigned int search_time = end_time - start_time; // искомое время
+	char ch[1024];
+	itoa(search_time, ch, 10);
+	logger_xy(search_time, 1);
+}
+
+void v_test_one_gaus() {
+	unsigned int start_time = clock(); // начальное время
+
+	cv::Mat dst = mat_gaussianblur("a.png");;
+
+	unsigned int end_time = clock(); // конечное время
+	unsigned int search_time = end_time - start_time; // искомое время
+	char ch[1024];
+	itoa(search_time, ch, 10);
+	logger_xy(search_time, 1);
+}
+
+void v_test_one_fast() {
+	unsigned int start_time = clock(); // начальное время
+
+	cv::Mat dst = mat_fastNoiseRemoval("a.png");
+
+	unsigned int end_time = clock(); // конечное время
+	unsigned int search_time = end_time - start_time; // искомое время
+	char ch[1024];
+	itoa(search_time, ch, 10);
+	logger_xy(search_time, 1);
 }

@@ -16,11 +16,7 @@
 //	Filters
 ///////////////////////////////////////////////////////////////////////////////
 cv::Mat mat_bilateral(char* source) {
-
-	// Load the source image
 	cv::Mat src = cv::imread(source, 1);
-
-	// Create a destination Mat object
 	cv::Mat dst;
 
 	/**
@@ -42,18 +38,26 @@ cv::Mat mat_gaussianblur(char* source) {
 	// Create a destination Mat object
 	cv::Mat dst;
 
-	//cv::GaussianBlur(src, dst, cv::Size(yenot::gaussianblur, yenot::gaussianblur), 0, 0);
-	//cv::GaussianBlur(src, dst, cv::Size(yenot::gaussianblur, yenot::gaussianblur), yenot::gaussianblur, 0, 0);
-	//cv::GaussianBlur(src, dst, cv::Size(5, 5), 0, 0);
 	cv::GaussianBlur(src, dst, cv::Size(yenot::gaussianblur_kernel_x, yenot::gaussianblur_kernel_y), 0, 0);
 
 	return dst;
 }
 
 cv::Mat mat_fastNoiseRemoval(char* source) {
-	cv::Mat dst = cv::imread(source, 1); // цвет
-	//cv::Mat dst = cv::imread(source, 0); // серое
+	cv::Mat dst = cv::imread(source, 1);
 	cv::fastNlMeansDenoising(dst, dst, 3.0f, 7, 21);
+	return dst;
+}
+
+cv::Mat mat_fastNoiseRemovalGrey(char* source) {
+	cv::Mat dst = cv::imread(source, 0);
+	cv::fastNlMeansDenoising(dst, dst, 3.0f, 7, 21);
+	return dst;
+}
+
+cv::Mat mat_blur(char* source) {
+	cv::Mat dst = cv::imread(source, 1);
+	cv::blur(dst, dst, cv::Size(yenot::blur_kernel_x, yenot::blur_kernel_y));
 	return dst;
 }
 ///////////////////////////////////////////////////////////////////////////////
@@ -65,8 +69,18 @@ std::string getSettingsString(char *block, char *value) {
 	return text;
 }
 
+std::string getSettingsString(char *block, char *value, char *ch_return_default) {
+	char text[yenot::buffer_size];
+	GetPrivateProfileString(block, value, ch_return_default, text, yenot::buffer_size, yenot::settings_file_name);
+	return text;
+}
+
 int getSettings(char *block, char *value) {
 	return GetPrivateProfileInt(block, value, yenot::i_return, yenot::settings_file_name);
+}
+
+int getSettings(char *block, char *value, int i_return_default) {
+	return GetPrivateProfileInt(block, value, i_return_default, yenot::settings_file_name);
 }
 
 void setSettings(char *block, char *value, char *text) {
@@ -74,7 +88,17 @@ void setSettings(char *block, char *value, char *text) {
 }
 
 bool check_file(char *filename) {
-	bool b_return = false;
+	bool b_return = yenot::b_return;
+	std::ifstream file;
+	file.open(filename);
+	if (file) {
+		b_return = true;
+	}
+	return b_return;
+}
+
+bool check_file(char *filename, bool b_return_default) {
+	bool b_return = b_return_default;
 	std::ifstream file;
 	file.open(filename);
 	if (file) {
