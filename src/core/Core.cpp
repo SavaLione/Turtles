@@ -7,10 +7,46 @@
 #include <fstream>
 #include <string>
 #include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/opencv.hpp>
 #include <opencv2/highgui/highgui_c.h>
 
 #include "Yenot.h"
+#include "Core.h"
+#include "..\io\Logger.h"
+
+///////////////////////////////////////////////////////////////////////////////
+//	Core
+///////////////////////////////////////////////////////////////////////////////
+
+cv::Mat noiseRemoval(char* source) {
+	cv::Mat dst = yenot::mat_return;
+	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, yenot::settings_noiseReduction_value)) {
+		// If no fast
+		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value)) {
+			dst = mat_bilateral(source);
+		} else {
+			dst = mat_gaussianblur(source);
+			logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_fMode);
+		}
+	} else {
+		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_noiseRemoval);
+	}
+	return dst;
+}
+
+cv::Mat lineDetection(char* source) {
+	cv::Mat dst = yenot::mat_return;
+	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_lineDetection, yenot::settings_lineDetection_value)) {
+		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value)) {
+			dst = mat_canny(source);
+		} else {
+			/*===============================================================================================================================================================================*/
+			logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_fMode);
+		}
+	} else {
+		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_lDetection);
+	}
+	return dst;
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
@@ -65,7 +101,7 @@ cv::Mat mat_blur(char* source) {
 ///////////////////////////////////////////////////////////////////////////////
 std::string getSettingsString(char *block, char *value) {
 	char text[yenot::buffer_size];
-	GetPrivateProfileString(block, value, yenot::ch_default_value, text, yenot::buffer_size, yenot::settings_file_name);
+	GetPrivateProfileString(block, value, yenot::settings_block_default, text, yenot::buffer_size, yenot::settings_file_name);
 	return text;
 }
 
@@ -111,12 +147,12 @@ void settings_initialization() {
 	if (!check_file((char*)yenot::settings_file_name)) {
 		setSettings("General", "initialization", "done");
 
-		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_value_fastmode, "0");
-		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_value_noiseReduction, "1");
-		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_value_machineLearning, "1");
+		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, (char*)yenot::settings_fastmode_value);
+		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, (char*)yenot::settings_noiseReduction_value);
+		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_machineLearning, (char*)yenot::settings_machineLearning_value);
 
-		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_value_log, "1");
-		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_value_logTime, "1");
+		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_log, (char*)yenot::settings_log_value);
+		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_logTime, (char*)yenot::settings_logTime_value);
 	}
 }
 
@@ -131,4 +167,23 @@ cv::Mat mat_canny(char* ch_image) {
 	Canny(gray, edge, 50, 150, 3);
 	edge.convertTo(draw, CV_8U);
 	return draw;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//	Test
+///////////////////////////////////////////////////////////////////////////////
+
+void v_test() {
+	for (int i = 1; i <= 128; i++) {
+		unsigned int start_time = clock(); // начальное время
+
+		cv::Mat dst = mat_canny("a.png");
+
+		unsigned int end_time = clock(); // конечное время
+		unsigned int search_time = end_time - start_time; // искомое время
+
+		double d = (double)search_time / 1000.0;
+
+		logger_xy(d, i);
+	}
 }
