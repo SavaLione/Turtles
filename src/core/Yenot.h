@@ -73,7 +73,9 @@ namespace yenot {
 	const char settings_logTime[] = "lTime";
 	const char settings_logTime_value[] = "1";
 
-	const char logger_level_warning[] = "warning";
+	const char logger_level_warning[] = "WARN";
+	const char logger_level_error[] = "ERROR";
+	const char logger_level_message[] = "MSG";
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Log messages
@@ -81,6 +83,12 @@ namespace yenot {
 	const char logger_message_noiseRemoval[] = "Noise filter is disabled.";
 	const char logger_message_lDetection[] = "Line detection is disabled.";
 	const char logger_message_fMode[] = "Fast mode enabled.";
+
+	const char buffer_dir_found[] = "Buffer dir found.";
+	const char buffer_dir_not_found[] = "Buffer dir not found. Created.";
+	const char buffer_img_found[] = "Buffer image found. Removed.";
+	const char buffer_img_found_err[] = "Buffer image found. Not removed.";
+	const char buffer_img_not_found[] = "Buffer image not found.";
 
 }
 

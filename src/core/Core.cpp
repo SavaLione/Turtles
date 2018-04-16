@@ -166,18 +166,18 @@ void settings_initialization() {
 
 void buffer_initialization() {
 	if (_mkdir((char*)yenot::buffer_dir_name) == 0) {
-		logger("ERROR", "Buffer dir not found. Created.");
+		logger((char*)yenot::logger_level_error, (char*)yenot::buffer_dir_not_found);
 	} else {
-		logger("WARN", "Buffer dir found.");
+		logger((char*)yenot::logger_level_warning, (char*)yenot::buffer_dir_found);
 	}
 	if (check_file((char*)yenot::buffer_file_name_img)) {
 		if (remove((char*)yenot::buffer_file_name_img) == 0) {
-			logger("WARN", "Buffer image found. Removed.");
+			logger((char*)yenot::logger_level_warning, (char*)yenot::buffer_img_found);
 		} else {
-			logger("ERROR", "Buffer image not removed.");
+			logger((char*)yenot::logger_level_error, (char*)yenot::buffer_img_found_err);
 		}
 	} else {
-		logger("WARN", "Buffer image not found.");
+		logger((char*)yenot::logger_level_warning, (char*)yenot::buffer_img_not_found);
 	}
 }
 

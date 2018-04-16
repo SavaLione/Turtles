@@ -19,9 +19,20 @@ using namespace cv;
 using namespace std;
 
 int main(int argc, char* argv[]) {
+	char* image = argc == 2 ? argv[1] : "a.png";
+	cv::Mat mat_image;
+
 	settings_initialization();
 	buffer_initialization();
 
+	mat_image = noiseRemoval(image);
+	cv::imwrite(yenot::buffer_file_name_img, mat_image);
+	system("pause");
+
+
+	mat_image = lineDetection((char*)yenot::buffer_file_name_img);
+	cv::imwrite(yenot::buffer_file_name_img, mat_image);
+	system("pause");
 
 
 	system("pause");
