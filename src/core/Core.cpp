@@ -8,6 +8,7 @@
 #include <string>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui_c.h>
+#include <cstdlib>
 
 #include "Yenot.h"
 #include "Core.h"
@@ -46,6 +47,27 @@ cv::Mat lineDetection(char* source) {
 		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_lDetection);
 	}
 	return dst;
+}
+
+/*DELETE*/
+char getRandom() {
+	srand(time(NULL) | clock());
+	int stringLength = sizeof(yenot::character_set) - 1;
+	return yenot::character_set[rand() % stringLength];
+}
+
+/*DELETE*/
+void getRandom(char *out, int stringLength) {
+	char ch_new[3] = "aa";
+	for (int i = 0; i <= stringLength; i++) {
+		//out[i] = getRandom();
+		ch_new[0] = getRandom();
+		ch_new[1] = getRandom();
+		while (ch_new[0] == ch_new[1]) {
+			ch_new[1] = getRandom();
+		}
+		out[i] = ch_new[1];
+	}
 }
 
 ///////////////////////////////////////////////////////////////////////////////

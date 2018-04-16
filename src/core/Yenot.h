@@ -39,6 +39,10 @@ namespace yenot {
 	const char settings_lineDetection[] = "lDetection";
 	const int settings_lineDetection_value = 1;
 
+	const char character_set[] =
+		"0123456789"
+		"abcdefghijklmnopqrstuvwxyz";
+
 	///////////////////////////////////////////////////////////////////////////////
 	//	Filters
 	///////////////////////////////////////////////////////////////////////////////
