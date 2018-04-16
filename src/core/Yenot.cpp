@@ -9,6 +9,7 @@
 #include "opencv2/imgproc/imgproc.hpp"
 
 #include <ctime>
+#include <filesystem>
 
 #include "Yenot.h"
 #include "..\core\Core.h"
@@ -19,16 +20,9 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 	settings_initialization();
-
-	char ch[16];
-	getRandom(ch, 15);
+	buffer_initialization();
 
 
-	cout << ch << endl;
-	getRandom(ch, 15);
-	cout << ch << endl;
-	getRandom(ch, 15);
-	cout << ch << endl;
 
 	system("pause");
     return 0;
@@ -47,5 +41,19 @@ cout << ch;
 cout << endl;
 }
 system("pause");
+}
+*/
+
+/*
+WIN32_FIND_DATAW wfd;
+HANDLE const hFind = FindFirstFileW(L"./*", &wfd);
+if (INVALID_HANDLE_VALUE != hFind)
+{
+do
+{
+std::wcout << &wfd.cFileName[0] << std::endl;
+} while (NULL != FindNextFileW(hFind, &wfd));
+
+FindClose(hFind);
 }
 */

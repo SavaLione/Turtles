@@ -40,6 +40,7 @@ bool check_file(char *filename);
 bool check_file(char *filename, bool b_return_default);
 void settings_initialization();
 void buffer_initialization();
+void createFile(char *file_name);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Test

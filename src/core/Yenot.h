@@ -13,9 +13,9 @@ namespace yenot {
 	//	General
 	///////////////////////////////////////////////////////////////////////////////
 	const char settings_file_name[] = "./config.ini";
-	const char logger_file_name[] = "./Yenot.log";
+	const char logger_file_name[] = "Yenot.log";
 	const char buffer_dir_name[] = "buffer";
-	const char buffer_file_name_img[] = "./buffer//buffer.png";
+	const char buffer_file_name_img[] = "buffer\\buffer.png";
 
 	const int buffer_size = 128;
 
@@ -30,16 +30,20 @@ namespace yenot {
 	const char settings_block_default[] = "General";
 
 	const char settings_fastmode[] = "fMode";
-	const int settings_fastmode_value = 0;
+	const char settings_fastmode_value[] = "0";
+	const int settings_fastmode_value_int = 0;
 
 	const char settings_noiseReduction[] = "nReduction";
-	const int settings_noiseReduction_value = 1;
+	const char settings_noiseReduction_value[] = "1";
+	const int settings_noiseReduction_value_int = 1;
 
 	const char settings_machineLearning[] = "mLearning";
-	const int settings_machineLearning_value = 1;
+	const char settings_machineLearning_value[] = "1";
+	const int settings_machineLearning_value_int = 1;
 
 	const char settings_lineDetection[] = "lDetection";
-	const int settings_lineDetection_value = 1;
+	const char settings_lineDetection_value[] = "1";
+	const int settings_lineDetection_value_int = 1;
 
 	const char character_set[] =
 		"0123456789"

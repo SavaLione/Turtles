@@ -22,9 +22,9 @@
 
 cv::Mat noiseRemoval(char* source) {
 	cv::Mat dst = yenot::mat_return;
-	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, yenot::settings_noiseReduction_value)) {
+	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, yenot::settings_noiseReduction_value_int)) {
 		// If no fast
-		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value)) {
+		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value_int)) {
 			dst = mat_bilateral(source);
 		} else {
 			dst = mat_gaussianblur(source);
@@ -38,8 +38,8 @@ cv::Mat noiseRemoval(char* source) {
 
 cv::Mat lineDetection(char* source) {
 	cv::Mat dst = yenot::mat_return;
-	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_lineDetection, yenot::settings_lineDetection_value)) {
-		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value)) {
+	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_lineDetection, yenot::settings_lineDetection_value_int)) {
+		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value_int)) {
 			dst = mat_canny(source);
 		} else {
 			/*===============================================================================================================================================================================*/
@@ -150,6 +150,8 @@ bool check_file(char *filename, bool b_return_default) {
 
 void settings_initialization() {
 	if (!check_file((char*)yenot::settings_file_name)) {
+		createFile((char*)yenot::settings_file_name);
+		
 		setSettings("General", "initialization", "done");
 
 		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, (char*)yenot::settings_fastmode_value);
@@ -158,6 +160,7 @@ void settings_initialization() {
 
 		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_log, (char*)yenot::settings_log_value);
 		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_logTime, (char*)yenot::settings_logTime_value);
+
 	}
 }
 
@@ -176,6 +179,12 @@ void buffer_initialization() {
 	} else {
 		logger("WARN", "Buffer image not found.");
 	}
+}
+
+
+void createFile(char *file_name) {
+	std::ofstream fout(file_name);
+	fout.close();
 }
 
 ///////////////////////////////////////////////////////////////////////////////
