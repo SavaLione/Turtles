@@ -14,11 +14,13 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	const char settings_file_name[] = "./config.ini";
 	const char logger_file_name[] = "./Yenot.log";
+	const char buffer_dir_name[] = "buffer";
+	const char buffer_file_name_img[] = "./buffer//buffer.png";
 
 	const int buffer_size = 128;
 
 	const int i_return = -1;
-	const bool b_return = true;
+	const bool b_return = false;
 	const cv::Mat mat_return(0,0,0);
 
 	///////////////////////////////////////////////////////////////////////////////

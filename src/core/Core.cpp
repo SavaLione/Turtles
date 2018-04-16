@@ -9,6 +9,8 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui_c.h>
 #include <cstdlib>
+#include <cstdio>
+#include <direct.h>
 
 #include "Yenot.h"
 #include "Core.h"
@@ -49,26 +51,7 @@ cv::Mat lineDetection(char* source) {
 	return dst;
 }
 
-/*DELETE*/
-char getRandom() {
-	srand(time(NULL) | clock());
-	int stringLength = sizeof(yenot::character_set) - 1;
-	return yenot::character_set[rand() % stringLength];
-}
 
-/*DELETE*/
-void getRandom(char *out, int stringLength) {
-	char ch_new[3] = "aa";
-	for (int i = 0; i <= stringLength; i++) {
-		//out[i] = getRandom();
-		ch_new[0] = getRandom();
-		ch_new[1] = getRandom();
-		while (ch_new[0] == ch_new[1]) {
-			ch_new[1] = getRandom();
-		}
-		out[i] = ch_new[1];
-	}
-}
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
@@ -175,6 +158,23 @@ void settings_initialization() {
 
 		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_log, (char*)yenot::settings_log_value);
 		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_logTime, (char*)yenot::settings_logTime_value);
+	}
+}
+
+void buffer_initialization() {
+	if (_mkdir((char*)yenot::buffer_dir_name) == 0) {
+		logger("ERROR", "Buffer dir not found. Created.");
+	} else {
+		logger("WARN", "Buffer dir found.");
+	}
+	if (check_file((char*)yenot::buffer_file_name_img)) {
+		if (remove((char*)yenot::buffer_file_name_img) == 0) {
+			logger("WARN", "Buffer image found. Removed.");
+		} else {
+			logger("ERROR", "Buffer image not removed.");
+		}
+	} else {
+		logger("WARN", "Buffer image not found.");
 	}
 }
 
