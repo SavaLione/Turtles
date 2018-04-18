@@ -90,6 +90,14 @@ namespace yenot {
 	const char buffer_img_found_err[] = "Buffer image found. Not removed.";
 	const char buffer_img_not_found[] = "Buffer image not found.";
 
+	///////////////////////////////////////////////////////////////////////////////
+	//	Car model
+	///////////////////////////////////////////////////////////////////////////////
+	const char settings_block_carModel[] = "carmodel";
+
+	const char settings_carModel_example[] = "example";
+	const char settings_carModel_example_description[] = "The car of model \"Example\"";
+
 }
 
 #endif // YENOT_H
