@@ -14,6 +14,9 @@
 cv::Mat noiseRemoval(char* source);
 cv::Mat lineDetection(char* source);
 
+void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
+void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out);
+
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
 ///////////////////////////////////////////////////////////////////////////////
@@ -23,10 +26,18 @@ cv::Mat mat_fastNoiseRemoval(char* source);
 cv::Mat mat_fastNoiseRemovalGrey(char* source);
 cv::Mat mat_blur(char* source);
 
+void bilateral(const cv::Mat& mat_in, cv::Mat& mat_out);
+void blur(const cv::Mat& mat_in, cv::Mat& mat_out);
+void fastNoiseRemovalGrey(const cv::Mat& mat_in, cv::Mat& mat_out);
+void gaussianblur(const cv::Mat& mat_in, cv::Mat& mat_out);
+void fastNoiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
+
 ///////////////////////////////////////////////////////////////////////////////
 //	Line detector
 ///////////////////////////////////////////////////////////////////////////////
 cv::Mat mat_canny(char* ch_image);
+
+void canny(const cv::Mat& mat_in, cv::Mat& mat_out);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Settings

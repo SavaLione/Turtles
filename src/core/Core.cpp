@@ -51,11 +51,39 @@ cv::Mat lineDetection(char* source) {
 	return dst;
 }
 
+void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
+	cv::Mat dst = yenot::mat_return;
+	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, yenot::settings_noiseReduction_value_int)) {
+		// If no fast
+		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value_int)) {
+			bilateral(mat_in, mat_out);
+		} else {
+			gaussianblur(mat_in, mat_out);
+			logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_fMode);
+		}
+	} else {
+		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_noiseRemoval);
+	}
+}
 
+void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out) {
+	cv::Mat dst = yenot::mat_return;
+	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_lineDetection, yenot::settings_lineDetection_value_int)) {
+		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value_int)) {
+			canny(mat_in, mat_out);
+		} else {
+			/*===============================================================================================================================================================================*/
+			logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_fMode);
+		}
+	} else {
+		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_lDetection);
+	}
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
 ///////////////////////////////////////////////////////////////////////////////
+/* OLD */
 cv::Mat mat_bilateral(char* source) {
 	cv::Mat src = cv::imread(source, 1);
 	cv::Mat dst;
@@ -72,6 +100,7 @@ cv::Mat mat_bilateral(char* source) {
 	return dst;
 }
 
+/* OLD */
 cv::Mat mat_gaussianblur(char* source) {
 	// Load the source image
 	cv::Mat src = cv::imread(source, 1);
@@ -84,22 +113,54 @@ cv::Mat mat_gaussianblur(char* source) {
 	return dst;
 }
 
+/* OLD */
 cv::Mat mat_fastNoiseRemoval(char* source) {
 	cv::Mat dst = cv::imread(source, 1);
 	cv::fastNlMeansDenoising(dst, dst, 3.0f, 7, 21);
 	return dst;
 }
 
+/* OLD */
 cv::Mat mat_fastNoiseRemovalGrey(char* source) {
 	cv::Mat dst = cv::imread(source, 0);
 	cv::fastNlMeansDenoising(dst, dst, 3.0f, 7, 21);
 	return dst;
 }
 
+/* OLD */
 cv::Mat mat_blur(char* source) {
 	cv::Mat dst = cv::imread(source, 1);
 	cv::blur(dst, dst, cv::Size(yenot::blur_kernel_x, yenot::blur_kernel_y));
 	return dst;
+}
+
+void bilateral(const cv::Mat& mat_in, cv::Mat& mat_out) {
+	//mat_out = mat_in.clone();
+
+	/**
+	src – Source 8-bit or floating-point, 1-channel or 3-channel image.
+	dst – Destination image of the same size and type as src .
+	d – Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace.
+	sigmaColor – Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color.
+	sigmaSpace – Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .
+	*/
+	bilateralFilter(mat_in, mat_out, yenot::diameter_each_pixel, yenot::sigmaColor, yenot::sigmaSpace);
+}
+
+void blur(const cv::Mat& mat_in, cv::Mat& mat_out) {
+	cv::blur(mat_in, mat_out, cv::Size(yenot::blur_kernel_x, yenot::blur_kernel_y));
+}
+
+void fastNoiseRemovalGrey(const cv::Mat& mat_in, cv::Mat& mat_out) {
+	cv::fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
+}
+
+void gaussianblur(const cv::Mat& mat_in, cv::Mat& mat_out) {
+	cv::GaussianBlur(mat_in, mat_out, cv::Size(yenot::gaussianblur_kernel_x, yenot::gaussianblur_kernel_y), 0, 0);
+}
+
+void fastNoiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
+	cv::fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
 }
 ///////////////////////////////////////////////////////////////////////////////
 //	Settings
@@ -190,7 +251,7 @@ void createFile(char *file_name) {
 ///////////////////////////////////////////////////////////////////////////////
 //	Line detector
 ///////////////////////////////////////////////////////////////////////////////
-
+/* OLD */
 cv::Mat mat_canny(char* ch_image) {
 	cv::Mat src1 = cv::imread(ch_image, CV_LOAD_IMAGE_COLOR);
 	cv::Mat gray, edge, draw;
@@ -198,6 +259,13 @@ cv::Mat mat_canny(char* ch_image) {
 	Canny(gray, edge, 50, 150, 3);
 	edge.convertTo(draw, CV_8U);
 	return draw;
+}
+
+void canny(const cv::Mat& mat_in, cv::Mat& mat_out) {
+	cv::Mat gray, edge, draw;
+	cvtColor(mat_in, gray, CV_BGR2GRAY);
+	Canny(gray, edge, 50, 150, 3);
+	edge.convertTo(mat_out, CV_8U);
 }
 
 ///////////////////////////////////////////////////////////////////////////////

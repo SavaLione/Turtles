@@ -18,27 +18,29 @@
 using namespace cv;
 using namespace std;
 
+Mat mat_filter(Mat in);
+
 int main(int argc, char* argv[]) {
 	char* image = argc == 2 ? argv[1] : "a.png";
-	cv::Mat mat_image;
+
+	cv::Mat out;
+	cv::Mat mat_image = cv::imread(image, 1);
 
 	settings_initialization();
 	buffer_initialization();
 
-	mat_image = noiseRemoval(image);
-	cv::imwrite(yenot::buffer_file_name_img, mat_image);
-	system("pause");
+	noiseRemoval(mat_image, out);
+	lineDetection(mat_image, out);
 
-
-	mat_image = lineDetection((char*)yenot::buffer_file_name_img);
-	cv::imwrite(yenot::buffer_file_name_img, mat_image);
-	system("pause");
-
-
-	/* SOME */
+	cv::imwrite(yenot::buffer_file_name_img, out);
 
 	system("pause");
     return 0;
+}
+
+Mat mat_filter(Mat in) {
+
+	return in;
 }
 
 /*
@@ -69,4 +71,17 @@ std::wcout << &wfd.cFileName[0] << std::endl;
 
 FindClose(hFind);
 }
+*/
+
+/*
+mat_image = noiseRemoval(image);
+cv::imwrite(yenot::buffer_file_name_img, mat_image);
+system("pause");
+
+
+mat_image = lineDetection((char*)yenot::buffer_file_name_img);
+cv::imwrite(yenot::buffer_file_name_img, mat_image);
+system("pause");
+
+
 */
