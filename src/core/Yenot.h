@@ -14,14 +14,9 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	const char settings_file_name[] = "./config.ini";
 	const char logger_file_name[] = "Yenot.log";
-	const char buffer_dir_name[] = "buffer";
-	const char buffer_file_name_img[] = "buffer\\buffer.png";
+	const char database_dir_name[] = "database";
 
 	const int buffer_size = 128;
-
-	const int i_return = -1;
-	const bool b_return = false;
-	const cv::Mat mat_return(0,0,0);
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Core
@@ -44,10 +39,6 @@ namespace yenot {
 	const char settings_lineDetection[] = "lDetection";
 	const char settings_lineDetection_value[] = "1";
 	const int settings_lineDetection_value_int = 1;
-
-	const char character_set[] =
-		"0123456789"
-		"abcdefghijklmnopqrstuvwxyz";
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Filters
@@ -83,12 +74,6 @@ namespace yenot {
 	const char logger_message_noiseRemoval[] = "Noise filter is disabled.";
 	const char logger_message_lDetection[] = "Line detection is disabled.";
 	const char logger_message_fMode[] = "Fast mode enabled.";
-
-	const char buffer_dir_found[] = "Buffer dir found.";
-	const char buffer_dir_not_found[] = "Buffer dir not found. Created.";
-	const char buffer_img_found[] = "Buffer image found. Removed.";
-	const char buffer_img_found_err[] = "Buffer image found. Not removed.";
-	const char buffer_img_not_found[] = "Buffer image not found.";
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Car model

@@ -25,15 +25,12 @@ int main(int argc, char* argv[]) {
 	cv::Mat mat_image = cv::imread(image, 1);
 
 	settings_initialization();
-	buffer_initialization();
 
 	noiseRemoval(mat_image, out);
 	mat_image = out;
 
 	lineDetection(mat_image, out);
 	mat_image = out;
-
-	cv::imwrite(yenot::buffer_file_name_img, mat_image);
 
 
 

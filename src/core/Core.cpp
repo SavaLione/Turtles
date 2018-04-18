@@ -94,7 +94,7 @@ std::string getSettingsString(char *block, char *value, char *ch_return_default)
 }
 
 int getSettings(char *block, char *value) {
-	return GetPrivateProfileInt(block, value, yenot::i_return, yenot::settings_file_name);
+	return GetPrivateProfileInt(block, value, -1, yenot::settings_file_name);
 }
 
 int getSettings(char *block, char *value, int i_return_default) {
@@ -132,24 +132,6 @@ void settings_initialization() {
 
 	}
 }
-
-void buffer_initialization() {
-	if (_mkdir((char*)yenot::buffer_dir_name) == 0) {
-		logger((char*)yenot::logger_level_error, (char*)yenot::buffer_dir_not_found);
-	} else {
-		logger((char*)yenot::logger_level_warning, (char*)yenot::buffer_dir_found);
-	}
-	if (check_file((char*)yenot::buffer_file_name_img)) {
-		if (remove((char*)yenot::buffer_file_name_img) == 0) {
-			logger((char*)yenot::logger_level_warning, (char*)yenot::buffer_img_found);
-		} else {
-			logger((char*)yenot::logger_level_error, (char*)yenot::buffer_img_found_err);
-		}
-	} else {
-		logger((char*)yenot::logger_level_warning, (char*)yenot::buffer_img_not_found);
-	}
-}
-
 
 void createFile(char *file_name) {
 	std::ofstream fout(file_name);

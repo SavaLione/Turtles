@@ -38,7 +38,6 @@ int getSettings(char *block, char *value, int i_return_default);
 void setSettings(char *block, char *value, char *text);
 bool check_file(char *filename);
 void settings_initialization();
-void buffer_initialization();
 void createFile(char *file_name);
 
 ///////////////////////////////////////////////////////////////////////////////
