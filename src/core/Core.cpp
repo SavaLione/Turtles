@@ -119,7 +119,7 @@ void settings_initialization() {
 	if (!check_file((char*)yenot::settings_file_name)) {
 		createFile((char*)yenot::settings_file_name);
 		
-		setSettings("General", "initialization", "done");
+		//setSettings("General", "initialization", "done");
 
 		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, (char*)yenot::settings_fastmode_value);
 		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, (char*)yenot::settings_noiseReduction_value);
