@@ -23,6 +23,12 @@ int main(int argc, char* argv[]) {
 	settings_initialization();
 	databaseClearning();
 
+	Mat mat_pixel(1,1, CV_8UC3, Scalar(110,0,255));
+
+	photoAdd("ex.xml", mat_pixel, "one");
+	photoAdd("ex.xml", mat_pixel, "two");
+	photoAdd("ex.xml", mat_pixel, "three");
+	photoAdd("ex.xml", mat_pixel, "four");
 
 	system("pause");
     return 0;

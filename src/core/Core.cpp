@@ -60,6 +60,20 @@ void databaseAdd(std::string filename) {
 	fsOut << yenot::database_name << stringVector;
 	fsOut.release();
 }
+void photoAdd(std::string filename, const cv::Mat& mat_in, std::string name) {
+
+	std::vector<std::string> stringVector;
+	cv::FileStorage fsIn;
+	fsIn.open(filename, cv::FileStorage::READ);
+	fsIn[yenot::settings_carModel_listphoto] >> stringVector;
+	fsIn.release(); //idk
+
+	stringVector.insert(stringVector.end(), name);
+
+	cv::FileStorage fsOut(filename, cv::FileStorage::WRITE);
+	fsOut << yenot::settings_carModel_listphoto << stringVector;
+	fsOut.release();
+}
 
 void databaseClearning() {
 	std::vector<std::string> stringVector;
@@ -72,6 +86,20 @@ void databaseClearning() {
 	stringVector.resize(std::unique(stringVector.begin(), stringVector.end()) - stringVector.begin());
 
 	cv::FileStorage fsOut((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::WRITE);
+	fsOut << yenot::database_name << stringVector;
+	fsOut.release();
+}
+void clearning(std::string filename) {
+	std::vector<std::string> stringVector;
+	cv::FileStorage fsIn;
+	fsIn.open(filename, cv::FileStorage::READ);
+	fsIn[yenot::database_name] >> stringVector;
+	fsIn.release(); //idk
+
+	std::sort(stringVector.begin(), stringVector.end());
+	stringVector.resize(std::unique(stringVector.begin(), stringVector.end()) - stringVector.begin());
+
+	cv::FileStorage fsOut(filename, cv::FileStorage::WRITE);
 	fsOut << yenot::database_name << stringVector;
 	fsOut.release();
 }

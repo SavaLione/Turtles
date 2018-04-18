@@ -82,6 +82,7 @@ namespace yenot {
 	//	Car model
 	///////////////////////////////////////////////////////////////////////////////
 	const char settings_block_carModel[] = "carmodel";
+	const char settings_carModel_listphoto[] = "listphoto";
 
 	const char settings_carModel_example[] = "example";
 	const char settings_carModel_example_description[] = "The car of model \"Example\"";

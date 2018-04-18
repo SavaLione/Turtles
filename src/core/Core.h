@@ -15,6 +15,8 @@ void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
 void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out);
 void databaseAdd(std::string filename);
 void databaseClearning();
+void clearning(std::string filename);
+void photoAdd(std::string filename, const cv::Mat& mat_in, std::string name);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
