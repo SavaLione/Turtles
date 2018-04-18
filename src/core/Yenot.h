@@ -14,7 +14,8 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	const char settings_file_name[] = "./config.ini";
 	const char logger_file_name[] = "Yenot.log";
-	const char database_dir_name[] = "database";
+	const char database_file_name[] = "database.xml";
+	const char database_name[] = "database";
 
 	const int buffer_size = 128;
 
@@ -74,6 +75,8 @@ namespace yenot {
 	const char logger_message_noiseRemoval[] = "Noise filter is disabled.";
 	const char logger_message_lDetection[] = "Line detection is disabled.";
 	const char logger_message_fMode[] = "Fast mode enabled.";
+	const char logger_message_cDir[] = "Folder created.";
+	const char logger_message_cDir_not[] = "Folder not created.";
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Car model
@@ -82,6 +85,7 @@ namespace yenot {
 
 	const char settings_carModel_example[] = "example";
 	const char settings_carModel_example_description[] = "The car of model \"Example\"";
+	const char settings_carModel_example_file[] = "example.xml";
 
 }
 

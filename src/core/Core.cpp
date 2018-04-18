@@ -11,6 +11,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <direct.h>
+#include <vector>
 
 #include "Yenot.h"
 #include "Core.h"
@@ -44,6 +45,35 @@ void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	} else {
 		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_lDetection);
 	}
+}
+
+void databaseAdd(std::string filename) {
+	std::vector<std::string> stringVector;
+	cv::FileStorage fsIn;
+	fsIn.open((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::READ);
+	fsIn[yenot::database_name] >> stringVector;
+	fsIn.release(); //idk
+
+	stringVector.insert(stringVector.end(), filename);
+
+	cv::FileStorage fsOut((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::WRITE);
+	fsOut << yenot::database_name << stringVector;
+	fsOut.release();
+}
+
+void databaseClearning() {
+	std::vector<std::string> stringVector;
+	cv::FileStorage fsIn;
+	fsIn.open((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::READ);
+	fsIn[yenot::database_name] >> stringVector;
+	fsIn.release(); //idk
+
+	std::sort(stringVector.begin(), stringVector.end());
+	stringVector.resize(std::unique(stringVector.begin(), stringVector.end()) - stringVector.begin());
+
+	cv::FileStorage fsOut((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::WRITE);
+	fsOut << yenot::database_name << stringVector;
+	fsOut.release();
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -114,12 +144,24 @@ bool check_file(char *filename) {
 	}
 	return b_return;
 }
+bool check_file(std::string filename) {
+	bool b_return = false;
+	std::ifstream file;
+	file.open(filename);
+	if (file) {
+		b_return = true;
+	}
+	return b_return;
+}
 
 void settings_initialization() {
+	if ((_mkdir((char*)yenot::database_name)) == 0) {
+		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_cDir);
+	} else {
+		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_cDir_not);
+	}
 	if (!check_file((char*)yenot::settings_file_name)) {
 		createFile((char*)yenot::settings_file_name);
-		
-		//setSettings("General", "initialization", "done");
 
 		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, (char*)yenot::settings_fastmode_value);
 		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, (char*)yenot::settings_noiseReduction_value);
@@ -130,6 +172,16 @@ void settings_initialization() {
 
 		setSettings((char*)yenot::settings_block_carModel, (char*)yenot::settings_carModel_example, (char*)yenot::settings_carModel_example_description);
 
+	}
+	if (!check_file(yenot::database_name + std::string("\\") + yenot::database_file_name)) {
+		std::vector<std::string> stringVector;
+		cv::FileStorage fsOut((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::WRITE);
+		fsOut << yenot::database_name << stringVector;
+		fsOut.release();
+	}
+	if (!check_file(yenot::database_name + std::string("\\") + yenot::settings_carModel_example_file)) {
+
+		databaseAdd(yenot::settings_carModel_example_file);
 	}
 }
 

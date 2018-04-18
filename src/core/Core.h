@@ -13,6 +13,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
 void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out);
+void databaseAdd(std::string filename);
+void databaseClearning();
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
@@ -37,6 +39,7 @@ int getSettings(char *block, char *value);
 int getSettings(char *block, char *value, int i_return_default);
 void setSettings(char *block, char *value, char *text);
 bool check_file(char *filename);
+bool check_file(std::string filename);
 void settings_initialization();
 void createFile(char *file_name);
 
