@@ -20,7 +20,6 @@
 //	Core
 ///////////////////////////////////////////////////////////////////////////////
 void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	cv::Mat dst = yenot::mat_return;
 	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, yenot::settings_noiseReduction_value_int)) {
 		// If no fast
 		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value_int)) {
@@ -35,7 +34,6 @@ void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
 }
 
 void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	cv::Mat dst = yenot::mat_return;
 	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_lineDetection, yenot::settings_lineDetection_value_int)) {
 		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value_int)) {
 			canny(mat_in, mat_out);
@@ -108,17 +106,7 @@ void setSettings(char *block, char *value, char *text) {
 }
 
 bool check_file(char *filename) {
-	bool b_return = yenot::b_return;
-	std::ifstream file;
-	file.open(filename);
-	if (file) {
-		b_return = true;
-	}
-	return b_return;
-}
-
-bool check_file(char *filename, bool b_return_default) {
-	bool b_return = b_return_default;
+	bool b_return = false;
 	std::ifstream file;
 	file.open(filename);
 	if (file) {
