@@ -17,6 +17,10 @@ namespace yenot {
 	const char database_file_name[] = "database.xml";
 	const char database_name[] = "database";
 
+	const char extensions_database_member[] = ".xml";
+	const char extensions_database_member_photo[] = ".png";
+
+
 	const int buffer_size = 128;
 
 	///////////////////////////////////////////////////////////////////////////////

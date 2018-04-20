@@ -14,9 +14,9 @@
 void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
 void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out);
 void databaseAdd(std::string filename);
-void databaseClearning();
-void clearning(std::string filename);
-void photoAdd(std::string filename, const cv::Mat& mat_in, std::string name);
+void clearning(std::string filename, std::string variable);
+void databaseAddMember(std::string name);
+void AddMemberPhoto(std::string name, const cv::Mat& photo);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
@@ -44,6 +44,7 @@ bool check_file(char *filename);
 bool check_file(std::string filename);
 void settings_initialization();
 void createFile(char *file_name);
+void createDir(std::string namedir);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Test

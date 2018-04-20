@@ -60,47 +60,58 @@ void databaseAdd(std::string filename) {
 	fsOut << yenot::database_name << stringVector;
 	fsOut.release();
 }
-void photoAdd(std::string filename, const cv::Mat& mat_in, std::string name) {
 
+void databaseAddMember(std::string name) {
+	databaseAdd(name + std::string(yenot::extensions_database_member));
+
+	if (!check_file(yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member)))) {
+		int number_members = 0;
+
+		cv::FileStorage fsOut((yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member))), cv::FileStorage::WRITE);
+		fsOut << "numbermembers" << number_members;
+		fsOut.release();
+	}
+
+	createDir(yenot::database_name + std::string("\\") + name);
+}
+
+void AddMemberPhoto(std::string name, const cv::Mat& photo) {
+	if (!check_file(yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member)))) {
+		logger((char*)yenot::logger_level_error, "Database member not found");
+	} else {
+		int number_members = 0;
+
+		cv::FileStorage fsIn;
+		fsIn.open((yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member))), cv::FileStorage::READ);
+		fsIn["numbermembers"] >> number_members;
+		fsIn.release();
+
+		if (number_members == 0) {
+			//error. length not found
+		} else {
+			number_members++;
+
+			cv::imwrite((yenot::database_name + std::string("\\") + name + std::string("\\") + std::to_string(number_members) + std::string(yenot::extensions_database_member_photo)), photo);
+
+			cv::FileStorage fsOut((yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member))), cv::FileStorage::WRITE);
+			fsOut << "numbermembers" << number_members;
+			fsOut.release();
+		}
+	}
+}
+
+void clearning(std::string filename, std::string variable) {
 	std::vector<std::string> stringVector;
 	cv::FileStorage fsIn;
 	fsIn.open(filename, cv::FileStorage::READ);
-	fsIn[yenot::settings_carModel_listphoto] >> stringVector;
-	fsIn.release(); //idk
-
-	stringVector.insert(stringVector.end(), name);
-
-	cv::FileStorage fsOut(filename, cv::FileStorage::WRITE);
-	fsOut << yenot::settings_carModel_listphoto << stringVector;
-	fsOut.release();
-}
-
-void databaseClearning() {
-	std::vector<std::string> stringVector;
-	cv::FileStorage fsIn;
-	fsIn.open((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::READ);
-	fsIn[yenot::database_name] >> stringVector;
+	fsIn[variable] >> stringVector;
 	fsIn.release(); //idk
 
 	std::sort(stringVector.begin(), stringVector.end());
 	stringVector.resize(std::unique(stringVector.begin(), stringVector.end()) - stringVector.begin());
 
-	cv::FileStorage fsOut((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::WRITE);
-	fsOut << yenot::database_name << stringVector;
-	fsOut.release();
-}
-void clearning(std::string filename) {
-	std::vector<std::string> stringVector;
-	cv::FileStorage fsIn;
-	fsIn.open(filename, cv::FileStorage::READ);
-	fsIn[yenot::database_name] >> stringVector;
-	fsIn.release(); //idk
-
-	std::sort(stringVector.begin(), stringVector.end());
-	stringVector.resize(std::unique(stringVector.begin(), stringVector.end()) - stringVector.begin());
-
 	cv::FileStorage fsOut(filename, cv::FileStorage::WRITE);
-	fsOut << yenot::database_name << stringVector;
+	fsOut << variable << stringVector;
 	fsOut.release();
 }
 
@@ -216,6 +227,15 @@ void settings_initialization() {
 void createFile(char *file_name) {
 	std::ofstream fout(file_name);
 	fout.close();
+}
+
+void createDir(std::string namedir) {
+	if ((_mkdir(namedir.c_str())) == 0) {
+		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_cDir);
+	} else {
+		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_cDir_not);
+	}
+	//_mkdir(namedir.c_str());
 }
 
 ///////////////////////////////////////////////////////////////////////////////

@@ -19,16 +19,15 @@ using namespace cv;
 using namespace std;
 
 int main(int argc, char* argv[]) {
-
 	settings_initialization();
-	databaseClearning();
 
-	Mat mat_pixel(1,1, CV_8UC3, Scalar(110,0,255));
+	clearning((yenot::database_name + std::string("\\") + yenot::database_file_name), yenot::database_name);
 
-	photoAdd("ex.xml", mat_pixel, "one");
-	photoAdd("ex.xml", mat_pixel, "two");
-	photoAdd("ex.xml", mat_pixel, "three");
-	photoAdd("ex.xml", mat_pixel, "four");
+	databaseAddMember("somebrand");
+
+	Mat mat_pixel(1, 1, CV_8UC3, Scalar(110, 0, 255));
+
+	AddMemberPhoto("somebrand", mat_pixel);
 
 	system("pause");
     return 0;
@@ -98,4 +97,8 @@ stringVectorNew.insert(stringVector.end(), "SOMETHING");
 FileStorage fsNew1("example.xml", FileStorage::WRITE);
 fsNew1 << "stringVector" << stringVectorNew;
 fsNew1.release();
+*/
+
+/*
+Mat mat_pixel(1,1, CV_8UC3, Scalar(110,0,255));
 */
