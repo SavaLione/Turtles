@@ -19,6 +19,7 @@ using namespace cv;
 using namespace std;
 
 void moments();
+void compare_new();
 
 int main(int argc, char* argv[]) {
 	//settings_initialization();
@@ -32,8 +33,8 @@ int main(int argc, char* argv[]) {
 	//AddMemberPhoto("somebrand", mat_pixel);
 	////
 
-	moments();
-
+	//moments();
+	compare_new();
 
 	system("pause");
     return 0;
@@ -194,13 +195,6 @@ void moments()
 	noiseRemoval(src, src_nr);
 	lineDetection(src_nr, src_done);
 
-
-	/// Create Window
-	char* source_window = "Source";
-	namedWindow(source_window, CV_WINDOW_AUTOSIZE);
-	imshow(source_window, src);
-
-
 	thresh_callback(src_done, output);
 
 	waitKey(0);
@@ -208,7 +202,6 @@ void moments()
 
 void thresh_callback(const cv::Mat& mat_in, cv::Mat& mat_out)
 {
-	RNG rng(12345);
 	Mat canny_output = mat_in;
 	vector<vector<Point> > contours;
 	vector<Vec4i> hierarchy;
@@ -224,35 +217,74 @@ void thresh_callback(const cv::Mat& mat_in, cv::Mat& mat_out)
 		mu[i] = moments(contours[i], false);
 	}
 
-	///  Get the mass centers:
-	vector<Point2f> mc(contours.size());
-	for (int i = 0; i < contours.size(); i++)
-	{
-		mc[i] = Point2f(mu[i].m10 / mu[i].m00, mu[i].m01 / mu[i].m00);
-	}
-
-	/// Draw contours
-	Mat drawing = Mat::zeros(canny_output.size(), CV_8UC3);
-	for (int i = 0; i< contours.size(); i++)
-	{
-		Scalar color = Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255));
-		drawContours(drawing, contours, i, color, 2, 8, hierarchy, 0, Point());
-		circle(drawing, mc[i], 4, color, -1, 8, 0);
-	}
-
-	/// Show in a window
-	namedWindow("Contours", CV_WINDOW_AUTOSIZE);
-	imshow("Contours", drawing);
-
 	/// Calculate the area with the moments 00 and compare with the result of the OpenCV function
 	printf("\t Info: Area and Contour Length \n");
 	for (int i = 0; i< contours.size(); i++)
 	{
 		printf(" * Contour[%d] - Area (M_00) = %.2f - Area OpenCV: %.2f - Length: %.2f \n", i, mu[i].m00, contourArea(contours[i]), arcLength(contours[i], true));
-		Scalar color = Scalar(rng.uniform(0, 255), rng.uniform(0, 255), rng.uniform(0, 255));
-		drawContours(drawing, contours, i, color, 2, 8, hierarchy, 0, Point());
-		circle(drawing, mc[i], 4, color, -1, 8, 0);
 	}
+	cout << endl << endl << endl << endl;
+	for (int i = 0; i < contours.size(); i++) {
+		cout << "Contour[" << i << "] " << mu[i].m00 << endl;
+	}
+	cout << endl << endl << endl << endl;
+
+	{
+		//cout << mu[].m00;
+	}
+}
+
+void compare_new() {
+	IplImage *src, *templ, *ftmp[6]; //ftmp is what to display on
+	int i;
+
+	// загрузка изображения
+	src = cvLoadImage("1.png", 1);
+
+	// загрузка шаблона
+	templ = cvLoadImage("2.png", 1);
+
+	int patchx = templ->width;
+	int patchy = templ->height;
+	int iwidth = src->width - patchx + 1;
+	int iheight = src->height - patchy + 1;
+	for (i = 0; i<6; ++i) {
+		ftmp[i] = cvCreateImage(cvSize(iwidth, iheight), 32, 1);
+	}
+
+	// сравнение шаблона с изображением
+	for (i = 0; i<6; ++i) {
+		cvMatchTemplate(src, templ, ftmp[i], i);
+		//              double min,max;
+		//              cvMinMaxLoc(ftmp,&min,&max);
+		cvNormalize(ftmp[i], ftmp[i], 1, 0, CV_MINMAX);
+	}
+	// показываем
+	cvNamedWindow("Template");
+	cvShowImage("Template", templ);
+	cvNamedWindow("Image");
+	cvShowImage("Image", src);
+
+	cvNamedWindow("SQDIFF");
+	cvShowImage("SQDIFF", ftmp[0]);
+
+	cvNamedWindow("SQDIFF_NORMED");
+	cvShowImage("SQDIFF_NORMED", ftmp[1]);
+
+	cvNamedWindow("CCORR");
+	cvShowImage("CCORR", ftmp[2]);
+
+	cvNamedWindow("CCORR_NORMED");
+	cvShowImage("CCORR_NORMED", ftmp[3]);
+
+	cvNamedWindow("CCOEFF");
+	cvShowImage("CCOEFF", ftmp[4]);
+
+	cvNamedWindow("CCOEFF_NORMED");
+	cvShowImage("CCOEFF_NORMED", ftmp[5]);
+
+	// ждём нажатия клавиши
+	cvWaitKey(0);
 }
 
 /*
