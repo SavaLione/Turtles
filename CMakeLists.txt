@@ -40,7 +40,54 @@ set( CMAKE_CONFIGURATION_TYPES "Release" )
 # ===================================================
 set ( OPENCV_LIB "lib/opencv/include")
 set ( OPENCV_LIB_LINK "lib/opencv/x64/vc15/lib")
-set ( OPENCV_LIB_LINK_DLIB "lib/opencv/x64/vc15/lib/opencv_world341.lib")
+
+set ( OPENCV_LIB_LINK_DLIB 
+		"lib/opencv/x64/vc15/lib/opencv_aruco400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_bgsegm400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_bioinspired400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_calib3d400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_ccalib400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_core400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_datasets400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_dnn_objdetect400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_dnn400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_dpm400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_face400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_features2d400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_flann400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_fuzzy400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_hfs400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_highgui400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_img_hash400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_imgcodecs400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_imgproc400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_line_descriptor400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_ml400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_objdetect400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_optflow400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_phase_unwrapping400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_photo400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_plot400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_reg400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_rgbd400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_saliency400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_shape400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_stereo400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_stitching400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_structured_light400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_superres400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_surface_matching400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_text400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_tracking400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_ts400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_video400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_videoio400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_videostab400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_xfeatures2d400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_ximgproc400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_xobjdetect400.lib"
+		"lib/opencv/x64/vc15/lib/opencv_xphoto400.lib"
+)
 
 include_directories(${OPENCV_LIB})
 link_directories(${OPENCV_LIB_LINK})

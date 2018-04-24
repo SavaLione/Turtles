@@ -5,14 +5,11 @@
 */
 #include <iostream>
 #include <Windows.h>
-#include "opencv2/imgproc/imgproc.hpp"
-#include <opencv2/core/core.hpp>
 #include <opencv2/opencv.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/features2d.hpp>
-#include <opencv2\calib3d\calib3d.hpp>
-#include <opencv2\nonfree\nonfree.hpp>
 
+#include <opencv\highgui.h>
+#include <opencv\cv.h>
+#include <opencv2\opencv.hpp>
 
 #include <ctime>
 #include <filesystem>
@@ -33,7 +30,6 @@ int main(int argc, char** argv)
 	{
 		readme(); return -1;
 	}
-
 	Mat img_object = imread(argv[1], CV_LOAD_IMAGE_GRAYSCALE);
 	Mat img_scene = imread(argv[2], CV_LOAD_IMAGE_GRAYSCALE);
 
