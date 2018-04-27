@@ -92,6 +92,8 @@ namespace yenot {
 	const char settings_carModel_example_description[] = "The car of model \"Example\"";
 	const char settings_carModel_example_file[] = "example.xml";
 
+	const char settings_carModel_description[] = "description";
+	const char settings_carModel_description_ifnotfound[] = "Not found";
 }
 
 #endif // YENOT_H

@@ -64,45 +64,6 @@ void databaseAdd(std::string filename) {
 	fsOut.release();
 }
 
-void databaseAddMember(std::string name) {
-	databaseAdd(name + std::string(yenot::extensions_database_member));
-
-	if (!check_file(yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member)))) {
-		int number_members = 0;
-
-		cv::FileStorage fsOut((yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member))), cv::FileStorage::WRITE);
-		fsOut << "numbermembers" << number_members;
-		fsOut.release();
-	}
-
-	createDir(yenot::database_name + std::string("\\") + name);
-}
-
-void AddMemberPhoto(std::string name, const cv::Mat& photo) {
-	if (!check_file(yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member)))) {
-		logger((char*)yenot::logger_level_error, "Database member not found");
-	} else {
-		int number_members = 0;
-
-		cv::FileStorage fsIn;
-		fsIn.open((yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member))), cv::FileStorage::READ);
-		fsIn["numbermembers"] >> number_members;
-		fsIn.release();
-
-		if (number_members == 0) {
-			//error. length not found
-		} else {
-			number_members++;
-
-			cv::imwrite((yenot::database_name + std::string("\\") + name + std::string("\\") + std::to_string(number_members) + std::string(yenot::extensions_database_member_photo)), photo);
-
-			cv::FileStorage fsOut((yenot::database_name + std::string("\\") + (name + std::string(yenot::extensions_database_member))), cv::FileStorage::WRITE);
-			fsOut << "numbermembers" << number_members;
-			fsOut.release();
-		}
-	}
-}
-
 void clearning(std::string filename, std::string variable) {
 	std::vector<std::string> stringVector;
 	cv::FileStorage fsIn;
@@ -122,7 +83,8 @@ void comparisonAlgorithm(const cv::Mat& photo) {
 
 }
 
-void detectionLogo() {
+bool detectionLogo() {
+	bool b_return = false;
 	Mat image;
 	image = imread("image.png", 1);
 
@@ -144,9 +106,69 @@ void detectionLogo() {
 		ellipse(image, center, Size(faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, Scalar(255, 0, 255), 4, 8, 0);
 	}
 
-	if (faces.size() == 0) {
-		// Нет на фото
+	if (faces.size() != 0) {
+		// Есть на фото
 		cout << faces.size() << endl;
+		b_return = true;
+	}
+	return b_return;
+}
+
+bool detectionLogo(const Mat& mat_logo, string cascadefile) {
+	bool b_return = false;
+	Mat image = mat_logo;
+
+	// Load cascade (.xml file)
+	CascadeClassifier logo_cascade;
+	logo_cascade.load(cascadefile);
+
+	if (logo_cascade.empty()) {
+		cerr << "Error Loading XML file" << endl;
+	}
+
+	// Detect object
+	std::vector<Rect> faces;
+	logo_cascade.detectMultiScale(image, faces, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(30, 30));
+
+	// Draw circles on the detected faces
+	for (int i = 0; i < faces.size(); i++) {
+		Point center(faces[i].x + faces[i].width*0.5, faces[i].y + faces[i].height*0.5);
+		ellipse(image, center, Size(faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, Scalar(255, 0, 255), 4, 8, 0);
+	}
+
+	if (faces.size() != 0) {
+		// Есть на фото
+		cout << faces.size() << endl;
+		b_return = true;
+	}
+	return b_return;
+}
+
+void help() {
+	std::cout << " Usage: Yenot.exe <image> <cascade>" << std::endl;
+}
+
+void detection(const Mat& mat_logo) {
+	std::vector<std::string> stringVector;
+	cv::FileStorage fsIn;
+	fsIn.open((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::READ);
+	fsIn[yenot::database_name] >> stringVector;
+	fsIn.release();
+
+	std::vector<bool> boolVector;
+
+	for (int i = 0; i <= (stringVector.size() - 1); i++) {
+		if (detectionLogo(mat_logo, stringVector[i])) {
+			boolVector[i] = true;
+		}
+	}
+
+	for (int i = 0; i <= (stringVector.size() - 1); i++) {
+		if (boolVector[i]) {
+			cout << stringVector[i] << endl;
+
+
+		}
 	}
 }
 
@@ -271,6 +293,10 @@ void createDir(std::string namedir) {
 		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_cDir_not);
 	}
 	//_mkdir(namedir.c_str());
+}
+
+void description(string s, string ret) {
+	ret = getSettingsString((char*)yenot::settings_carModel_description, (char*)s.c_str(), (char*)yenot::settings_carModel_description_ifnotfound);
 }
 
 ///////////////////////////////////////////////////////////////////////////////

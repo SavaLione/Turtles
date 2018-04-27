@@ -15,8 +15,10 @@ void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
 void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out);
 void databaseAdd(std::string filename);
 void clearning(std::string filename, std::string variable);
-void databaseAddMember(std::string name);
-void AddMemberPhoto(std::string name, const cv::Mat& photo);
+bool detectionLogo();
+bool detectionLogo(const Mat& mat_logo, string cascadefile);
+void detection(const Mat& mat_logo);
+void help();
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
@@ -26,8 +28,6 @@ void blur(const cv::Mat& mat_in, cv::Mat& mat_out);
 void fastNoiseRemovalGrey(const cv::Mat& mat_in, cv::Mat& mat_out);
 void gaussianblur(const cv::Mat& mat_in, cv::Mat& mat_out);
 void fastNoiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
-
-void detectionLogo();
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Line detector
@@ -47,6 +47,7 @@ bool check_file(std::string filename);
 void settings_initialization();
 void createFile(char *file_name);
 void createDir(std::string namedir);
+void description(std::string s, std::string ret);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Test

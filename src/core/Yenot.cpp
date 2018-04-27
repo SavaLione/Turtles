@@ -20,29 +20,33 @@
 using namespace cv;
 using namespace std;
 
-void readme();
+int main(int argc, char* argv[]) {
+	int i_return = 0;
 
-int main() {
+	settings_initialization();
+	clearning((yenot::database_name + std::string("\\") + yenot::database_file_name), yenot::database_name);
 
-	return 0;
+	if (argc < 1) {
+		help();
+		i_return = -1;
+	} else {
+		Mat src, dst;
+		src = imread(argv[1], 1);
+
+		resize(src, dst, Size(128,128));
+		src = dst;
+
+		noiseRemoval(src, dst);
+		src = dst;
+
+		lineDetection(src, dst);
+		src = dst;
+
+		detection(src);
+	}
+
+
+	return i_return;
 }
 
-void readme()
-{
-	std::cout << " Usage: ./SURF_descriptor <img1> <img2>" << std::endl;
-}
-
-/*
-//settings_initialization();
-
-//clearning((yenot::database_name + std::string("\\") + yenot::database_file_name), yenot::database_name);
-
-//databaseAddMember("somebrand");
-
-//Mat mat_pixel(1, 1, CV_8UC3, Scalar(110, 0, 255));
-
-//AddMemberPhoto("somebrand", mat_pixel);
-////
-
-//moments();
-*/
+// Yenot.exe image.png cascade.xml
