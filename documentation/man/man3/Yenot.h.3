@@ -1,0 +1,211 @@
+.TH "Yenot.h" 3 "Пт 27 Апр 2018" "Yenot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Yenot.h \- :D  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <opencv2/opencv\&.hpp>\fP
+.br
+
+.SS "Пространства имен"
+
+.in +1c
+.ti -1c
+.RI " \fByenot\fP"
+.br
+.in -1c
+.SS "Переменные"
+
+.in +1c
+.ti -1c
+.RI "const char \fByenot::settings_file_name\fP [] = '\&./config\&.ini'"
+.br
+.ti -1c
+.RI "const char \fByenot::logger_file_name\fP [] = 'Yenot\&.log'"
+.br
+.ti -1c
+.RI "const char \fByenot::database_file_name\fP [] = 'database\&.xml'"
+.br
+.ti -1c
+.RI "const char \fByenot::database_name\fP [] = 'database'"
+.br
+.ti -1c
+.RI "const char \fByenot::extensions_database_member\fP [] = '\&.xml'"
+.br
+.ti -1c
+.RI "const char \fByenot::extensions_database_member_photo\fP [] = '\&.png'"
+.br
+.ti -1c
+.RI "const int \fByenot::buffer_size\fP = 128"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_block_core\fP [] = 'Core'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_block_default\fP [] = 'General'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_fastmode\fP [] = 'fMode'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_fastmode_value\fP [] = '0'"
+.br
+.ti -1c
+.RI "const int \fByenot::settings_fastmode_value_int\fP = 0"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_noiseReduction\fP [] = 'nReduction'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_noiseReduction_value\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fByenot::settings_noiseReduction_value_int\fP = 1"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_machineLearning\fP [] = 'mLearning'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_machineLearning_value\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fByenot::settings_machineLearning_value_int\fP = 1"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_lineDetection\fP [] = 'lDetection'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_lineDetection_value\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fByenot::settings_lineDetection_value_int\fP = 1"
+.br
+.ti -1c
+.RI "const char \fByenot::use_detection\fP [] = 'detection'"
+.br
+.ti -1c
+.RI "const char \fByenot::use_detection_value\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fByenot::use_detection_value_int\fP = 1"
+.br
+.ti -1c
+.RI "const char \fByenot::save_processed_image\fP [] = 'sImage'"
+.br
+.ti -1c
+.RI "const char \fByenot::save_processed_image_value\fP [] = '0'"
+.br
+.ti -1c
+.RI "const int \fByenot::save_processed_image_value_int\fP = 0"
+.br
+.ti -1c
+.RI "const char \fByenot::save_processed_image_name\fP [] = 'test\&.png'"
+.br
+.ti -1c
+.RI "const int \fByenot::diameter_each_pixel\fP = 9"
+.br
+.ti -1c
+.RI "const int \fByenot::sigmaColor\fP = 75"
+.br
+.ti -1c
+.RI "const int \fByenot::sigmaSpace\fP = 75"
+.br
+.ti -1c
+.RI "const int \fByenot::gaussianblur_kernel_x\fP = 5"
+.br
+.ti -1c
+.RI "const int \fByenot::gaussianblur_kernel_y\fP = 5"
+.br
+.ti -1c
+.RI "const int \fByenot::blur_kernel_x\fP = 5"
+.br
+.ti -1c
+.RI "const int \fByenot::blur_kernel_y\fP = 5"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_block_logger\fP [] = 'Logger'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_log\fP [] = 'log'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_log_value\fP [] = '1'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_logTime\fP [] = 'lTime'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_logTime_value\fP [] = '1'"
+.br
+.ti -1c
+.RI "const char \fByenot::logger_level_warning\fP [] = 'WARN'"
+.br
+.ti -1c
+.RI "const char \fByenot::logger_level_error\fP [] = 'ERROR'"
+.br
+.ti -1c
+.RI "const char \fByenot::logger_level_message\fP [] = 'MSG'"
+.br
+.ti -1c
+.RI "const char \fByenot::logger_message_noiseRemoval\fP [] = 'Noise filter is disabled\&.'"
+.br
+.ti -1c
+.RI "const char \fByenot::logger_message_lDetection\fP [] = 'Line \fBdetection\fP is disabled\&.'"
+.br
+.ti -1c
+.RI "const char \fByenot::logger_message_fMode\fP [] = 'Fast mode enabled\&.'"
+.br
+.ti -1c
+.RI "const char \fByenot::logger_message_cDir\fP [] = 'Folder created\&.'"
+.br
+.ti -1c
+.RI "const char \fByenot::logger_message_cDir_not\fP [] = 'Folder not created\&.'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_block_carModel\fP [] = 'carmodel'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_carModel_listphoto\fP [] = 'listphoto'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_carModel_example\fP [] = 'example'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_carModel_example_description\fP [] = 'The car of model \\'Example\\''"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_carModel_example_file\fP [] = 'example\&.xml'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_block_description\fP [] = 'description'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_description_ifnotfound\fP [] = 'Not found'"
+.br
+.ti -1c
+.RI "const char \fByenot::settings_description_example\fP [] = 'Example brand'"
+.br
+.ti -1c
+.RI "const int \fByenot::settings_size_photo\fP = 512"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+:D 
+
+
+.PP
+\fBАвтор:\fP
+.RS 4
+SavaLione 
+.RE
+.PP
+
+.PP
+См\&. определение в файле \fBYenot\&.h\fP
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Yenot из исходного текста\&.

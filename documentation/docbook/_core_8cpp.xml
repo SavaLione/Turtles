@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_core_8cpp">
+    <title>Core.cpp File Reference</title>
+    <programlisting>#include &lt;Windows.h&gt;</programlisting>
+    <programlisting>#include &lt;fstream&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;opencv2/imgproc/imgproc.hpp&gt;</programlisting>
+    <programlisting>#include &lt;opencv2/highgui/highgui_c.h&gt;</programlisting>
+    <programlisting>#include &lt;cstdlib&gt;</programlisting>
+    <programlisting>#include &lt;cstdio&gt;</programlisting>
+    <programlisting>#include &lt;direct.h&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+    <programlisting>#include &quot;Yenot.h&quot;</programlisting>
+    <programlisting>#include &quot;Core.h&quot;</programlisting>
+    <programlisting>#include &quot;..\io\Logger.h&quot;</programlisting>
+<para>Include dependency diagram for Core.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_core_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Core.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_core_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Пространства имен </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespacecv">cv</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespacestd">std</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a438c92819ed0ad4fc2e187ed5f5a2e27">noiseRemoval</link> (
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1aa7c37c22318217cd913a50800eb336a3">lineDetection</link> (
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a5a4a30ca6128e13ce1ec6efaa23dd6c7">databaseAdd</link> (
+std::string filename)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1aebd676a1476aa4d75b280db8ae09d11c">clearning</link> (
+std::string filename, std::string variable)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="_core_8cpp_1ac75bd6101866dc6b17aa1dd79723eb52">detectionLogo</link> (
+const Mat &amp; mat_logo, std::string cascadefile)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a97ee70a8770dc30d06c744b24eb2fcfc">help</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1ae99907f19e7f09055012f68347a57d05">detection</link> (
+const Mat &amp; mat_logo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a0a1a2acbf75cc1c23ae101ebca89c816">bilateral</link> (
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a64b67e9219ba96b984256d89bc46c2f5">blur</link> (
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a39eb2014e38b68bd4e6453a24e51d896">fastNoiseRemovalGrey</link> (
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a38f0b724796df5703cf0c1c77b3942fa">gaussianblur</link> (
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1ab5eb0c124067d093b9001373071f4636">fastNoiseRemoval</link> (
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="_core_8cpp_1a33e1cb874acab9d31a98a12cdd1472ce">getSettingsString</link> (
+char * block, char * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="_core_8cpp_1a3a0f1e87eb01bdd16c4a7e365aa283eb">getSettingsString</link> (
+char * block, char * value, char * ch_return_default)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</link> (
+char * block, char * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_core_8cpp_1a0a2fe94de4037eda33c49fe332970891">getSettings</link> (
+char * block, char * value, int i_return_default)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999">setSettings</link> (
+char * block, char * value, char * text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="_core_8cpp_1a96c018612a57329cdb94506523f5b7ec">check_file</link> (
+char * filename)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="_core_8cpp_1a041e0f6c7598005e2e71f7da64197d65">check_file</link> (
+std::string filename)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a8ba7f398362c96368015412b023565d0">settings_initialization</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a8f34a2030acfb5567678ab2bba25f3c1">createFile</link> (
+char * file_name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1a912b67f6f6b05abadd055a379dd84864">createDir</link> (
+std::string namedir)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="_core_8cpp_1a9a68ac8e2d40e06f82cc017d723e133e">description</link> (
+string value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1aff2d42310702a0aab15af5ad62a59f2b">canny</link> (
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_core_8cpp_1aafaa59e41cfa4f5fda8c4d703394f26a">v_test</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Подробное описание</title>
+
+<para>ќписание </para>
+
+<para><formalpara><title>Автор: </title>
+
+<para>SavaLione </para>
+</formalpara>
+</para>
+    <para>Definition in file Core.cpp</para>
+    </simplesect>
+</section>

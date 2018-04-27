@@ -1,0 +1,867 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_core_8cpp" kind="file" language="C++">
+    <compoundname>Core.cpp</compoundname>
+    <includes local="no">Windows.h</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">opencv2/imgproc/imgproc.hpp</includes>
+    <includes local="no">opencv2/highgui/highgui_c.h</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">direct.h</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_yenot_8h" local="yes">Yenot.h</includes>
+    <includes refid="_core_8h" local="yes">Core.h</includes>
+    <includes refid="_logger_8h" local="yes">..\io\Logger.h</includes>
+    <incdepgraph>
+      <node id="13">
+        <label>..\io\Logger.h</label>
+        <link refid="_logger_8h"/>
+      </node>
+      <node id="5">
+        <label>opencv2/highgui/highgui_c.h</label>
+      </node>
+      <node id="1">
+        <label>Windows.h</label>
+      </node>
+      <node id="11">
+        <label>opencv2/opencv.hpp</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>direct.h</label>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="12">
+        <label>Core.h</label>
+        <link refid="_core_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>cstdio</label>
+      </node>
+      <node id="4">
+        <label>opencv2/imgproc/imgproc.hpp</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="0">
+        <label>Core.cpp</label>
+        <link refid="_core_8cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="10">
+        <label>Yenot.h</label>
+        <link refid="_yenot_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacecv">cv</innernamespace>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_core_8cpp_1a438c92819ed0ad4fc2e187ed5f5a2e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void noiseRemoval</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>noiseRemoval</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="26" column="1" bodyfile="src/core/Core.cpp" bodystart="26" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1aa7c37c22318217cd913a50800eb336a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lineDetection</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>lineDetection</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="40" column="1" bodyfile="src/core/Core.cpp" bodystart="40" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a5a4a30ca6128e13ce1ec6efaa23dd6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void databaseAdd</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>databaseAdd</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="53" column="1" bodyfile="src/core/Core.cpp" bodystart="53" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1aebd676a1476aa4d75b280db8ae09d11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clearning</definition>
+        <argsstring>(std::string filename, std::string variable)</argsstring>
+        <name>clearning</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="67" column="1" bodyfile="src/core/Core.cpp" bodystart="67" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1ac75bd6101866dc6b17aa1dd79723eb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detectionLogo</definition>
+        <argsstring>(const Mat &amp;mat_logo, std::string cascadefile)</argsstring>
+        <name>detectionLogo</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>mat_logo</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>cascadefile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="82" column="1" bodyfile="src/core/Core.cpp" bodystart="82" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a97ee70a8770dc30d06c744b24eb2fcfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void help</definition>
+        <argsstring>()</argsstring>
+        <name>help</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="106" column="1" bodyfile="src/core/Core.cpp" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1ae99907f19e7f09055012f68347a57d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void detection</definition>
+        <argsstring>(const Mat &amp;mat_logo)</argsstring>
+        <name>detection</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>mat_logo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="110" column="1" bodyfile="src/core/Core.cpp" bodystart="110" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a0a1a2acbf75cc1c23ae101ebca89c816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bilateral</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>bilateral</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><linebreak/>
+src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Destination image of the same size and type as src . d Ц Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace. sigmaColor Ц Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color. sigmaSpace Ц Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d&gt;0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .</para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="137" column="1" bodyfile="src/core/Core.cpp" bodystart="137" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a64b67e9219ba96b984256d89bc46c2f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void blur</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>blur</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="150" column="1" bodyfile="src/core/Core.cpp" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a39eb2014e38b68bd4e6453a24e51d896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fastNoiseRemovalGrey</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>fastNoiseRemovalGrey</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="154" column="1" bodyfile="src/core/Core.cpp" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a38f0b724796df5703cf0c1c77b3942fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gaussianblur</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>gaussianblur</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="158" column="1" bodyfile="src/core/Core.cpp" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1ab5eb0c124067d093b9001373071f4636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fastNoiseRemoval</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>fastNoiseRemoval</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="162" column="1" bodyfile="src/core/Core.cpp" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a33e1cb874acab9d31a98a12cdd1472ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getSettingsString</definition>
+        <argsstring>(char *block, char *value)</argsstring>
+        <name>getSettingsString</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="169" column="1" bodyfile="src/core/Core.cpp" bodystart="169" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a3a0f1e87eb01bdd16c4a7e365aa283eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getSettingsString</definition>
+        <argsstring>(char *block, char *value, char *ch_return_default)</argsstring>
+        <name>getSettingsString</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>ch_return_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="175" column="1" bodyfile="src/core/Core.cpp" bodystart="175" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getSettings</definition>
+        <argsstring>(char *block, char *value)</argsstring>
+        <name>getSettings</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="181" column="1" bodyfile="src/core/Core.cpp" bodystart="181" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a0a2fe94de4037eda33c49fe332970891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getSettings</definition>
+        <argsstring>(char *block, char *value, int i_return_default)</argsstring>
+        <name>getSettings</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i_return_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="185" column="1" bodyfile="src/core/Core.cpp" bodystart="185" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setSettings</definition>
+        <argsstring>(char *block, char *value, char *text)</argsstring>
+        <name>setSettings</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="189" column="1" bodyfile="src/core/Core.cpp" bodystart="189" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a96c018612a57329cdb94506523f5b7ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool check_file</definition>
+        <argsstring>(char *filename)</argsstring>
+        <name>check_file</name>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="193" column="1" bodyfile="src/core/Core.cpp" bodystart="193" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a041e0f6c7598005e2e71f7da64197d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool check_file</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>check_file</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="202" column="1" bodyfile="src/core/Core.cpp" bodystart="202" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a8ba7f398362c96368015412b023565d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void settings_initialization</definition>
+        <argsstring>()</argsstring>
+        <name>settings_initialization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="212" column="1" bodyfile="src/core/Core.cpp" bodystart="212" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a8f34a2030acfb5567678ab2bba25f3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void createFile</definition>
+        <argsstring>(char *file_name)</argsstring>
+        <name>createFile</name>
+        <param>
+          <type>char *</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="247" column="1" bodyfile="src/core/Core.cpp" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a912b67f6f6b05abadd055a379dd84864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void createDir</definition>
+        <argsstring>(std::string namedir)</argsstring>
+        <name>createDir</name>
+        <param>
+          <type>std::string</type>
+          <declname>namedir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="252" column="1" bodyfile="src/core/Core.cpp" bodystart="252" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1a9a68ac8e2d40e06f82cc017d723e133e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string description</definition>
+        <argsstring>(string value)</argsstring>
+        <name>description</name>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="261" column="1" bodyfile="src/core/Core.cpp" bodystart="261" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1aff2d42310702a0aab15af5ad62a59f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void canny</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>canny</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="270" column="1" bodyfile="src/core/Core.cpp" bodystart="270" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="_core_8cpp_1aafaa59e41cfa4f5fda8c4d703394f26a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void v_test</definition>
+        <argsstring>()</argsstring>
+        <name>v_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.cpp" line="281" column="1" bodyfile="src/core/Core.cpp" bodystart="281" bodyend="298"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ќписание </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>SavaLione </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/imgproc/imgproc.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/highgui/highgui_c.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;direct.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_yenot_8h" kindref="compound">Yenot.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_core_8h" kindref="compound">Core.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\io\Logger.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecv" kindref="compound">cv</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment">//<sp/><sp/>Core</highlight></codeline>
+<codeline lineno="26" refid="_core_8h_1a438c92819ed0ad4fc2e187ed5f5a2e27" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a438c92819ed0ad4fc2e187ed5f5a2e27" kindref="member">noiseRemoval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a50716fcb731614c596c51676324c11e5" kindref="member">yenot::settings_noiseReduction</ref>,<sp/><ref refid="namespaceyenot_1aa228b5315065090d02dadbf128ba3d33" kindref="member">yenot::settings_noiseReduction_value_int</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>no<sp/>fast</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a49273bc3609e4a1d9c1a3e4a5cfcdafd" kindref="member">yenot::settings_fastmode</ref>,<sp/><ref refid="namespaceyenot_1aee49fb849c0951972cdac7466599314a" kindref="member">yenot::settings_fastmode_value_int</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a0a1a2acbf75cc1c23ae101ebca89c816" kindref="member">bilateral</ref>(mat_in,<sp/>mat_out);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a38f0b724796df5703cf0c1c77b3942fa" kindref="member">gaussianblur</ref>(mat_in,<sp/>mat_out);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa" kindref="member">yenot::logger_level_warning</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a5cb3756995a6e5a93819405ca99eb35a" kindref="member">yenot::logger_message_fMode</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa" kindref="member">yenot::logger_level_warning</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a27e7d588bfc41ad2d47d044d4541dad5" kindref="member">yenot::logger_message_noiseRemoval</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_core_8h_1aa7c37c22318217cd913a50800eb336a3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1aa7c37c22318217cd913a50800eb336a3" kindref="member">lineDetection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a49dc5e175f5b81894abe218db8949a89" kindref="member">yenot::settings_lineDetection</ref>,<sp/><ref refid="namespaceyenot_1ae8c5d5792720627ea225afb6ee387915" kindref="member">yenot::settings_lineDetection_value_int</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a49273bc3609e4a1d9c1a3e4a5cfcdafd" kindref="member">yenot::settings_fastmode</ref>,<sp/><ref refid="namespaceyenot_1aee49fb849c0951972cdac7466599314a" kindref="member">yenot::settings_fastmode_value_int</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1aff2d42310702a0aab15af5ad62a59f2b" kindref="member">canny</ref>(mat_in,<sp/>mat_out);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*===============================================================================================================================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa" kindref="member">yenot::logger_level_warning</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a5cb3756995a6e5a93819405ca99eb35a" kindref="member">yenot::logger_message_fMode</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa" kindref="member">yenot::logger_level_warning</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a7ba035b0bd5ec0ca88a1741671cf6818" kindref="member">yenot::logger_message_lDetection</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_core_8h_1a5a4a30ca6128e13ce1ec6efaa23dd6c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a5a4a30ca6128e13ce1ec6efaa23dd6c7" kindref="member">databaseAdd</ref>(std::string<sp/>filename)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::FileStorage<sp/>fsIn;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.open((<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref><sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9" kindref="member">yenot::database_file_name</ref>),<sp/>cv::FileStorage::READ);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn[<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref>]<sp/>&gt;&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.release();<sp/></highlight><highlight class="comment">//idk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>stringVector.insert(stringVector.end(),<sp/>filename);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::FileStorage<sp/>fsOut((<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref><sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9" kindref="member">yenot::database_file_name</ref>),<sp/>cv::FileStorage::WRITE);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut<sp/>&lt;&lt;<sp/><ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref><sp/>&lt;&lt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut.release();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_core_8h_1aebd676a1476aa4d75b280db8ae09d11c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1aebd676a1476aa4d75b280db8ae09d11c" kindref="member">clearning</ref>(std::string<sp/>filename,<sp/>std::string<sp/>variable)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::FileStorage<sp/>fsIn;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.open(filename,<sp/>cv::FileStorage::READ);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn[variable]<sp/>&gt;&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.release();<sp/></highlight><highlight class="comment">//idk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>std::sort(stringVector.begin(),<sp/>stringVector.end());</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>stringVector.resize(std::unique(stringVector.begin(),<sp/>stringVector.end())<sp/>-<sp/>stringVector.begin());</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::FileStorage<sp/>fsOut(filename,<sp/>cv::FileStorage::WRITE);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut<sp/>&lt;&lt;<sp/>variable<sp/>&lt;&lt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut.release();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_core_8cpp_1ac75bd6101866dc6b17aa1dd79723eb52" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1ac75bd6101866dc6b17aa1dd79723eb52" kindref="member">detectionLogo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_logo,<sp/>std::string<sp/>cascadefile)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>image<sp/>=<sp/>mat_logo;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>cascade<sp/>(.xml<sp/>file)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>CascadeClassifier<sp/>logo_cascade;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>logo_cascade.load(cascadefile);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(logo_cascade.empty())<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>Loading<sp/>XML<sp/>file&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Detect<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Rect&gt;<sp/>detectObject;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>logo_cascade.detectMultiScale(image,<sp/>detectObject,<sp/>1.1,<sp/>2,<sp/>0<sp/>|<sp/>CV_HAAR_SCALE_IMAGE,<sp/>Size(<ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">yenot::settings_size_photo</ref>,<sp/><ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">yenot::settings_size_photo</ref>));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(detectObject.size()<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>≈сть<sp/>на<sp/>фото</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>detectObject.size()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b_return;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="_core_8h_1a97ee70a8770dc30d06c744b24eb2fcfc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a97ee70a8770dc30d06c744b24eb2fcfc" kindref="member">help</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Usage:<sp/>Yenot.exe<sp/>&lt;image&gt;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="_core_8cpp_1ae99907f19e7f09055012f68347a57d05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1ae99907f19e7f09055012f68347a57d05" kindref="member">detection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_logo)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a17fec4b53b47f434f720ad8e804e3497" kindref="member">yenot::use_detection</ref>,<sp/><ref refid="namespaceyenot_1a8ba9c1f83b4502a37417a016875a3918" kindref="member">yenot::use_detection_value_int</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv::FileStorage<sp/>fsIn;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsIn.open((<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref><sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9" kindref="member">yenot::database_file_name</ref>),<sp/>cv::FileStorage::READ);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsIn[<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref>]<sp/>&gt;&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsIn.release();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;bool&gt;<sp/>boolVector;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;=<sp/>(stringVector.size()<sp/>-<sp/>1);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1ac75bd6101866dc6b17aa1dd79723eb52" kindref="member">detectionLogo</ref>(mat_logo,<sp/>stringVector[i]))<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boolVector[i]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;=<sp/>(stringVector.size()<sp/>-<sp/>1);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(boolVector[i])<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="_core_8cpp_1a9a68ac8e2d40e06f82cc017d723e133e" kindref="member">description</ref>(stringVector[i])<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="comment">//<sp/><sp/>Filters</highlight></codeline>
+<codeline lineno="137" refid="_core_8h_1a0a1a2acbf75cc1c23ae101ebca89c816" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a0a1a2acbf75cc1c23ae101ebca89c816" kindref="member">bilateral</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//mat_out<sp/>=<sp/>mat_in.clone();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>bilateralFilter(mat_in,<sp/>mat_out,<sp/><ref refid="namespaceyenot_1a6c5730ae743bc1203438dfcf6f35faeb" kindref="member">yenot::diameter_each_pixel</ref>,<sp/><ref refid="namespaceyenot_1a54032afcd8390f4a4975bbf20ffa248c" kindref="member">yenot::sigmaColor</ref>,<sp/><ref refid="namespaceyenot_1adbbb6d50f7db1942c60be8b5d621d3b7" kindref="member">yenot::sigmaSpace</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="_core_8h_1a64b67e9219ba96b984256d89bc46c2f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a64b67e9219ba96b984256d89bc46c2f5" kindref="member">blur</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a64b67e9219ba96b984256d89bc46c2f5" kindref="member">cv::blur</ref>(mat_in,<sp/>mat_out,<sp/>cv::Size(<ref refid="namespaceyenot_1a1b60119efa619ee2a1a927d430e984d2" kindref="member">yenot::blur_kernel_x</ref>,<sp/><ref refid="namespaceyenot_1ad178c04ee8518b1553ee1ab5b5054712" kindref="member">yenot::blur_kernel_y</ref>));</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="_core_8h_1a39eb2014e38b68bd4e6453a24e51d896" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a39eb2014e38b68bd4e6453a24e51d896" kindref="member">fastNoiseRemovalGrey</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::fastNlMeansDenoising(mat_in,<sp/>mat_out,<sp/>3.0f,<sp/>7,<sp/>21);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="_core_8h_1a38f0b724796df5703cf0c1c77b3942fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a38f0b724796df5703cf0c1c77b3942fa" kindref="member">gaussianblur</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::GaussianBlur(mat_in,<sp/>mat_out,<sp/>cv::Size(<ref refid="namespaceyenot_1a7b716ae635492024820f16eb8c04a385" kindref="member">yenot::gaussianblur_kernel_x</ref>,<sp/><ref refid="namespaceyenot_1a9f129e682fdc00d2869d4ed69a4c6aa7" kindref="member">yenot::gaussianblur_kernel_y</ref>),<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="_core_8h_1ab5eb0c124067d093b9001373071f4636" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1ab5eb0c124067d093b9001373071f4636" kindref="member">fastNoiseRemoval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::fastNlMeansDenoising(mat_in,<sp/>mat_out,<sp/>3.0f,<sp/>7,<sp/>21);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="comment">//<sp/><sp/>Settings</highlight></codeline>
+<codeline lineno="169" refid="_core_8h_1a33e1cb874acab9d31a98a12cdd1472ce" refkind="member"><highlight class="comment"></highlight><highlight class="normal">std::string<sp/><ref refid="_core_8cpp_1a33e1cb874acab9d31a98a12cdd1472ce" kindref="member">getSettingsString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>text[<ref refid="namespaceyenot_1adc382d9413986f36649df4f983cf1ebe" kindref="member">yenot::buffer_size</ref>];</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>GetPrivateProfileString(block,<sp/>value,<sp/><ref refid="namespaceyenot_1a2c183b5b1119e19804dce22eaad06010" kindref="member">yenot::settings_block_default</ref>,<sp/>text,<sp/><ref refid="namespaceyenot_1adc382d9413986f36649df4f983cf1ebe" kindref="member">yenot::buffer_size</ref>,<sp/><ref refid="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1" kindref="member">yenot::settings_file_name</ref>);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>text;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="_core_8h_1a3a0f1e87eb01bdd16c4a7e365aa283eb" refkind="member"><highlight class="normal">std::string<sp/><ref refid="_core_8cpp_1a33e1cb874acab9d31a98a12cdd1472ce" kindref="member">getSettingsString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ch_return_default)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>text[<ref refid="namespaceyenot_1adc382d9413986f36649df4f983cf1ebe" kindref="member">yenot::buffer_size</ref>];</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>GetPrivateProfileString(block,<sp/>value,<sp/>ch_return_default,<sp/>text,<sp/><ref refid="namespaceyenot_1adc382d9413986f36649df4f983cf1ebe" kindref="member">yenot::buffer_size</ref>,<sp/><ref refid="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1" kindref="member">yenot::settings_file_name</ref>);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>text;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="_core_8h_1a68b4d9ed6be7aaa93d9a6fe8fd683862" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GetPrivateProfileInt(block,<sp/>value,<sp/>-1,<sp/><ref refid="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1" kindref="member">yenot::settings_file_name</ref>);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="_core_8h_1a0a2fe94de4037eda33c49fe332970891" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_return_default)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GetPrivateProfileInt(block,<sp/>value,<sp/>i_return_default,<sp/><ref refid="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1" kindref="member">yenot::settings_file_name</ref>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="_core_8h_1a463e32ccb37f9478b0e62ee0d21c5999" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>WritePrivateProfileString(block,<sp/>value,<sp/>text,<sp/><ref refid="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1" kindref="member">yenot::settings_file_name</ref>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="_core_8h_1a96c018612a57329cdb94506523f5b7ec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename)<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>file;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>file.open(filename);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(file)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b_return;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202" refid="_core_8h_1a041e0f6c7598005e2e71f7da64197d65" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>(std::string<sp/>filename)<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>file;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>file.open(filename);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(file)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b_return;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="_core_8h_1a8ba7f398362c96368015412b023565d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a8ba7f398362c96368015412b023565d0" kindref="member">settings_initialization</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((_mkdir((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref>))<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa" kindref="member">yenot::logger_level_warning</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a674d34d95501a1071db0ac7b39c64f57" kindref="member">yenot::logger_message_cDir</ref>);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa" kindref="member">yenot::logger_level_warning</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a16669256cbc1918ac8500a364e0ba21d" kindref="member">yenot::logger_message_cDir_not</ref>);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1" kindref="member">yenot::settings_file_name</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a8f34a2030acfb5567678ab2bba25f3c1" kindref="member">createFile</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1" kindref="member">yenot::settings_file_name</ref>);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a49273bc3609e4a1d9c1a3e4a5cfcdafd" kindref="member">yenot::settings_fastmode</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a860366d2b9aa9cf0d9cdcaf58528c101" kindref="member">yenot::settings_fastmode_value</ref>);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a50716fcb731614c596c51676324c11e5" kindref="member">yenot::settings_noiseReduction</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ae03e5eafa7f7253bce5126abe8575bfd" kindref="member">yenot::settings_noiseReduction_value</ref>);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a9e0a7decaab1ac67fda9bba816d240ad" kindref="member">yenot::settings_machineLearning</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ac24f2700516e72d7abda843c90ea197d" kindref="member">yenot::settings_machineLearning_value</ref>);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a17fec4b53b47f434f720ad8e804e3497" kindref="member">yenot::use_detection</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1affbdf7e1315bdd3e0c9f7bb5d1b0a9b1" kindref="member">yenot::use_detection_value</ref>);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab35e22cfa0a4ef6c8e960cfa75873aa0" kindref="member">yenot::save_processed_image</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ace3fd31c709279dc1bb3450404d770b0" kindref="member">yenot::save_processed_image_value</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ad8a7ef4466cc151f6f380b4c4ccbfa66" kindref="member">yenot::settings_log</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a8e18cd22c222abdaffa0e12b65af2ac5" kindref="member">yenot::settings_log_value</ref>);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1af1e97f87e798dc626f1a437f23b42199" kindref="member">yenot::settings_logTime</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1aa1103de8317b20c60b2ae5da7e05f2b3" kindref="member">yenot::settings_logTime_value</ref>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab685b9f0b8baadc950b69329d1fae577" kindref="member">yenot::settings_block_carModel</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1af238d0e227de22ee3c26114077153efc" kindref="member">yenot::settings_carModel_example</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a5f4aa342b4a3e3f87069f6fef812594a" kindref="member">yenot::settings_carModel_example_description</ref>);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1aea7e9eb4d5b9e645f22e83e2d5fe893e" kindref="member">yenot::settings_block_description</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" kindref="member">yenot::settings_carModel_example_file</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a37f90b0081fe0617055470d46489ea0f" kindref="member">yenot::settings_description_example</ref>);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>(<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref><sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9" kindref="member">yenot::database_file_name</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv::FileStorage<sp/>fsOut((<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref><sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9" kindref="member">yenot::database_file_name</ref>),<sp/>cv::FileStorage::WRITE);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsOut<sp/>&lt;&lt;<sp/><ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref><sp/>&lt;&lt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsOut.release();</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>(<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref><sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" kindref="member">yenot::settings_carModel_example_file</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a5a4a30ca6128e13ce1ec6efaa23dd6c7" kindref="member">databaseAdd</ref>(<ref refid="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" kindref="member">yenot::settings_carModel_example_file</ref>);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="_core_8h_1a8f34a2030acfb5567678ab2bba25f3c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a8f34a2030acfb5567678ab2bba25f3c1" kindref="member">createFile</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name)<sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(file_name);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="_core_8h_1a912b67f6f6b05abadd055a379dd84864" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a912b67f6f6b05abadd055a379dd84864" kindref="member">createDir</ref>(std::string<sp/>namedir)<sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((_mkdir(namedir.c_str()))<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa" kindref="member">yenot::logger_level_warning</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a674d34d95501a1071db0ac7b39c64f57" kindref="member">yenot::logger_message_cDir</ref>);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa" kindref="member">yenot::logger_level_warning</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a16669256cbc1918ac8500a364e0ba21d" kindref="member">yenot::logger_message_cDir_not</ref>);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//_mkdir(namedir.c_str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="_core_8cpp_1a9a68ac8e2d40e06f82cc017d723e133e" refkind="member"><highlight class="normal">std::string<sp/><ref refid="_core_8cpp_1a9a68ac8e2d40e06f82cc017d723e133e" kindref="member">description</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s_ret;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>s_ret<sp/>=<sp/><ref refid="_core_8cpp_1a33e1cb874acab9d31a98a12cdd1472ce" kindref="member">getSettingsString</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1aea7e9eb4d5b9e645f22e83e2d5fe893e" kindref="member">yenot::settings_block_description</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)value.c_str(),<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a53b4bd62fd7a6e3abedfdfb47db53284" kindref="member">yenot::settings_description_ifnotfound</ref>);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s_ret;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="comment">//<sp/><sp/>Line<sp/>detector</highlight></codeline>
+<codeline lineno="270" refid="_core_8h_1aff2d42310702a0aab15af5ad62a59f2b" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1aff2d42310702a0aab15af5ad62a59f2b" kindref="member">canny</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/>gray,<sp/>edge,<sp/>draw;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>cvtColor(mat_in,<sp/>gray,<sp/>CV_BGR2GRAY);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>Canny(gray,<sp/>edge,<sp/>50,<sp/>150,<sp/>3);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>edge.convertTo(mat_out,<sp/>CV_8U);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="comment">//<sp/><sp/>Test</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="_core_8h_1aafaa59e41cfa4f5fda8c4d703394f26a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1aafaa59e41cfa4f5fda8c4d703394f26a" kindref="member">v_test</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;=<sp/>128;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>start_time<sp/>=<sp/>clock();<sp/></highlight><highlight class="comment">//<sp/>начальное<sp/>врем¤</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv::Mat<sp/>image,<sp/>out;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>image<sp/>=<sp/>cv::imread(</highlight><highlight class="stringliteral">&quot;a.png&quot;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1aff2d42310702a0aab15af5ad62a59f2b" kindref="member">canny</ref>(image,<sp/>out);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>end_time<sp/>=<sp/>clock();<sp/></highlight><highlight class="comment">//<sp/>конечное<sp/>врем¤</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>search_time<sp/>=<sp/>end_time<sp/>-<sp/>start_time;<sp/></highlight><highlight class="comment">//<sp/>искомое<sp/>врем¤</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>(double)search_time<sp/>/<sp/>1000.0;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a5e632a6ec68609b973a180293035b94b" kindref="member">logger_xy</ref>(d,<sp/>i);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/core/Core.cpp"/>
+  </compounddef>
+</doxygen>

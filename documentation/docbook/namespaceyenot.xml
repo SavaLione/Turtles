@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="namespaceyenot">
+<title>yenot</title>
+        <section>
+            <title>Переменные</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1">settings_file_name</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1ab82af39640477c63378716f6699d49fe">logger_file_name</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9">database_file_name</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2">database_name</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a33ac96c1605ea0acb1f29aaf1ace51da">extensions_database_member</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1aad9119112273f919a9be40dd3cd6f883">extensions_database_member_photo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1adc382d9413986f36649df4f983cf1ebe">buffer_size</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5">settings_block_core</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a2c183b5b1119e19804dce22eaad06010">settings_block_default</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a49273bc3609e4a1d9c1a3e4a5cfcdafd">settings_fastmode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a860366d2b9aa9cf0d9cdcaf58528c101">settings_fastmode_value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1aee49fb849c0951972cdac7466599314a">settings_fastmode_value_int</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a50716fcb731614c596c51676324c11e5">settings_noiseReduction</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1ae03e5eafa7f7253bce5126abe8575bfd">settings_noiseReduction_value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1aa228b5315065090d02dadbf128ba3d33">settings_noiseReduction_value_int</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a9e0a7decaab1ac67fda9bba816d240ad">settings_machineLearning</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1ac24f2700516e72d7abda843c90ea197d">settings_machineLearning_value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1a14d42f7507a42b87ff62a9dc822c0af8">settings_machineLearning_value_int</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a49dc5e175f5b81894abe218db8949a89">settings_lineDetection</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a300cc5d9afdbc58876cf3b52a2d9f055">settings_lineDetection_value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1ae8c5d5792720627ea225afb6ee387915">settings_lineDetection_value_int</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a17fec4b53b47f434f720ad8e804e3497">use_detection</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1affbdf7e1315bdd3e0c9f7bb5d1b0a9b1">use_detection_value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1a8ba9c1f83b4502a37417a016875a3918">use_detection_value_int</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1ab35e22cfa0a4ef6c8e960cfa75873aa0">save_processed_image</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1ace3fd31c709279dc1bb3450404d770b0">save_processed_image_value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1accc48c2808f0c8c98f853614c546b5eb">save_processed_image_value_int</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1afe93bb98a5b2fd1f0cab330e4da59332">save_processed_image_name</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1a6c5730ae743bc1203438dfcf6f35faeb">diameter_each_pixel</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1a54032afcd8390f4a4975bbf20ffa248c">sigmaColor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1adbbb6d50f7db1942c60be8b5d621d3b7">sigmaSpace</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1a7b716ae635492024820f16eb8c04a385">gaussianblur_kernel_x</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1a9f129e682fdc00d2869d4ed69a4c6aa7">gaussianblur_kernel_y</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1a1b60119efa619ee2a1a927d430e984d2">blur_kernel_x</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1ad178c04ee8518b1553ee1ab5b5054712">blur_kernel_y</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb">settings_block_logger</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1ad8a7ef4466cc151f6f380b4c4ccbfa66">settings_log</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a8e18cd22c222abdaffa0e12b65af2ac5">settings_log_value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1af1e97f87e798dc626f1a437f23b42199">settings_logTime</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1aa1103de8317b20c60b2ae5da7e05f2b3">settings_logTime_value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa">logger_level_warning</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a9624d76c2385fbb9861e403225b1d698">logger_level_error</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a536380830aa21975126348216a729b08">logger_level_message</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a27e7d588bfc41ad2d47d044d4541dad5">logger_message_noiseRemoval</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a7ba035b0bd5ec0ca88a1741671cf6818">logger_message_lDetection</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a5cb3756995a6e5a93819405ca99eb35a">logger_message_fMode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a674d34d95501a1071db0ac7b39c64f57">logger_message_cDir</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a16669256cbc1918ac8500a364e0ba21d">logger_message_cDir_not</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1ab685b9f0b8baadc950b69329d1fae577">settings_block_carModel</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a0a2414e62514c20e76cf0c522ebf38a3">settings_carModel_listphoto</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1af238d0e227de22ee3c26114077153efc">settings_carModel_example</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a5f4aa342b4a3e3f87069f6fef812594a">settings_carModel_example_description</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48">settings_carModel_example_file</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1aea7e9eb4d5b9e645f22e83e2d5fe893e">settings_block_description</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a53b4bd62fd7a6e3abedfdfb47db53284">settings_description_ifnotfound</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1a37f90b0081fe0617055470d46489ea0f">settings_description_example</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int <link linkend="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9">settings_size_photo</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

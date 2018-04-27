@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Yenot: Исходный файл Yenot.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Yenot
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Yenot.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_yenot_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;opencv\highgui.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;opencv\cv.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;opencv2\opencv.hpp&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_yenot_8h.html">Yenot.h</a>&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;..\core\Core.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;..\io\Logger.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacecv.html">cv</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_yenot_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   23</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_yenot_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> i_return = 0;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Mat src, dst;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">char</span>* imagename = argc == 2 ? argv[1] : <span class="stringliteral">&quot;image.png&quot;</span>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    src = imread(imagename, 1);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="_core_8cpp.html#a8ba7f398362c96368015412b023565d0">settings_initialization</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="_core_8cpp.html#aebd676a1476aa4d75b280db8ae09d11c">clearning</a>((<a class="code" href="namespaceyenot.html#a5c402b62f742f34e9e42756075df6ed2">yenot::database_name</a> + std::string(<span class="stringliteral">&quot;\\&quot;</span>) + <a class="code" href="namespaceyenot.html#ac18180ab326731ce58145fe9049c49b9">yenot::database_file_name</a>), <a class="code" href="namespaceyenot.html#a5c402b62f742f34e9e42756075df6ed2">yenot::database_name</a>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    resize(src, dst, Size(<a class="code" href="namespaceyenot.html#a4e9a58fa114bcb3d3ae09fb62129f2c9">yenot::settings_size_photo</a>, <a class="code" href="namespaceyenot.html#a4e9a58fa114bcb3d3ae09fb62129f2c9">yenot::settings_size_photo</a>));</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (dst.data) { src = dst.clone(); }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="_core_8cpp.html#a438c92819ed0ad4fc2e187ed5f5a2e27">noiseRemoval</a>(src, dst);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (dst.data) { src = dst.clone(); }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="_core_8cpp.html#aa7c37c22318217cd913a50800eb336a3">lineDetection</a>(src, dst);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (dst.data) { src = dst.clone(); }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="_core_8cpp.html#ae99907f19e7f09055012f68347a57d05">detection</a>(src);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_core_8cpp.html#a68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a>((<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#a2640b6ef7faaea51fd49edfd377c62a5">yenot::settings_block_core</a>, (<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#ab35e22cfa0a4ef6c8e960cfa75873aa0">yenot::save_processed_image</a>, <a class="code" href="namespaceyenot.html#accc48c2808f0c8c98f853614c546b5eb">yenot::save_processed_image_value_int</a>)) {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        imwrite((<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#afe93bb98a5b2fd1f0cab330e4da59332">yenot::save_processed_image_name</a>, src);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    system(<span class="stringliteral">&quot;pause&quot;</span>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> i_return;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="ttc" id="namespaceyenot_html_ac18180ab326731ce58145fe9049c49b9"><div class="ttname"><a href="namespaceyenot.html#ac18180ab326731ce58145fe9049c49b9">yenot::database_file_name</a></div><div class="ttdeci">const char database_file_name[]</div><div class="ttdef"><b>Definition:</b> <a href="_yenot_8h_source.html#l00017">Yenot.h:17</a></div></div>
+<div class="ttc" id="_core_8cpp_html_ae99907f19e7f09055012f68347a57d05"><div class="ttname"><a href="_core_8cpp.html#ae99907f19e7f09055012f68347a57d05">detection</a></div><div class="ttdeci">void detection(const Mat &amp;mat_logo)</div><div class="ttdef"><b>Definition:</b> <a href="_core_8cpp_source.html#l00110">Core.cpp:110</a></div></div>
+<div class="ttc" id="namespaceyenot_html_a4e9a58fa114bcb3d3ae09fb62129f2c9"><div class="ttname"><a href="namespaceyenot.html#a4e9a58fa114bcb3d3ae09fb62129f2c9">yenot::settings_size_photo</a></div><div class="ttdeci">const int settings_size_photo</div><div class="ttdef"><b>Definition:</b> <a href="_yenot_8h_source.html#l00107">Yenot.h:107</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="namespacecv_html"><div class="ttname"><a href="namespacecv.html">cv</a></div></div>
+<div class="ttc" id="namespaceyenot_html_a5c402b62f742f34e9e42756075df6ed2"><div class="ttname"><a href="namespaceyenot.html#a5c402b62f742f34e9e42756075df6ed2">yenot::database_name</a></div><div class="ttdeci">const char database_name[]</div><div class="ttdef"><b>Definition:</b> <a href="_yenot_8h_source.html#l00018">Yenot.h:18</a></div></div>
+<div class="ttc" id="namespaceyenot_html_a2640b6ef7faaea51fd49edfd377c62a5"><div class="ttname"><a href="namespaceyenot.html#a2640b6ef7faaea51fd49edfd377c62a5">yenot::settings_block_core</a></div><div class="ttdeci">const char settings_block_core[]</div><div class="ttdef"><b>Definition:</b> <a href="_yenot_8h_source.html#l00028">Yenot.h:28</a></div></div>
+<div class="ttc" id="namespaceyenot_html_accc48c2808f0c8c98f853614c546b5eb"><div class="ttname"><a href="namespaceyenot.html#accc48c2808f0c8c98f853614c546b5eb">yenot::save_processed_image_value_int</a></div><div class="ttdeci">const int save_processed_image_value_int</div><div class="ttdef"><b>Definition:</b> <a href="_yenot_8h_source.html#l00053">Yenot.h:53</a></div></div>
+<div class="ttc" id="_core_8cpp_html_a68b4d9ed6be7aaa93d9a6fe8fd683862"><div class="ttname"><a href="_core_8cpp.html#a68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a></div><div class="ttdeci">int getSettings(char *block, char *value)</div><div class="ttdef"><b>Definition:</b> <a href="_core_8cpp_source.html#l00181">Core.cpp:181</a></div></div>
+<div class="ttc" id="namespaceyenot_html_ab35e22cfa0a4ef6c8e960cfa75873aa0"><div class="ttname"><a href="namespaceyenot.html#ab35e22cfa0a4ef6c8e960cfa75873aa0">yenot::save_processed_image</a></div><div class="ttdeci">const char save_processed_image[]</div><div class="ttdef"><b>Definition:</b> <a href="_yenot_8h_source.html#l00051">Yenot.h:51</a></div></div>
+<div class="ttc" id="_core_8cpp_html_a438c92819ed0ad4fc2e187ed5f5a2e27"><div class="ttname"><a href="_core_8cpp.html#a438c92819ed0ad4fc2e187ed5f5a2e27">noiseRemoval</a></div><div class="ttdeci">void noiseRemoval(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</div><div class="ttdef"><b>Definition:</b> <a href="_core_8cpp_source.html#l00026">Core.cpp:26</a></div></div>
+<div class="ttc" id="_yenot_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="_yenot_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="_yenot_8cpp_source.html#l00023">Yenot.cpp:23</a></div></div>
+<div class="ttc" id="_core_8cpp_html_aebd676a1476aa4d75b280db8ae09d11c"><div class="ttname"><a href="_core_8cpp.html#aebd676a1476aa4d75b280db8ae09d11c">clearning</a></div><div class="ttdeci">void clearning(std::string filename, std::string variable)</div><div class="ttdef"><b>Definition:</b> <a href="_core_8cpp_source.html#l00067">Core.cpp:67</a></div></div>
+<div class="ttc" id="_yenot_8h_html"><div class="ttname"><a href="_yenot_8h.html">Yenot.h</a></div><div class="ttdoc">:D </div></div>
+<div class="ttc" id="_core_8cpp_html_a8ba7f398362c96368015412b023565d0"><div class="ttname"><a href="_core_8cpp.html#a8ba7f398362c96368015412b023565d0">settings_initialization</a></div><div class="ttdeci">void settings_initialization()</div><div class="ttdef"><b>Definition:</b> <a href="_core_8cpp_source.html#l00212">Core.cpp:212</a></div></div>
+<div class="ttc" id="_core_8cpp_html_aa7c37c22318217cd913a50800eb336a3"><div class="ttname"><a href="_core_8cpp.html#aa7c37c22318217cd913a50800eb336a3">lineDetection</a></div><div class="ttdeci">void lineDetection(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</div><div class="ttdef"><b>Definition:</b> <a href="_core_8cpp_source.html#l00040">Core.cpp:40</a></div></div>
+<div class="ttc" id="namespaceyenot_html_afe93bb98a5b2fd1f0cab330e4da59332"><div class="ttname"><a href="namespaceyenot.html#afe93bb98a5b2fd1f0cab330e4da59332">yenot::save_processed_image_name</a></div><div class="ttdeci">const char save_processed_image_name[]</div><div class="ttdef"><b>Definition:</b> <a href="_yenot_8h_source.html#l00054">Yenot.h:54</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

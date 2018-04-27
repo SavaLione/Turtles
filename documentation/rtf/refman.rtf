@@ -1,0 +1,2387 @@
+{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\info 
+{\title {\comment Yenot }Yenot}
+{\comment \'D1\'EE\'E7\'E4\'E0\'ED\'EE \'F1\'E8\'F1\'F2\'E5\'EC\'EE\'E9Doxgyen. }
+{\creatim \yr2018\mo4\dy27\hr23\min34\sec54}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Yenot}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+\'C2\'E5\'F0\'F1\'E8\'FF \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt \'CF\'F2 27 \'C0\'EF\'F0 2018 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'CE\'E3\'EB\'E0\'E2\'EB\'E5\'ED\'E8\'E5\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2 \'E8\'EC\'E5\'ED\par \pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2 \'E8\'EC\'E5\'ED}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'E0 \'E8\'EC\'E5\'ED\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CF\'EE\'EB\'ED\'FB\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'EF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2 \'E8\'EC\'E5\'ED.}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b yenot} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2\par \pard\plain 
+{\tc \v \'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB\'FB\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CF\'EE\'EB\'ED\'FB\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2.}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Core.cpp} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'9D\'EF\'E8\'F1\'E0\'ED\'E8\'E5 })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Core.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'9D\'EF\'E8\'F1\'E0\'ED\'E8\'E5 })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Logger.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Logger.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'9D\'EF\'E8\'F1\'E0\'ED\'E8\'E5 })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Yenot.cpp} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CE\'EF\'E8\'F1\'E0\'ED\'E8\'E5 })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Yenot.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+:D })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'E0 \'E8\'EC\'E5\'ED\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'EE \'E8\'EC\'E5\'ED yenot\par \pard\plain 
+{\tc\tcl2 \v yenot}
+{\xe \v yenot}
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_file_name} [] = "./config.ini"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b logger_file_name} [] = "Yenot.log"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b database_file_name} [] = "database.xml"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b database_name} [] = "database"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b extensions_database_member} [] = ".xml"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b extensions_database_member_photo} [] = ".png"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b buffer_size} = 128\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_block_core} [] = "Core"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_block_default} [] = "General"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_fastmode} [] = "fMode"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_fastmode_value} [] = "0"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b settings_fastmode_value_int} = 0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_noiseReduction} [] = "nReduction"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_noiseReduction_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b settings_noiseReduction_value_int} = 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_machineLearning} [] = "mLearning"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_machineLearning_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b settings_machineLearning_value_int} = 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_lineDetection} [] = "lDetection"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_lineDetection_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b settings_lineDetection_value_int} = 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b use_detection} [] = "detection"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b use_detection_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b use_detection_value_int} = 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b save_processed_image} [] = "sImage"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b save_processed_image_value} [] = "0"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b save_processed_image_value_int} = 0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b save_processed_image_name} [] = "test.png"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b diameter_each_pixel} = 9\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b sigmaColor} = 75\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b sigmaSpace} = 75\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b gaussianblur_kernel_x} = 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b gaussianblur_kernel_y} = 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b blur_kernel_x} = 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b blur_kernel_y} = 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_block_logger} [] = "Logger"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_log} [] = "log"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_log_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_logTime} [] = "lTime"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_logTime_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b logger_level_warning} [] = "WARN"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b logger_level_error} [] = "ERROR"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b logger_level_message} [] = "MSG"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b logger_message_noiseRemoval} [] = "Noise filter is disabled."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b logger_message_lDetection} [] = "Line {\b detection} is disabled."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b logger_message_fMode} [] = "Fast mode enabled."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b logger_message_cDir} [] = "Folder created."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b logger_message_cDir_not} [] = "Folder not created."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_block_carModel} [] = "carmodel"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_carModel_listphoto} [] = "listphoto"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_carModel_example} [] = "example"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_carModel_example_description} [] = "The car of model \\"Example\\""\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_carModel_example_file} [] = "example.xml"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_block_description} [] = "description"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_description_ifnotfound} [] = "Not found"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b settings_description_example} [] = "Example brand"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b settings_size_photo} = 512\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+{\xe \v blur_kernel_x\:yenot}
+{\xe \v yenot\:blur_kernel_x}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::blur_kernel_x = 5}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 66}\par
+}
+{\xe \v blur_kernel_y\:yenot}
+{\xe \v yenot\:blur_kernel_y}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::blur_kernel_y = 5}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 67}\par
+}
+{\xe \v buffer_size\:yenot}
+{\xe \v yenot\:buffer_size}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::buffer_size = 128}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 23}\par
+}
+{\xe \v database_file_name\:yenot}
+{\xe \v yenot\:database_file_name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::database_file_name[] = "database.xml"}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 17}\par
+}
+{\xe \v database_name\:yenot}
+{\xe \v yenot\:database_name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::database_name[] = "database"}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 18}\par
+}
+{\xe \v diameter_each_pixel\:yenot}
+{\xe \v yenot\:diameter_each_pixel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::diameter_each_pixel = 9}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 59}\par
+}
+{\xe \v extensions_database_member\:yenot}
+{\xe \v yenot\:extensions_database_member}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::extensions_database_member[] = ".xml"}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 20}\par
+}
+{\xe \v extensions_database_member_photo\:yenot}
+{\xe \v yenot\:extensions_database_member_photo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::extensions_database_member_photo[] = ".png"}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 21}\par
+}
+{\xe \v gaussianblur_kernel_x\:yenot}
+{\xe \v yenot\:gaussianblur_kernel_x}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::gaussianblur_kernel_x = 5}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 63}\par
+}
+{\xe \v gaussianblur_kernel_y\:yenot}
+{\xe \v yenot\:gaussianblur_kernel_y}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::gaussianblur_kernel_y = 5}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 64}\par
+}
+{\xe \v logger_file_name\:yenot}
+{\xe \v yenot\:logger_file_name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::logger_file_name[] = "Yenot.log"}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 16}\par
+}
+{\xe \v logger_level_error\:yenot}
+{\xe \v yenot\:logger_level_error}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::logger_level_error[] = "ERROR"}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 81}\par
+}
+{\xe \v logger_level_message\:yenot}
+{\xe \v yenot\:logger_level_message}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::logger_level_message[] = "MSG"}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 82}\par
+}
+{\xe \v logger_level_warning\:yenot}
+{\xe \v yenot\:logger_level_warning}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::logger_level_warning[] = "WARN"}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 80}\par
+}
+{\xe \v logger_message_cDir\:yenot}
+{\xe \v yenot\:logger_message_cDir}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::logger_message_cDir[] = "Folder created."}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 90}\par
+}
+{\xe \v logger_message_cDir_not\:yenot}
+{\xe \v yenot\:logger_message_cDir_not}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::logger_message_cDir_not[] = "Folder not created."}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 91}\par
+}
+{\xe \v logger_message_fMode\:yenot}
+{\xe \v yenot\:logger_message_fMode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::logger_message_fMode[] = "Fast mode enabled."}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 89}\par
+}
+{\xe \v logger_message_lDetection\:yenot}
+{\xe \v yenot\:logger_message_lDetection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::logger_message_lDetection[] = "Line {\b detection} is disabled."}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 88}\par
+}
+{\xe \v logger_message_noiseRemoval\:yenot}
+{\xe \v yenot\:logger_message_noiseRemoval}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::logger_message_noiseRemoval[] = "Noise filter is disabled."}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 87}\par
+}
+{\xe \v save_processed_image\:yenot}
+{\xe \v yenot\:save_processed_image}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::save_processed_image[] = "sImage"}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 51}\par
+}
+{\xe \v save_processed_image_name\:yenot}
+{\xe \v yenot\:save_processed_image_name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::save_processed_image_name[] = "test.png"}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 54}\par
+}
+{\xe \v save_processed_image_value\:yenot}
+{\xe \v yenot\:save_processed_image_value}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::save_processed_image_value[] = "0"}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 52}\par
+}
+{\xe \v save_processed_image_value_int\:yenot}
+{\xe \v yenot\:save_processed_image_value_int}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::save_processed_image_value_int = 0}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 53}\par
+}
+{\xe \v settings_block_carModel\:yenot}
+{\xe \v yenot\:settings_block_carModel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_block_carModel[] = "carmodel"}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 96}\par
+}
+{\xe \v settings_block_core\:yenot}
+{\xe \v yenot\:settings_block_core}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_block_core[] = "Core"}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 28}\par
+}
+{\xe \v settings_block_default\:yenot}
+{\xe \v yenot\:settings_block_default}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_block_default[] = "General"}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 29}\par
+}
+{\xe \v settings_block_description\:yenot}
+{\xe \v yenot\:settings_block_description}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_block_description[] = "description"}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 103}\par
+}
+{\xe \v settings_block_logger\:yenot}
+{\xe \v yenot\:settings_block_logger}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_block_logger[] = "Logger"}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 72}\par
+}
+{\xe \v settings_carModel_example\:yenot}
+{\xe \v yenot\:settings_carModel_example}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_carModel_example[] = "example"}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 99}\par
+}
+{\xe \v settings_carModel_example_description\:yenot}
+{\xe \v yenot\:settings_carModel_example_description}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_carModel_example_description[] = "The car of model \\"Example\\""}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 100}\par
+}
+{\xe \v settings_carModel_example_file\:yenot}
+{\xe \v yenot\:settings_carModel_example_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_carModel_example_file[] = "example.xml"}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 101}\par
+}
+{\xe \v settings_carModel_listphoto\:yenot}
+{\xe \v yenot\:settings_carModel_listphoto}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_carModel_listphoto[] = "listphoto"}}
+\par
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 97}\par
+}
+{\xe \v settings_description_example\:yenot}
+{\xe \v yenot\:settings_description_example}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_description_example[] = "Example brand"}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 105}\par
+}
+{\xe \v settings_description_ifnotfound\:yenot}
+{\xe \v yenot\:settings_description_ifnotfound}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_description_ifnotfound[] = "Not found"}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 104}\par
+}
+{\xe \v settings_fastmode\:yenot}
+{\xe \v yenot\:settings_fastmode}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_fastmode[] = "fMode"}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 31}\par
+}
+{\xe \v settings_fastmode_value\:yenot}
+{\xe \v yenot\:settings_fastmode_value}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_fastmode_value[] = "0"}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 32}\par
+}
+{\xe \v settings_fastmode_value_int\:yenot}
+{\xe \v yenot\:settings_fastmode_value_int}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::settings_fastmode_value_int = 0}}
+\par
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 33}\par
+}
+{\xe \v settings_file_name\:yenot}
+{\xe \v yenot\:settings_file_name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_file_name[] = "./config.ini"}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 15}\par
+}
+{\xe \v settings_lineDetection\:yenot}
+{\xe \v yenot\:settings_lineDetection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_lineDetection[] = "lDetection"}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 43}\par
+}
+{\xe \v settings_lineDetection_value\:yenot}
+{\xe \v yenot\:settings_lineDetection_value}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_lineDetection_value[] = "1"}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 44}\par
+}
+{\xe \v settings_lineDetection_value_int\:yenot}
+{\xe \v yenot\:settings_lineDetection_value_int}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::settings_lineDetection_value_int = 1}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 45}\par
+}
+{\xe \v settings_log\:yenot}
+{\xe \v yenot\:settings_log}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_log[] = "log"}}
+\par
+{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 74}\par
+}
+{\xe \v settings_log_value\:yenot}
+{\xe \v yenot\:settings_log_value}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_log_value[] = "1"}}
+\par
+{\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 75}\par
+}
+{\xe \v settings_logTime\:yenot}
+{\xe \v yenot\:settings_logTime}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_logTime[] = "lTime"}}
+\par
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 77}\par
+}
+{\xe \v settings_logTime_value\:yenot}
+{\xe \v yenot\:settings_logTime_value}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_logTime_value[] = "1"}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 78}\par
+}
+{\xe \v settings_machineLearning\:yenot}
+{\xe \v yenot\:settings_machineLearning}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_machineLearning[] = "mLearning"}}
+\par
+{\bkmkstart AAAAAAAAED}
+{\bkmkend AAAAAAAAED}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 39}\par
+}
+{\xe \v settings_machineLearning_value\:yenot}
+{\xe \v yenot\:settings_machineLearning_value}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_machineLearning_value[] = "1"}}
+\par
+{\bkmkstart AAAAAAAAEE}
+{\bkmkend AAAAAAAAEE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 40}\par
+}
+{\xe \v settings_machineLearning_value_int\:yenot}
+{\xe \v yenot\:settings_machineLearning_value_int}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::settings_machineLearning_value_int = 1}}
+\par
+{\bkmkstart AAAAAAAAEF}
+{\bkmkend AAAAAAAAEF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 41}\par
+}
+{\xe \v settings_noiseReduction\:yenot}
+{\xe \v yenot\:settings_noiseReduction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_noiseReduction[] = "nReduction"}}
+\par
+{\bkmkstart AAAAAAAAEG}
+{\bkmkend AAAAAAAAEG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 35}\par
+}
+{\xe \v settings_noiseReduction_value\:yenot}
+{\xe \v yenot\:settings_noiseReduction_value}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::settings_noiseReduction_value[] = "1"}}
+\par
+{\bkmkstart AAAAAAAAEH}
+{\bkmkend AAAAAAAAEH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 36}\par
+}
+{\xe \v settings_noiseReduction_value_int\:yenot}
+{\xe \v yenot\:settings_noiseReduction_value_int}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::settings_noiseReduction_value_int = 1}}
+\par
+{\bkmkstart AAAAAAAAEI}
+{\bkmkend AAAAAAAAEI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 37}\par
+}
+{\xe \v settings_size_photo\:yenot}
+{\xe \v yenot\:settings_size_photo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::settings_size_photo = 512}}
+\par
+{\bkmkstart AAAAAAAAEJ}
+{\bkmkend AAAAAAAAEJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 107}\par
+}
+{\xe \v sigmaColor\:yenot}
+{\xe \v yenot\:sigmaColor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::sigmaColor = 75}}
+\par
+{\bkmkstart AAAAAAAAEK}
+{\bkmkend AAAAAAAAEK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 60}\par
+}
+{\xe \v sigmaSpace\:yenot}
+{\xe \v yenot\:sigmaSpace}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::sigmaSpace = 75}}
+\par
+{\bkmkstart AAAAAAAAEL}
+{\bkmkend AAAAAAAAEL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 61}\par
+}
+{\xe \v use_detection\:yenot}
+{\xe \v yenot\:use_detection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::use_detection[] = "detection"}}
+\par
+{\bkmkstart AAAAAAAAEM}
+{\bkmkend AAAAAAAAEM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 47}\par
+}
+{\xe \v use_detection_value\:yenot}
+{\xe \v yenot\:use_detection_value}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char yenot::use_detection_value[] = "1"}}
+\par
+{\bkmkstart AAAAAAAAEN}
+{\bkmkend AAAAAAAAEN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 48}\par
+}
+{\xe \v use_detection_value_int\:yenot}
+{\xe \v yenot\:use_detection_value_int}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int yenot::use_detection_value_int = 1}}
+\par
+{\bkmkstart AAAAAAAAEO}
+{\bkmkend AAAAAAAAEO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.h \'F1\'F2\'F0\'EE\'EA\'E0 49}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D4\'E0\'E9\'EB\'FB{\tc \v \'D4\'E0\'E9\'EB\'FB}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB Core.cpp\par \pard\plain 
+{\tc\tcl2 \v Core.cpp}
+{\xe \v Core.cpp}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'9D\'EF\'E8\'F1\'E0\'ED\'E8\'E5 }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <Windows.h>}\par
+{\f2 #include <fstream>}\par
+{\f2 #include <string>}\par
+{\f2 #include <opencv2/imgproc/imgproc.hpp>}\par
+{\f2 #include <opencv2/highgui/highgui_c.h>}\par
+{\f2 #include <cstdlib>}\par
+{\f2 #include <cstdio>}\par
+{\f2 #include <direct.h>}\par
+{\f2 #include <vector>}\par
+{\f2 #include "Yenot.h"}\par
+{\f2 #include "Core.h"}\par
+{\f2 #include "..\\io\\Logger.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'EC\'FB\'F5 \'E7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2 \'E4\'EB\'FF Core.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "_core_8cpp__incl.svg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b noiseRemoval} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b lineDetection} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b databaseAdd} (std::string filename)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b clearning} (std::string filename, std::string variable)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b detectionLogo} (const Mat &mat_logo, std::string cascadefile)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b help} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b detection} (const Mat &mat_logo)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b bilateral} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b blur} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fastNoiseRemovalGrey} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b gaussianblur} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fastNoiseRemoval} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b getSettingsString} (char *block, char *value)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b getSettingsString} (char *block, char *value, char *ch_return_default)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b getSettings} (char *block, char *value)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b getSettings} (char *block, char *value, int i_return_default)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b setSettings} (char *block, char *value, char *text)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b check_file} (char *filename)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b check_file} (std::string filename)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b settings_initialization} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b createFile} (char *file_name)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b createDir} (std::string namedir)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b description} (string value)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b canny} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b v_test} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'9D\'EF\'E8\'F1\'E0\'ED\'E8\'E5 \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'E2\'F2\'EE\'F0:\par}\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid SavaLione \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+{\xe \v bilateral\:Core.cpp}
+{\xe \v Core.cpp\:bilateral}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void bilateral (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+src \'D6 Source 8-bit or floating-point, 1-channel or 3-channel image. dst \'D6 Destination image of the same size and type as src . d \'D6 Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace. sigmaColor \'D6 Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color. sigmaSpace \'D6 Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .\par
+}{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 137}\par
+}
+{\xe \v blur\:Core.cpp}
+{\xe \v Core.cpp\:blur}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void blur (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 150}\par
+}
+{\xe \v canny\:Core.cpp}
+{\xe \v Core.cpp\:canny}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void canny (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 270}\par
+}
+{\xe \v check_file\:Core.cpp}
+{\xe \v Core.cpp\:check_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool check_file (char *  {\i filename})}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 193}\par
+}
+{\xe \v check_file\:Core.cpp}
+{\xe \v Core.cpp\:check_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool check_file (std::string  {\i filename})}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 202}\par
+}
+{\xe \v clearning\:Core.cpp}
+{\xe \v Core.cpp\:clearning}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void clearning (std::string  {\i filename}, std::string  {\i variable})}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 67}\par
+}
+{\xe \v createDir\:Core.cpp}
+{\xe \v Core.cpp\:createDir}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void createDir (std::string  {\i namedir})}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 252}\par
+}
+{\xe \v createFile\:Core.cpp}
+{\xe \v Core.cpp\:createFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void createFile (char *  {\i file_name})}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 247}\par
+}
+{\xe \v databaseAdd\:Core.cpp}
+{\xe \v Core.cpp\:databaseAdd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void databaseAdd (std::string  {\i filename})}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 53}\par
+}
+{\xe \v description\:Core.cpp}
+{\xe \v Core.cpp\:description}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string description (string  {\i value})}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 261}\par
+}
+{\xe \v detection\:Core.cpp}
+{\xe \v Core.cpp\:detection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void detection (const Mat &  {\i mat_logo})}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 110}\par
+}
+{\xe \v detectionLogo\:Core.cpp}
+{\xe \v Core.cpp\:detectionLogo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool detectionLogo (const Mat &  {\i mat_logo}, std::string  {\i cascadefile})}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 82}\par
+}
+{\xe \v fastNoiseRemoval\:Core.cpp}
+{\xe \v Core.cpp\:fastNoiseRemoval}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fastNoiseRemoval (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 162}\par
+}
+{\xe \v fastNoiseRemovalGrey\:Core.cpp}
+{\xe \v Core.cpp\:fastNoiseRemovalGrey}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fastNoiseRemovalGrey (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 154}\par
+}
+{\xe \v gaussianblur\:Core.cpp}
+{\xe \v Core.cpp\:gaussianblur}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void gaussianblur (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 158}\par
+}
+{\xe \v getSettings\:Core.cpp}
+{\xe \v Core.cpp\:getSettings}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int getSettings (char *  {\i block}, char *  {\i value})}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 181}\par
+}
+{\xe \v getSettings\:Core.cpp}
+{\xe \v Core.cpp\:getSettings}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int getSettings (char *  {\i block}, char *  {\i value}, int  {\i i_return_default})}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 185}\par
+}
+{\xe \v getSettingsString\:Core.cpp}
+{\xe \v Core.cpp\:getSettingsString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string getSettingsString (char *  {\i block}, char *  {\i value})}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 169}\par
+}
+{\xe \v getSettingsString\:Core.cpp}
+{\xe \v Core.cpp\:getSettingsString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string getSettingsString (char *  {\i block}, char *  {\i value}, char *  {\i ch_return_default})}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 175}\par
+}
+{\xe \v help\:Core.cpp}
+{\xe \v Core.cpp\:help}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void help ()}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 106}\par
+}
+{\xe \v lineDetection\:Core.cpp}
+{\xe \v Core.cpp\:lineDetection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void lineDetection (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 40}\par
+}
+{\xe \v noiseRemoval\:Core.cpp}
+{\xe \v Core.cpp\:noiseRemoval}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void noiseRemoval (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 26}\par
+}
+{\xe \v setSettings\:Core.cpp}
+{\xe \v Core.cpp\:setSettings}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void setSettings (char *  {\i block}, char *  {\i value}, char *  {\i text})}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 189}\par
+}
+{\xe \v settings_initialization\:Core.cpp}
+{\xe \v Core.cpp\:settings_initialization}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void settings_initialization ()}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 212}\par
+}
+{\xe \v v_test\:Core.cpp}
+{\xe \v Core.cpp\:v_test}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void v_test ()}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 281}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB Core.h\par \pard\plain 
+{\tc\tcl2 \v Core.h}
+{\xe \v Core.h}
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'9D\'EF\'E8\'F1\'E0\'ED\'E8\'E5 }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <opencv2/opencv.hpp>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'EC\'FB\'F5 \'E7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2 \'E4\'EB\'FF Core.h:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "_core_8h__incl.svg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'F4\'E0\'E9\'EB\'EE\'E2, \'E2 \'EA\'EE\'F2\'EE\'F0\'FB\'E5 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'F2\'F1\'FF \'FD\'F2\'EE\'F2 \'F4\'E0\'E9\'EB:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "_core_8h__dep__incl.svg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b noiseRemoval} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b lineDetection} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b databaseAdd} (std::string filename)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b clearning} (std::string filename, std::string variable)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b detectionLogo} (const cv::Mat &mat_logo, std::string cascadefile)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b detection} (const cv::Mat &mat_logo)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b help} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b bilateral} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b blur} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fastNoiseRemovalGrey} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b gaussianblur} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fastNoiseRemoval} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b canny} (const cv::Mat &mat_in, cv::Mat &mat_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b getSettingsString} (char *block, char *value)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b getSettingsString} (char *block, char *value, char *ch_return_default)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b getSettings} (char *block, char *value)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b getSettings} (char *block, char *value, int i_return_default)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b setSettings} (char *block, char *value, char *text)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b check_file} (char *filename)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b check_file} (std::string filename)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b settings_initialization} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b createFile} (char *file_name)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b createDir} (std::string namedir)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b description} (std::string value)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b v_test} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'9D\'EF\'E8\'F1\'E0\'ED\'E8\'E5 \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'E2\'F2\'EE\'F0:\par}\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid SavaLione \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+{\xe \v bilateral\:Core.h}
+{\xe \v Core.h\:bilateral}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void bilateral (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+src \'D6 Source 8-bit or floating-point, 1-channel or 3-channel image. dst \'D6 Destination image of the same size and type as src . d \'D6 Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace. sigmaColor \'D6 Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color. sigmaSpace \'D6 Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .\par
+}{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 137}\par
+}
+{\xe \v blur\:Core.h}
+{\xe \v Core.h\:blur}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void blur (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 150}\par
+}
+{\xe \v canny\:Core.h}
+{\xe \v Core.h\:canny}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void canny (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 270}\par
+}
+{\xe \v check_file\:Core.h}
+{\xe \v Core.h\:check_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool check_file (char *  {\i filename})}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 193}\par
+}
+{\xe \v check_file\:Core.h}
+{\xe \v Core.h\:check_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool check_file (std::string  {\i filename})}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 202}\par
+}
+{\xe \v clearning\:Core.h}
+{\xe \v Core.h\:clearning}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void clearning (std::string  {\i filename}, std::string  {\i variable})}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 67}\par
+}
+{\xe \v createDir\:Core.h}
+{\xe \v Core.h\:createDir}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void createDir (std::string  {\i namedir})}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 252}\par
+}
+{\xe \v createFile\:Core.h}
+{\xe \v Core.h\:createFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void createFile (char *  {\i file_name})}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 247}\par
+}
+{\xe \v databaseAdd\:Core.h}
+{\xe \v Core.h\:databaseAdd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void databaseAdd (std::string  {\i filename})}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 53}\par
+}
+{\xe \v description\:Core.h}
+{\xe \v Core.h\:description}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string description (std::string  {\i value})}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v detection\:Core.h}
+{\xe \v Core.h\:detection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void detection (const cv::Mat &  {\i mat_logo})}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v detectionLogo\:Core.h}
+{\xe \v Core.h\:detectionLogo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool detectionLogo (const cv::Mat &  {\i mat_logo}, std::string  {\i cascadefile})}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v fastNoiseRemoval\:Core.h}
+{\xe \v Core.h\:fastNoiseRemoval}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fastNoiseRemoval (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 162}\par
+}
+{\xe \v fastNoiseRemovalGrey\:Core.h}
+{\xe \v Core.h\:fastNoiseRemovalGrey}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void fastNoiseRemovalGrey (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 154}\par
+}
+{\xe \v gaussianblur\:Core.h}
+{\xe \v Core.h\:gaussianblur}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void gaussianblur (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 158}\par
+}
+{\xe \v getSettings\:Core.h}
+{\xe \v Core.h\:getSettings}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int getSettings (char *  {\i block}, char *  {\i value})}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 181}\par
+}
+{\xe \v getSettings\:Core.h}
+{\xe \v Core.h\:getSettings}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int getSettings (char *  {\i block}, char *  {\i value}, int  {\i i_return_default})}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 185}\par
+}
+{\xe \v getSettingsString\:Core.h}
+{\xe \v Core.h\:getSettingsString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string getSettingsString (char *  {\i block}, char *  {\i value})}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 169}\par
+}
+{\xe \v getSettingsString\:Core.h}
+{\xe \v Core.h\:getSettingsString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string getSettingsString (char *  {\i block}, char *  {\i value}, char *  {\i ch_return_default})}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 175}\par
+}
+{\xe \v help\:Core.h}
+{\xe \v Core.h\:help}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void help ()}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 106}\par
+}
+{\xe \v lineDetection\:Core.h}
+{\xe \v Core.h\:lineDetection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void lineDetection (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 40}\par
+}
+{\xe \v noiseRemoval\:Core.h}
+{\xe \v Core.h\:noiseRemoval}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void noiseRemoval (const cv::Mat &  {\i mat_in}, cv::Mat &  {\i mat_out})}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 26}\par
+}
+{\xe \v setSettings\:Core.h}
+{\xe \v Core.h\:setSettings}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void setSettings (char *  {\i block}, char *  {\i value}, char *  {\i text})}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 189}\par
+}
+{\xe \v settings_initialization\:Core.h}
+{\xe \v Core.h\:settings_initialization}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void settings_initialization ()}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 212}\par
+}
+{\xe \v v_test\:Core.h}
+{\xe \v Core.h\:v_test}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void v_test ()}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Core.cpp \'F1\'F2\'F0\'EE\'EA\'E0 281}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB Logger.cpp\par \pard\plain 
+{\tc\tcl2 \v Logger.cpp}
+{\xe \v Logger.cpp}
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <string>}\par
+{\f2 #include <fstream>}\par
+{\f2 #include <windows.h>}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include <iostream>}\par
+{\f2 #include "..\\core\\Yenot.h"}\par
+{\f2 #include "..\\core\\Core.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'EC\'FB\'F5 \'E7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2 \'E4\'EB\'FF Logger.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "_logger_8cpp__incl.svg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b logger} (char *level, char *text)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b logger_xy} (double x, int y)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+{\xe \v logger\:Logger.cpp}
+{\xe \v Logger.cpp\:logger}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void logger (char *  {\i level}, char *  {\i text})}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Logger.cpp \'F1\'F2\'F0\'EE\'EA\'E0 11}\par
+}
+{\xe \v logger_xy\:Logger.cpp}
+{\xe \v Logger.cpp\:logger_xy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void logger_xy (double  {\i x}, int  {\i y})}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Logger.cpp \'F1\'F2\'F0\'EE\'EA\'E0 51}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB Logger.h\par \pard\plain 
+{\tc\tcl2 \v Logger.h}
+{\xe \v Logger.h}
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'9D\'EF\'E8\'F1\'E0\'ED\'E8\'E5 }}\par
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'F4\'E0\'E9\'EB\'EE\'E2, \'E2 \'EA\'EE\'F2\'EE\'F0\'FB\'E5 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'F2\'F1\'FF \'FD\'F2\'EE\'F2 \'F4\'E0\'E9\'EB:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "_logger_8h__dep__incl.svg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b logger} (char *level, char *text)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b logger_xy} (double x, int y)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'9D\'EF\'E8\'F1\'E0\'ED\'E8\'E5 \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'E2\'F2\'EE\'F0:\par}\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid SavaLione \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+{\xe \v logger\:Logger.h}
+{\xe \v Logger.h\:logger}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void logger (char *  {\i level}, char *  {\i text})}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Logger.cpp \'F1\'F2\'F0\'EE\'EA\'E0 11}\par
+}
+{\xe \v logger_xy\:Logger.h}
+{\xe \v Logger.h\:logger_xy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void logger_xy (double  {\i x}, int  {\i y})}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Logger.cpp \'F1\'F2\'F0\'EE\'EA\'E0 51}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB Yenot.cpp\par \pard\plain 
+{\tc\tcl2 \v Yenot.cpp}
+{\xe \v Yenot.cpp}
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CE\'EF\'E8\'F1\'E0\'ED\'E8\'E5 }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <Windows.h>}\par
+{\f2 #include <opencv\\highgui.h>}\par
+{\f2 #include <opencv\\cv.h>}\par
+{\f2 #include <opencv2\\opencv.hpp>}\par
+{\f2 #include <ctime>}\par
+{\f2 #include <filesystem>}\par
+{\f2 #include "Yenot.h"}\par
+{\f2 #include "..\\core\\Core.h"}\par
+{\f2 #include "..\\io\\Logger.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'EC\'FB\'F5 \'E7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2 \'E4\'EB\'FF Yenot.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "_yenot_8cpp__incl.svg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} (int argc, char *argv[])\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CE\'EF\'E8\'F1\'E0\'ED\'E8\'E5 \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'E2\'F2\'EE\'F0:\par}\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid SavaLione \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+{\xe \v main\:Yenot.cpp}
+{\xe \v Yenot.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main (int  {\i argc}, char *  {\i argv}[])}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+\'D1\'EC. \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'E8\'E5 \'E2 \'F4\'E0\'E9\'EB\'E5 Yenot.cpp \'F1\'F2\'F0\'EE\'EA\'E0 23}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB Yenot.h\par \pard\plain 
+{\tc\tcl2 \v Yenot.h}
+{\xe \v Yenot.h}
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+:D }}\par
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <opencv2/opencv.hpp>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'EC\'FB\'F5 \'E7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2 \'E4\'EB\'FF Yenot.h:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "_yenot_8h__incl.svg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C3\'F0\'E0\'F4 \'F4\'E0\'E9\'EB\'EE\'E2, \'E2 \'EA\'EE\'F2\'EE\'F0\'FB\'E5 \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'F2\'F1\'FF \'FD\'F2\'EE\'F2 \'F4\'E0\'E9\'EB:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "_yenot_8h__dep__incl.svg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'E0 \'E8\'EC\'E5\'ED\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\b yenot}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_file_name} [] = "./config.ini"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::logger_file_name} [] = "Yenot.log"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::database_file_name} [] = "database.xml"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::database_name} [] = "database"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::extensions_database_member} [] = ".xml"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::extensions_database_member_photo} [] = ".png"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::buffer_size} = 128\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_block_core} [] = "Core"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_block_default} [] = "General"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_fastmode} [] = "fMode"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_fastmode_value} [] = "0"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::settings_fastmode_value_int} = 0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_noiseReduction} [] = "nReduction"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_noiseReduction_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::settings_noiseReduction_value_int} = 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_machineLearning} [] = "mLearning"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_machineLearning_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::settings_machineLearning_value_int} = 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_lineDetection} [] = "lDetection"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_lineDetection_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::settings_lineDetection_value_int} = 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::use_detection} [] = "detection"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::use_detection_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::use_detection_value_int} = 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::save_processed_image} [] = "sImage"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::save_processed_image_value} [] = "0"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::save_processed_image_value_int} = 0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::save_processed_image_name} [] = "test.png"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::diameter_each_pixel} = 9\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::sigmaColor} = 75\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::sigmaSpace} = 75\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::gaussianblur_kernel_x} = 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::gaussianblur_kernel_y} = 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::blur_kernel_x} = 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::blur_kernel_y} = 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_block_logger} [] = "Logger"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_log} [] = "log"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_log_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_logTime} [] = "lTime"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_logTime_value} [] = "1"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::logger_level_warning} [] = "WARN"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::logger_level_error} [] = "ERROR"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::logger_level_message} [] = "MSG"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::logger_message_noiseRemoval} [] = "Noise filter is disabled."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::logger_message_lDetection} [] = "Line {\b detection} is disabled."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::logger_message_fMode} [] = "Fast mode enabled."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::logger_message_cDir} [] = "Folder created."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::logger_message_cDir_not} [] = "Folder not created."\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_block_carModel} [] = "carmodel"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_carModel_listphoto} [] = "listphoto"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_carModel_example} [] = "example"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_carModel_example_description} [] = "The car of model \\"Example\\""\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_carModel_example_file} [] = "example.xml"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_block_description} [] = "description"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_description_ifnotfound} [] = "Not found"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const char {\b yenot::settings_description_example} [] = "Example brand"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b yenot::settings_size_photo} = 512\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+:D \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'E2\'F2\'EE\'F0:\par}\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid SavaLione \par
+}}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC\par 
+\pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
