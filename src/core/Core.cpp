@@ -1,6 +1,6 @@
 /**
 \file
-\brief Описание
+\brief СњРїРёСЃР°РЅРёРµ
 \author SavaLione
 */
 #include <Windows.h>
@@ -96,7 +96,7 @@ bool detectionLogo(const Mat& mat_logo, std::string cascadefile) {
 	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(yenot::settings_size_photo, yenot::settings_size_photo));
 
 	if (detectObject.size() != 0) {
-		// Есть на фото
+		// в‰€СЃС‚СЊ РЅР° С„РѕС‚Рѕ
 		cout << detectObject.size() << endl;
 		b_return = true;
 	}
@@ -138,11 +138,11 @@ void bilateral(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	//mat_out = mat_in.clone();
 
 	/**
-	src – Source 8-bit or floating-point, 1-channel or 3-channel image.
-	dst – Destination image of the same size and type as src .
-	d – Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace.
-	sigmaColor – Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color.
-	sigmaSpace – Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .
+	src Р¦ Source 8-bit or floating-point, 1-channel or 3-channel image.
+	dst Р¦ Destination image of the same size and type as src .
+	d Р¦ Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace.
+	sigmaColor Р¦ Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color.
+	sigmaSpace Р¦ Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .
 	*/
 	bilateralFilter(mat_in, mat_out, yenot::diameter_each_pixel, yenot::sigmaColor, yenot::sigmaSpace);
 }
@@ -280,7 +280,7 @@ void canny(const cv::Mat& mat_in, cv::Mat& mat_out) {
 
 void v_test() {
 	for (int i = 1; i <= 128; i++) {
-		unsigned int start_time = clock(); // начальное время
+		unsigned int start_time = clock(); // РЅР°С‡Р°Р»СЊРЅРѕРµ РІСЂРµРјВ¤
 
 		///////////////////////////////////////////////////////////////////////////////
 		cv::Mat image, out;
@@ -288,8 +288,8 @@ void v_test() {
 		canny(image, out);
 		///////////////////////////////////////////////////////////////////////////////
 
-		unsigned int end_time = clock(); // конечное время
-		unsigned int search_time = end_time - start_time; // искомое время
+		unsigned int end_time = clock(); // РєРѕРЅРµС‡РЅРѕРµ РІСЂРµРјВ¤
+		unsigned int search_time = end_time - start_time; // РёСЃРєРѕРјРѕРµ РІСЂРµРјВ¤
 
 		double d = (double)search_time / 1000.0;
 

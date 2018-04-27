@@ -1,6 +1,6 @@
 /**
 \file
-\brief Описание
+\brief СњРїРёСЃР°РЅРёРµ
 \author SavaLione
 */
 #ifndef LOGGER_H
