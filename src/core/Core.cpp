@@ -104,7 +104,7 @@ bool detectionLogo(const Mat& mat_logo, std::string cascadefile) {
 }
 
 void help() {
-	std::cout << " Usage: Yenot.exe <image> <cascade>" << std::endl;
+	std::cout << " Usage: Yenot.exe <image>" << std::endl;
 }
 
 void detection(const Mat& mat_logo) {
