@@ -17,6 +17,9 @@
 #include "Core.h"
 #include "..\io\Logger.h"
 
+using namespace cv;
+using namespace std;
+
 ///////////////////////////////////////////////////////////////////////////////
 //	Core
 ///////////////////////////////////////////////////////////////////////////////
@@ -117,6 +120,34 @@ void clearning(std::string filename, std::string variable) {
 
 void comparisonAlgorithm(const cv::Mat& photo) {
 
+}
+
+void detectionLogo() {
+	Mat image;
+	image = imread("image.png", 1);
+
+	// Load cascade (.xml file)
+	CascadeClassifier logo_cascade;
+	logo_cascade.load("cascade.xml");
+
+	if (logo_cascade.empty()) {
+		cerr << "Error Loading XML file" << endl;
+	}
+
+	// Detect object
+	std::vector<Rect> faces;
+	logo_cascade.detectMultiScale(image, faces, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(30, 30));
+
+	// Draw circles on the detected faces
+	for (int i = 0; i < faces.size(); i++) {
+		Point center(faces[i].x + faces[i].width*0.5, faces[i].y + faces[i].height*0.5);
+		ellipse(image, center, Size(faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, Scalar(255, 0, 255), 4, 8, 0);
+	}
+
+	if (faces.size() == 0) {
+		// Нет на фото
+		cout << faces.size() << endl;
+	}
 }
 
 ///////////////////////////////////////////////////////////////////////////////

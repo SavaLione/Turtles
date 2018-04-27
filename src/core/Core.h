@@ -27,6 +27,8 @@ void fastNoiseRemovalGrey(const cv::Mat& mat_in, cv::Mat& mat_out);
 void gaussianblur(const cv::Mat& mat_in, cv::Mat& mat_out);
 void fastNoiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
 
+void detectionLogo();
+
 ///////////////////////////////////////////////////////////////////////////////
 //	Line detector
 ///////////////////////////////////////////////////////////////////////////////
