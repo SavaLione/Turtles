@@ -1433,12 +1433,14 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'text';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/io/Logger.cpp';
-      func-mem-desc-line = '11';
+      func-mem-desc-line = '15';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+Основная функция для логирования
+@param [in] level Уровень логировния
+@param [in] text текст для логировния
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -1463,12 +1465,15 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'y';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/io/Logger.cpp';
-      func-mem-desc-line = '51';
+      func-mem-desc-line = '65';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+Функция для простого логирования.
+Используется для замера скорости выполнения некоторых алгоритмов.
+@param [in] x Время
+@param [in] y Итерация
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
@@ -1507,12 +1512,14 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'text';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/io/Logger.h';
-      func-mem-desc-line = '9';
+      func-mem-desc-line = '13';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+Основная функция для логирования
+@param [in] level Уровень логировния
+@param [in] text текст для логировния
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -1537,19 +1544,22 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'y';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/io/Logger.h';
-      func-mem-desc-line = '10';
+      func-mem-desc-line = '20';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+Функция для простого логирования.
+Используется для замера скорости выполнения некоторых алгоритмов.
+@param [in] x Время
+@param [in] y Итерация
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
   file-full-name  = 'D:/work/git/Yenot/src/io/Logger.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
-ќписание
+Заголовочный файл модуля логирования
 _EnD_oF_dEf_TeXt_;
   file-documentation = <<_EnD_oF_dEf_TeXt_
 \author SavaLione

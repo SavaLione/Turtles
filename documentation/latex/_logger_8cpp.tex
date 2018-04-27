@@ -7,8 +7,7 @@
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Yenot.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Core.\+h\char`\"{}}\newline
-Граф включаемых заголовочных файлов для Logger.\+cpp\+:
-\nopagebreak
+Граф включаемых заголовочных файлов для Logger.\+cpp\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -31,9 +30,16 @@ void \mbox{\hyperlink{_logger_8cpp_a5e632a6ec68609b973a180293035b94b}{logger\+\_
 \subsubsection{\texorpdfstring{logger()}{logger()}}
 {\footnotesize\ttfamily void logger (\begin{DoxyParamCaption}\item[{char $\ast$}]{level,  }\item[{char $\ast$}]{text }\end{DoxyParamCaption})}
 
+Основная функция для логирования 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em level} & Уровень логировния \\
+\hline
+\mbox{\tt in}  & {\em text} & текст для логировния \\
+\hline
+\end{DoxyParams}
 
 
-См. определение в файле Logger.\+cpp строка 11
+См. определение в файле Logger.\+cpp строка 15
 
 \mbox{\Hypertarget{_logger_8cpp_a5e632a6ec68609b973a180293035b94b}\label{_logger_8cpp_a5e632a6ec68609b973a180293035b94b}} 
 \index{Logger.\+cpp@{Logger.\+cpp}!logger\+\_\+xy@{logger\+\_\+xy}}
@@ -41,7 +47,14 @@ void \mbox{\hyperlink{_logger_8cpp_a5e632a6ec68609b973a180293035b94b}{logger\+\_
 \subsubsection{\texorpdfstring{logger\+\_\+xy()}{logger\_xy()}}
 {\footnotesize\ttfamily void logger\+\_\+xy (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
 
+Функция для простого логирования. Используется для замера скорости выполнения некоторых алгоритмов. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em x} & Время \\
+\hline
+\mbox{\tt in}  & {\em y} & Итерация \\
+\hline
+\end{DoxyParams}
 
 
-См. определение в файле Logger.\+cpp строка 51
+См. определение в файле Logger.\+cpp строка 65
 

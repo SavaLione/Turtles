@@ -112,7 +112,7 @@
 </g>
 <!-- Node100 -->
 <g id="node12" class="node"><title>Node100</title>
-<g id="a_node12"><a xlink:href="$_logger_8h.html" xlink:title="ќписание ">
+<g id="a_node12"><a xlink:href="$_logger_8h.html" xlink:title="Заголовочный файл модуля логирования ">
 <polygon fill="white" stroke="black" points="771,-56.5 771,-75.5 845,-75.5 845,-56.5 771,-56.5"/>
 <text text-anchor="middle" x="808" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">..\io\Logger.h</text>
 </a>
