@@ -15,9 +15,8 @@ void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
 void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out);
 void databaseAdd(std::string filename);
 void clearning(std::string filename, std::string variable);
-bool detectionLogo();
-bool detectionLogo(const Mat& mat_logo, string cascadefile);
-void detection(const Mat& mat_logo);
+bool detectionLogo(const cv::Mat& mat_logo, std::string cascadefile);
+void detection(const cv::Mat& mat_logo);
 void help();
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -47,7 +46,7 @@ bool check_file(std::string filename);
 void settings_initialization();
 void createFile(char *file_name);
 void createDir(std::string namedir);
-void description(std::string s, std::string ret);
+std::string description(std::string value);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Test

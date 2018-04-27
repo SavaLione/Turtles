@@ -22,31 +22,30 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 	int i_return = 0;
+	Mat src, dst;
+	char* imagename = argc == 2 ? argv[1] : "image.png";
+
+	src = imread(imagename, 1);
 
 	settings_initialization();
 	clearning((yenot::database_name + std::string("\\") + yenot::database_file_name), yenot::database_name);
 
-	if (argc < 1) {
-		help();
-		i_return = -1;
-	} else {
-		Mat src, dst;
-		src = imread(argv[1], 1);
 
-		resize(src, dst, Size(128,128));
-		src = dst;
+	resize(src, dst, Size(yenot::settings_size_photo, yenot::settings_size_photo));
+	if (dst.data) { src = dst.clone(); }
 
-		noiseRemoval(src, dst);
-		src = dst;
+	noiseRemoval(src, dst);
+	if (dst.data) { src = dst.clone(); }
 
-		lineDetection(src, dst);
-		src = dst;
+	lineDetection(src, dst);
+	if (dst.data) { src = dst.clone(); }
 
-		detection(src);
+	detection(src);
+
+	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::save_processed_image, yenot::save_processed_image_value_int)) {
+		imwrite((char*)yenot::save_processed_image_name, src);
 	}
 
-
+	system("pause");
 	return i_return;
 }
-
-// Yenot.exe image.png cascade.xml

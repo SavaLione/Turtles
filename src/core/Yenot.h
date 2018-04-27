@@ -20,7 +20,6 @@ namespace yenot {
 	const char extensions_database_member[] = ".xml";
 	const char extensions_database_member_photo[] = ".png";
 
-
 	const int buffer_size = 128;
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -44,6 +43,15 @@ namespace yenot {
 	const char settings_lineDetection[] = "lDetection";
 	const char settings_lineDetection_value[] = "1";
 	const int settings_lineDetection_value_int = 1;
+
+	const char use_detection[] = "detection";
+	const char use_detection_value[] = "1";
+	const int use_detection_value_int = 1;
+
+	const char save_processed_image[] = "sImage";
+	const char save_processed_image_value[] = "0";
+	const int save_processed_image_value_int = 0;
+	const char save_processed_image_name[] = "test.png";
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Filters
@@ -92,8 +100,11 @@ namespace yenot {
 	const char settings_carModel_example_description[] = "The car of model \"Example\"";
 	const char settings_carModel_example_file[] = "example.xml";
 
-	const char settings_carModel_description[] = "description";
-	const char settings_carModel_description_ifnotfound[] = "Not found";
+	const char settings_block_description[] = "description";
+	const char settings_description_ifnotfound[] = "Not found";
+	const char settings_description_example[] = "Example brand";
+
+	const int settings_size_photo = 512;
 }
 
 #endif // YENOT_H

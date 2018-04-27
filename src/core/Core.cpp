@@ -79,42 +79,7 @@ void clearning(std::string filename, std::string variable) {
 	fsOut.release();
 }
 
-void comparisonAlgorithm(const cv::Mat& photo) {
-
-}
-
-bool detectionLogo() {
-	bool b_return = false;
-	Mat image;
-	image = imread("image.png", 1);
-
-	// Load cascade (.xml file)
-	CascadeClassifier logo_cascade;
-	logo_cascade.load("cascade.xml");
-
-	if (logo_cascade.empty()) {
-		cerr << "Error Loading XML file" << endl;
-	}
-
-	// Detect object
-	std::vector<Rect> faces;
-	logo_cascade.detectMultiScale(image, faces, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(30, 30));
-
-	// Draw circles on the detected faces
-	for (int i = 0; i < faces.size(); i++) {
-		Point center(faces[i].x + faces[i].width*0.5, faces[i].y + faces[i].height*0.5);
-		ellipse(image, center, Size(faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, Scalar(255, 0, 255), 4, 8, 0);
-	}
-
-	if (faces.size() != 0) {
-		// Есть на фото
-		cout << faces.size() << endl;
-		b_return = true;
-	}
-	return b_return;
-}
-
-bool detectionLogo(const Mat& mat_logo, string cascadefile) {
+bool detectionLogo(const Mat& mat_logo, std::string cascadefile) {
 	bool b_return = false;
 	Mat image = mat_logo;
 
@@ -127,18 +92,12 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 	}
 
 	// Detect object
-	std::vector<Rect> faces;
-	logo_cascade.detectMultiScale(image, faces, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(30, 30));
+	std::vector<Rect> detectObject;
+	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(yenot::settings_size_photo, yenot::settings_size_photo));
 
-	// Draw circles on the detected faces
-	for (int i = 0; i < faces.size(); i++) {
-		Point center(faces[i].x + faces[i].width*0.5, faces[i].y + faces[i].height*0.5);
-		ellipse(image, center, Size(faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, Scalar(255, 0, 255), 4, 8, 0);
-	}
-
-	if (faces.size() != 0) {
+	if (detectObject.size() != 0) {
 		// Есть на фото
-		cout << faces.size() << endl;
+		cout << detectObject.size() << endl;
 		b_return = true;
 	}
 	return b_return;
@@ -149,25 +108,25 @@ void help() {
 }
 
 void detection(const Mat& mat_logo) {
-	std::vector<std::string> stringVector;
-	cv::FileStorage fsIn;
-	fsIn.open((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::READ);
-	fsIn[yenot::database_name] >> stringVector;
-	fsIn.release();
+	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::use_detection, yenot::use_detection_value_int)) {
+		std::vector<std::string> stringVector;
+		cv::FileStorage fsIn;
+		fsIn.open((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::READ);
+		fsIn[yenot::database_name] >> stringVector;
+		fsIn.release();
 
-	std::vector<bool> boolVector;
+		std::vector<bool> boolVector;
 
-	for (int i = 0; i <= (stringVector.size() - 1); i++) {
-		if (detectionLogo(mat_logo, stringVector[i])) {
-			boolVector[i] = true;
+		for (int i = 0; i <= (stringVector.size() - 1); i++) {
+			if (detectionLogo(mat_logo, stringVector[i])) {
+				boolVector[i] = true;
+			}
 		}
-	}
 
-	for (int i = 0; i <= (stringVector.size() - 1); i++) {
-		if (boolVector[i]) {
-			cout << stringVector[i] << endl;
-
-
+		for (int i = 0; i <= (stringVector.size() - 1); i++) {
+			if (boolVector[i]) {
+				cout << description(stringVector[i]) << endl;
+			}
 		}
 	}
 }
@@ -262,11 +221,15 @@ void settings_initialization() {
 		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, (char*)yenot::settings_fastmode_value);
 		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, (char*)yenot::settings_noiseReduction_value);
 		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_machineLearning, (char*)yenot::settings_machineLearning_value);
+		setSettings((char*)yenot::settings_block_core, (char*)yenot::use_detection, (char*)yenot::use_detection_value);
+		setSettings((char*)yenot::settings_block_core, (char*)yenot::save_processed_image, (char*)yenot::save_processed_image_value);
 
 		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_log, (char*)yenot::settings_log_value);
 		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_logTime, (char*)yenot::settings_logTime_value);
 
 		setSettings((char*)yenot::settings_block_carModel, (char*)yenot::settings_carModel_example, (char*)yenot::settings_carModel_example_description);
+
+		setSettings((char*)yenot::settings_block_description, (char*)yenot::settings_carModel_example_file, (char*)yenot::settings_description_example);
 
 	}
 	if (!check_file(yenot::database_name + std::string("\\") + yenot::database_file_name)) {
@@ -295,8 +258,10 @@ void createDir(std::string namedir) {
 	//_mkdir(namedir.c_str());
 }
 
-void description(string s, string ret) {
-	ret = getSettingsString((char*)yenot::settings_carModel_description, (char*)s.c_str(), (char*)yenot::settings_carModel_description_ifnotfound);
+std::string description(string value) {
+	string s_ret;
+	s_ret = getSettingsString((char*)yenot::settings_block_description, (char*)value.c_str(), (char*)yenot::settings_description_ifnotfound);
+	return s_ret;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
