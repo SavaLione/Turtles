@@ -29,7 +29,8 @@
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_logger_8h_1a0d6abeb129096910c85ae6cba8bb59cf">logger</link> (
-char * level, char * text)</para>
+char * level, char * text)<para><emphasis>Основная функция для логирования</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -37,7 +38,8 @@ char * level, char * text)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_logger_8h_1a5e632a6ec68609b973a180293035b94b">logger_xy</link> (
-double x, int y)</para>
+double x, int y)<para><emphasis>Функция для простого логирования.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -50,6 +52,10 @@ double x, int y)</para>
 <para><formalpara><title>Автор: </title>
 
 <para>SavaLione </para>
+</formalpara>
+<formalpara><title>Дата: </title>
+
+<para>1 Apr 2018 </para>
 </formalpara>
 </para>
     <para>Definition in file Logger.h</para>

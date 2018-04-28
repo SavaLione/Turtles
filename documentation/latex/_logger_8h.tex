@@ -16,9 +16,9 @@
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_logger_8h_a0d6abeb129096910c85ae6cba8bb59cf}{logger}} (char $\ast$level, char $\ast$text)
-\item 
+\begin{DoxyCompactList}\small\item\em Основная функция для логирования \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_logger_8h_a5e632a6ec68609b973a180293035b94b}{logger\+\_\+xy}} (double x, int y)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Функция для простого логирования. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Подробное описание}
@@ -27,6 +27,9 @@ void \mbox{\hyperlink{_logger_8h_a5e632a6ec68609b973a180293035b94b}{logger\+\_\+
 \begin{DoxyAuthor}{Автор}
 Sava\+Lione 
 \end{DoxyAuthor}
+\begin{DoxyDate}{Дата}
+1 Apr 2018 
+\end{DoxyDate}
 
 
 \subsection{Функции}
@@ -36,16 +39,22 @@ Sava\+Lione
 \subsubsection{\texorpdfstring{logger()}{logger()}}
 {\footnotesize\ttfamily void logger (\begin{DoxyParamCaption}\item[{char $\ast$}]{level,  }\item[{char $\ast$}]{text }\end{DoxyParamCaption})}
 
+
+
 Основная функция для логирования 
+
+Логирование возможно с разными уровнями и с выводом времени
+
+
 \begin{DoxyParams}[1]{Аргументы}
-\mbox{\tt in}  & {\em level} & Уровень логировния \\
+\mbox{\tt in}  & {\em level} & Уровень логирования \\
 \hline
-\mbox{\tt in}  & {\em text} & текст для логировния \\
+\mbox{\tt in}  & {\em text} & Текст для логирования \\
 \hline
 \end{DoxyParams}
 
 
-См. определение в файле Logger.\+cpp строка 15
+См. определение в файле Logger.\+cpp строка 25
 
 \mbox{\Hypertarget{_logger_8h_a5e632a6ec68609b973a180293035b94b}\label{_logger_8h_a5e632a6ec68609b973a180293035b94b}} 
 \index{Logger.\+h@{Logger.\+h}!logger\+\_\+xy@{logger\+\_\+xy}}
@@ -53,7 +62,13 @@ Sava\+Lione
 \subsubsection{\texorpdfstring{logger\+\_\+xy()}{logger\_xy()}}
 {\footnotesize\ttfamily void logger\+\_\+xy (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
 
-Функция для простого логирования. Используется для замера скорости выполнения некоторых алгоритмов. 
+
+
+Функция для простого логирования. 
+
+Используется для замера скорости выполнения некоторых алгоритмов.
+
+
 \begin{DoxyParams}[1]{Аргументы}
 \mbox{\tt in}  & {\em x} & Время \\
 \hline
@@ -62,5 +77,5 @@ Sava\+Lione
 \end{DoxyParams}
 
 
-См. определение в файле Logger.\+cpp строка 65
+См. определение в файле Logger.\+cpp строка 89
 

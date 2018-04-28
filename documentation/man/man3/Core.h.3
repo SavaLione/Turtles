@@ -1,8 +1,8 @@
-.TH "Core.h" 3 "Сб 28 Апр 2018" "Yenot" \" -*- nroff -*-
+.TH "Core.h" 3 "Вс 29 Апр 2018" "Yenot" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Core.h \- ќписание  
+Core.h \- Ядро проекта\&. Содержит все главные и вспомогательные функции для определения марки автомобиля  
 
 .SH SYNOPSIS
 .br
@@ -91,13 +91,18 @@ Core.h \- ќписание
 .in -1c
 .SH "Подробное описание"
 .PP 
-ќписание 
+Ядро проекта\&. Содержит все главные и вспомогательные функции для определения марки автомобиля 
 
 
 .PP
 \fBАвтор:\fP
 .RS 4
 SavaLione 
+.RE
+.PP
+\fBДата:\fP
+.RS 4
+12 Apr 2018 
 .RE
 .PP
 
@@ -110,39 +115,39 @@ SavaLione
 .br
 src Ц Source 8-bit or floating-point, 1-channel or 3-channel image\&. dst Ц Destination image of the same size and type as src \&. d Ц Diameter of each pixel neighborhood that is used during filtering\&. If it is non-positive, it is computed from sigmaSpace\&. sigmaColor Ц Filter sigma in the color space\&. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color\&. sigmaSpace Ц Filter sigma in the coordinate space\&. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor )\&. When d>0 , it specifies the neighborhood size regardless of sigmaSpace \&. Otherwise, d is proportional to sigmaSpace \&.
 .PP
-См\&. определение в файле Core\&.cpp строка 137
+См\&. определение в файле Core\&.cpp строка 138
 .SS "void blur (const cv::Mat & mat_in, cv::Mat & mat_out)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 150
+См\&. определение в файле Core\&.cpp строка 151
 .SS "void canny (const cv::Mat & mat_in, cv::Mat & mat_out)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 270
+См\&. определение в файле Core\&.cpp строка 271
 .SS "bool check_file (char * filename)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 193
+См\&. определение в файле Core\&.cpp строка 194
 .SS "bool check_file (std::string filename)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 202
+См\&. определение в файле Core\&.cpp строка 203
 .SS "void clearning (std::string filename, std::string variable)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 67
+См\&. определение в файле Core\&.cpp строка 68
 .SS "void createDir (std::string namedir)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 252
+См\&. определение в файле Core\&.cpp строка 253
 .SS "void createFile (char * file_name)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 247
+См\&. определение в файле Core\&.cpp строка 248
 .SS "void databaseAdd (std::string filename)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 53
+См\&. определение в файле Core\&.cpp строка 54
 .SS "std::string description (std::string value)"
 
 .SS "void detection (const cv::Mat & mat_logo)"
@@ -152,55 +157,55 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image\&. dst Ц De
 .SS "void fastNoiseRemoval (const cv::Mat & mat_in, cv::Mat & mat_out)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 162
+См\&. определение в файле Core\&.cpp строка 163
 .SS "void fastNoiseRemovalGrey (const cv::Mat & mat_in, cv::Mat & mat_out)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 154
+См\&. определение в файле Core\&.cpp строка 155
 .SS "void gaussianblur (const cv::Mat & mat_in, cv::Mat & mat_out)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 158
+См\&. определение в файле Core\&.cpp строка 159
 .SS "int getSettings (char * block, char * value)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 181
+См\&. определение в файле Core\&.cpp строка 182
 .SS "int getSettings (char * block, char * value, int i_return_default)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 185
+См\&. определение в файле Core\&.cpp строка 186
 .SS "std::string getSettingsString (char * block, char * value)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 169
+См\&. определение в файле Core\&.cpp строка 170
 .SS "std::string getSettingsString (char * block, char * value, char * ch_return_default)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 175
+См\&. определение в файле Core\&.cpp строка 176
 .SS "void help ()"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 106
+См\&. определение в файле Core\&.cpp строка 107
 .SS "void lineDetection (const cv::Mat & mat_in, cv::Mat & mat_out)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 40
+См\&. определение в файле Core\&.cpp строка 41
 .SS "void noiseRemoval (const cv::Mat & mat_in, cv::Mat & mat_out)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 26
+См\&. определение в файле Core\&.cpp строка 27
 .SS "void setSettings (char * block, char * value, char * text)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 189
+См\&. определение в файле Core\&.cpp строка 190
 .SS "void settings_initialization ()"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 212
+См\&. определение в файле Core\&.cpp строка 213
 .SS "void v_test ()"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 281
+См\&. определение в файле Core\&.cpp строка 282
 .SH "Автор"
 .PP 
 Автоматически создано Doxygen для Yenot из исходного текста\&.

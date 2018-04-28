@@ -1,7 +1,8 @@
 /**
-	\file
-    \brief Описание
-	\author SavaLione
+	@file
+    @brief Описание
+	@author SavaLione
+	@date 28 Mar 2018
 */
 #include <iostream>
 #include <Windows.h>

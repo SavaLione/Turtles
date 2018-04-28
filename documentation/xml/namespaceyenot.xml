@@ -10,12 +10,12 @@
         <name>settings_file_name</name>
         <initializer>= &quot;./config.ini&quot;</initializer>
         <briefdescription>
-        </briefdescription>
+<para>Файл с настройками </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="15" column="1" bodyfile="src/core/Yenot.h" bodystart="15" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="33" column="1" bodyfile="src/core/Yenot.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ab82af39640477c63378716f6699d49fe" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -24,12 +24,12 @@
         <name>logger_file_name</name>
         <initializer>= &quot;Yenot.log&quot;</initializer>
         <briefdescription>
-        </briefdescription>
+<para>Файл с логами </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="16" column="1" bodyfile="src/core/Yenot.h" bodystart="16" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="36" column="1" bodyfile="src/core/Yenot.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -38,12 +38,12 @@
         <name>database_file_name</name>
         <initializer>= &quot;database.xml&quot;</initializer>
         <briefdescription>
-        </briefdescription>
+<para>Файл, в котором хранятся </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="17" column="1" bodyfile="src/core/Yenot.h" bodystart="17" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="39" column="1" bodyfile="src/core/Yenot.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="18" column="1" bodyfile="src/core/Yenot.h" bodystart="18" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="42" column="1" bodyfile="src/core/Yenot.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a33ac96c1605ea0acb1f29aaf1ace51da" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -68,10 +68,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Расширение для хранения данных</para><para>Поддерживается xml и yaml </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="20" column="1" bodyfile="src/core/Yenot.h" bodystart="20" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="47" column="1" bodyfile="src/core/Yenot.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1aad9119112273f919a9be40dd3cd6f883" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -82,10 +82,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Расширение для хранения фотографий</para><para>Поддерживается png jpg jpeg </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="21" column="1" bodyfile="src/core/Yenot.h" bodystart="21" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="52" column="1" bodyfile="src/core/Yenot.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1adc382d9413986f36649df4f983cf1ebe" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -94,12 +94,12 @@
         <name>buffer_size</name>
         <initializer>= 128</initializer>
         <briefdescription>
-        </briefdescription>
+<para>Стандартный размер буфера </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="23" column="1" bodyfile="src/core/Yenot.h" bodystart="23" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="55" column="1" bodyfile="src/core/Yenot.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="28" column="1" bodyfile="src/core/Yenot.h" bodystart="28" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="60" column="1" bodyfile="src/core/Yenot.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a2c183b5b1119e19804dce22eaad06010" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="29" column="1" bodyfile="src/core/Yenot.h" bodystart="29" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="61" column="1" bodyfile="src/core/Yenot.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a49273bc3609e4a1d9c1a3e4a5cfcdafd" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="31" column="1" bodyfile="src/core/Yenot.h" bodystart="31" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="63" column="1" bodyfile="src/core/Yenot.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a860366d2b9aa9cf0d9cdcaf58528c101" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="32" column="1" bodyfile="src/core/Yenot.h" bodystart="32" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="64" column="1" bodyfile="src/core/Yenot.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1aee49fb849c0951972cdac7466599314a" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="33" column="1" bodyfile="src/core/Yenot.h" bodystart="33" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="65" column="1" bodyfile="src/core/Yenot.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a50716fcb731614c596c51676324c11e5" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="35" column="1" bodyfile="src/core/Yenot.h" bodystart="35" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="67" column="1" bodyfile="src/core/Yenot.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ae03e5eafa7f7253bce5126abe8575bfd" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="36" column="1" bodyfile="src/core/Yenot.h" bodystart="36" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="68" column="1" bodyfile="src/core/Yenot.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1aa228b5315065090d02dadbf128ba3d33" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -211,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="37" column="1" bodyfile="src/core/Yenot.h" bodystart="37" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="69" column="1" bodyfile="src/core/Yenot.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a9e0a7decaab1ac67fda9bba816d240ad" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -225,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="39" column="1" bodyfile="src/core/Yenot.h" bodystart="39" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="71" column="1" bodyfile="src/core/Yenot.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ac24f2700516e72d7abda843c90ea197d" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -239,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="40" column="1" bodyfile="src/core/Yenot.h" bodystart="40" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="72" column="1" bodyfile="src/core/Yenot.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a14d42f7507a42b87ff62a9dc822c0af8" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="41" column="1" bodyfile="src/core/Yenot.h" bodystart="41" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="73" column="1" bodyfile="src/core/Yenot.h" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a49dc5e175f5b81894abe218db8949a89" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -267,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="43" column="1" bodyfile="src/core/Yenot.h" bodystart="43" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="75" column="1" bodyfile="src/core/Yenot.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a300cc5d9afdbc58876cf3b52a2d9f055" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="44" column="1" bodyfile="src/core/Yenot.h" bodystart="44" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="76" column="1" bodyfile="src/core/Yenot.h" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ae8c5d5792720627ea225afb6ee387915" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -295,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="45" column="1" bodyfile="src/core/Yenot.h" bodystart="45" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="77" column="1" bodyfile="src/core/Yenot.h" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a17fec4b53b47f434f720ad8e804e3497" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -309,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="47" column="1" bodyfile="src/core/Yenot.h" bodystart="47" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="79" column="1" bodyfile="src/core/Yenot.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1affbdf7e1315bdd3e0c9f7bb5d1b0a9b1" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -323,7 +323,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="48" column="1" bodyfile="src/core/Yenot.h" bodystart="48" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="80" column="1" bodyfile="src/core/Yenot.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a8ba9c1f83b4502a37417a016875a3918" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -337,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="49" column="1" bodyfile="src/core/Yenot.h" bodystart="49" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="81" column="1" bodyfile="src/core/Yenot.h" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ab35e22cfa0a4ef6c8e960cfa75873aa0" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -351,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="51" column="1" bodyfile="src/core/Yenot.h" bodystart="51" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="83" column="1" bodyfile="src/core/Yenot.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ace3fd31c709279dc1bb3450404d770b0" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -365,7 +365,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="52" column="1" bodyfile="src/core/Yenot.h" bodystart="52" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="84" column="1" bodyfile="src/core/Yenot.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1accc48c2808f0c8c98f853614c546b5eb" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -379,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="53" column="1" bodyfile="src/core/Yenot.h" bodystart="53" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="85" column="1" bodyfile="src/core/Yenot.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1afe93bb98a5b2fd1f0cab330e4da59332" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -393,7 +393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="54" column="1" bodyfile="src/core/Yenot.h" bodystart="54" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="86" column="1" bodyfile="src/core/Yenot.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a6c5730ae743bc1203438dfcf6f35faeb" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -407,7 +407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="59" column="1" bodyfile="src/core/Yenot.h" bodystart="59" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="91" column="1" bodyfile="src/core/Yenot.h" bodystart="91" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a54032afcd8390f4a4975bbf20ffa248c" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -421,7 +421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="60" column="1" bodyfile="src/core/Yenot.h" bodystart="60" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="92" column="1" bodyfile="src/core/Yenot.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1adbbb6d50f7db1942c60be8b5d621d3b7" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -435,7 +435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="61" column="1" bodyfile="src/core/Yenot.h" bodystart="61" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="93" column="1" bodyfile="src/core/Yenot.h" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a7b716ae635492024820f16eb8c04a385" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -446,10 +446,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Фильтр Гаусса. Размер ядра по x</para><para>Число не чётное </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="63" column="1" bodyfile="src/core/Yenot.h" bodystart="63" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="98" column="1" bodyfile="src/core/Yenot.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a9f129e682fdc00d2869d4ed69a4c6aa7" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -460,10 +460,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Фильтр Гаусса. Размер ядра по x</para><para>Число не чётное </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="64" column="1" bodyfile="src/core/Yenot.h" bodystart="64" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="103" column="1" bodyfile="src/core/Yenot.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a1b60119efa619ee2a1a927d430e984d2" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -474,10 +474,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Размытие. Размер ядра по x</para><para>Число не чётное </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="66" column="1" bodyfile="src/core/Yenot.h" bodystart="66" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="108" column="1" bodyfile="src/core/Yenot.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ad178c04ee8518b1553ee1ab5b5054712" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -488,10 +488,10 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Размытие. Размер ядра по x</para><para>Число не чётное </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="67" column="1" bodyfile="src/core/Yenot.h" bodystart="67" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="113" column="1" bodyfile="src/core/Yenot.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -505,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="72" column="1" bodyfile="src/core/Yenot.h" bodystart="72" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="118" column="1" bodyfile="src/core/Yenot.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ad8a7ef4466cc151f6f380b4c4ccbfa66" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -519,7 +519,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="74" column="1" bodyfile="src/core/Yenot.h" bodystart="74" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="120" column="1" bodyfile="src/core/Yenot.h" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a8e18cd22c222abdaffa0e12b65af2ac5" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -533,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="75" column="1" bodyfile="src/core/Yenot.h" bodystart="75" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="121" column="1" bodyfile="src/core/Yenot.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1af1e97f87e798dc626f1a437f23b42199" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -547,7 +547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="77" column="1" bodyfile="src/core/Yenot.h" bodystart="77" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="123" column="1" bodyfile="src/core/Yenot.h" bodystart="123" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1aa1103de8317b20c60b2ae5da7e05f2b3" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -561,7 +561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="78" column="1" bodyfile="src/core/Yenot.h" bodystart="78" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="124" column="1" bodyfile="src/core/Yenot.h" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ab09d0dabe8840893fe9dc4a855ffc2fa" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -575,7 +575,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="80" column="1" bodyfile="src/core/Yenot.h" bodystart="80" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="126" column="1" bodyfile="src/core/Yenot.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a9624d76c2385fbb9861e403225b1d698" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -589,7 +589,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="81" column="1" bodyfile="src/core/Yenot.h" bodystart="81" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="127" column="1" bodyfile="src/core/Yenot.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a536380830aa21975126348216a729b08" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -603,7 +603,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="82" column="1" bodyfile="src/core/Yenot.h" bodystart="82" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="128" column="1" bodyfile="src/core/Yenot.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a27e7d588bfc41ad2d47d044d4541dad5" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -617,7 +617,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="87" column="1" bodyfile="src/core/Yenot.h" bodystart="87" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="133" column="1" bodyfile="src/core/Yenot.h" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a7ba035b0bd5ec0ca88a1741671cf6818" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -631,7 +631,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="88" column="1" bodyfile="src/core/Yenot.h" bodystart="88" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="134" column="1" bodyfile="src/core/Yenot.h" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a5cb3756995a6e5a93819405ca99eb35a" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -645,7 +645,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="89" column="1" bodyfile="src/core/Yenot.h" bodystart="89" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="135" column="1" bodyfile="src/core/Yenot.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a674d34d95501a1071db0ac7b39c64f57" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -659,7 +659,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="90" column="1" bodyfile="src/core/Yenot.h" bodystart="90" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="136" column="1" bodyfile="src/core/Yenot.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a16669256cbc1918ac8500a364e0ba21d" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -673,7 +673,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="91" column="1" bodyfile="src/core/Yenot.h" bodystart="91" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="137" column="1" bodyfile="src/core/Yenot.h" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1ab685b9f0b8baadc950b69329d1fae577" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -687,7 +687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="96" column="1" bodyfile="src/core/Yenot.h" bodystart="96" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="142" column="1" bodyfile="src/core/Yenot.h" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a0a2414e62514c20e76cf0c522ebf38a3" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -701,7 +701,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="97" column="1" bodyfile="src/core/Yenot.h" bodystart="97" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="143" column="1" bodyfile="src/core/Yenot.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1af238d0e227de22ee3c26114077153efc" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -715,7 +715,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="99" column="1" bodyfile="src/core/Yenot.h" bodystart="99" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="145" column="1" bodyfile="src/core/Yenot.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a5f4aa342b4a3e3f87069f6fef812594a" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -729,7 +729,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="100" column="1" bodyfile="src/core/Yenot.h" bodystart="100" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="146" column="1" bodyfile="src/core/Yenot.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -743,7 +743,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="101" column="1" bodyfile="src/core/Yenot.h" bodystart="101" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="147" column="1" bodyfile="src/core/Yenot.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1aea7e9eb4d5b9e645f22e83e2d5fe893e" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -757,7 +757,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="103" column="1" bodyfile="src/core/Yenot.h" bodystart="103" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="149" column="1" bodyfile="src/core/Yenot.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a53b4bd62fd7a6e3abedfdfb47db53284" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -771,7 +771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="104" column="1" bodyfile="src/core/Yenot.h" bodystart="104" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="150" column="1" bodyfile="src/core/Yenot.h" bodystart="150" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a37f90b0081fe0617055470d46489ea0f" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -785,7 +785,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="105" column="1" bodyfile="src/core/Yenot.h" bodystart="105" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="151" column="1" bodyfile="src/core/Yenot.h" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -799,13 +799,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.h" line="107" column="1" bodyfile="src/core/Yenot.h" bodystart="107" bodyend="-1"/>
+        <location file="src/core/Yenot.h" line="153" column="1" bodyfile="src/core/Yenot.h" bodystart="153" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>Пространство имён с константами </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
-    <location file="src/core/Yenot.h" line="11" column="1"/>
+<para>General - Основные константы</para><para>Core - Ядро</para><para>Filters - Фильтры</para><para>Logger - Модуль логирования</para><para>Log messages - Сообщения для вывода в логами</para><para>Car model - Пример </para>    </detaileddescription>
+    <location file="src/core/Yenot.h" line="27" column="1"/>
   </compounddef>
 </doxygen>

@@ -1,8 +1,9 @@
-.TH "yenot" 3 "Сб 28 Апр 2018" "Yenot" \" -*- nroff -*-
+.TH "yenot" 3 "Вс 29 Апр 2018" "Yenot" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-yenot
+yenot \- Пространство имён с константами  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -12,12 +13,15 @@ yenot
 .ti -1c
 .RI "const char \fBsettings_file_name\fP [] = '\&./config\&.ini'"
 .br
+.RI "Файл с настройками "
 .ti -1c
 .RI "const char \fBlogger_file_name\fP [] = 'Yenot\&.log'"
 .br
+.RI "Файл с логами "
 .ti -1c
 .RI "const char \fBdatabase_file_name\fP [] = 'database\&.xml'"
 .br
+.RI "Файл, в котором хранятся "
 .ti -1c
 .RI "const char \fBdatabase_name\fP [] = 'database'"
 .br
@@ -30,6 +34,7 @@ yenot
 .ti -1c
 .RI "const int \fBbuffer_size\fP = 128"
 .br
+.RI "Стандартный размер буфера "
 .ti -1c
 .RI "const char \fBsettings_block_core\fP [] = 'Core'"
 .br
@@ -181,236 +186,271 @@ yenot
 .RI "const int \fBsettings_size_photo\fP = 512"
 .br
 .in -1c
+.SH "Подробное описание"
+.PP 
+Пространство имён с константами 
+
+General - Основные константы
+.PP
+Core - Ядро
+.PP
+Filters - Фильтры
+.PP
+Logger - Модуль логирования
+.PP
+Log messages - Сообщения для вывода в логами
+.PP
+Car model - Пример 
 .SH "Переменные"
 .PP 
 .SS "const int yenot::blur_kernel_x = 5"
-
+Размытие\&. Размер ядра по x
 .PP
-См\&. определение в файле Yenot\&.h строка 66
+Число не чётное 
+.PP
+См\&. определение в файле Yenot\&.h строка 108
 .SS "const int yenot::blur_kernel_y = 5"
-
+Размытие\&. Размер ядра по x
 .PP
-См\&. определение в файле Yenot\&.h строка 67
+Число не чётное 
+.PP
+См\&. определение в файле Yenot\&.h строка 113
 .SS "const int yenot::buffer_size = 128"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 23
+Стандартный размер буфера 
+.PP
+См\&. определение в файле Yenot\&.h строка 55
 .SS "const char yenot::database_file_name[] = 'database\&.xml'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 17
+Файл, в котором хранятся 
+.PP
+См\&. определение в файле Yenot\&.h строка 39
 .SS "const char yenot::database_name[] = 'database'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 18
+См\&. определение в файле Yenot\&.h строка 42
 .SS "const int yenot::diameter_each_pixel = 9"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 59
+См\&. определение в файле Yenot\&.h строка 91
 .SS "const char yenot::extensions_database_member[] = '\&.xml'"
-
+Расширение для хранения данных
 .PP
-См\&. определение в файле Yenot\&.h строка 20
+Поддерживается xml и yaml 
+.PP
+См\&. определение в файле Yenot\&.h строка 47
 .SS "const char yenot::extensions_database_member_photo[] = '\&.png'"
-
+Расширение для хранения фотографий
 .PP
-См\&. определение в файле Yenot\&.h строка 21
+Поддерживается png jpg jpeg 
+.PP
+См\&. определение в файле Yenot\&.h строка 52
 .SS "const int yenot::gaussianblur_kernel_x = 5"
-
+Фильтр Гаусса\&. Размер ядра по x
 .PP
-См\&. определение в файле Yenot\&.h строка 63
+Число не чётное 
+.PP
+См\&. определение в файле Yenot\&.h строка 98
 .SS "const int yenot::gaussianblur_kernel_y = 5"
-
+Фильтр Гаусса\&. Размер ядра по x
 .PP
-См\&. определение в файле Yenot\&.h строка 64
+Число не чётное 
+.PP
+См\&. определение в файле Yenot\&.h строка 103
 .SS "const char yenot::logger_file_name[] = 'Yenot\&.log'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 16
+Файл с логами 
+.PP
+См\&. определение в файле Yenot\&.h строка 36
 .SS "const char yenot::logger_level_error[] = 'ERROR'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 81
+См\&. определение в файле Yenot\&.h строка 127
 .SS "const char yenot::logger_level_message[] = 'MSG'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 82
+См\&. определение в файле Yenot\&.h строка 128
 .SS "const char yenot::logger_level_warning[] = 'WARN'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 80
+См\&. определение в файле Yenot\&.h строка 126
 .SS "const char yenot::logger_message_cDir[] = 'Folder created\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 90
+См\&. определение в файле Yenot\&.h строка 136
 .SS "const char yenot::logger_message_cDir_not[] = 'Folder not created\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 91
+См\&. определение в файле Yenot\&.h строка 137
 .SS "const char yenot::logger_message_fMode[] = 'Fast mode enabled\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 89
+См\&. определение в файле Yenot\&.h строка 135
 .SS "const char yenot::logger_message_lDetection[] = 'Line \fBdetection\fP is disabled\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 88
+См\&. определение в файле Yenot\&.h строка 134
 .SS "const char yenot::logger_message_noiseRemoval[] = 'Noise filter is disabled\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 87
+См\&. определение в файле Yenot\&.h строка 133
 .SS "const char yenot::save_processed_image[] = 'sImage'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 51
+См\&. определение в файле Yenot\&.h строка 83
 .SS "const char yenot::save_processed_image_name[] = 'test\&.png'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 54
+См\&. определение в файле Yenot\&.h строка 86
 .SS "const char yenot::save_processed_image_value[] = '0'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 52
+См\&. определение в файле Yenot\&.h строка 84
 .SS "const int yenot::save_processed_image_value_int = 0"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 53
+См\&. определение в файле Yenot\&.h строка 85
 .SS "const char yenot::settings_block_carModel[] = 'carmodel'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 96
+См\&. определение в файле Yenot\&.h строка 142
 .SS "const char yenot::settings_block_core[] = 'Core'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 28
+См\&. определение в файле Yenot\&.h строка 60
 .SS "const char yenot::settings_block_default[] = 'General'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 29
+См\&. определение в файле Yenot\&.h строка 61
 .SS "const char yenot::settings_block_description[] = 'description'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 103
+См\&. определение в файле Yenot\&.h строка 149
 .SS "const char yenot::settings_block_logger[] = 'Logger'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 72
+См\&. определение в файле Yenot\&.h строка 118
 .SS "const char yenot::settings_carModel_example[] = 'example'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 99
+См\&. определение в файле Yenot\&.h строка 145
 .SS "const char yenot::settings_carModel_example_description[] = 'The car of model \\'Example\\''"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 100
+См\&. определение в файле Yenot\&.h строка 146
 .SS "const char yenot::settings_carModel_example_file[] = 'example\&.xml'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 101
+См\&. определение в файле Yenot\&.h строка 147
 .SS "const char yenot::settings_carModel_listphoto[] = 'listphoto'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 97
+См\&. определение в файле Yenot\&.h строка 143
 .SS "const char yenot::settings_description_example[] = 'Example brand'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 105
+См\&. определение в файле Yenot\&.h строка 151
 .SS "const char yenot::settings_description_ifnotfound[] = 'Not found'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 104
+См\&. определение в файле Yenot\&.h строка 150
 .SS "const char yenot::settings_fastmode[] = 'fMode'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 31
+См\&. определение в файле Yenot\&.h строка 63
 .SS "const char yenot::settings_fastmode_value[] = '0'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 32
+См\&. определение в файле Yenot\&.h строка 64
 .SS "const int yenot::settings_fastmode_value_int = 0"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 33
+См\&. определение в файле Yenot\&.h строка 65
 .SS "const char yenot::settings_file_name[] = '\&./config\&.ini'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 15
+Файл с настройками 
+.PP
+См\&. определение в файле Yenot\&.h строка 33
 .SS "const char yenot::settings_lineDetection[] = 'lDetection'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 43
+См\&. определение в файле Yenot\&.h строка 75
 .SS "const char yenot::settings_lineDetection_value[] = '1'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 44
+См\&. определение в файле Yenot\&.h строка 76
 .SS "const int yenot::settings_lineDetection_value_int = 1"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 45
+См\&. определение в файле Yenot\&.h строка 77
 .SS "const char yenot::settings_log[] = 'log'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 74
+См\&. определение в файле Yenot\&.h строка 120
 .SS "const char yenot::settings_log_value[] = '1'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 75
+См\&. определение в файле Yenot\&.h строка 121
 .SS "const char yenot::settings_logTime[] = 'lTime'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 77
+См\&. определение в файле Yenot\&.h строка 123
 .SS "const char yenot::settings_logTime_value[] = '1'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 78
+См\&. определение в файле Yenot\&.h строка 124
 .SS "const char yenot::settings_machineLearning[] = 'mLearning'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 39
+См\&. определение в файле Yenot\&.h строка 71
 .SS "const char yenot::settings_machineLearning_value[] = '1'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 40
+См\&. определение в файле Yenot\&.h строка 72
 .SS "const int yenot::settings_machineLearning_value_int = 1"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 41
+См\&. определение в файле Yenot\&.h строка 73
 .SS "const char yenot::settings_noiseReduction[] = 'nReduction'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 35
+См\&. определение в файле Yenot\&.h строка 67
 .SS "const char yenot::settings_noiseReduction_value[] = '1'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 36
+См\&. определение в файле Yenot\&.h строка 68
 .SS "const int yenot::settings_noiseReduction_value_int = 1"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 37
+См\&. определение в файле Yenot\&.h строка 69
 .SS "const int yenot::settings_size_photo = 512"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 107
+См\&. определение в файле Yenot\&.h строка 153
 .SS "const int yenot::sigmaColor = 75"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 60
+См\&. определение в файле Yenot\&.h строка 92
 .SS "const int yenot::sigmaSpace = 75"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 61
+См\&. определение в файле Yenot\&.h строка 93
 .SS "const char yenot::use_detection[] = 'detection'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 47
+См\&. определение в файле Yenot\&.h строка 79
 .SS "const char yenot::use_detection_value[] = '1'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 48
+См\&. определение в файле Yenot\&.h строка 80
 .SS "const int yenot::use_detection_value_int = 1"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 49
+См\&. определение в файле Yenot\&.h строка 81
 .SH "Автор"
 .PP 
 Автоматически создано Doxygen для Yenot из исходного текста\&.

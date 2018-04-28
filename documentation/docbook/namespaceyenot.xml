@@ -6,21 +6,24 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>const char <link linkend="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1">settings_file_name</link></para>
+                        <para>const char <link linkend="namespaceyenot_1adc33110d5c91abdee044c45cd5c725b1">settings_file_name</link><para><emphasis>Файл с настройками</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>const char <link linkend="namespaceyenot_1ab82af39640477c63378716f6699d49fe">logger_file_name</link></para>
+                        <para>const char <link linkend="namespaceyenot_1ab82af39640477c63378716f6699d49fe">logger_file_name</link><para><emphasis>Файл с логами</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>const char <link linkend="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9">database_file_name</link></para>
+                        <para>const char <link linkend="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9">database_file_name</link><para><emphasis>Файл, в котором хранятся</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -48,7 +51,8 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>const int <link linkend="namespaceyenot_1adc382d9413986f36649df4f983cf1ebe">buffer_size</link></para>
+                        <para>const int <link linkend="namespaceyenot_1adc382d9413986f36649df4f983cf1ebe">buffer_size</link><para><emphasis>Стандартный размер буфера</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -403,4 +407,26 @@
                 </itemizedlist>
             </para>
         </section>
+    <simplesect>
+
+<para>Пространство имён с константами </para>
+    </simplesect>
+        <simplesect>
+            <title>Подробное описание</title>
+
+<para>General - Основные константы</para>
+
+<para>Core - Ядро</para>
+
+<para>Filters - Фильтры</para>
+
+<para>Logger - Модуль логирования</para>
+
+<para>Log messages - Сообщения для вывода в логами</para>
+
+<para>Car model - Пример </para>
+                <para>Definition at line 27 of file Yenot.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Yenot.h</para></listitem></itemizedlist></para>
+        </simplesect>
 </section>

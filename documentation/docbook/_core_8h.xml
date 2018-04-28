@@ -230,11 +230,15 @@ std::string value)</para>
     <simplesect>
         <title>Подробное описание</title>
 
-<para>ќписание </para>
+<para>Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля </para>
 
 <para><formalpara><title>Автор: </title>
 
 <para>SavaLione </para>
+</formalpara>
+<formalpara><title>Дата: </title>
+
+<para>12 Apr 2018 </para>
 </formalpara>
 </para>
     <para>Definition in file Core.h</para>

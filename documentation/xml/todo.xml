@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="todo" kind="page">
+    <compoundname>todo</compoundname>
+    <title>Список задач</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="todo_1_todo000001"/>Член <ref refid="_logger_8h_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>  (char *level, char *text)</term></varlistentry>
+<listitem><para>logger(&quot;level&quot;, &quot;message&quot;); </para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -74,27 +74,27 @@
           <declname>text</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Основная функция для логирования </para>        </briefdescription>
         <detaileddescription>
-<para>Основная функция для логирования <parameterlist kind="param"><parameteritem>
+<para>Логирование возможно с разными уровнями и с выводом времени</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">level</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Уровень логировния </para></parameterdescription>
+<para>Уровень логирования </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername direction="in">text</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>текст для логировния </para></parameterdescription>
+<para>Текст для логирования </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/io/Logger.cpp" line="15" column="1" bodyfile="src/io/Logger.cpp" bodystart="15" bodyend="58"/>
+        <location file="src/io/Logger.cpp" line="25" column="1" bodyfile="src/io/Logger.cpp" bodystart="25" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="_logger_8cpp_1a5e632a6ec68609b973a180293035b94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -110,9 +110,9 @@
           <declname>y</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Функция для простого логирования. </para>        </briefdescription>
         <detaileddescription>
-<para>Функция для простого логирования. Используется для замера скорости выполнения некоторых алгоритмов. <parameterlist kind="param"><parameteritem>
+<para>Используется для замера скорости выполнения некоторых алгоритмов.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">x</parametername>
 </parameternamelist>
@@ -130,80 +130,94 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/io/Logger.cpp" line="65" column="1" bodyfile="src/io/Logger.cpp" bodystart="65" bodyend="75"/>
+        <location file="src/io/Logger.cpp" line="89" column="1" bodyfile="src/io/Logger.cpp" bodystart="89" bodyend="99"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>Модуль логирования. Поддерживает логирование со временем и логирование с различными уровнями. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><simplesect kind="author"><para>SavaLione </para></simplesect>
+<simplesect kind="date"><para>1 Apr 2018 </para></simplesect>
+</para>    </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Yenot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Core.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15" refid="_logger_8h_1a0d6abeb129096910c85ae6cba8bb59cf" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*level,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text)<sp/>{</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Проверяем,<sp/>нужно<sp/>ли<sp/>логировать</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ad8a7ef4466cc151f6f380b4c4ccbfa66" kindref="member">yenot::settings_log</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/></highlight></codeline>
-<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Проверка<sp/>наличия<sp/>файла<sp/>с<sp/>выводом<sp/>лога<sp/>в<sp/>папке.</highlight></codeline>
-<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Если<sp/>файл<sp/>не<sp/>найден,<sp/>то<sp/>создаём<sp/>его</highlight></codeline>
-<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>);</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1af1e97f87e798dc626f1a437f23b42199" kindref="member">yenot::settings_logTime</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>year<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>month<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>day<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>hour<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>minute<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>second;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSTEMTIME<sp/>time;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetLocalTime(&amp;time);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wYear<sp/>&lt;<sp/>10)<sp/>{<sp/>year<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wMonth<sp/>&lt;<sp/>10)<sp/>{<sp/>month<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wDay<sp/>&lt;<sp/>10)<sp/>{<sp/>day<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wHour<sp/>&lt;<sp/>10)<sp/>{<sp/>hour<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wMinute<sp/>&lt;<sp/>10)<sp/>{<sp/>minute<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wSecond<sp/>&lt;<sp/>10)<sp/>{<sp/>second<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>,<sp/>std::ios_base::app);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>year<sp/>&lt;&lt;<sp/>time.wYear<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>month<sp/>&lt;&lt;<sp/>time.wMonth<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>day<sp/>&lt;&lt;<sp/>time.wDay<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>hour<sp/>&lt;&lt;<sp/>time.wHour<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>minute<sp/>&lt;&lt;<sp/>time.wMinute<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>second<sp/>&lt;&lt;<sp/>time.wSecond<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>level<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>text</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>,<sp/>std::ios_base::app);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>level<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>text<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65" refid="_logger_8h_1a5e632a6ec68609b973a180293035b94b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_logger_8cpp_1a5e632a6ec68609b973a180293035b94b" kindref="member">logger_xy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ad8a7ef4466cc151f6f380b4c4ccbfa66" kindref="member">yenot::settings_log</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>,<sp/>std::ios_base::app);</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch_x[1024];</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(ch_x,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>x);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout<sp/>&lt;&lt;<sp/>ch_x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Yenot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Core.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_logger_8h_1a0d6abeb129096910c85ae6cba8bb59cf" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*level,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Проверяем,<sp/>нужно<sp/>ли<sp/>логировать.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ad8a7ef4466cc151f6f380b4c4ccbfa66" kindref="member">yenot::settings_log</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Проверка<sp/>наличия<sp/>файла<sp/>с<sp/>выводом<sp/>лога<sp/>в<sp/>папке.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Если<sp/>файл<sp/>не<sp/>найден,<sp/>то<sp/>создаём<sp/>его</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Проверка,<sp/>нужно<sp/>ли<sp/>логировать<sp/>с<sp/>выводом<sp/>времени</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Создаём<sp/>строки,<sp/>которые<sp/>будут<sp/>хранить<sp/>в<sp/>себе<sp/>значения<sp/>текущего<sp/>времени</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Создаём<sp/>структуру<sp/>SYSTEMTIME<sp/>из<sp/>которой<sp/>будем<sp/>брать<sp/>текущее<sp/>время</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Получаем<sp/>текущее<sp/>время<sp/>системы<sp/>и<sp/>по<sp/>адресу<sp/>присваиваем<sp/>значение<sp/>структуре<sp/>time</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Помещаем<sp/>текущее<sp/>время<sp/>системы<sp/>в<sp/>строки.</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--------------------------------------------------------------------------------------------------------[Изменить<sp/>код,<sp/>т.к<sp/>string<sp/>не<sp/>нужен</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1af1e97f87e798dc626f1a437f23b42199" kindref="member">yenot::settings_logTime</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>year<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>month<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>day<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>hour<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>minute<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>second<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSTEMTIME<sp/>time;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetLocalTime(&amp;time);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wYear<sp/>&lt;<sp/>10)<sp/>{<sp/>year<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wMonth<sp/>&lt;<sp/>10)<sp/>{<sp/>month<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wDay<sp/>&lt;<sp/>10)<sp/>{<sp/>day<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wHour<sp/>&lt;<sp/>10)<sp/>{<sp/>hour<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wMinute<sp/>&lt;<sp/>10)<sp/>{<sp/>minute<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.wSecond<sp/>&lt;<sp/>10)<sp/>{<sp/>second<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>year<sp/>&lt;&lt;<sp/>time.wYear<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>month<sp/>&lt;&lt;<sp/>time.wMonth<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>day<sp/>&lt;&lt;<sp/>time.wDay<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>hour<sp/>&lt;&lt;<sp/>time.wHour<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>minute<sp/>&lt;&lt;<sp/>time.wMinute<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>second<sp/>&lt;&lt;<sp/>time.wSecond<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>level<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>text</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>level<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>text<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_logger_8h_1a5e632a6ec68609b973a180293035b94b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_logger_8cpp_1a5e632a6ec68609b973a180293035b94b" kindref="member">logger_xy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ad8a7ef4466cc151f6f380b4c4ccbfa66" kindref="member">yenot::settings_log</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch_x[1024];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(ch_x,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>x);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout<sp/>&lt;&lt;<sp/>ch_x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/io/Logger.cpp"/>
   </compounddef>

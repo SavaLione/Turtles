@@ -1,7 +1,8 @@
 /**
-\file
-\brief ќписание
-\author SavaLione
+	@file
+	@brief Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля
+	@author SavaLione
+	@date 12 Apr 2018
 */
 #include <Windows.h>
 #include <fstream>

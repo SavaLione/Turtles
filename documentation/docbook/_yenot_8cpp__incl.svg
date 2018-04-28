@@ -86,7 +86,7 @@
 </g>
 <!-- Node97 -->
 <g id="node9" class="node"><title>Node97</title>
-<g id="a_node9"><a xlink:href="$_yenot_8h.html" xlink:title=":D ">
+<g id="a_node9"><a xlink:href="$_yenot_8h.html" xlink:title="Заголовочный файл с пространством имён, которое хранит в себе константы. ">
 <polygon fill="white" stroke="black" points="609,-56.5 609,-75.5 659,-75.5 659,-56.5 609,-56.5"/>
 <text text-anchor="middle" x="634" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Yenot.h</text>
 </a>
@@ -99,7 +99,7 @@
 </g>
 <!-- Node99 -->
 <g id="node11" class="node"><title>Node99</title>
-<g id="a_node11"><a xlink:href="$_core_8h.html" xlink:title="ќписание ">
+<g id="a_node11"><a xlink:href="$_core_8h.html" xlink:title="Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля ...">
 <polygon fill="white" stroke="black" points="677,-56.5 677,-75.5 753,-75.5 753,-56.5 677,-56.5"/>
 <text text-anchor="middle" x="715" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">..\core\Core.h</text>
 </a>

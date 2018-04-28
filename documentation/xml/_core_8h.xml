@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="14" column="1" bodyfile="src/core/Core.cpp" bodystart="26" bodyend="38"/>
+        <location file="src/core/Core.h" line="15" column="1" bodyfile="src/core/Core.cpp" bodystart="27" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1aa7c37c22318217cd913a50800eb336a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="15" column="1" bodyfile="src/core/Core.cpp" bodystart="40" bodyend="51"/>
+        <location file="src/core/Core.h" line="16" column="1" bodyfile="src/core/Core.cpp" bodystart="41" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a5a4a30ca6128e13ce1ec6efaa23dd6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="16" column="1" bodyfile="src/core/Core.cpp" bodystart="53" bodyend="65"/>
+        <location file="src/core/Core.h" line="17" column="1" bodyfile="src/core/Core.cpp" bodystart="54" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1aebd676a1476aa4d75b280db8ae09d11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="17" column="1" bodyfile="src/core/Core.cpp" bodystart="67" bodyend="80"/>
+        <location file="src/core/Core.h" line="18" column="1" bodyfile="src/core/Core.cpp" bodystart="68" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1ad1ae53e92ff9edcee7a9f35d2956ae57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="18" column="1"/>
+        <location file="src/core/Core.h" line="19" column="1"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a0ef39a5ada0921b3abf8906957746b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="19" column="1"/>
+        <location file="src/core/Core.h" line="20" column="1"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a97ee70a8770dc30d06c744b24eb2fcfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="20" column="1" bodyfile="src/core/Core.cpp" bodystart="106" bodyend="108"/>
+        <location file="src/core/Core.h" line="21" column="1" bodyfile="src/core/Core.cpp" bodystart="107" bodyend="109"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a0a1a2acbf75cc1c23ae101ebca89c816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -193,7 +193,7 @@
         <inbodydescription>
 <para><linebreak/>
 src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Destination image of the same size and type as src . d Ц Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace. sigmaColor Ц Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color. sigmaSpace Ц Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d&gt;0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .</para>        </inbodydescription>
-        <location file="src/core/Core.h" line="25" column="1" bodyfile="src/core/Core.cpp" bodystart="137" bodyend="148"/>
+        <location file="src/core/Core.h" line="26" column="1" bodyfile="src/core/Core.cpp" bodystart="138" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a64b67e9219ba96b984256d89bc46c2f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -214,7 +214,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="26" column="1" bodyfile="src/core/Core.cpp" bodystart="150" bodyend="152"/>
+        <location file="src/core/Core.h" line="27" column="1" bodyfile="src/core/Core.cpp" bodystart="151" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a39eb2014e38b68bd4e6453a24e51d896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -235,7 +235,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="27" column="1" bodyfile="src/core/Core.cpp" bodystart="154" bodyend="156"/>
+        <location file="src/core/Core.h" line="28" column="1" bodyfile="src/core/Core.cpp" bodystart="155" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a38f0b724796df5703cf0c1c77b3942fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -256,7 +256,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="28" column="1" bodyfile="src/core/Core.cpp" bodystart="158" bodyend="160"/>
+        <location file="src/core/Core.h" line="29" column="1" bodyfile="src/core/Core.cpp" bodystart="159" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1ab5eb0c124067d093b9001373071f4636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -277,7 +277,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="29" column="1" bodyfile="src/core/Core.cpp" bodystart="162" bodyend="164"/>
+        <location file="src/core/Core.h" line="30" column="1" bodyfile="src/core/Core.cpp" bodystart="163" bodyend="165"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1aff2d42310702a0aab15af5ad62a59f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -298,7 +298,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="34" column="1" bodyfile="src/core/Core.cpp" bodystart="270" bodyend="275"/>
+        <location file="src/core/Core.h" line="35" column="1" bodyfile="src/core/Core.cpp" bodystart="271" bodyend="276"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a33e1cb874acab9d31a98a12cdd1472ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -319,7 +319,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="39" column="1" bodyfile="src/core/Core.cpp" bodystart="169" bodyend="173"/>
+        <location file="src/core/Core.h" line="40" column="1" bodyfile="src/core/Core.cpp" bodystart="170" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a3a0f1e87eb01bdd16c4a7e365aa283eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -344,7 +344,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="40" column="1" bodyfile="src/core/Core.cpp" bodystart="175" bodyend="179"/>
+        <location file="src/core/Core.h" line="41" column="1" bodyfile="src/core/Core.cpp" bodystart="176" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a68b4d9ed6be7aaa93d9a6fe8fd683862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -365,7 +365,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="41" column="1" bodyfile="src/core/Core.cpp" bodystart="181" bodyend="183"/>
+        <location file="src/core/Core.h" line="42" column="1" bodyfile="src/core/Core.cpp" bodystart="182" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a0a2fe94de4037eda33c49fe332970891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -390,7 +390,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="42" column="1" bodyfile="src/core/Core.cpp" bodystart="185" bodyend="187"/>
+        <location file="src/core/Core.h" line="43" column="1" bodyfile="src/core/Core.cpp" bodystart="186" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a463e32ccb37f9478b0e62ee0d21c5999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -415,7 +415,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="43" column="1" bodyfile="src/core/Core.cpp" bodystart="189" bodyend="191"/>
+        <location file="src/core/Core.h" line="44" column="1" bodyfile="src/core/Core.cpp" bodystart="190" bodyend="192"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a96c018612a57329cdb94506523f5b7ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -432,7 +432,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="44" column="1" bodyfile="src/core/Core.cpp" bodystart="193" bodyend="201"/>
+        <location file="src/core/Core.h" line="45" column="1" bodyfile="src/core/Core.cpp" bodystart="194" bodyend="202"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a041e0f6c7598005e2e71f7da64197d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -449,7 +449,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="45" column="1" bodyfile="src/core/Core.cpp" bodystart="202" bodyend="210"/>
+        <location file="src/core/Core.h" line="46" column="1" bodyfile="src/core/Core.cpp" bodystart="203" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a8ba7f398362c96368015412b023565d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -462,7 +462,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="46" column="1" bodyfile="src/core/Core.cpp" bodystart="212" bodyend="245"/>
+        <location file="src/core/Core.h" line="47" column="1" bodyfile="src/core/Core.cpp" bodystart="213" bodyend="246"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a8f34a2030acfb5567678ab2bba25f3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -479,7 +479,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="47" column="1" bodyfile="src/core/Core.cpp" bodystart="247" bodyend="250"/>
+        <location file="src/core/Core.h" line="48" column="1" bodyfile="src/core/Core.cpp" bodystart="248" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1a912b67f6f6b05abadd055a379dd84864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -496,7 +496,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="48" column="1" bodyfile="src/core/Core.cpp" bodystart="252" bodyend="259"/>
+        <location file="src/core/Core.h" line="49" column="1" bodyfile="src/core/Core.cpp" bodystart="253" bodyend="260"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1aad0390ab7aa8f0cac1eee4492e919baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -513,7 +513,7 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="49" column="1"/>
+        <location file="src/core/Core.h" line="50" column="1"/>
       </memberdef>
       <memberdef kind="function" id="_core_8h_1aafaa59e41cfa4f5fda8c4d703394f26a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -526,58 +526,59 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image. dst Ц Dest
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="55" column="1" bodyfile="src/core/Core.cpp" bodystart="281" bodyend="298"/>
+        <location file="src/core/Core.h" line="56" column="1" bodyfile="src/core/Core.cpp" bodystart="282" bodyend="299"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>ќписание </para>    </briefdescription>
+<para>Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля </para>    </briefdescription>
     <detaileddescription>
 <para><simplesect kind="author"><para>SavaLione </para></simplesect>
+<simplesect kind="date"><para>12 Apr 2018 </para></simplesect>
 </para>    </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
-<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>CORE_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CORE_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/opencv.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="comment">//<sp/><sp/>Core</highlight></codeline>
-<codeline lineno="14"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a438c92819ed0ad4fc2e187ed5f5a2e27" kindref="member">noiseRemoval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1aa7c37c22318217cd913a50800eb336a3" kindref="member">lineDetection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a5a4a30ca6128e13ce1ec6efaa23dd6c7" kindref="member">databaseAdd</ref>(std::string<sp/>filename);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1aebd676a1476aa4d75b280db8ae09d11c" kindref="member">clearning</ref>(std::string<sp/>filename,<sp/>std::string<sp/>variable);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1ad1ae53e92ff9edcee7a9f35d2956ae57" kindref="member">detectionLogo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_logo,<sp/>std::string<sp/>cascadefile);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a0ef39a5ada0921b3abf8906957746b86" kindref="member">detection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_logo);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a97ee70a8770dc30d06c744b24eb2fcfc" kindref="member">help</ref>();</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="comment">//<sp/><sp/>Filters</highlight></codeline>
-<codeline lineno="25"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a0a1a2acbf75cc1c23ae101ebca89c816" kindref="member">bilateral</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a64b67e9219ba96b984256d89bc46c2f5" kindref="member">blur</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a39eb2014e38b68bd4e6453a24e51d896" kindref="member">fastNoiseRemovalGrey</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a38f0b724796df5703cf0c1c77b3942fa" kindref="member">gaussianblur</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1ab5eb0c124067d093b9001373071f4636" kindref="member">fastNoiseRemoval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="comment">//<sp/><sp/>Line<sp/>detector</highlight></codeline>
-<codeline lineno="34"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1aff2d42310702a0aab15af5ad62a59f2b" kindref="member">canny</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="comment">//<sp/><sp/>Settings</highlight></codeline>
-<codeline lineno="39"><highlight class="comment"></highlight><highlight class="normal">std::string<sp/><ref refid="_core_8h_1a33e1cb874acab9d31a98a12cdd1472ce" kindref="member">getSettingsString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal">std::string<sp/><ref refid="_core_8h_1a33e1cb874acab9d31a98a12cdd1472ce" kindref="member">getSettingsString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ch_return_default);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_return_default);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>(std::string<sp/>filename);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a8ba7f398362c96368015412b023565d0" kindref="member">settings_initialization</ref>();</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a8f34a2030acfb5567678ab2bba25f3c1" kindref="member">createFile</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a912b67f6f6b05abadd055a379dd84864" kindref="member">createDir</ref>(std::string<sp/>namedir);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal">std::string<sp/><ref refid="_core_8h_1aad0390ab7aa8f0cac1eee4492e919baf" kindref="member">description</ref>(std::string<sp/>value);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="comment">//<sp/><sp/>Test</highlight></codeline>
-<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1aafaa59e41cfa4f5fda8c4d703394f26a" kindref="member">v_test</ref>();</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CORE_H</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>CORE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CORE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/opencv.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">//<sp/><sp/>Core</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a438c92819ed0ad4fc2e187ed5f5a2e27" kindref="member">noiseRemoval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1aa7c37c22318217cd913a50800eb336a3" kindref="member">lineDetection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a5a4a30ca6128e13ce1ec6efaa23dd6c7" kindref="member">databaseAdd</ref>(std::string<sp/>filename);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1aebd676a1476aa4d75b280db8ae09d11c" kindref="member">clearning</ref>(std::string<sp/>filename,<sp/>std::string<sp/>variable);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1ad1ae53e92ff9edcee7a9f35d2956ae57" kindref="member">detectionLogo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_logo,<sp/>std::string<sp/>cascadefile);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a0ef39a5ada0921b3abf8906957746b86" kindref="member">detection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_logo);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a97ee70a8770dc30d06c744b24eb2fcfc" kindref="member">help</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment">//<sp/><sp/>Filters</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a0a1a2acbf75cc1c23ae101ebca89c816" kindref="member">bilateral</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a64b67e9219ba96b984256d89bc46c2f5" kindref="member">blur</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a39eb2014e38b68bd4e6453a24e51d896" kindref="member">fastNoiseRemovalGrey</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a38f0b724796df5703cf0c1c77b3942fa" kindref="member">gaussianblur</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1ab5eb0c124067d093b9001373071f4636" kindref="member">fastNoiseRemoval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment">//<sp/><sp/>Line<sp/>detector</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1aff2d42310702a0aab15af5ad62a59f2b" kindref="member">canny</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cv::Mat&amp;<sp/>mat_in,<sp/>cv::Mat&amp;<sp/>mat_out);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment">//<sp/><sp/>Settings</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight><highlight class="normal">std::string<sp/><ref refid="_core_8h_1a33e1cb874acab9d31a98a12cdd1472ce" kindref="member">getSettingsString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">std::string<sp/><ref refid="_core_8h_1a33e1cb874acab9d31a98a12cdd1472ce" kindref="member">getSettingsString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ch_return_default);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_return_default);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a96c018612a57329cdb94506523f5b7ec" kindref="member">check_file</ref>(std::string<sp/>filename);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a8ba7f398362c96368015412b023565d0" kindref="member">settings_initialization</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a8f34a2030acfb5567678ab2bba25f3c1" kindref="member">createFile</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1a912b67f6f6b05abadd055a379dd84864" kindref="member">createDir</ref>(std::string<sp/>namedir);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">std::string<sp/><ref refid="_core_8h_1aad0390ab7aa8f0cac1eee4492e919baf" kindref="member">description</ref>(std::string<sp/>value);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">//<sp/><sp/>Test</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8h_1aafaa59e41cfa4f5fda8c4d703394f26a" kindref="member">v_test</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CORE_H</highlight></codeline>
     </programlisting>
     <location file="src/core/Core.h"/>
   </compounddef>

@@ -1,14 +1,19 @@
 \hypertarget{namespaceyenot}{}\section{Пространство имен yenot}
 \label{namespaceyenot}\index{yenot@{yenot}}
+
+
+Пространство имён с константами  
+
+
 \subsection*{Переменные}
 \begin{DoxyCompactItemize}
 \item 
 const char \mbox{\hyperlink{namespaceyenot_adc33110d5c91abdee044c45cd5c725b1}{settings\+\_\+file\+\_\+name}} \mbox{[}$\,$\mbox{]} = \char`\"{}./config.\+ini\char`\"{}
-\item 
+\begin{DoxyCompactList}\small\item\em Файл с настройками \end{DoxyCompactList}\item 
 const char \mbox{\hyperlink{namespaceyenot_ab82af39640477c63378716f6699d49fe}{logger\+\_\+file\+\_\+name}} \mbox{[}$\,$\mbox{]} = \char`\"{}Yenot.\+log\char`\"{}
-\item 
+\begin{DoxyCompactList}\small\item\em Файл с логами \end{DoxyCompactList}\item 
 const char \mbox{\hyperlink{namespaceyenot_ac18180ab326731ce58145fe9049c49b9}{database\+\_\+file\+\_\+name}} \mbox{[}$\,$\mbox{]} = \char`\"{}database.\+xml\char`\"{}
-\item 
+\begin{DoxyCompactList}\small\item\em Файл, в котором хранятся \end{DoxyCompactList}\item 
 const char \mbox{\hyperlink{namespaceyenot_a5c402b62f742f34e9e42756075df6ed2}{database\+\_\+name}} \mbox{[}$\,$\mbox{]} = \char`\"{}database\char`\"{}
 \item 
 const char \mbox{\hyperlink{namespaceyenot_a33ac96c1605ea0acb1f29aaf1ace51da}{extensions\+\_\+database\+\_\+member}} \mbox{[}$\,$\mbox{]} = \char`\"{}.xml\char`\"{}
@@ -16,7 +21,7 @@ const char \mbox{\hyperlink{namespaceyenot_a33ac96c1605ea0acb1f29aaf1ace51da}{ex
 const char \mbox{\hyperlink{namespaceyenot_aad9119112273f919a9be40dd3cd6f883}{extensions\+\_\+database\+\_\+member\+\_\+photo}} \mbox{[}$\,$\mbox{]} = \char`\"{}.png\char`\"{}
 \item 
 const int \mbox{\hyperlink{namespaceyenot_adc382d9413986f36649df4f983cf1ebe}{buffer\+\_\+size}} = 128
-\item 
+\begin{DoxyCompactList}\small\item\em Стандартный размер буфера \end{DoxyCompactList}\item 
 const char \mbox{\hyperlink{namespaceyenot_a2640b6ef7faaea51fd49edfd377c62a5}{settings\+\_\+block\+\_\+core}} \mbox{[}$\,$\mbox{]} = \char`\"{}Core\char`\"{}
 \item 
 const char \mbox{\hyperlink{namespaceyenot_a2c183b5b1119e19804dce22eaad06010}{settings\+\_\+block\+\_\+default}} \mbox{[}$\,$\mbox{]} = \char`\"{}General\char`\"{}
@@ -119,6 +124,21 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 \end{DoxyCompactItemize}
 
 
+\subsection{Подробное описание}
+Пространство имён с константами 
+
+General -\/ Основные константы
+
+Core -\/ Ядро
+
+Filters -\/ Фильтры
+
+Logger -\/ Модуль логирования
+
+Log messages -\/ Сообщения для вывода в логами
+
+Car model -\/ Пример 
+
 \subsection{Переменные}
 \mbox{\Hypertarget{namespaceyenot_a1b60119efa619ee2a1a927d430e984d2}\label{namespaceyenot_a1b60119efa619ee2a1a927d430e984d2}} 
 \index{yenot@{yenot}!blur\+\_\+kernel\+\_\+x@{blur\+\_\+kernel\+\_\+x}}
@@ -126,9 +146,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 \subsubsection{\texorpdfstring{blur\+\_\+kernel\+\_\+x}{blur\_kernel\_x}}
 {\footnotesize\ttfamily const int yenot\+::blur\+\_\+kernel\+\_\+x = 5}
 
+Размытие. Размер ядра по x
 
+Число не чётное 
 
-См. определение в файле Yenot.\+h строка 66
+См. определение в файле Yenot.\+h строка 108
 
 \mbox{\Hypertarget{namespaceyenot_ad178c04ee8518b1553ee1ab5b5054712}\label{namespaceyenot_ad178c04ee8518b1553ee1ab5b5054712}} 
 \index{yenot@{yenot}!blur\+\_\+kernel\+\_\+y@{blur\+\_\+kernel\+\_\+y}}
@@ -136,9 +158,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 \subsubsection{\texorpdfstring{blur\+\_\+kernel\+\_\+y}{blur\_kernel\_y}}
 {\footnotesize\ttfamily const int yenot\+::blur\+\_\+kernel\+\_\+y = 5}
 
+Размытие. Размер ядра по x
 
+Число не чётное 
 
-См. определение в файле Yenot.\+h строка 67
+См. определение в файле Yenot.\+h строка 113
 
 \mbox{\Hypertarget{namespaceyenot_adc382d9413986f36649df4f983cf1ebe}\label{namespaceyenot_adc382d9413986f36649df4f983cf1ebe}} 
 \index{yenot@{yenot}!buffer\+\_\+size@{buffer\+\_\+size}}
@@ -148,7 +172,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 23
+Стандартный размер буфера 
+
+
+
+См. определение в файле Yenot.\+h строка 55
 
 \mbox{\Hypertarget{namespaceyenot_ac18180ab326731ce58145fe9049c49b9}\label{namespaceyenot_ac18180ab326731ce58145fe9049c49b9}} 
 \index{yenot@{yenot}!database\+\_\+file\+\_\+name@{database\+\_\+file\+\_\+name}}
@@ -158,7 +186,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 17
+Файл, в котором хранятся 
+
+
+
+См. определение в файле Yenot.\+h строка 39
 
 \mbox{\Hypertarget{namespaceyenot_a5c402b62f742f34e9e42756075df6ed2}\label{namespaceyenot_a5c402b62f742f34e9e42756075df6ed2}} 
 \index{yenot@{yenot}!database\+\_\+name@{database\+\_\+name}}
@@ -168,7 +200,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 18
+См. определение в файле Yenot.\+h строка 42
 
 \mbox{\Hypertarget{namespaceyenot_a6c5730ae743bc1203438dfcf6f35faeb}\label{namespaceyenot_a6c5730ae743bc1203438dfcf6f35faeb}} 
 \index{yenot@{yenot}!diameter\+\_\+each\+\_\+pixel@{diameter\+\_\+each\+\_\+pixel}}
@@ -178,7 +210,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 59
+См. определение в файле Yenot.\+h строка 91
 
 \mbox{\Hypertarget{namespaceyenot_a33ac96c1605ea0acb1f29aaf1ace51da}\label{namespaceyenot_a33ac96c1605ea0acb1f29aaf1ace51da}} 
 \index{yenot@{yenot}!extensions\+\_\+database\+\_\+member@{extensions\+\_\+database\+\_\+member}}
@@ -186,9 +218,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 \subsubsection{\texorpdfstring{extensions\+\_\+database\+\_\+member}{extensions\_database\_member}}
 {\footnotesize\ttfamily const char yenot\+::extensions\+\_\+database\+\_\+member\mbox{[}$\,$\mbox{]} = \char`\"{}.xml\char`\"{}}
 
+Расширение для хранения данных
 
+Поддерживается xml и yaml 
 
-См. определение в файле Yenot.\+h строка 20
+См. определение в файле Yenot.\+h строка 47
 
 \mbox{\Hypertarget{namespaceyenot_aad9119112273f919a9be40dd3cd6f883}\label{namespaceyenot_aad9119112273f919a9be40dd3cd6f883}} 
 \index{yenot@{yenot}!extensions\+\_\+database\+\_\+member\+\_\+photo@{extensions\+\_\+database\+\_\+member\+\_\+photo}}
@@ -196,9 +230,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 \subsubsection{\texorpdfstring{extensions\+\_\+database\+\_\+member\+\_\+photo}{extensions\_database\_member\_photo}}
 {\footnotesize\ttfamily const char yenot\+::extensions\+\_\+database\+\_\+member\+\_\+photo\mbox{[}$\,$\mbox{]} = \char`\"{}.png\char`\"{}}
 
+Расширение для хранения фотографий
 
+Поддерживается png jpg jpeg 
 
-См. определение в файле Yenot.\+h строка 21
+См. определение в файле Yenot.\+h строка 52
 
 \mbox{\Hypertarget{namespaceyenot_a7b716ae635492024820f16eb8c04a385}\label{namespaceyenot_a7b716ae635492024820f16eb8c04a385}} 
 \index{yenot@{yenot}!gaussianblur\+\_\+kernel\+\_\+x@{gaussianblur\+\_\+kernel\+\_\+x}}
@@ -206,9 +242,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 \subsubsection{\texorpdfstring{gaussianblur\+\_\+kernel\+\_\+x}{gaussianblur\_kernel\_x}}
 {\footnotesize\ttfamily const int yenot\+::gaussianblur\+\_\+kernel\+\_\+x = 5}
 
+Фильтр Гаусса. Размер ядра по x
 
+Число не чётное 
 
-См. определение в файле Yenot.\+h строка 63
+См. определение в файле Yenot.\+h строка 98
 
 \mbox{\Hypertarget{namespaceyenot_a9f129e682fdc00d2869d4ed69a4c6aa7}\label{namespaceyenot_a9f129e682fdc00d2869d4ed69a4c6aa7}} 
 \index{yenot@{yenot}!gaussianblur\+\_\+kernel\+\_\+y@{gaussianblur\+\_\+kernel\+\_\+y}}
@@ -216,9 +254,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 \subsubsection{\texorpdfstring{gaussianblur\+\_\+kernel\+\_\+y}{gaussianblur\_kernel\_y}}
 {\footnotesize\ttfamily const int yenot\+::gaussianblur\+\_\+kernel\+\_\+y = 5}
 
+Фильтр Гаусса. Размер ядра по x
 
+Число не чётное 
 
-См. определение в файле Yenot.\+h строка 64
+См. определение в файле Yenot.\+h строка 103
 
 \mbox{\Hypertarget{namespaceyenot_ab82af39640477c63378716f6699d49fe}\label{namespaceyenot_ab82af39640477c63378716f6699d49fe}} 
 \index{yenot@{yenot}!logger\+\_\+file\+\_\+name@{logger\+\_\+file\+\_\+name}}
@@ -228,7 +268,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 16
+Файл с логами 
+
+
+
+См. определение в файле Yenot.\+h строка 36
 
 \mbox{\Hypertarget{namespaceyenot_a9624d76c2385fbb9861e403225b1d698}\label{namespaceyenot_a9624d76c2385fbb9861e403225b1d698}} 
 \index{yenot@{yenot}!logger\+\_\+level\+\_\+error@{logger\+\_\+level\+\_\+error}}
@@ -238,7 +282,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 81
+См. определение в файле Yenot.\+h строка 127
 
 \mbox{\Hypertarget{namespaceyenot_a536380830aa21975126348216a729b08}\label{namespaceyenot_a536380830aa21975126348216a729b08}} 
 \index{yenot@{yenot}!logger\+\_\+level\+\_\+message@{logger\+\_\+level\+\_\+message}}
@@ -248,7 +292,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 82
+См. определение в файле Yenot.\+h строка 128
 
 \mbox{\Hypertarget{namespaceyenot_ab09d0dabe8840893fe9dc4a855ffc2fa}\label{namespaceyenot_ab09d0dabe8840893fe9dc4a855ffc2fa}} 
 \index{yenot@{yenot}!logger\+\_\+level\+\_\+warning@{logger\+\_\+level\+\_\+warning}}
@@ -258,7 +302,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 80
+См. определение в файле Yenot.\+h строка 126
 
 \mbox{\Hypertarget{namespaceyenot_a674d34d95501a1071db0ac7b39c64f57}\label{namespaceyenot_a674d34d95501a1071db0ac7b39c64f57}} 
 \index{yenot@{yenot}!logger\+\_\+message\+\_\+c\+Dir@{logger\+\_\+message\+\_\+c\+Dir}}
@@ -268,7 +312,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 90
+См. определение в файле Yenot.\+h строка 136
 
 \mbox{\Hypertarget{namespaceyenot_a16669256cbc1918ac8500a364e0ba21d}\label{namespaceyenot_a16669256cbc1918ac8500a364e0ba21d}} 
 \index{yenot@{yenot}!logger\+\_\+message\+\_\+c\+Dir\+\_\+not@{logger\+\_\+message\+\_\+c\+Dir\+\_\+not}}
@@ -278,7 +322,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 91
+См. определение в файле Yenot.\+h строка 137
 
 \mbox{\Hypertarget{namespaceyenot_a5cb3756995a6e5a93819405ca99eb35a}\label{namespaceyenot_a5cb3756995a6e5a93819405ca99eb35a}} 
 \index{yenot@{yenot}!logger\+\_\+message\+\_\+f\+Mode@{logger\+\_\+message\+\_\+f\+Mode}}
@@ -288,7 +332,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 89
+См. определение в файле Yenot.\+h строка 135
 
 \mbox{\Hypertarget{namespaceyenot_a7ba035b0bd5ec0ca88a1741671cf6818}\label{namespaceyenot_a7ba035b0bd5ec0ca88a1741671cf6818}} 
 \index{yenot@{yenot}!logger\+\_\+message\+\_\+l\+Detection@{logger\+\_\+message\+\_\+l\+Detection}}
@@ -298,7 +342,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 88
+См. определение в файле Yenot.\+h строка 134
 
 \mbox{\Hypertarget{namespaceyenot_a27e7d588bfc41ad2d47d044d4541dad5}\label{namespaceyenot_a27e7d588bfc41ad2d47d044d4541dad5}} 
 \index{yenot@{yenot}!logger\+\_\+message\+\_\+noise\+Removal@{logger\+\_\+message\+\_\+noise\+Removal}}
@@ -308,7 +352,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 87
+См. определение в файле Yenot.\+h строка 133
 
 \mbox{\Hypertarget{namespaceyenot_ab35e22cfa0a4ef6c8e960cfa75873aa0}\label{namespaceyenot_ab35e22cfa0a4ef6c8e960cfa75873aa0}} 
 \index{yenot@{yenot}!save\+\_\+processed\+\_\+image@{save\+\_\+processed\+\_\+image}}
@@ -318,7 +362,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 51
+См. определение в файле Yenot.\+h строка 83
 
 \mbox{\Hypertarget{namespaceyenot_afe93bb98a5b2fd1f0cab330e4da59332}\label{namespaceyenot_afe93bb98a5b2fd1f0cab330e4da59332}} 
 \index{yenot@{yenot}!save\+\_\+processed\+\_\+image\+\_\+name@{save\+\_\+processed\+\_\+image\+\_\+name}}
@@ -328,7 +372,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 54
+См. определение в файле Yenot.\+h строка 86
 
 \mbox{\Hypertarget{namespaceyenot_ace3fd31c709279dc1bb3450404d770b0}\label{namespaceyenot_ace3fd31c709279dc1bb3450404d770b0}} 
 \index{yenot@{yenot}!save\+\_\+processed\+\_\+image\+\_\+value@{save\+\_\+processed\+\_\+image\+\_\+value}}
@@ -338,7 +382,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 52
+См. определение в файле Yenot.\+h строка 84
 
 \mbox{\Hypertarget{namespaceyenot_accc48c2808f0c8c98f853614c546b5eb}\label{namespaceyenot_accc48c2808f0c8c98f853614c546b5eb}} 
 \index{yenot@{yenot}!save\+\_\+processed\+\_\+image\+\_\+value\+\_\+int@{save\+\_\+processed\+\_\+image\+\_\+value\+\_\+int}}
@@ -348,7 +392,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 53
+См. определение в файле Yenot.\+h строка 85
 
 \mbox{\Hypertarget{namespaceyenot_ab685b9f0b8baadc950b69329d1fae577}\label{namespaceyenot_ab685b9f0b8baadc950b69329d1fae577}} 
 \index{yenot@{yenot}!settings\+\_\+block\+\_\+car\+Model@{settings\+\_\+block\+\_\+car\+Model}}
@@ -358,7 +402,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 96
+См. определение в файле Yenot.\+h строка 142
 
 \mbox{\Hypertarget{namespaceyenot_a2640b6ef7faaea51fd49edfd377c62a5}\label{namespaceyenot_a2640b6ef7faaea51fd49edfd377c62a5}} 
 \index{yenot@{yenot}!settings\+\_\+block\+\_\+core@{settings\+\_\+block\+\_\+core}}
@@ -368,7 +412,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 28
+См. определение в файле Yenot.\+h строка 60
 
 \mbox{\Hypertarget{namespaceyenot_a2c183b5b1119e19804dce22eaad06010}\label{namespaceyenot_a2c183b5b1119e19804dce22eaad06010}} 
 \index{yenot@{yenot}!settings\+\_\+block\+\_\+default@{settings\+\_\+block\+\_\+default}}
@@ -378,7 +422,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 29
+См. определение в файле Yenot.\+h строка 61
 
 \mbox{\Hypertarget{namespaceyenot_aea7e9eb4d5b9e645f22e83e2d5fe893e}\label{namespaceyenot_aea7e9eb4d5b9e645f22e83e2d5fe893e}} 
 \index{yenot@{yenot}!settings\+\_\+block\+\_\+description@{settings\+\_\+block\+\_\+description}}
@@ -388,7 +432,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 103
+См. определение в файле Yenot.\+h строка 149
 
 \mbox{\Hypertarget{namespaceyenot_a13c8b24e2bbaab0c3bf3fe14e3f495bb}\label{namespaceyenot_a13c8b24e2bbaab0c3bf3fe14e3f495bb}} 
 \index{yenot@{yenot}!settings\+\_\+block\+\_\+logger@{settings\+\_\+block\+\_\+logger}}
@@ -398,7 +442,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 72
+См. определение в файле Yenot.\+h строка 118
 
 \mbox{\Hypertarget{namespaceyenot_af238d0e227de22ee3c26114077153efc}\label{namespaceyenot_af238d0e227de22ee3c26114077153efc}} 
 \index{yenot@{yenot}!settings\+\_\+car\+Model\+\_\+example@{settings\+\_\+car\+Model\+\_\+example}}
@@ -408,7 +452,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 99
+См. определение в файле Yenot.\+h строка 145
 
 \mbox{\Hypertarget{namespaceyenot_a5f4aa342b4a3e3f87069f6fef812594a}\label{namespaceyenot_a5f4aa342b4a3e3f87069f6fef812594a}} 
 \index{yenot@{yenot}!settings\+\_\+car\+Model\+\_\+example\+\_\+description@{settings\+\_\+car\+Model\+\_\+example\+\_\+description}}
@@ -418,7 +462,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 100
+См. определение в файле Yenot.\+h строка 146
 
 \mbox{\Hypertarget{namespaceyenot_acd910e59eb17aa18802af8f4544aab48}\label{namespaceyenot_acd910e59eb17aa18802af8f4544aab48}} 
 \index{yenot@{yenot}!settings\+\_\+car\+Model\+\_\+example\+\_\+file@{settings\+\_\+car\+Model\+\_\+example\+\_\+file}}
@@ -428,7 +472,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 101
+См. определение в файле Yenot.\+h строка 147
 
 \mbox{\Hypertarget{namespaceyenot_a0a2414e62514c20e76cf0c522ebf38a3}\label{namespaceyenot_a0a2414e62514c20e76cf0c522ebf38a3}} 
 \index{yenot@{yenot}!settings\+\_\+car\+Model\+\_\+listphoto@{settings\+\_\+car\+Model\+\_\+listphoto}}
@@ -438,7 +482,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 97
+См. определение в файле Yenot.\+h строка 143
 
 \mbox{\Hypertarget{namespaceyenot_a37f90b0081fe0617055470d46489ea0f}\label{namespaceyenot_a37f90b0081fe0617055470d46489ea0f}} 
 \index{yenot@{yenot}!settings\+\_\+description\+\_\+example@{settings\+\_\+description\+\_\+example}}
@@ -448,7 +492,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 105
+См. определение в файле Yenot.\+h строка 151
 
 \mbox{\Hypertarget{namespaceyenot_a53b4bd62fd7a6e3abedfdfb47db53284}\label{namespaceyenot_a53b4bd62fd7a6e3abedfdfb47db53284}} 
 \index{yenot@{yenot}!settings\+\_\+description\+\_\+ifnotfound@{settings\+\_\+description\+\_\+ifnotfound}}
@@ -458,7 +502,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 104
+См. определение в файле Yenot.\+h строка 150
 
 \mbox{\Hypertarget{namespaceyenot_a49273bc3609e4a1d9c1a3e4a5cfcdafd}\label{namespaceyenot_a49273bc3609e4a1d9c1a3e4a5cfcdafd}} 
 \index{yenot@{yenot}!settings\+\_\+fastmode@{settings\+\_\+fastmode}}
@@ -468,7 +512,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 31
+См. определение в файле Yenot.\+h строка 63
 
 \mbox{\Hypertarget{namespaceyenot_a860366d2b9aa9cf0d9cdcaf58528c101}\label{namespaceyenot_a860366d2b9aa9cf0d9cdcaf58528c101}} 
 \index{yenot@{yenot}!settings\+\_\+fastmode\+\_\+value@{settings\+\_\+fastmode\+\_\+value}}
@@ -478,7 +522,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 32
+См. определение в файле Yenot.\+h строка 64
 
 \mbox{\Hypertarget{namespaceyenot_aee49fb849c0951972cdac7466599314a}\label{namespaceyenot_aee49fb849c0951972cdac7466599314a}} 
 \index{yenot@{yenot}!settings\+\_\+fastmode\+\_\+value\+\_\+int@{settings\+\_\+fastmode\+\_\+value\+\_\+int}}
@@ -488,7 +532,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 33
+См. определение в файле Yenot.\+h строка 65
 
 \mbox{\Hypertarget{namespaceyenot_adc33110d5c91abdee044c45cd5c725b1}\label{namespaceyenot_adc33110d5c91abdee044c45cd5c725b1}} 
 \index{yenot@{yenot}!settings\+\_\+file\+\_\+name@{settings\+\_\+file\+\_\+name}}
@@ -498,7 +542,11 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 15
+Файл с настройками 
+
+
+
+См. определение в файле Yenot.\+h строка 33
 
 \mbox{\Hypertarget{namespaceyenot_a49dc5e175f5b81894abe218db8949a89}\label{namespaceyenot_a49dc5e175f5b81894abe218db8949a89}} 
 \index{yenot@{yenot}!settings\+\_\+line\+Detection@{settings\+\_\+line\+Detection}}
@@ -508,7 +556,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 43
+См. определение в файле Yenot.\+h строка 75
 
 \mbox{\Hypertarget{namespaceyenot_a300cc5d9afdbc58876cf3b52a2d9f055}\label{namespaceyenot_a300cc5d9afdbc58876cf3b52a2d9f055}} 
 \index{yenot@{yenot}!settings\+\_\+line\+Detection\+\_\+value@{settings\+\_\+line\+Detection\+\_\+value}}
@@ -518,7 +566,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 44
+См. определение в файле Yenot.\+h строка 76
 
 \mbox{\Hypertarget{namespaceyenot_ae8c5d5792720627ea225afb6ee387915}\label{namespaceyenot_ae8c5d5792720627ea225afb6ee387915}} 
 \index{yenot@{yenot}!settings\+\_\+line\+Detection\+\_\+value\+\_\+int@{settings\+\_\+line\+Detection\+\_\+value\+\_\+int}}
@@ -528,7 +576,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 45
+См. определение в файле Yenot.\+h строка 77
 
 \mbox{\Hypertarget{namespaceyenot_ad8a7ef4466cc151f6f380b4c4ccbfa66}\label{namespaceyenot_ad8a7ef4466cc151f6f380b4c4ccbfa66}} 
 \index{yenot@{yenot}!settings\+\_\+log@{settings\+\_\+log}}
@@ -538,7 +586,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 74
+См. определение в файле Yenot.\+h строка 120
 
 \mbox{\Hypertarget{namespaceyenot_a8e18cd22c222abdaffa0e12b65af2ac5}\label{namespaceyenot_a8e18cd22c222abdaffa0e12b65af2ac5}} 
 \index{yenot@{yenot}!settings\+\_\+log\+\_\+value@{settings\+\_\+log\+\_\+value}}
@@ -548,7 +596,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 75
+См. определение в файле Yenot.\+h строка 121
 
 \mbox{\Hypertarget{namespaceyenot_af1e97f87e798dc626f1a437f23b42199}\label{namespaceyenot_af1e97f87e798dc626f1a437f23b42199}} 
 \index{yenot@{yenot}!settings\+\_\+log\+Time@{settings\+\_\+log\+Time}}
@@ -558,7 +606,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 77
+См. определение в файле Yenot.\+h строка 123
 
 \mbox{\Hypertarget{namespaceyenot_aa1103de8317b20c60b2ae5da7e05f2b3}\label{namespaceyenot_aa1103de8317b20c60b2ae5da7e05f2b3}} 
 \index{yenot@{yenot}!settings\+\_\+log\+Time\+\_\+value@{settings\+\_\+log\+Time\+\_\+value}}
@@ -568,7 +616,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 78
+См. определение в файле Yenot.\+h строка 124
 
 \mbox{\Hypertarget{namespaceyenot_a9e0a7decaab1ac67fda9bba816d240ad}\label{namespaceyenot_a9e0a7decaab1ac67fda9bba816d240ad}} 
 \index{yenot@{yenot}!settings\+\_\+machine\+Learning@{settings\+\_\+machine\+Learning}}
@@ -578,7 +626,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 39
+См. определение в файле Yenot.\+h строка 71
 
 \mbox{\Hypertarget{namespaceyenot_ac24f2700516e72d7abda843c90ea197d}\label{namespaceyenot_ac24f2700516e72d7abda843c90ea197d}} 
 \index{yenot@{yenot}!settings\+\_\+machine\+Learning\+\_\+value@{settings\+\_\+machine\+Learning\+\_\+value}}
@@ -588,7 +636,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 40
+См. определение в файле Yenot.\+h строка 72
 
 \mbox{\Hypertarget{namespaceyenot_a14d42f7507a42b87ff62a9dc822c0af8}\label{namespaceyenot_a14d42f7507a42b87ff62a9dc822c0af8}} 
 \index{yenot@{yenot}!settings\+\_\+machine\+Learning\+\_\+value\+\_\+int@{settings\+\_\+machine\+Learning\+\_\+value\+\_\+int}}
@@ -598,7 +646,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 41
+См. определение в файле Yenot.\+h строка 73
 
 \mbox{\Hypertarget{namespaceyenot_a50716fcb731614c596c51676324c11e5}\label{namespaceyenot_a50716fcb731614c596c51676324c11e5}} 
 \index{yenot@{yenot}!settings\+\_\+noise\+Reduction@{settings\+\_\+noise\+Reduction}}
@@ -608,7 +656,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 35
+См. определение в файле Yenot.\+h строка 67
 
 \mbox{\Hypertarget{namespaceyenot_ae03e5eafa7f7253bce5126abe8575bfd}\label{namespaceyenot_ae03e5eafa7f7253bce5126abe8575bfd}} 
 \index{yenot@{yenot}!settings\+\_\+noise\+Reduction\+\_\+value@{settings\+\_\+noise\+Reduction\+\_\+value}}
@@ -618,7 +666,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 36
+См. определение в файле Yenot.\+h строка 68
 
 \mbox{\Hypertarget{namespaceyenot_aa228b5315065090d02dadbf128ba3d33}\label{namespaceyenot_aa228b5315065090d02dadbf128ba3d33}} 
 \index{yenot@{yenot}!settings\+\_\+noise\+Reduction\+\_\+value\+\_\+int@{settings\+\_\+noise\+Reduction\+\_\+value\+\_\+int}}
@@ -628,7 +676,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 37
+См. определение в файле Yenot.\+h строка 69
 
 \mbox{\Hypertarget{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}\label{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}} 
 \index{yenot@{yenot}!settings\+\_\+size\+\_\+photo@{settings\+\_\+size\+\_\+photo}}
@@ -638,7 +686,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 107
+См. определение в файле Yenot.\+h строка 153
 
 \mbox{\Hypertarget{namespaceyenot_a54032afcd8390f4a4975bbf20ffa248c}\label{namespaceyenot_a54032afcd8390f4a4975bbf20ffa248c}} 
 \index{yenot@{yenot}!sigma\+Color@{sigma\+Color}}
@@ -648,7 +696,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 60
+См. определение в файле Yenot.\+h строка 92
 
 \mbox{\Hypertarget{namespaceyenot_adbbb6d50f7db1942c60be8b5d621d3b7}\label{namespaceyenot_adbbb6d50f7db1942c60be8b5d621d3b7}} 
 \index{yenot@{yenot}!sigma\+Space@{sigma\+Space}}
@@ -658,7 +706,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 61
+См. определение в файле Yenot.\+h строка 93
 
 \mbox{\Hypertarget{namespaceyenot_a17fec4b53b47f434f720ad8e804e3497}\label{namespaceyenot_a17fec4b53b47f434f720ad8e804e3497}} 
 \index{yenot@{yenot}!use\+\_\+detection@{use\+\_\+detection}}
@@ -668,7 +716,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 47
+См. определение в файле Yenot.\+h строка 79
 
 \mbox{\Hypertarget{namespaceyenot_affbdf7e1315bdd3e0c9f7bb5d1b0a9b1}\label{namespaceyenot_affbdf7e1315bdd3e0c9f7bb5d1b0a9b1}} 
 \index{yenot@{yenot}!use\+\_\+detection\+\_\+value@{use\+\_\+detection\+\_\+value}}
@@ -678,7 +726,7 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 48
+См. определение в файле Yenot.\+h строка 80
 
 \mbox{\Hypertarget{namespaceyenot_a8ba9c1f83b4502a37417a016875a3918}\label{namespaceyenot_a8ba9c1f83b4502a37417a016875a3918}} 
 \index{yenot@{yenot}!use\+\_\+detection\+\_\+value\+\_\+int@{use\+\_\+detection\+\_\+value\+\_\+int}}
@@ -688,5 +736,5 @@ const int \mbox{\hyperlink{namespaceyenot_a4e9a58fa114bcb3d3ae09fb62129f2c9}{set
 
 
 
-См. определение в файле Yenot.\+h строка 49
+См. определение в файле Yenot.\+h строка 81
 

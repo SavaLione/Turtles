@@ -1,8 +1,8 @@
-.TH "Yenot.h" 3 "Сб 28 Апр 2018" "Yenot" \" -*- nroff -*-
+.TH "Yenot.h" 3 "Вс 29 Апр 2018" "Yenot" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-Yenot.h \- :D  
+Yenot.h \- Заголовочный файл с пространством имён, которое хранит в себе константы\&.  
 
 .SH SYNOPSIS
 .br
@@ -16,6 +16,7 @@ Yenot.h \- :D
 .ti -1c
 .RI " \fByenot\fP"
 .br
+.RI "Пространство имён с константами "
 .in -1c
 .SS "Переменные"
 
@@ -23,12 +24,15 @@ Yenot.h \- :D
 .ti -1c
 .RI "const char \fByenot::settings_file_name\fP [] = '\&./config\&.ini'"
 .br
+.RI "Файл с настройками "
 .ti -1c
 .RI "const char \fByenot::logger_file_name\fP [] = 'Yenot\&.log'"
 .br
+.RI "Файл с логами "
 .ti -1c
 .RI "const char \fByenot::database_file_name\fP [] = 'database\&.xml'"
 .br
+.RI "Файл, в котором хранятся "
 .ti -1c
 .RI "const char \fByenot::database_name\fP [] = 'database'"
 .br
@@ -41,6 +45,7 @@ Yenot.h \- :D
 .ti -1c
 .RI "const int \fByenot::buffer_size\fP = 128"
 .br
+.RI "Стандартный размер буфера "
 .ti -1c
 .RI "const char \fByenot::settings_block_core\fP [] = 'Core'"
 .br
@@ -194,13 +199,18 @@ Yenot.h \- :D
 .in -1c
 .SH "Подробное описание"
 .PP 
-:D 
+Заголовочный файл с пространством имён, которое хранит в себе константы\&. 
 
 
 .PP
 \fBАвтор:\fP
 .RS 4
 SavaLione 
+.RE
+.PP
+\fBДата:\fP
+.RS 4
+3 Apr 2018 
 .RE
 .PP
 

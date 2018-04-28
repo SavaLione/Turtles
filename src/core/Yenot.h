@@ -1,25 +1,57 @@
 /**
-	\file
-	\brief :D
-	\author SavaLione
+	@file
+	@brief Заголовочный файл с пространством имён, которое хранит в себе константы.
+	@author SavaLione
+	@date 3 Apr 2018
 */
 #ifndef YENOT_H
 #define YENOT_H
 
 #include <opencv2/opencv.hpp>
 
+/**
+	@brief Пространство имён с константами
+	
+	General - Основные константы
+	
+	Core - Ядро
+	
+	Filters - Фильтры
+	
+	Logger - Модуль логирования
+	
+	Log messages - Сообщения для вывода в логами
+	
+	Car model - Пример
+*/
 namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	//	General
 	///////////////////////////////////////////////////////////////////////////////
+	
+	/// Файл с настройками
 	const char settings_file_name[] = "./config.ini";
+	
+	/// Файл с логами
 	const char logger_file_name[] = "Yenot.log";
+	
+	/// Файл, в котором хранятся 
 	const char database_file_name[] = "database.xml";
+	
+	/// 
 	const char database_name[] = "database";
-
+	
+	/// Расширение для хранения данных
+	///
+	/// Поддерживается xml и yaml
 	const char extensions_database_member[] = ".xml";
+	
+	/// Расширение для хранения фотографий
+	///
+	///Поддерживается png jpg jpeg
 	const char extensions_database_member_photo[] = ".png";
-
+	
+	/// Стандартный размер буфера
 	const int buffer_size = 128;
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -59,12 +91,26 @@ namespace yenot {
 	const int diameter_each_pixel = 9;
 	const int sigmaColor = 75;
 	const int sigmaSpace = 75;
-
-	const int gaussianblur_kernel_x = 5; //odd
-	const int gaussianblur_kernel_y = 5; //odd
-
-	const int blur_kernel_x = 5; //odd
-	const int blur_kernel_y = 5; //odd
+	
+	/// Фильтр Гаусса. Размер ядра по x
+	///
+	/// Число не чётное
+	const int gaussianblur_kernel_x = 5;
+	
+	/// Фильтр Гаусса. Размер ядра по x
+	///
+	/// Число не чётное
+	const int gaussianblur_kernel_y = 5;
+	
+	/// Размытие. Размер ядра по x
+	///
+	/// Число не чётное
+	const int blur_kernel_x = 5;
+	
+	/// Размытие. Размер ядра по x
+	///
+	/// Число не чётное
+	const int blur_kernel_y = 5;
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Logger

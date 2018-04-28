@@ -1,3 +1,9 @@
+/**
+	@file
+	@brief Модуль логирования. Поддерживает логирование со временем и логирование с различными уровнями.
+	@author SavaLione
+	@date 1 Apr 2018
+*/
 #include <string>
 #include <fstream>
 #include <windows.h>
@@ -8,12 +14,18 @@
 #include "..\core\Yenot.h"
 #include "..\core\Core.h"
 
-/** Основная функция для логирования
-	\param[in] level Уровень логировния
-	\param[in] text текст для логировния
+/**
+	@brief Основная функция для логирования
+	
+	Логирование возможно с разными уровнями и с выводом времени
+	
+	@param [in] level Уровень логирования
+	@param [in] text Текст для логирования
 */
 void logger(char *level, char *text) {
-	// Проверяем, нужно ли логировать
+	/*
+		Проверяем, нужно ли логировать.
+	*/
 	if (getSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_log)) {
 		/* 
 			Проверка наличия файла с выводом лога в папке.
@@ -23,8 +35,17 @@ void logger(char *level, char *text) {
 			std::ofstream fout(yenot::logger_file_name);
 			fout.close();
 		}
+		/*
+			Проверка, нужно ли логировать с выводом времени
+				Создаём строки, которые будут хранить в себе значения текущего времени
+				Создаём структуру SYSTEMTIME из которой будем брать текущее время
+				Получаем текущее время системы и по адресу присваиваем значение структуре time
+				Помещаем текущее время системы в строки.
+			--------------------------------------------------------------------------------------------------------[Изменить код, т.к string не нужен
+				
+		*/
 		if (getSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_logTime)) {
-			std::string year = "", month = "", day = "", hour = "", minute = "", second;
+			std::string year = "", month = "", day = "", hour = "", minute = "", second = "";
 			SYSTEMTIME time;
 			GetLocalTime(&time);
 
@@ -57,10 +78,13 @@ void logger(char *level, char *text) {
 	}
 }
 
-/** Функция для простого логирования.
-	Используется для замера скорости выполнения некоторых алгоритмов.
-	\param[in] x Время
-	\param[in] y Итерация
+/**
+	@brief Функция для простого логирования.
+	
+		Используется для замера скорости выполнения некоторых алгоритмов.
+	
+	@param [in] x Время
+	@param [in] y Итерация
 */
 void logger_xy(double x, int y) {
 	if (getSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_log)) {
