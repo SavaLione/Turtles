@@ -1,7 +1,7 @@
 Yenot
 =====
 <p align="left">
-<img width="625" height="400" src="https://cdn-images-1.medium.com/max/1600/1*R2LMOGWg3BlVCeMR-Y9Dhw.jpeg">
+<img width="625" height="400" src="https://github.com/SavaLione/Yenot/raw/master/assets/Yenot.gif">
 </p>
 
 Что это?
