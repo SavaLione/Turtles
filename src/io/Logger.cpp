@@ -14,6 +14,9 @@
 #include "..\core\Yenot.h"
 #include "..\core\Core.h"
 
+using namespace std;
+using namespace yenot;
+
 /**
 	@brief Основная функция для логирования
 	
@@ -26,13 +29,13 @@ void logger(char *level, char *text) {
 	/*
 		Проверяем, нужно ли логировать.
 	*/
-	if (getSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_log)) {
+	if (getSettings((char*)settings_block_logger, (char*)settings_log)) {
 		/* 
 			Проверка наличия файла с выводом лога в папке.
 			Если файл не найден, то создаём его
 		*/
-		if (!check_file((char*)yenot::logger_file_name)) {
-			std::ofstream fout(yenot::logger_file_name);
+		if (!check_file((char*)logger_file_name)) {
+			ofstream fout(logger_file_name);
 			fout.close();
 		}
 		/*
@@ -44,8 +47,8 @@ void logger(char *level, char *text) {
 			--------------------------------------------------------------------------------------------------------[Изменить код, т.к string не нужен
 				
 		*/
-		if (getSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_logTime)) {
-			std::string year = "", month = "", day = "", hour = "", minute = "", second = "";
+		if (getSettings((char*)settings_block_logger, (char*)settings_logTime)) {
+			char *year = "", *month = "", *day = "", *hour = "", *minute = "", *second = "";
 			SYSTEMTIME time;
 			GetLocalTime(&time);
 
@@ -56,7 +59,7 @@ void logger(char *level, char *text) {
 			if (time.wMinute < 10) { minute = "0"; }
 			if (time.wSecond < 10) { second = "0"; }
 
-			std::ofstream fout(yenot::logger_file_name, std::ios_base::app);
+			ofstream fout(logger_file_name, ios_base::app);
 
 			fout
 				<< "["
@@ -70,7 +73,7 @@ void logger(char *level, char *text) {
 				<< "\n";
 			fout.close();
 		} else {
-			std::ofstream fout(yenot::logger_file_name, std::ios_base::app);
+			ofstream fout(logger_file_name, ios_base::app);
 			fout
 				<< "[" << level << "]" << text << "\n";
 			fout.close();
@@ -99,8 +102,8 @@ void logger_xy(double x, int y) {
 	///
 	/// Закрываем файл
 	/// @code
-	if (getSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_log)) {
-		std::ofstream fout(yenot::logger_file_name, std::ios_base::app);
+	if (getSettings((char*)settings_block_logger, (char*)settings_log)) {
+		ofstream fout(logger_file_name, ios_base::app);
 		char ch_x[1024];
 
 		sprintf(ch_x, "%f", x);

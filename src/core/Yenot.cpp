@@ -20,6 +20,7 @@
 
 using namespace cv;
 using namespace std;
+using namespace yenot;
 
 int main(int argc, char* argv[]) {
 	int i_return = 0;
@@ -29,10 +30,10 @@ int main(int argc, char* argv[]) {
 	src = imread(imagename, 1);
 
 	settings_initialization();
-	clearning((yenot::database_name + std::string("\\") + yenot::database_file_name), yenot::database_name);
+	clearning((database_name + std::string("\\") + database_file_name), database_name);
 
 
-	resize(src, dst, Size(yenot::settings_size_photo, yenot::settings_size_photo));
+	resize(src, dst, Size(settings_size_photo, settings_size_photo));
 	if (dst.data) { src = dst.clone(); }
 
 	noiseRemoval(src, dst);
@@ -43,8 +44,8 @@ int main(int argc, char* argv[]) {
 
 	detection(src);
 
-	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::save_processed_image, yenot::save_processed_image_value_int)) {
-		imwrite((char*)yenot::save_processed_image_name, src);
+	if (getSettings((char*)settings_block_core, (char*)save_processed_image, save_processed_image_value_int)) {
+		imwrite((char*)save_processed_image_name, src);
 	}
 
 	system("pause");

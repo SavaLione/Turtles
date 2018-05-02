@@ -20,6 +20,7 @@
 
 using namespace cv;
 using namespace std;
+using namespace yenot;
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Core
@@ -31,24 +32,24 @@ using namespace std;
 	
 	Также проверяем режим обработки изображений. Быстрый или нет.
 	
-	Для обычного режима используется - bilateral(mat_in, mat_out);
+	Для обычного режима используется двусторонний фильтр - bilateralFilter();
 	
-	Для быстрого режима используется - gaussianblur(mat_in, mat_out);
+	Для быстрого режима используется Гауссовый фильтр размытия изображений - GaussianBlur();
 	
 	@param [in] mat_in Матрица с изображением для обработки
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
-void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, yenot::settings_noiseReduction_value_int)) {
+void noiseRemoval(const Mat& mat_in, Mat& mat_out) {
+	if (getSettings((char*)settings_block_core, (char*)settings_noiseReduction, settings_noiseReduction_value_int)) {
 		// If no fast
-		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value_int)) {
-			bilateral(mat_in, mat_out);
+		if (!getSettings((char*)settings_block_core, (char*)settings_fastmode, settings_fastmode_value_int)) {
+			bilateralFilter(mat_in, mat_out, diameter_each_pixel, sigmaColor, sigmaSpace);
 		} else {
-			gaussianblur(mat_in, mat_out);
-			logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_fMode);
+			GaussianBlur(mat_in, mat_out, Size(gaussianblur_kernel_x, gaussianblur_kernel_y), 0, 0);
+			logger((char*)logger_level_warning, (char*)logger_message_fMode);
 		}
 	} else {
-		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_noiseRemoval);
+		logger((char*)logger_level_warning, (char*)logger_message_noiseRemoval);
 	}
 }
 
@@ -66,49 +67,49 @@ void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	@param [in] mat_in Матрица с изображением для обработки
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
-void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_lineDetection, yenot::settings_lineDetection_value_int)) {
-		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value_int)) {
+void lineDetection(const Mat& mat_in, Mat& mat_out) {
+	if (getSettings((char*)settings_block_core, (char*)settings_lineDetection, settings_lineDetection_value_int)) {
+		if (!getSettings((char*)settings_block_core, (char*)settings_fastmode, settings_fastmode_value_int)) {
 			canny(mat_in, mat_out);
 		} else {
 			/*===============================================================================================================================================================================*/
-			logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_fMode);
+			logger((char*)logger_level_warning, (char*)logger_message_fMode);
 		}
 	} else {
-		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_lDetection);
+		logger((char*)logger_level_warning, (char*)logger_message_lDetection);
 	}
 }
 
-void databaseAdd(std::string filename) {
-	std::vector<std::string> stringVector;
-	cv::FileStorage fsIn;
-	fsIn.open((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::READ);
-	fsIn[yenot::database_name] >> stringVector;
+void databaseAdd(string filename) {
+	vector<string> stringVector;
+	FileStorage fsIn;
+	fsIn.open((database_name + string("\\") + database_file_name), FileStorage::READ);
+	fsIn[database_name] >> stringVector;
 	fsIn.release(); //idk
 
 	stringVector.insert(stringVector.end(), filename);
 
-	cv::FileStorage fsOut((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::WRITE);
-	fsOut << yenot::database_name << stringVector;
+	FileStorage fsOut((database_name + string("\\") + database_file_name), FileStorage::WRITE);
+	fsOut << database_name << stringVector;
 	fsOut.release();
 }
 
-void clearning(std::string filename, std::string variable) {
-	std::vector<std::string> stringVector;
-	cv::FileStorage fsIn;
-	fsIn.open(filename, cv::FileStorage::READ);
+void clearning(string filename, string variable) {
+	vector<string> stringVector;
+	FileStorage fsIn;
+	fsIn.open(filename, FileStorage::READ);
 	fsIn[variable] >> stringVector;
 	fsIn.release(); //idk
 
-	std::sort(stringVector.begin(), stringVector.end());
-	stringVector.resize(std::unique(stringVector.begin(), stringVector.end()) - stringVector.begin());
+	sort(stringVector.begin(), stringVector.end());
+	stringVector.resize(unique(stringVector.begin(), stringVector.end()) - stringVector.begin());
 
-	cv::FileStorage fsOut(filename, cv::FileStorage::WRITE);
+	FileStorage fsOut(filename, FileStorage::WRITE);
 	fsOut << variable << stringVector;
 	fsOut.release();
 }
 
-bool detectionLogo(const Mat& mat_logo, std::string cascadefile) {
+bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 	bool b_return = false;
 	Mat image = mat_logo;
 
@@ -121,8 +122,8 @@ bool detectionLogo(const Mat& mat_logo, std::string cascadefile) {
 	}
 
 	// Detect object
-	std::vector<Rect> detectObject;
-	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(yenot::settings_size_photo, yenot::settings_size_photo));
+	vector<Rect> detectObject;
+	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(settings_size_photo, settings_size_photo));
 
 	if (detectObject.size() != 0) {
 		// ≈сть на фото
@@ -133,18 +134,18 @@ bool detectionLogo(const Mat& mat_logo, std::string cascadefile) {
 }
 
 void help() {
-	std::cout << " Usage: Yenot.exe <image>" << std::endl;
+	cout << " Usage: Yenot.exe <image>" << endl;
 }
 
 void detection(const Mat& mat_logo) {
-	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::use_detection, yenot::use_detection_value_int)) {
-		std::vector<std::string> stringVector;
-		cv::FileStorage fsIn;
-		fsIn.open((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::READ);
-		fsIn[yenot::database_name] >> stringVector;
+	if (getSettings((char*)settings_block_core, (char*)use_detection, use_detection_value_int)) {
+		vector<string> stringVector;
+		FileStorage fsIn;
+		fsIn.open((database_name + string("\\") + database_file_name), FileStorage::READ);
+		fsIn[database_name] >> stringVector;
 		fsIn.release();
 
-		std::vector<bool> boolVector;
+		vector<bool> boolVector;
 
 		for (int i = 0; i <= (stringVector.size() - 1); i++) {
 			if (detectionLogo(mat_logo, stringVector[i])) {
@@ -163,24 +164,6 @@ void detection(const Mat& mat_logo) {
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
 ///////////////////////////////////////////////////////////////////////////////
-/**
-	@brief Функция для обработки изображений.
-	
-	Двусторонний фильтр
-	
-	@param [in] mat_in Матрица с изображением для обработки
-	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
-*/
-void bilateral(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	/**
-		src Ц Source 8-bit or floating-point, 1-channel or 3-channel image.
-		dst Ц Destination image of the same size and type as src .
-		d Ц Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace.
-		sigmaColor Ц Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color.
-		sigmaSpace Ц Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .
-	*/
-	bilateralFilter(mat_in, mat_out, yenot::diameter_each_pixel, yenot::sigmaColor, yenot::sigmaSpace);
-}
 
 /**
 	@brief Функция для обработки изображений.
@@ -190,8 +173,8 @@ void bilateral(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	@param [in] mat_in Матрица с изображением для обработки
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
-void blur(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	cv::blur(mat_in, mat_out, cv::Size(yenot::blur_kernel_x, yenot::blur_kernel_y));
+void blur(const Mat& mat_in, Mat& mat_out) {
+	blur(mat_in, mat_out, Size(blur_kernel_x, blur_kernel_y));
 }
 
 /**
@@ -202,20 +185,8 @@ void blur(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	@param [in] mat_in Матрица с изображением для обработки
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
-void fastNoiseRemovalGrey(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	cv::fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
-}
-
-/**
-	@brief Функция для обработки изображений.
-	
-	Гауссовый фильтр для размытия изображений.
-	
-	@param [in] mat_in Матрица с изображением для обработки
-	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
-*/
-void gaussianblur(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	cv::GaussianBlur(mat_in, mat_out, cv::Size(yenot::gaussianblur_kernel_x, yenot::gaussianblur_kernel_y), 0, 0);
+void fastNoiseRemovalGrey(const Mat& mat_in, Mat& mat_out) {
+	fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
 }
 
 /**
@@ -226,49 +197,49 @@ void gaussianblur(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	@param [in] mat_in Матрица с изображением для обработки
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
-void fastNoiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	cv::fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
+void fastNoiseRemoval(const Mat& mat_in, Mat& mat_out) {
+	fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Settings
 ///////////////////////////////////////////////////////////////////////////////
-std::string getSettingsString(char *block, char *value) {
-	char text[yenot::buffer_size];
-	GetPrivateProfileString(block, value, yenot::settings_block_default, text, yenot::buffer_size, yenot::settings_file_name);
+string getSettingsString(char *block, char *value) {
+	char text[buffer_size];
+	GetPrivateProfileString(block, value, settings_block_default, text, buffer_size, settings_file_name);
 	return text;
 }
 
-std::string getSettingsString(char *block, char *value, char *ch_return_default) {
-	char text[yenot::buffer_size];
-	GetPrivateProfileString(block, value, ch_return_default, text, yenot::buffer_size, yenot::settings_file_name);
+string getSettingsString(char *block, char *value, char *ch_return_default) {
+	char text[buffer_size];
+	GetPrivateProfileString(block, value, ch_return_default, text, buffer_size, settings_file_name);
 	return text;
 }
 
 int getSettings(char *block, char *value) {
-	return GetPrivateProfileInt(block, value, -1, yenot::settings_file_name);
+	return GetPrivateProfileInt(block, value, -1, settings_file_name);
 }
 
 int getSettings(char *block, char *value, int i_return_default) {
-	return GetPrivateProfileInt(block, value, i_return_default, yenot::settings_file_name);
+	return GetPrivateProfileInt(block, value, i_return_default, settings_file_name);
 }
 
 void setSettings(char *block, char *value, char *text) {
-	WritePrivateProfileString(block, value, text, yenot::settings_file_name);
+	WritePrivateProfileString(block, value, text, settings_file_name);
 }
 
 bool check_file(char *filename) {
 	bool b_return = false;
-	std::ifstream file;
+	ifstream file;
 	file.open(filename);
 	if (file) {
 		b_return = true;
 	}
 	return b_return;
 }
-bool check_file(std::string filename) {
+bool check_file(string filename) {
 	bool b_return = false;
-	std::ifstream file;
+	ifstream file;
 	file.open(filename);
 	if (file) {
 		b_return = true;
@@ -277,65 +248,64 @@ bool check_file(std::string filename) {
 }
 
 void settings_initialization() {
-	if ((_mkdir((char*)yenot::database_name)) == 0) {
-		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_cDir);
+	if ((_mkdir((char*)database_name)) == 0) {
+		logger((char*)logger_level_warning, (char*)logger_message_cDir);
 	} else {
-		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_cDir_not);
+		logger((char*)logger_level_warning, (char*)logger_message_cDir_not);
 	}
-	if (!check_file((char*)yenot::settings_file_name)) {
-		createFile((char*)yenot::settings_file_name);
+	if (!check_file((char*)settings_file_name)) {
+		createFile((char*)settings_file_name);
 
-		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, (char*)yenot::settings_fastmode_value);
-		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, (char*)yenot::settings_noiseReduction_value);
-		setSettings((char*)yenot::settings_block_core, (char*)yenot::settings_machineLearning, (char*)yenot::settings_machineLearning_value);
-		setSettings((char*)yenot::settings_block_core, (char*)yenot::use_detection, (char*)yenot::use_detection_value);
-		setSettings((char*)yenot::settings_block_core, (char*)yenot::save_processed_image, (char*)yenot::save_processed_image_value);
+		setSettings((char*)settings_block_core, (char*)settings_fastmode, (char*)settings_fastmode_value);
+		setSettings((char*)settings_block_core, (char*)settings_noiseReduction, (char*)settings_noiseReduction_value);
+		setSettings((char*)settings_block_core, (char*)settings_machineLearning, (char*)settings_machineLearning_value);
+		setSettings((char*)settings_block_core, (char*)use_detection, (char*)use_detection_value);
+		setSettings((char*)settings_block_core, (char*)save_processed_image, (char*)save_processed_image_value);
 
-		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_log, (char*)yenot::settings_log_value);
-		setSettings((char*)yenot::settings_block_logger, (char*)yenot::settings_logTime, (char*)yenot::settings_logTime_value);
+		setSettings((char*)settings_block_logger, (char*)settings_log, (char*)settings_log_value);
+		setSettings((char*)settings_block_logger, (char*)settings_logTime, (char*)settings_logTime_value);
 
-		setSettings((char*)yenot::settings_block_carModel, (char*)yenot::settings_carModel_example, (char*)yenot::settings_carModel_example_description);
+		setSettings((char*)settings_block_carModel, (char*)settings_carModel_example, (char*)settings_carModel_example_description);
 
-		setSettings((char*)yenot::settings_block_description, (char*)yenot::settings_carModel_example_file, (char*)yenot::settings_description_example);
+		setSettings((char*)settings_block_description, (char*)settings_carModel_example_file, (char*)settings_description_example);
 
 	}
-	if (!check_file(yenot::database_name + std::string("\\") + yenot::database_file_name)) {
-		std::vector<std::string> stringVector;
-		cv::FileStorage fsOut((yenot::database_name + std::string("\\") + yenot::database_file_name), cv::FileStorage::WRITE);
-		fsOut << yenot::database_name << stringVector;
+	if (!check_file(database_name + string("\\") + database_file_name)) {
+		vector<string> stringVector;
+		FileStorage fsOut((database_name + string("\\") + database_file_name), FileStorage::WRITE);
+		fsOut << database_name << stringVector;
 		fsOut.release();
 	}
-	if (!check_file(yenot::database_name + std::string("\\") + yenot::settings_carModel_example_file)) {
+	if (!check_file(database_name + string("\\") + settings_carModel_example_file)) {
 
-		databaseAdd(yenot::settings_carModel_example_file);
+		databaseAdd(settings_carModel_example_file);
 	}
 }
 
 void createFile(char *file_name) {
-	std::ofstream fout(file_name);
+	ofstream fout(file_name);
 	fout.close();
 }
 
-void createDir(std::string namedir) {
+void createDir(string namedir) {
 	if ((_mkdir(namedir.c_str())) == 0) {
-		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_cDir);
+		logger((char*)logger_level_warning, (char*)logger_message_cDir);
 	} else {
-		logger((char*)yenot::logger_level_warning, (char*)yenot::logger_message_cDir_not);
+		logger((char*)logger_level_warning, (char*)logger_message_cDir_not);
 	}
-	//_mkdir(namedir.c_str());
 }
 
-std::string description(string value) {
+string description(string value) {
 	string s_ret;
-	s_ret = getSettingsString((char*)yenot::settings_block_description, (char*)value.c_str(), (char*)yenot::settings_description_ifnotfound);
+	s_ret = getSettingsString((char*)settings_block_description, (char*)value.c_str(), (char*)settings_description_ifnotfound);
 	return s_ret;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Line detector
 ///////////////////////////////////////////////////////////////////////////////
-void canny(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	cv::Mat gray, edge, draw;
+void canny(const Mat& mat_in, Mat& mat_out) {
+	Mat gray, edge, draw;
 	cvtColor(mat_in, gray, CV_BGR2GRAY);
 	Canny(gray, edge, 50, 150, 3);
 	edge.convertTo(mat_out, CV_8U);
@@ -350,8 +320,8 @@ void v_test() {
 		unsigned int start_time = clock(); // начальное врем¤
 
 		///////////////////////////////////////////////////////////////////////////////
-		cv::Mat image, out;
-		image = cv::imread("a.png", 1);
+		Mat image, out;
+		image = imread("a.png", 1);
 		canny(image, out);
 		///////////////////////////////////////////////////////////////////////////////
 
