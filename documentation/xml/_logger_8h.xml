@@ -56,8 +56,31 @@
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="src/io/Logger.h" line="18" column="1" bodyfile="src/io/Logger.cpp" bodystart="25" bodyend="79"/>
+<para>Проверяем, нужно ли логировать.</para><para>Проверка наличия файла с выводом лога в папке.</para><para>Если файл не найден, то создаём его <linebreak/>
+<linebreak/>
+<linebreak/>
+ Проверка, нужно ли логировать с выводом времени</para><para>Если нужно ли логировать с выводом времени, то <verbatim>Создаём строки, которые будут хранить в себе значения текущего времени
+
+Создаём структуру SYSTEMTIME из которой будем брать текущее время
+
+Получаем текущее время системы и по адресу присваиваем значение структуре time
+
+Помещаем текущее время системы в строки.
+
+Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл
+</verbatim></para><para>иначе <verbatim>Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл  </verbatim></para><para>Записываем данные в файл.</para><para>Пример: <programlisting><codeline><highlight class="normal">[2018/05/02<sp/>17:17:03]<sp/>[WARN]Folder<sp/>created.</highlight></codeline>
+</programlisting> <linebreak/>
+ Записываем данные в файл.</para><para>Пример: <programlisting><codeline><highlight class="normal">[WARN]Folder<sp/>created.</highlight></codeline>
+</programlisting> </para>        </inbodydescription>
+        <location file="src/io/Logger.h" line="18" column="1" bodyfile="src/io/Logger.cpp" bodystart="28" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="_logger_8h_1a5e632a6ec68609b973a180293035b94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -92,8 +115,8 @@
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
-<para>Проверяем, нужно ли логировать.</para><para>Открываем файл для вывода лога в конце и для записи</para><para>Создаём буфер - массив символов char для вывода времени с плавающей запятой</para><para>Присваиваем массиву символов время, полученное с переменной x</para><para>Записываем данные в файл для логирования</para><para>Закрываем файл <programlisting><codeline><highlight class="normal">if<sp/>(getSettings((char*)yenot::settings_block_logger,<sp/>(char*)yenot::settings_log))<sp/>{</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(yenot::logger_file_name,<sp/>std::ios_base::app);</highlight></codeline>
+<para>Проверяем, нужно ли логировать.</para><para>Открываем файл для вывода лога в конце и для записи</para><para>Создаём буфер - массив символов char для вывода времени с плавающей запятой</para><para>Присваиваем массиву символов время, полученное с переменной x</para><para>Открываем файл для логирования. Файл открываем для записи в конце.</para><para>Записываем данные в файл</para><para>Закрываем файл <programlisting><codeline><highlight class="normal">if<sp/>(getSettings((char*)settings_block_logger,<sp/>(char*)settings_log))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ofstream<sp/>fout(logger_file_name,<sp/>ios_base::app);</highlight></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>char<sp/>ch_x[1024];</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sprintf(ch_x,<sp/>&quot;%f&quot;,<sp/>x);</highlight></codeline>
@@ -102,7 +125,7 @@
 <codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
 <codeline><highlight class="normal">}</highlight></codeline>
 </programlisting> </para>        </inbodydescription>
-        <location file="src/io/Logger.h" line="28" column="1" bodyfile="src/io/Logger.cpp" bodystart="89" bodyend="112"/>
+        <location file="src/io/Logger.h" line="28" column="1" bodyfile="src/io/Logger.cpp" bodystart="116" bodyend="141"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

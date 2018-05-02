@@ -140,8 +140,34 @@ $(function() {
   </table>
   </dd>
 </dl>
+<p>Проверяем, нужно ли логировать.</p>
+<p>Проверка наличия файла с выводом лога в папке.</p>
+<p>Если файл не найден, то создаём его <br />
+<br />
+<br />
+ Проверка, нужно ли логировать с выводом времени</p>
+<p>Если нужно ли логировать с выводом времени, то </p><pre class="fragment">Создаём строки, которые будут хранить в себе значения текущего времени
 
-<p class="definition">См. определение в файле <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> строка <a class="el" href="_logger_8cpp_source.html#l00025">25</a></p>
+Создаём структуру SYSTEMTIME из которой будем брать текущее время
+
+Получаем текущее время системы и по адресу присваиваем значение структуре time
+
+Помещаем текущее время системы в строки.
+
+Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл
+</pre><p>иначе </p><pre class="fragment">Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл  </pre><p>Записываем данные в файл.</p>
+<p>Пример: </p><div class="fragment"><div class="line">[2018/05/02 17:17:03] [WARN]Folder created.</div></div><!-- fragment --><p> <br />
+ Записываем данные в файл.</p>
+<p>Пример: </p><div class="fragment"><div class="line">[WARN]Folder created.</div></div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> строка <a class="el" href="_logger_8cpp_source.html#l00028">28</a></p>
 
 </div>
 </div>
@@ -184,9 +210,10 @@ $(function() {
 <p>Открываем файл для вывода лога в конце и для записи</p>
 <p>Создаём буфер - массив символов char для вывода времени с плавающей запятой</p>
 <p>Присваиваем массиву символов время, полученное с переменной x</p>
-<p>Записываем данные в файл для логирования</p>
-<p>Закрываем файл </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (<a class="code" href="_core_8cpp.html#a68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a>((<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#a13c8b24e2bbaab0c3bf3fe14e3f495bb">yenot::settings_block_logger</a>, (<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#ad8a7ef4466cc151f6f380b4c4ccbfa66">yenot::settings_log</a>)) {</div><div class="line">    std::ofstream fout(<a class="code" href="namespaceyenot.html#ab82af39640477c63378716f6699d49fe">yenot::logger_file_name</a>, std::ios_base::app);</div><div class="line">    <span class="keywordtype">char</span> ch_x[1024];</div><div class="line"></div><div class="line">    sprintf(ch_x, <span class="stringliteral">&quot;%f&quot;</span>, x);</div><div class="line"></div><div class="line">    fout &lt;&lt; ch_x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line">    fout.close();</div><div class="line">}</div></div><!-- fragment --> 
-<p class="definition">См. определение в файле <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> строка <a class="el" href="_logger_8cpp_source.html#l00089">89</a></p>
+<p>Открываем файл для логирования. Файл открываем для записи в конце.</p>
+<p>Записываем данные в файл</p>
+<p>Закрываем файл </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (<a class="code" href="_core_8cpp.html#a68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a>((<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#a13c8b24e2bbaab0c3bf3fe14e3f495bb">settings_block_logger</a>, (<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#ad8a7ef4466cc151f6f380b4c4ccbfa66">settings_log</a>)) {</div><div class="line">    ofstream fout(<a class="code" href="namespaceyenot.html#ab82af39640477c63378716f6699d49fe">logger_file_name</a>, ios_base::app);</div><div class="line">    <span class="keywordtype">char</span> ch_x[1024];</div><div class="line"></div><div class="line">    sprintf(ch_x, <span class="stringliteral">&quot;%f&quot;</span>, x);</div><div class="line"></div><div class="line">    fout &lt;&lt; ch_x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line">    fout.close();</div><div class="line">}</div></div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> строка <a class="el" href="_logger_8cpp_source.html#l00116">116</a></p>
 
 </div>
 </div>

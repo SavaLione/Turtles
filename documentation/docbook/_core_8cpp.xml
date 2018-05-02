@@ -57,8 +57,8 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a438c92819ed0ad4fc2e187ed5f5a2e27">noiseRemoval</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+                        <para>void <link linkend="_core_8cpp_1ab8ed3baad2f1d9b6b82bf74da9dd3d3a">noiseRemoval</link> (
+const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
 </para>
                     </listitem>
                 </itemizedlist>
@@ -66,8 +66,8 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1aa7c37c22318217cd913a50800eb336a3">lineDetection</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+                        <para>void <link linkend="_core_8cpp_1a9e277d82296b5ed9eda6266d8dcc24a3">lineDetection</link> (
+const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
 </para>
                     </listitem>
                 </itemizedlist>
@@ -75,24 +75,24 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a5a4a30ca6128e13ce1ec6efaa23dd6c7">databaseAdd</link> (
-std::string filename)</para>
+                        <para>void <link linkend="_core_8cpp_1a10a0271bceabc9c1a0d736ab93113212">databaseAdd</link> (
+string filename)</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1aebd676a1476aa4d75b280db8ae09d11c">clearning</link> (
-std::string filename, std::string variable)</para>
+                        <para>void <link linkend="_core_8cpp_1a78cdbfbe907847e78cfb387df76d99f9">clearning</link> (
+string filename, string variable)</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>bool <link linkend="_core_8cpp_1ac75bd6101866dc6b17aa1dd79723eb52">detectionLogo</link> (
-const Mat &amp; mat_logo, std::string cascadefile)</para>
+                        <para>bool <link linkend="_core_8cpp_1a76b0b7de3d9fa0de10d66740466ebc14">detectionLogo</link> (
+const Mat &amp; mat_logo, string cascadefile)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -115,8 +115,8 @@ const Mat &amp; mat_logo)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a0a1a2acbf75cc1c23ae101ebca89c816">bilateral</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+                        <para>void <link linkend="_core_8cpp_1a52e35dcbe19501f48a77bffff1ab742d">blur</link> (
+const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
 </para>
                     </listitem>
                 </itemizedlist>
@@ -124,8 +124,8 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a64b67e9219ba96b984256d89bc46c2f5">blur</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+                        <para>void <link linkend="_core_8cpp_1aede9a861af03b2d343843baa70ab729e">fastNoiseRemovalGrey</link> (
+const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
 </para>
                     </listitem>
                 </itemizedlist>
@@ -133,8 +133,8 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a39eb2014e38b68bd4e6453a24e51d896">fastNoiseRemovalGrey</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+                        <para>void <link linkend="_core_8cpp_1a9c94d105a9b6a7a8209f68dee9432133">fastNoiseRemoval</link> (
+const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
 </para>
                     </listitem>
                 </itemizedlist>
@@ -142,25 +142,7 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a38f0b724796df5703cf0c1c77b3942fa">gaussianblur</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_core_8cpp_1ab5eb0c124067d093b9001373071f4636">fastNoiseRemoval</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>std::string <link linkend="_core_8cpp_1a33e1cb874acab9d31a98a12cdd1472ce">getSettingsString</link> (
+                        <para>string <link linkend="_core_8cpp_1a61e05ff7e764817705d59ccef670c81e">getSettingsString</link> (
 char * block, char * value)</para>
                     </listitem>
                 </itemizedlist>
@@ -168,7 +150,7 @@ char * block, char * value)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>std::string <link linkend="_core_8cpp_1a3a0f1e87eb01bdd16c4a7e365aa283eb">getSettingsString</link> (
+                        <para>string <link linkend="_core_8cpp_1a50535cebf45c8d7cbffd29274699e5f5">getSettingsString</link> (
 char * block, char * value, char * ch_return_default)</para>
                     </listitem>
                 </itemizedlist>
@@ -208,8 +190,8 @@ char * filename)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>bool <link linkend="_core_8cpp_1a041e0f6c7598005e2e71f7da64197d65">check_file</link> (
-std::string filename)</para>
+                        <para>bool <link linkend="_core_8cpp_1ad0a55567f006a236b894f86f5f2e8917">check_file</link> (
+string filename)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -225,31 +207,35 @@ std::string filename)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8cpp_1a8f34a2030acfb5567678ab2bba25f3c1">createFile</link> (
-char * file_name)</para>
+char * file_name)<para><emphasis>Функция для создания файла</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a912b67f6f6b05abadd055a379dd84864">createDir</link> (
-std::string namedir)</para>
+                        <para>void <link linkend="_core_8cpp_1a5ac0cd45ecb6e65e3ace40687d6ee8bc">createDir</link> (
+string namedir)<para><emphasis>Функция для создания директории</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>std::string <link linkend="_core_8cpp_1a9a68ac8e2d40e06f82cc017d723e133e">description</link> (
-string value)</para>
+                        <para>string <link linkend="_core_8cpp_1aa85ae460901348b74381239ce0517d5f">description</link> (
+string value)<para><emphasis>Функция для поиска описания марки по файлу с каскадом Хаара</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1aff2d42310702a0aab15af5ad62a59f2b">canny</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+                        <para>void <link linkend="_core_8cpp_1afe1c5d9570a4ccddf9b5105997e3ddb4">canny</link> (
+const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -257,7 +243,8 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8cpp_1aafaa59e41cfa4f5fda8c4d703394f26a">v_test</link> (
-)</para>
+)<para><emphasis>Функция для проведения тестов. Замер скорости выполнения алгоритмов.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>

@@ -59,9 +59,54 @@ Sava\+Lione
 \mbox{\tt in}  & {\em text} & Текст для логирования \\
 \hline
 \end{DoxyParams}
+Проверяем, нужно ли логировать.
+
+Проверка наличия файла с выводом лога в папке.
+
+Если файл не найден, то создаём его ~\newline
+~\newline
+~\newline
+ Проверка, нужно ли логировать с выводом времени
+
+Если нужно ли логировать с выводом времени, то \begin{DoxyVerb}Создаём строки, которые будут хранить в себе значения текущего времени
+
+Создаём структуру SYSTEMTIME из которой будем брать текущее время
+
+Получаем текущее время системы и по адресу присваиваем значение структуре time
+
+Помещаем текущее время системы в строки.
+
+Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл
+\end{DoxyVerb}
 
 
-См. определение в файле Logger.\+cpp строка 25
+иначе \begin{DoxyVerb}Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл  \end{DoxyVerb}
+
+
+Записываем данные в файл.
+
+Пример\+: 
+\begin{DoxyCode}
+[2018/05/02 17:17:03] [WARN]Folder created.
+\end{DoxyCode}
+ ~\newline
+ Записываем данные в файл.
+
+Пример\+: 
+\begin{DoxyCode}
+[WARN]Folder created.
+\end{DoxyCode}
+ 
+
+См. определение в файле Logger.\+cpp строка 28
 
 \mbox{\Hypertarget{_logger_8cpp_a5e632a6ec68609b973a180293035b94b}\label{_logger_8cpp_a5e632a6ec68609b973a180293035b94b}} 
 \index{Logger.\+cpp@{Logger.\+cpp}!logger\+\_\+xy@{logger\+\_\+xy}}
@@ -90,13 +135,15 @@ Sava\+Lione
 
 Присваиваем массиву символов время, полученное с переменной x
 
-Записываем данные в файл для логирования
+Открываем файл для логирования. Файл открываем для записи в конце.
+
+Записываем данные в файл
 
 Закрываем файл 
 \begin{DoxyCode}
-\textcolor{keywordflow}{if} (\mbox{\hyperlink{_core_8cpp_a68b4d9ed6be7aaa93d9a6fe8fd683862}{getSettings}}((\textcolor{keywordtype}{char}*)\mbox{\hyperlink{namespaceyenot_a13c8b24e2bbaab0c3bf3fe14e3f495bb}{yenot::settings\_block\_logger}}, (\textcolor{keywordtype}{char}*)
-      \mbox{\hyperlink{namespaceyenot_ad8a7ef4466cc151f6f380b4c4ccbfa66}{yenot::settings\_log}})) \{
-    std::ofstream fout(\mbox{\hyperlink{namespaceyenot_ab82af39640477c63378716f6699d49fe}{yenot::logger\_file\_name}}, std::ios\_base::app);
+\textcolor{keywordflow}{if} (\mbox{\hyperlink{_core_8cpp_a68b4d9ed6be7aaa93d9a6fe8fd683862}{getSettings}}((\textcolor{keywordtype}{char}*)\mbox{\hyperlink{namespaceyenot_a13c8b24e2bbaab0c3bf3fe14e3f495bb}{settings\_block\_logger}}, (\textcolor{keywordtype}{char}*)
+      \mbox{\hyperlink{namespaceyenot_ad8a7ef4466cc151f6f380b4c4ccbfa66}{settings\_log}})) \{
+    ofstream fout(\mbox{\hyperlink{namespaceyenot_ab82af39640477c63378716f6699d49fe}{logger\_file\_name}}, ios\_base::app);
     \textcolor{keywordtype}{char} ch\_x[1024];
 
     sprintf(ch\_x, \textcolor{stringliteral}{"%f"}, x);
@@ -107,5 +154,5 @@ Sava\+Lione
 \end{DoxyCode}
  
 
-См. определение в файле Logger.\+cpp строка 89
+См. определение в файле Logger.\+cpp строка 116
 

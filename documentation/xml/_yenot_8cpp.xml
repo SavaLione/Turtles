@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.cpp" line="24" column="1" bodyfile="src/core/Yenot.cpp" bodystart="24" bodyend="52"/>
+        <location file="src/core/Yenot.cpp" line="25" column="1" bodyfile="src/core/Yenot.cpp" bodystart="25" bodyend="53"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -126,36 +126,37 @@
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecv" kindref="compound">cv</ref>;</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24" refid="_yenot_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_yenot_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])<sp/>{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_return<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>src,<sp/>dst;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>imagename<sp/>=<sp/>argc<sp/>==<sp/>2<sp/>?<sp/>argv[1]<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;image.png&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>src<sp/>=<sp/>imread(imagename,<sp/>1);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a8ba7f398362c96368015412b023565d0" kindref="member">settings_initialization</ref>();</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1aebd676a1476aa4d75b280db8ae09d11c" kindref="member">clearning</ref>((<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref><sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9" kindref="member">yenot::database_file_name</ref>),<sp/><ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">yenot::database_name</ref>);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceyenot" kindref="compound">yenot</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_yenot_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_yenot_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_return<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>src,<sp/>dst;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>imagename<sp/>=<sp/>argc<sp/>==<sp/>2<sp/>?<sp/>argv[1]<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;image.png&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>src<sp/>=<sp/>imread(imagename,<sp/>1);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a8ba7f398362c96368015412b023565d0" kindref="member">settings_initialization</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a78cdbfbe907847e78cfb387df76d99f9" kindref="member">clearning</ref>((<ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">database_name</ref><sp/>+<sp/>std::string(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ac18180ab326731ce58145fe9049c49b9" kindref="member">database_file_name</ref>),<sp/><ref refid="namespaceyenot_1a5c402b62f742f34e9e42756075df6ed2" kindref="member">database_name</ref>);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>resize(src,<sp/>dst,<sp/>Size(<ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">yenot::settings_size_photo</ref>,<sp/><ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">yenot::settings_size_photo</ref>));</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dst.data)<sp/>{<sp/>src<sp/>=<sp/>dst.clone();<sp/>}</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a438c92819ed0ad4fc2e187ed5f5a2e27" kindref="member">noiseRemoval</ref>(src,<sp/>dst);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dst.data)<sp/>{<sp/>src<sp/>=<sp/>dst.clone();<sp/>}</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1aa7c37c22318217cd913a50800eb336a3" kindref="member">lineDetection</ref>(src,<sp/>dst);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dst.data)<sp/>{<sp/>src<sp/>=<sp/>dst.clone();<sp/>}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1ae99907f19e7f09055012f68347a57d05" kindref="member">detection</ref>(src);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">yenot::settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab35e22cfa0a4ef6c8e960cfa75873aa0" kindref="member">yenot::save_processed_image</ref>,<sp/><ref refid="namespaceyenot_1accc48c2808f0c8c98f853614c546b5eb" kindref="member">yenot::save_processed_image_value_int</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imwrite((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1afe93bb98a5b2fd1f0cab330e4da59332" kindref="member">yenot::save_processed_image_name</ref>,<sp/>src);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;pause&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i_return;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>resize(src,<sp/>dst,<sp/>Size(<ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">settings_size_photo</ref>,<sp/><ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">settings_size_photo</ref>));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dst.data)<sp/>{<sp/>src<sp/>=<sp/>dst.clone();<sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1ab8ed3baad2f1d9b6b82bf74da9dd3d3a" kindref="member">noiseRemoval</ref>(src,<sp/>dst);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dst.data)<sp/>{<sp/>src<sp/>=<sp/>dst.clone();<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a9e277d82296b5ed9eda6266d8dcc24a3" kindref="member">lineDetection</ref>(src,<sp/>dst);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dst.data)<sp/>{<sp/>src<sp/>=<sp/>dst.clone();<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1ae99907f19e7f09055012f68347a57d05" kindref="member">detection</ref>(src);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2640b6ef7faaea51fd49edfd377c62a5" kindref="member">settings_block_core</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab35e22cfa0a4ef6c8e960cfa75873aa0" kindref="member">save_processed_image</ref>,<sp/><ref refid="namespaceyenot_1accc48c2808f0c8c98f853614c546b5eb" kindref="member">save_processed_image_value_int</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imwrite((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1afe93bb98a5b2fd1f0cab330e4da59332" kindref="member">save_processed_image_name</ref>,<sp/>src);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;pause&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i_return;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/core/Yenot.cpp"/>
   </compounddef>

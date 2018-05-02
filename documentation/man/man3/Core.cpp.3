@@ -36,21 +36,21 @@ Core.cpp \- Ядро проекта\&. Содержит все главные и
 
 .in +1c
 .ti -1c
-.RI "void \fBnoiseRemoval\fP (const cv::Mat &mat_in, cv::Mat &mat_out)"
+.RI "void \fBnoiseRemoval\fP (const Mat &mat_in, Mat &mat_out)"
 .br
 .RI "Функция для обработки изображений\&. "
 .ti -1c
-.RI "void \fBlineDetection\fP (const cv::Mat &mat_in, cv::Mat &mat_out)"
+.RI "void \fBlineDetection\fP (const Mat &mat_in, Mat &mat_out)"
 .br
 .RI "Функция для обработки изображений\&. "
 .ti -1c
-.RI "void \fBdatabaseAdd\fP (std::string filename)"
+.RI "void \fBdatabaseAdd\fP (string filename)"
 .br
 .ti -1c
-.RI "void \fBclearning\fP (std::string filename, std::string variable)"
+.RI "void \fBclearning\fP (string filename, string variable)"
 .br
 .ti -1c
-.RI "bool \fBdetectionLogo\fP (const Mat &mat_logo, std::string cascadefile)"
+.RI "bool \fBdetectionLogo\fP (const Mat &mat_logo, string cascadefile)"
 .br
 .ti -1c
 .RI "void \fBhelp\fP ()"
@@ -59,30 +59,22 @@ Core.cpp \- Ядро проекта\&. Содержит все главные и
 .RI "void \fBdetection\fP (const Mat &mat_logo)"
 .br
 .ti -1c
-.RI "void \fBbilateral\fP (const cv::Mat &mat_in, cv::Mat &mat_out)"
+.RI "void \fBblur\fP (const Mat &mat_in, Mat &mat_out)"
 .br
 .RI "Функция для обработки изображений\&. "
 .ti -1c
-.RI "void \fBblur\fP (const cv::Mat &mat_in, cv::Mat &mat_out)"
+.RI "void \fBfastNoiseRemovalGrey\fP (const Mat &mat_in, Mat &mat_out)"
 .br
 .RI "Функция для обработки изображений\&. "
 .ti -1c
-.RI "void \fBfastNoiseRemovalGrey\fP (const cv::Mat &mat_in, cv::Mat &mat_out)"
+.RI "void \fBfastNoiseRemoval\fP (const Mat &mat_in, Mat &mat_out)"
 .br
 .RI "Функция для обработки изображений\&. "
 .ti -1c
-.RI "void \fBgaussianblur\fP (const cv::Mat &mat_in, cv::Mat &mat_out)"
-.br
-.RI "Функция для обработки изображений\&. "
-.ti -1c
-.RI "void \fBfastNoiseRemoval\fP (const cv::Mat &mat_in, cv::Mat &mat_out)"
-.br
-.RI "Функция для обработки изображений\&. "
-.ti -1c
-.RI "std::string \fBgetSettingsString\fP (char *block, char *value)"
+.RI "string \fBgetSettingsString\fP (char *block, char *value)"
 .br
 .ti -1c
-.RI "std::string \fBgetSettingsString\fP (char *block, char *value, char *ch_return_default)"
+.RI "string \fBgetSettingsString\fP (char *block, char *value, char *ch_return_default)"
 .br
 .ti -1c
 .RI "int \fBgetSettings\fP (char *block, char *value)"
@@ -97,7 +89,7 @@ Core.cpp \- Ядро проекта\&. Содержит все главные и
 .RI "bool \fBcheck_file\fP (char *filename)"
 .br
 .ti -1c
-.RI "bool \fBcheck_file\fP (std::string filename)"
+.RI "bool \fBcheck_file\fP (string filename)"
 .br
 .ti -1c
 .RI "void \fBsettings_initialization\fP ()"
@@ -105,18 +97,23 @@ Core.cpp \- Ядро проекта\&. Содержит все главные и
 .ti -1c
 .RI "void \fBcreateFile\fP (char *file_name)"
 .br
+.RI "Функция для создания файла "
 .ti -1c
-.RI "void \fBcreateDir\fP (std::string namedir)"
+.RI "void \fBcreateDir\fP (string namedir)"
 .br
+.RI "Функция для создания директории "
 .ti -1c
-.RI "std::string \fBdescription\fP (string value)"
+.RI "string \fBdescription\fP (string value)"
 .br
+.RI "Функция для поиска описания марки по файлу с каскадом Хаара "
 .ti -1c
-.RI "void \fBcanny\fP (const cv::Mat &mat_in, cv::Mat &mat_out)"
+.RI "void \fBcanny\fP (const Mat &mat_in, Mat &mat_out)"
 .br
+.RI "Функция для обработки изображений\&. "
 .ti -1c
 .RI "void \fBv_test\fP ()"
 .br
+.RI "Функция для проведения тестов\&. Замер скорости выполнения алгоритмов\&. "
 .in -1c
 .SH "Подробное описание"
 .PP 
@@ -139,22 +136,7 @@ SavaLione
 См\&. определение в файле \fBCore\&.cpp\fP
 .SH "Функции"
 .PP 
-.SS "void bilateral (const cv::Mat & mat_in, cv::Mat & mat_out)"
-
-.PP
-Функция для обработки изображений\&. Двусторонний фильтр
-.PP
-\fBАргументы:\fP
-.RS 4
-\fImat_in\fP Матрица с изображением для обработки 
-.br
-\fImat_out\fP Матрица с обработанным изображением, которая будет возвращена 
-.RE
-.PP
-src Ц Source 8-bit or floating-point, 1-channel or 3-channel image\&. dst Ц Destination image of the same size and type as src \&. d Ц Diameter of each pixel neighborhood that is used during filtering\&. If it is non-positive, it is computed from sigmaSpace\&. sigmaColor Ц Filter sigma in the color space\&. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color\&. sigmaSpace Ц Filter sigma in the coordinate space\&. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor )\&. When d>0 , it specifies the neighborhood size regardless of sigmaSpace \&. Otherwise, d is proportional to sigmaSpace \&.
-.PP
-См\&. определение в файле Core\&.cpp строка 174
-.SS "void blur (const cv::Mat & mat_in, cv::Mat & mat_out)"
+.SS "void blur (const Mat & mat_in, Mat & mat_out)"
 
 .PP
 Функция для обработки изображений\&. Фильтр для размытия изображений\&.
@@ -168,63 +150,107 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image\&. dst Ц De
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 193
-.SS "void canny (const cv::Mat & mat_in, cv::Mat & mat_out)"
+См\&. определение в файле Core\&.cpp строка 176
+.SS "void canny (const Mat & mat_in, Mat & mat_out)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 337
+Функция для обработки изображений\&. Поиск границ на изображении\&. Метод canny\&.
+.PP
+\fBАргументы:\fP
+.RS 4
+\fImat_in\fP Матрица с изображением для обработки 
+.br
+\fImat_out\fP Матрица с обработанным изображением, которая будет возвращена 
+.RE
+.PP
+
+.PP
+См\&. определение в файле Core\&.cpp строка 336
 .SS "bool check_file (char * filename)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 260
-.SS "bool check_file (std::string filename)"
+См\&. определение в файле Core\&.cpp строка 231
+.SS "bool check_file (string filename)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 269
-.SS "void clearning (std::string filename, std::string variable)"
+См\&. определение в файле Core\&.cpp строка 240
+.SS "void clearning (string filename, string variable)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 96
-.SS "void createDir (std::string namedir)"
+См\&. определение в файле Core\&.cpp строка 97
+.SS "void createDir (string namedir)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 319
+Функция для создания директории 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fInamedir\fP Путь и название директории 
+.RE
+.PP
+Если успешно создали директорию, то: 
+.PP
+.nf
+Вывод в лог, что получилось создать директорию
+
+.fi
+.PP
+.PP
+иначе: 
+.PP
+.nf
+Вывод в лог, что не получилось создать директорию
+
+Возможно это связано с тем, что нет прав на создание директории или директория уже есть  
+.fi
+.PP
+
+.PP
+См\&. определение в файле Core\&.cpp строка 297
 .SS "void createFile (char * file_name)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 314
-.SS "void databaseAdd (std::string filename)"
+Функция для создания файла 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIfile_name\fP Путь и название файла 
+.RE
+.PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 82
-.SS "std::string description (string value)"
+См\&. определение в файле Core\&.cpp строка 288
+.SS "void databaseAdd (string filename)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 328
+См\&. определение в файле Core\&.cpp строка 83
+.SS "string description (string value)"
+
+.PP
+Функция для поиска описания марки по файлу с каскадом Хаара 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIvalue\fP Название файла 
+.RE
+.PP
+\fBВозвращает:\fP
+.RS 4
+Искомое описание марки 
+.RE
+.PP
+
+.PP
+См\&. определение в файле Core\&.cpp строка 319
 .SS "void detection (const Mat & mat_logo)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 139
-.SS "bool detectionLogo (const Mat & mat_logo, std::string cascadefile)"
+См\&. определение в файле Core\&.cpp строка 140
+.SS "bool detectionLogo (const Mat & mat_logo, string cascadefile)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 111
-.SS "void fastNoiseRemoval (const cv::Mat & mat_in, cv::Mat & mat_out)"
-
-.PP
-Функция для обработки изображений\&. Быстрый фильтр для размытия изображений в оттенках серого\&.
-.PP
-\fBАргументы:\fP
-.RS 4
-\fImat_in\fP Матрица с изображением для обработки 
-.br
-\fImat_out\fP Матрица с обработанным изображением, которая будет возвращена 
-.RE
-.PP
-
-.PP
-См\&. определение в файле Core\&.cpp строка 229
-.SS "void fastNoiseRemovalGrey (const cv::Mat & mat_in, cv::Mat & mat_out)"
+См\&. определение в файле Core\&.cpp строка 112
+.SS "void fastNoiseRemoval (const Mat & mat_in, Mat & mat_out)"
 
 .PP
 Функция для обработки изображений\&. Быстрый фильтр для размытия изображений в оттенках серого\&.
@@ -238,11 +264,11 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image\&. dst Ц De
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 205
-.SS "void gaussianblur (const cv::Mat & mat_in, cv::Mat & mat_out)"
+См\&. определение в файле Core\&.cpp строка 200
+.SS "void fastNoiseRemovalGrey (const Mat & mat_in, Mat & mat_out)"
 
 .PP
-Функция для обработки изображений\&. Гауссовый фильтр для размытия изображений\&.
+Функция для обработки изображений\&. Быстрый фильтр для размытия изображений в оттенках серого\&.
 .PP
 \fBАргументы:\fP
 .RS 4
@@ -253,28 +279,28 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image\&. dst Ц De
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 217
+См\&. определение в файле Core\&.cpp строка 188
 .SS "int getSettings (char * block, char * value)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 248
+См\&. определение в файле Core\&.cpp строка 219
 .SS "int getSettings (char * block, char * value, int i_return_default)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 252
-.SS "std::string getSettingsString (char * block, char * value)"
+См\&. определение в файле Core\&.cpp строка 223
+.SS "string getSettingsString (char * block, char * value)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 236
-.SS "std::string getSettingsString (char * block, char * value, char * ch_return_default)"
+См\&. определение в файле Core\&.cpp строка 207
+.SS "string getSettingsString (char * block, char * value, char * ch_return_default)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 242
+См\&. определение в файле Core\&.cpp строка 213
 .SS "void help ()"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 135
-.SS "void lineDetection (const cv::Mat & mat_in, cv::Mat & mat_out)"
+См\&. определение в файле Core\&.cpp строка 136
+.SS "void lineDetection (const Mat & mat_in, Mat & mat_out)"
 
 .PP
 Функция для обработки изображений\&. Проверяет, нужно ли находить линии на изображении\&.
@@ -294,17 +320,17 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image\&. dst Ц De
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 69
-.SS "void noiseRemoval (const cv::Mat & mat_in, cv::Mat & mat_out)"
+См\&. определение в файле Core\&.cpp строка 70
+.SS "void noiseRemoval (const Mat & mat_in, Mat & mat_out)"
 
 .PP
 Функция для обработки изображений\&. Проверяет, нужно ли убирать шум на фотографиях\&.
 .PP
 Также проверяем режим обработки изображений\&. Быстрый или нет\&.
 .PP
-Для обычного режима используется - bilateral(mat_in, mat_out);
+Для обычного режима используется двусторонний фильтр - bilateralFilter();
 .PP
-Для быстрого режима используется - gaussianblur(mat_in, mat_out);
+Для быстрого режима используется Гауссовый фильтр размытия изображений - GaussianBlur();
 .PP
 \fBАргументы:\fP
 .RS 4
@@ -315,19 +341,21 @@ src Ц Source 8-bit or floating-point, 1-channel or 3-channel image\&. dst Ц De
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 41
+См\&. определение в файле Core\&.cpp строка 42
 .SS "void setSettings (char * block, char * value, char * text)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 256
+См\&. определение в файле Core\&.cpp строка 227
 .SS "void settings_initialization ()"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 279
+См\&. определение в файле Core\&.cpp строка 250
 .SS "void v_test ()"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 348
+Функция для проведения тестов\&. Замер скорости выполнения алгоритмов\&. 
+.PP
+См\&. определение в файле Core\&.cpp строка 349
 .SH "Автор"
 .PP 
 Автоматически создано Doxygen для Yenot из исходного текста\&.

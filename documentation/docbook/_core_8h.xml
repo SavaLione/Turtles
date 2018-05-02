@@ -30,8 +30,7 @@
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8h_1a438c92819ed0ad4fc2e187ed5f5a2e27">noiseRemoval</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
-</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -39,8 +38,7 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8h_1aa7c37c22318217cd913a50800eb336a3">lineDetection</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
-</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -87,18 +85,8 @@ const cv::Mat &amp; mat_logo)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8h_1a0a1a2acbf75cc1c23ae101ebca89c816">bilateral</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
                         <para>void <link linkend="_core_8h_1a64b67e9219ba96b984256d89bc46c2f5">blur</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
-</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -106,17 +94,7 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8h_1a39eb2014e38b68bd4e6453a24e51d896">fastNoiseRemovalGrey</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_core_8h_1a38f0b724796df5703cf0c1c77b3942fa">gaussianblur</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
-</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -124,8 +102,7 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8h_1ab5eb0c124067d093b9001373071f4636">fastNoiseRemoval</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
-</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -205,7 +182,8 @@ std::string filename)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8h_1a8f34a2030acfb5567678ab2bba25f3c1">createFile</link> (
-char * file_name)</para>
+char * file_name)<para><emphasis>Функция для создания файла</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -229,7 +207,8 @@ std::string value)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8h_1aafaa59e41cfa4f5fda8c4d703394f26a">v_test</link> (
-)</para>
+)<para><emphasis>Функция для проведения тестов. Замер скорости выполнения алгоритмов.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>

@@ -277,17 +277,33 @@ void settings_initialization() {
 		fsOut.release();
 	}
 	if (!check_file(database_name + string("\\") + settings_carModel_example_file)) {
-
 		databaseAdd(settings_carModel_example_file);
 	}
 }
 
+/**
+	@brief Функция для создания файла
+	@param [in] file_name Путь и название файла
+*/
 void createFile(char *file_name) {
 	ofstream fout(file_name);
 	fout.close();
 }
 
+/**
+	@brief Функция для создания директории
+	@param [in] namedir Путь и название директории
+*/
 void createDir(string namedir) {
+	///	Если успешно создали директорию, то:
+	///
+	///		Вывод в лог, что получилось создать директорию
+	///
+	/// иначе:
+	///
+	///		Вывод в лог, что не получилось создать директорию
+	///
+	///		Возможно это связано с тем, что нет прав на создание директории или директория уже есть
 	if ((_mkdir(namedir.c_str())) == 0) {
 		logger((char*)logger_level_warning, (char*)logger_message_cDir);
 	} else {
@@ -295,8 +311,13 @@ void createDir(string namedir) {
 	}
 }
 
+/**
+	@brief Функция для поиска описания марки по файлу с каскадом Хаара
+	@param [in] value Название файла
+	@return Искомое описание марки
+*/
 string description(string value) {
-	string s_ret;
+	string s_ret = "";
 	s_ret = getSettingsString((char*)settings_block_description, (char*)value.c_str(), (char*)settings_description_ifnotfound);
 	return s_ret;
 }
@@ -304,6 +325,14 @@ string description(string value) {
 ///////////////////////////////////////////////////////////////////////////////
 //	Line detector
 ///////////////////////////////////////////////////////////////////////////////
+/**
+	@brief Функция для обработки изображений.
+	
+	Поиск границ на изображении. Метод canny.
+	
+	@param [in] mat_in Матрица с изображением для обработки
+	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+*/
 void canny(const Mat& mat_in, Mat& mat_out) {
 	Mat gray, edge, draw;
 	cvtColor(mat_in, gray, CV_BGR2GRAY);
@@ -314,10 +343,12 @@ void canny(const Mat& mat_in, Mat& mat_out) {
 ///////////////////////////////////////////////////////////////////////////////
 //	Test
 ///////////////////////////////////////////////////////////////////////////////
-
+/**
+	@brief Функция для проведения тестов. Замер скорости выполнения алгоритмов.
+*/
 void v_test() {
 	for (int i = 1; i <= 128; i++) {
-		unsigned int start_time = clock(); // начальное врем¤
+		unsigned int start_time = clock(); // начальное время
 
 		///////////////////////////////////////////////////////////////////////////////
 		Mat image, out;
@@ -325,8 +356,8 @@ void v_test() {
 		canny(image, out);
 		///////////////////////////////////////////////////////////////////////////////
 
-		unsigned int end_time = clock(); // конечное врем¤
-		unsigned int search_time = end_time - start_time; // искомое врем¤
+		unsigned int end_time = clock(); // конечное время
+		unsigned int search_time = end_time - start_time; // искомое время
 
 		double d = (double)search_time / 1000.0;
 
