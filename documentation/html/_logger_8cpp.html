@@ -172,7 +172,7 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Функция для простого логирования. </p>
-<p>Используется для замера скорости выполнения некоторых алгоритмов.</p>
+<p>Используется для записи значений скорости выполнения алгоритмов в файл.</p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>Время </td></tr>
@@ -180,7 +180,12 @@ $(function() {
   </table>
   </dd>
 </dl>
-
+<p>Проверяем, нужно ли логировать.</p>
+<p>Открываем файл для вывода лога в конце и для записи</p>
+<p>Создаём буфер - массив символов char для вывода времени с плавающей запятой</p>
+<p>Присваиваем массиву символов время, полученное с переменной x</p>
+<p>Записываем данные в файл для логирования</p>
+<p>Закрываем файл </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (<a class="code" href="_core_8cpp.html#a68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a>((<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#a13c8b24e2bbaab0c3bf3fe14e3f495bb">yenot::settings_block_logger</a>, (<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#ad8a7ef4466cc151f6f380b4c4ccbfa66">yenot::settings_log</a>)) {</div><div class="line">    std::ofstream fout(<a class="code" href="namespaceyenot.html#ab82af39640477c63378716f6699d49fe">yenot::logger_file_name</a>, std::ios_base::app);</div><div class="line">    <span class="keywordtype">char</span> ch_x[1024];</div><div class="line"></div><div class="line">    sprintf(ch_x, <span class="stringliteral">&quot;%f&quot;</span>, x);</div><div class="line"></div><div class="line">    fout &lt;&lt; ch_x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line">    fout.close();</div><div class="line">}</div></div><!-- fragment --> 
 <p class="definition">См. определение в файле <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> строка <a class="el" href="_logger_8cpp_source.html#l00089">89</a></p>
 
 </div>

@@ -24,6 +24,20 @@ using namespace std;
 ///////////////////////////////////////////////////////////////////////////////
 //	Core
 ///////////////////////////////////////////////////////////////////////////////
+/**
+	@brief Функция для обработки изображений.
+	
+	Проверяет, нужно ли убирать шум на фотографиях.
+	
+	Также проверяем режим обработки изображений. Быстрый или нет.
+	
+	Для обычного режима используется - bilateral(mat_in, mat_out);
+	
+	Для быстрого режима используется - gaussianblur(mat_in, mat_out);
+	
+	@param [in] mat_in Матрица с изображением для обработки
+	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+*/
 void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_noiseReduction, yenot::settings_noiseReduction_value_int)) {
 		// If no fast
@@ -38,6 +52,20 @@ void noiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	}
 }
 
+/**
+	@brief Функция для обработки изображений.
+	
+	Проверяет, нужно ли находить линии на изображении.
+	
+	Также проверяем режим обработки изображений. Быстрый или нет.
+	
+	Для обычного режима используется - canny(mat_in, mat_out);
+	
+	Для быстрого режима используется - 
+	
+	@param [in] mat_in Матрица с изображением для обработки
+	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+*/
 void lineDetection(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	if (getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_lineDetection, yenot::settings_lineDetection_value_int)) {
 		if (!getSettings((char*)yenot::settings_block_core, (char*)yenot::settings_fastmode, yenot::settings_fastmode_value_int)) {
@@ -135,31 +163,69 @@ void detection(const Mat& mat_logo) {
 ///////////////////////////////////////////////////////////////////////////////
 //	Filters
 ///////////////////////////////////////////////////////////////////////////////
+/**
+	@brief Функция для обработки изображений.
+	
+	Двусторонний фильтр
+	
+	@param [in] mat_in Матрица с изображением для обработки
+	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+*/
 void bilateral(const cv::Mat& mat_in, cv::Mat& mat_out) {
-	//mat_out = mat_in.clone();
-
 	/**
-	src Ц Source 8-bit or floating-point, 1-channel or 3-channel image.
-	dst Ц Destination image of the same size and type as src .
-	d Ц Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace.
-	sigmaColor Ц Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color.
-	sigmaSpace Ц Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .
+		src Ц Source 8-bit or floating-point, 1-channel or 3-channel image.
+		dst Ц Destination image of the same size and type as src .
+		d Ц Diameter of each pixel neighborhood that is used during filtering. If it is non-positive, it is computed from sigmaSpace.
+		sigmaColor Ц Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigmaSpace ) will be mixed together, resulting in larger areas of semi-equal color.
+		sigmaSpace Ц Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigmaColor ). When d>0 , it specifies the neighborhood size regardless of sigmaSpace . Otherwise, d is proportional to sigmaSpace .
 	*/
 	bilateralFilter(mat_in, mat_out, yenot::diameter_each_pixel, yenot::sigmaColor, yenot::sigmaSpace);
 }
 
+/**
+	@brief Функция для обработки изображений.
+	
+	Фильтр для размытия изображений.
+	
+	@param [in] mat_in Матрица с изображением для обработки
+	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+*/
 void blur(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	cv::blur(mat_in, mat_out, cv::Size(yenot::blur_kernel_x, yenot::blur_kernel_y));
 }
 
+/**
+	@brief Функция для обработки изображений.
+	
+	Быстрый фильтр для размытия изображений в оттенках серого.
+	
+	@param [in] mat_in Матрица с изображением для обработки
+	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+*/
 void fastNoiseRemovalGrey(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	cv::fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
 }
 
+/**
+	@brief Функция для обработки изображений.
+	
+	Гауссовый фильтр для размытия изображений.
+	
+	@param [in] mat_in Матрица с изображением для обработки
+	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+*/
 void gaussianblur(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	cv::GaussianBlur(mat_in, mat_out, cv::Size(yenot::gaussianblur_kernel_x, yenot::gaussianblur_kernel_y), 0, 0);
 }
 
+/**
+	@brief Функция для обработки изображений.
+	
+	Быстрый фильтр для размытия изображений в оттенках серого.
+	
+	@param [in] mat_in Матрица с изображением для обработки
+	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+*/
 void fastNoiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out) {
 	cv::fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
 }

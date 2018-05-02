@@ -73,7 +73,7 @@ Sava\+Lione
 
 Функция для простого логирования. 
 
-Используется для замера скорости выполнения некоторых алгоритмов.
+Используется для записи значений скорости выполнения алгоритмов в файл.
 
 
 \begin{DoxyParams}[1]{Аргументы}
@@ -82,7 +82,30 @@ Sava\+Lione
 \mbox{\tt in}  & {\em y} & Итерация \\
 \hline
 \end{DoxyParams}
+Проверяем, нужно ли логировать.
 
+Открываем файл для вывода лога в конце и для записи
+
+Создаём буфер -\/ массив символов char для вывода времени с плавающей запятой
+
+Присваиваем массиву символов время, полученное с переменной x
+
+Записываем данные в файл для логирования
+
+Закрываем файл 
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (\mbox{\hyperlink{_core_8cpp_a68b4d9ed6be7aaa93d9a6fe8fd683862}{getSettings}}((\textcolor{keywordtype}{char}*)\mbox{\hyperlink{namespaceyenot_a13c8b24e2bbaab0c3bf3fe14e3f495bb}{yenot::settings\_block\_logger}}, (\textcolor{keywordtype}{char}*)
+      \mbox{\hyperlink{namespaceyenot_ad8a7ef4466cc151f6f380b4c4ccbfa66}{yenot::settings\_log}})) \{
+    std::ofstream fout(\mbox{\hyperlink{namespaceyenot_ab82af39640477c63378716f6699d49fe}{yenot::logger\_file\_name}}, std::ios\_base::app);
+    \textcolor{keywordtype}{char} ch\_x[1024];
+
+    sprintf(ch\_x, \textcolor{stringliteral}{"%f"}, x);
+
+    fout << ch\_x << \textcolor{stringliteral}{" "} << y << \textcolor{stringliteral}{"\(\backslash\)n"};
+    fout.close();
+\}
+\end{DoxyCode}
+ 
 
 См. определение в файле Logger.\+cpp строка 89
 

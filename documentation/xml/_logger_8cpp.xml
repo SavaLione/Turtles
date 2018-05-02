@@ -112,7 +112,7 @@
         <briefdescription>
 <para>Функция для простого логирования. </para>        </briefdescription>
         <detaileddescription>
-<para>Используется для замера скорости выполнения некоторых алгоритмов.</para><para><parameterlist kind="param"><parameteritem>
+<para>Используется для записи значений скорости выполнения алгоритмов в файл.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">x</parametername>
 </parameternamelist>
@@ -129,8 +129,17 @@
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="src/io/Logger.cpp" line="89" column="1" bodyfile="src/io/Logger.cpp" bodystart="89" bodyend="99"/>
+<para>Проверяем, нужно ли логировать.</para><para>Открываем файл для вывода лога в конце и для записи</para><para>Создаём буфер - массив символов char для вывода времени с плавающей запятой</para><para>Присваиваем массиву символов время, полученное с переменной x</para><para>Записываем данные в файл для логирования</para><para>Закрываем файл <programlisting><codeline><highlight class="normal">if<sp/>(getSettings((char*)yenot::settings_block_logger,<sp/>(char*)yenot::settings_log))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(yenot::logger_file_name,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>char<sp/>ch_x[1024];</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sprintf(ch_x,<sp/>&quot;%f&quot;,<sp/>x);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fout<sp/>&lt;&lt;<sp/>ch_x<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>y<sp/>&lt;&lt;<sp/>&quot;\n&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>        </inbodydescription>
+        <location file="src/io/Logger.cpp" line="89" column="1" bodyfile="src/io/Logger.cpp" bodystart="89" bodyend="112"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -208,16 +217,16 @@
 <codeline lineno="79"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="89" refid="_logger_8h_1a5e632a6ec68609b973a180293035b94b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_logger_8cpp_1a5e632a6ec68609b973a180293035b94b" kindref="member">logger_xy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/>{</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ad8a7ef4466cc151f6f380b4c4ccbfa66" kindref="member">yenot::settings_log</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>,<sp/>std::ios_base::app);</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch_x[1024];</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(ch_x,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>x);</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout<sp/>&lt;&lt;<sp/>ch_x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a13c8b24e2bbaab0c3bf3fe14e3f495bb" kindref="member">yenot::settings_block_logger</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ad8a7ef4466cc151f6f380b4c4ccbfa66" kindref="member">yenot::settings_log</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(<ref refid="namespaceyenot_1ab82af39640477c63378716f6699d49fe" kindref="member">yenot::logger_file_name</ref>,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch_x[1024];</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(ch_x,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>x);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout<sp/>&lt;&lt;<sp/>ch_x<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>y<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/io/Logger.cpp"/>
   </compounddef>

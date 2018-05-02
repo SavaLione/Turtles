@@ -25,12 +25,21 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '27';
+      func-mem-desc-line = '41';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Проверяет, нужно ли убирать шум на фотографиях.
 
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется - bilateral(mat_in, mat_out);
+
+Для быстрого режима используется - gaussianblur(mat_in, mat_out);
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -55,12 +64,21 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '41';
+      func-mem-desc-line = '69';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Проверяет, нужно ли находить линии на изображении.
 
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется - canny(mat_in, mat_out);
+
+Для быстрого режима используется - 
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -79,7 +97,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'filename';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '54';
+      func-mem-desc-line = '82';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -109,7 +127,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'variable';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '68';
+      func-mem-desc-line = '96';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -139,7 +157,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'cascadefile';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '83';
+      func-mem-desc-line = '111';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -157,7 +175,7 @@ void
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'help';
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '107';
+      func-mem-desc-line = '135';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -181,7 +199,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_logo';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '111';
+      func-mem-desc-line = '139';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -211,12 +229,15 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '138';
+      func-mem-desc-line = '174';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Двусторонний фильтр
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -241,12 +262,15 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '151';
+      func-mem-desc-line = '193';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Фильтр для размытия изображений.
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -271,12 +295,15 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '155';
+      func-mem-desc-line = '205';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Быстрый фильтр для размытия изображений в оттенках серого.
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -301,12 +328,15 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '159';
+      func-mem-desc-line = '217';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Гауссовый фильтр для размытия изображений.
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -331,12 +361,15 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '163';
+      func-mem-desc-line = '229';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Быстрый фильтр для размытия изображений в оттенках серого.
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -361,7 +394,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'value';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '170';
+      func-mem-desc-line = '236';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -397,7 +430,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'ch_return_default';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '176';
+      func-mem-desc-line = '242';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -427,7 +460,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'value';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '182';
+      func-mem-desc-line = '248';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -463,7 +496,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'i_return_default';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '186';
+      func-mem-desc-line = '252';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -499,7 +532,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'text';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '190';
+      func-mem-desc-line = '256';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -523,7 +556,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'filename';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '194';
+      func-mem-desc-line = '260';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -547,7 +580,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'filename';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '203';
+      func-mem-desc-line = '269';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -565,7 +598,7 @@ void
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'settings_initialization';
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '213';
+      func-mem-desc-line = '279';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -589,7 +622,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'file_name';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '248';
+      func-mem-desc-line = '314';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -613,7 +646,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'namedir';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '253';
+      func-mem-desc-line = '319';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -637,7 +670,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'value';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '262';
+      func-mem-desc-line = '328';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -667,7 +700,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '271';
+      func-mem-desc-line = '337';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -685,7 +718,7 @@ void
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'v_test';
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
-      func-mem-desc-line = '282';
+      func-mem-desc-line = '348';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -732,10 +765,19 @@ _EnD_oF_dEf_TeXt_;
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
       func-mem-desc-line = '15';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Проверяет, нужно ли убирать шум на фотографиях.
 
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется - bilateral(mat_in, mat_out);
+
+Для быстрого режима используется - gaussianblur(mat_in, mat_out);
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -762,10 +804,19 @@ _EnD_oF_dEf_TeXt_;
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
       func-mem-desc-line = '16';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Проверяет, нужно ли находить линии на изображении.
 
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется - canny(mat_in, mat_out);
+
+Для быстрого режима используется - 
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -918,10 +969,13 @@ _EnD_oF_dEf_TeXt_;
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
       func-mem-desc-line = '26';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Двусторонний фильтр
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -948,10 +1002,13 @@ _EnD_oF_dEf_TeXt_;
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
       func-mem-desc-line = '27';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Фильтр для размытия изображений.
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -978,10 +1035,13 @@ _EnD_oF_dEf_TeXt_;
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
       func-mem-desc-line = '28';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Быстрый фильтр для размытия изображений в оттенках серого.
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -1008,10 +1068,13 @@ _EnD_oF_dEf_TeXt_;
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
       func-mem-desc-line = '29';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Гауссовый фильтр для размытия изображений.
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -1038,10 +1101,13 @@ _EnD_oF_dEf_TeXt_;
       func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
       func-mem-desc-line = '30';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+Функция для обработки изображений.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Быстрый фильтр для размытия изображений в оттенках серого.
 
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     func-member = {
@@ -1473,7 +1539,7 @@ _EnD_oF_dEf_TeXt_;
 Функция для простого логирования.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-    Используется для замера скорости выполнения некоторых алгоритмов.
+    Используется для записи значений скорости выполнения алгоритмов в файл.
 
 @param [in] x Время
 @param [in] y Итерация
@@ -1554,7 +1620,7 @@ _EnD_oF_dEf_TeXt_;
 Функция для простого логирования.
 _EnD_oF_dEf_TeXt_;
       func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-    Используется для замера скорости выполнения некоторых алгоритмов.
+    Используется для записи значений скорости выполнения алгоритмов в файл.
 
 @param [in] x Время
 @param [in] y Итерация

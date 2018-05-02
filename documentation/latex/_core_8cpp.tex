@@ -28,9 +28,9 @@
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_core_8cpp_a438c92819ed0ad4fc2e187ed5f5a2e27}{noise\+Removal}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
-\item 
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_core_8cpp_aa7c37c22318217cd913a50800eb336a3}{line\+Detection}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
-\item 
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_core_8cpp_a5a4a30ca6128e13ce1ec6efaa23dd6c7}{database\+Add}} (std\+::string filename)
 \item 
 void \mbox{\hyperlink{_core_8cpp_aebd676a1476aa4d75b280db8ae09d11c}{clearning}} (std\+::string filename, std\+::string variable)
@@ -42,15 +42,15 @@ void \mbox{\hyperlink{_core_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}{help}} ()
 void \mbox{\hyperlink{_core_8cpp_ae99907f19e7f09055012f68347a57d05}{detection}} (const Mat \&mat\+\_\+logo)
 \item 
 void \mbox{\hyperlink{_core_8cpp_a0a1a2acbf75cc1c23ae101ebca89c816}{bilateral}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
-\item 
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_core_8cpp_a64b67e9219ba96b984256d89bc46c2f5}{blur}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
-\item 
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_core_8cpp_a39eb2014e38b68bd4e6453a24e51d896}{fast\+Noise\+Removal\+Grey}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
-\item 
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_core_8cpp_a38f0b724796df5703cf0c1c77b3942fa}{gaussianblur}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
-\item 
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_core_8cpp_ab5eb0c124067d093b9001373071f4636}{fast\+Noise\+Removal}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
-\item 
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{_core_8cpp_a33e1cb874acab9d31a98a12cdd1472ce}{get\+Settings\+String}} (char $\ast$block, char $\ast$value)
 \item 
 std\+::string \mbox{\hyperlink{_core_8cpp_a3a0f1e87eb01bdd16c4a7e365aa283eb}{get\+Settings\+String}} (char $\ast$block, char $\ast$value, char $\ast$ch\+\_\+return\+\_\+default)
@@ -97,10 +97,22 @@ Sava\+Lione
 \subsubsection{\texorpdfstring{bilateral()}{bilateral()}}
 {\footnotesize\ttfamily void bilateral (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{mat\+\_\+in,  }\item[{cv\+::\+Mat \&}]{mat\+\_\+out }\end{DoxyParamCaption})}
 
-~\newline
+
+
+Функция для обработки изображений. 
+
+Двусторонний фильтр
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
 src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst Ц Destination image of the same size and type as src . d Ц Diameter of each pixel neighborhood that is used during filtering. If it is non-\/positive, it is computed from sigma\+Space. sigma\+Color Ц Filter sigma in the color space. A larger value of the parameter means that farther colors within the pixel neighborhood (see sigma\+Space ) will be mixed together, resulting in larger areas of semi-\/equal color. sigma\+Space Ц Filter sigma in the coordinate space. A larger value of the parameter means that farther pixels will influence each other as long as their colors are close enough (see sigma\+Color ). When d$>$0 , it specifies the neighborhood size regardless of sigma\+Space . Otherwise, d is proportional to sigma\+Space .
 
-См. определение в файле Core.\+cpp строка 138
+См. определение в файле Core.\+cpp строка 174
 
 \mbox{\Hypertarget{_core_8cpp_a64b67e9219ba96b984256d89bc46c2f5}\label{_core_8cpp_a64b67e9219ba96b984256d89bc46c2f5}} 
 \index{Core.\+cpp@{Core.\+cpp}!blur@{blur}}
@@ -110,7 +122,20 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 151
+Функция для обработки изображений. 
+
+Фильтр для размытия изображений.
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле Core.\+cpp строка 193
 
 \mbox{\Hypertarget{_core_8cpp_aff2d42310702a0aab15af5ad62a59f2b}\label{_core_8cpp_aff2d42310702a0aab15af5ad62a59f2b}} 
 \index{Core.\+cpp@{Core.\+cpp}!canny@{canny}}
@@ -120,7 +145,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 271
+См. определение в файле Core.\+cpp строка 337
 
 \mbox{\Hypertarget{_core_8cpp_a96c018612a57329cdb94506523f5b7ec}\label{_core_8cpp_a96c018612a57329cdb94506523f5b7ec}} 
 \index{Core.\+cpp@{Core.\+cpp}!check\+\_\+file@{check\+\_\+file}}
@@ -130,7 +155,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 194
+См. определение в файле Core.\+cpp строка 260
 
 \mbox{\Hypertarget{_core_8cpp_a041e0f6c7598005e2e71f7da64197d65}\label{_core_8cpp_a041e0f6c7598005e2e71f7da64197d65}} 
 \index{Core.\+cpp@{Core.\+cpp}!check\+\_\+file@{check\+\_\+file}}
@@ -140,7 +165,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 203
+См. определение в файле Core.\+cpp строка 269
 
 \mbox{\Hypertarget{_core_8cpp_aebd676a1476aa4d75b280db8ae09d11c}\label{_core_8cpp_aebd676a1476aa4d75b280db8ae09d11c}} 
 \index{Core.\+cpp@{Core.\+cpp}!clearning@{clearning}}
@@ -150,7 +175,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 68
+См. определение в файле Core.\+cpp строка 96
 
 \mbox{\Hypertarget{_core_8cpp_a912b67f6f6b05abadd055a379dd84864}\label{_core_8cpp_a912b67f6f6b05abadd055a379dd84864}} 
 \index{Core.\+cpp@{Core.\+cpp}!create\+Dir@{create\+Dir}}
@@ -160,7 +185,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 253
+См. определение в файле Core.\+cpp строка 319
 
 \mbox{\Hypertarget{_core_8cpp_a8f34a2030acfb5567678ab2bba25f3c1}\label{_core_8cpp_a8f34a2030acfb5567678ab2bba25f3c1}} 
 \index{Core.\+cpp@{Core.\+cpp}!create\+File@{create\+File}}
@@ -170,7 +195,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 248
+См. определение в файле Core.\+cpp строка 314
 
 \mbox{\Hypertarget{_core_8cpp_a5a4a30ca6128e13ce1ec6efaa23dd6c7}\label{_core_8cpp_a5a4a30ca6128e13ce1ec6efaa23dd6c7}} 
 \index{Core.\+cpp@{Core.\+cpp}!database\+Add@{database\+Add}}
@@ -180,7 +205,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 54
+См. определение в файле Core.\+cpp строка 82
 
 \mbox{\Hypertarget{_core_8cpp_a9a68ac8e2d40e06f82cc017d723e133e}\label{_core_8cpp_a9a68ac8e2d40e06f82cc017d723e133e}} 
 \index{Core.\+cpp@{Core.\+cpp}!description@{description}}
@@ -190,7 +215,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 262
+См. определение в файле Core.\+cpp строка 328
 
 \mbox{\Hypertarget{_core_8cpp_ae99907f19e7f09055012f68347a57d05}\label{_core_8cpp_ae99907f19e7f09055012f68347a57d05}} 
 \index{Core.\+cpp@{Core.\+cpp}!detection@{detection}}
@@ -200,7 +225,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 111
+См. определение в файле Core.\+cpp строка 139
 
 \mbox{\Hypertarget{_core_8cpp_ac75bd6101866dc6b17aa1dd79723eb52}\label{_core_8cpp_ac75bd6101866dc6b17aa1dd79723eb52}} 
 \index{Core.\+cpp@{Core.\+cpp}!detection\+Logo@{detection\+Logo}}
@@ -210,7 +235,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 83
+См. определение в файле Core.\+cpp строка 111
 
 \mbox{\Hypertarget{_core_8cpp_ab5eb0c124067d093b9001373071f4636}\label{_core_8cpp_ab5eb0c124067d093b9001373071f4636}} 
 \index{Core.\+cpp@{Core.\+cpp}!fast\+Noise\+Removal@{fast\+Noise\+Removal}}
@@ -220,7 +245,20 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 163
+Функция для обработки изображений. 
+
+Быстрый фильтр для размытия изображений в оттенках серого.
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле Core.\+cpp строка 229
 
 \mbox{\Hypertarget{_core_8cpp_a39eb2014e38b68bd4e6453a24e51d896}\label{_core_8cpp_a39eb2014e38b68bd4e6453a24e51d896}} 
 \index{Core.\+cpp@{Core.\+cpp}!fast\+Noise\+Removal\+Grey@{fast\+Noise\+Removal\+Grey}}
@@ -230,7 +268,20 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 155
+Функция для обработки изображений. 
+
+Быстрый фильтр для размытия изображений в оттенках серого.
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле Core.\+cpp строка 205
 
 \mbox{\Hypertarget{_core_8cpp_a38f0b724796df5703cf0c1c77b3942fa}\label{_core_8cpp_a38f0b724796df5703cf0c1c77b3942fa}} 
 \index{Core.\+cpp@{Core.\+cpp}!gaussianblur@{gaussianblur}}
@@ -240,7 +291,20 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 159
+Функция для обработки изображений. 
+
+Гауссовый фильтр для размытия изображений.
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле Core.\+cpp строка 217
 
 \mbox{\Hypertarget{_core_8cpp_a68b4d9ed6be7aaa93d9a6fe8fd683862}\label{_core_8cpp_a68b4d9ed6be7aaa93d9a6fe8fd683862}} 
 \index{Core.\+cpp@{Core.\+cpp}!get\+Settings@{get\+Settings}}
@@ -250,7 +314,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 182
+См. определение в файле Core.\+cpp строка 248
 
 \mbox{\Hypertarget{_core_8cpp_a0a2fe94de4037eda33c49fe332970891}\label{_core_8cpp_a0a2fe94de4037eda33c49fe332970891}} 
 \index{Core.\+cpp@{Core.\+cpp}!get\+Settings@{get\+Settings}}
@@ -260,7 +324,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 186
+См. определение в файле Core.\+cpp строка 252
 
 \mbox{\Hypertarget{_core_8cpp_a33e1cb874acab9d31a98a12cdd1472ce}\label{_core_8cpp_a33e1cb874acab9d31a98a12cdd1472ce}} 
 \index{Core.\+cpp@{Core.\+cpp}!get\+Settings\+String@{get\+Settings\+String}}
@@ -270,7 +334,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 170
+См. определение в файле Core.\+cpp строка 236
 
 \mbox{\Hypertarget{_core_8cpp_a3a0f1e87eb01bdd16c4a7e365aa283eb}\label{_core_8cpp_a3a0f1e87eb01bdd16c4a7e365aa283eb}} 
 \index{Core.\+cpp@{Core.\+cpp}!get\+Settings\+String@{get\+Settings\+String}}
@@ -280,7 +344,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 176
+См. определение в файле Core.\+cpp строка 242
 
 \mbox{\Hypertarget{_core_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}\label{_core_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}} 
 \index{Core.\+cpp@{Core.\+cpp}!help@{help}}
@@ -290,7 +354,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 107
+См. определение в файле Core.\+cpp строка 135
 
 \mbox{\Hypertarget{_core_8cpp_aa7c37c22318217cd913a50800eb336a3}\label{_core_8cpp_aa7c37c22318217cd913a50800eb336a3}} 
 \index{Core.\+cpp@{Core.\+cpp}!line\+Detection@{line\+Detection}}
@@ -300,7 +364,26 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 41
+Функция для обработки изображений. 
+
+Проверяет, нужно ли находить линии на изображении.
+
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется -\/ canny(mat\+\_\+in, mat\+\_\+out);
+
+Для быстрого режима используется -\/
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле Core.\+cpp строка 69
 
 \mbox{\Hypertarget{_core_8cpp_a438c92819ed0ad4fc2e187ed5f5a2e27}\label{_core_8cpp_a438c92819ed0ad4fc2e187ed5f5a2e27}} 
 \index{Core.\+cpp@{Core.\+cpp}!noise\+Removal@{noise\+Removal}}
@@ -310,7 +393,26 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 27
+Функция для обработки изображений. 
+
+Проверяет, нужно ли убирать шум на фотографиях.
+
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется -\/ bilateral(mat\+\_\+in, mat\+\_\+out);
+
+Для быстрого режима используется -\/ gaussianblur(mat\+\_\+in, mat\+\_\+out);
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле Core.\+cpp строка 41
 
 \mbox{\Hypertarget{_core_8cpp_a463e32ccb37f9478b0e62ee0d21c5999}\label{_core_8cpp_a463e32ccb37f9478b0e62ee0d21c5999}} 
 \index{Core.\+cpp@{Core.\+cpp}!set\+Settings@{set\+Settings}}
@@ -320,7 +422,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 190
+См. определение в файле Core.\+cpp строка 256
 
 \mbox{\Hypertarget{_core_8cpp_a8ba7f398362c96368015412b023565d0}\label{_core_8cpp_a8ba7f398362c96368015412b023565d0}} 
 \index{Core.\+cpp@{Core.\+cpp}!settings\+\_\+initialization@{settings\+\_\+initialization}}
@@ -330,7 +432,7 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 213
+См. определение в файле Core.\+cpp строка 279
 
 \mbox{\Hypertarget{_core_8cpp_aafaa59e41cfa4f5fda8c4d703394f26a}\label{_core_8cpp_aafaa59e41cfa4f5fda8c4d703394f26a}} 
 \index{Core.\+cpp@{Core.\+cpp}!v\+\_\+test@{v\+\_\+test}}
@@ -340,5 +442,5 @@ src Ц Source 8-\/bit or floating-\/point, 1-\/channel or 3-\/channel image. dst
 
 
 
-См. определение в файле Core.\+cpp строка 282
+См. определение в файле Core.\+cpp строка 348
 

@@ -75,7 +75,7 @@
         <briefdescription>
 <para>Функция для простого логирования. </para>        </briefdescription>
         <detaileddescription>
-<para>Используется для замера скорости выполнения некоторых алгоритмов.</para><para><parameterlist kind="param"><parameteritem>
+<para>Используется для записи значений скорости выполнения алгоритмов в файл.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername direction="in">x</parametername>
 </parameternamelist>
@@ -92,8 +92,17 @@
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="src/io/Logger.h" line="28" column="1" bodyfile="src/io/Logger.cpp" bodystart="89" bodyend="99"/>
+<para>Проверяем, нужно ли логировать.</para><para>Открываем файл для вывода лога в конце и для записи</para><para>Создаём буфер - массив символов char для вывода времени с плавающей запятой</para><para>Присваиваем массиву символов время, полученное с переменной x</para><para>Записываем данные в файл для логирования</para><para>Закрываем файл <programlisting><codeline><highlight class="normal">if<sp/>(getSettings((char*)yenot::settings_block_logger,<sp/>(char*)yenot::settings_log))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>fout(yenot::logger_file_name,<sp/>std::ios_base::app);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>char<sp/>ch_x[1024];</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sprintf(ch_x,<sp/>&quot;%f&quot;,<sp/>x);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fout<sp/>&lt;&lt;<sp/>ch_x<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>y<sp/>&lt;&lt;<sp/>&quot;\n&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>        </inbodydescription>
+        <location file="src/io/Logger.h" line="28" column="1" bodyfile="src/io/Logger.cpp" bodystart="89" bodyend="112"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -58,7 +58,8 @@
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8cpp_1a438c92819ed0ad4fc2e187ed5f5a2e27">noiseRemoval</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -66,7 +67,8 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8cpp_1aa7c37c22318217cd913a50800eb336a3">lineDetection</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -114,7 +116,8 @@ const Mat &amp; mat_logo)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8cpp_1a0a1a2acbf75cc1c23ae101ebca89c816">bilateral</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -122,7 +125,8 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8cpp_1a64b67e9219ba96b984256d89bc46c2f5">blur</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -130,7 +134,8 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8cpp_1a39eb2014e38b68bd4e6453a24e51d896">fastNoiseRemovalGrey</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -138,7 +143,8 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8cpp_1a38f0b724796df5703cf0c1c77b3942fa">gaussianblur</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -146,7 +152,8 @@ const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
                 <itemizedlist>
                     <listitem>
                         <para>void <link linkend="_core_8cpp_1ab5eb0c124067d093b9001373071f4636">fastNoiseRemoval</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
+const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
                     </listitem>
                 </itemizedlist>
             </para>
