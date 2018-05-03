@@ -284,28 +284,3 @@ void canny(const Mat& mat_in, Mat& mat_out) {
 	Canny(gray, edge, 50, 150, 3);
 	edge.convertTo(mat_out, CV_8U);
 }
-
-///////////////////////////////////////////////////////////////////////////////
-//	Test
-///////////////////////////////////////////////////////////////////////////////
-/**
-	@brief Функция для проведения тестов. Замер скорости выполнения алгоритмов.
-*/
-void v_test() {
-	for (int i = 1; i <= 128; i++) {
-		unsigned int start_time = clock(); // начальное время
-
-		///////////////////////////////////////////////////////////////////////////////
-		Mat image, out;
-		image = imread("a.png", 1);
-		canny(image, out);
-		///////////////////////////////////////////////////////////////////////////////
-
-		unsigned int end_time = clock(); // конечное время
-		unsigned int search_time = end_time - start_time; // искомое время
-
-		double d = (double)search_time / 1000.0;
-
-		loggerXY(d, i);
-	}
-}

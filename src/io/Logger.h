@@ -17,14 +17,4 @@
 */
 void logger(char *level, char *text);
 
-/**
-	@brief Функция для простого логирования.
-	
-		Используется для записи значений скорости выполнения алгоритмов в файл.
-	
-	@param [in] x Время
-	@param [in] y Итерация
-*/
-void loggerXY(double x, int y);
-
 #endif // LOGGER_H
