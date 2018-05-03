@@ -40,16 +40,16 @@ using namespace yenot;
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
 void noiseRemoval(const Mat& mat_in, Mat& mat_out) {
-	if (getSettings((char*)settings_block_core, (char*)settings_noiseReduction, settings_noiseReduction_value_int)) {
+	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_NOISE_REDUCTION, SETTINGS_NOISE_REDUCTION_VALUE_INT)) {
 		// If no fast
-		if (!getSettings((char*)settings_block_core, (char*)settings_fastmode, settings_fastmode_value_int)) {
+		if (!getSettings((char*)BLOCK_CORE, (char*)SETTINGS_FASTMODE, SETTINGS_FASTMODE_VALUE_INT)) {
 			bilateralFilter(mat_in, mat_out, diameter_each_pixel, sigmaColor, sigmaSpace);
 		} else {
 			GaussianBlur(mat_in, mat_out, Size(gaussianblur_kernel_x, gaussianblur_kernel_y), 0, 0);
-			logger((char*)logger_level_warning, (char*)logger_message_fMode);
+			logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_FAST_MODE);
 		}
 	} else {
-		logger((char*)logger_level_warning, (char*)logger_message_noiseRemoval);
+		logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_NOISE_REMOVAL);
 	}
 }
 
@@ -68,29 +68,29 @@ void noiseRemoval(const Mat& mat_in, Mat& mat_out) {
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
 void lineDetection(const Mat& mat_in, Mat& mat_out) {
-	if (getSettings((char*)settings_block_core, (char*)settings_lineDetection, settings_lineDetection_value_int)) {
-		if (!getSettings((char*)settings_block_core, (char*)settings_fastmode, settings_fastmode_value_int)) {
+	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_LINE_DETECTION, SETTINGS_LINE_DETECTION_VALUE_INT)) {
+		if (!getSettings((char*)BLOCK_CORE, (char*)SETTINGS_FASTMODE, SETTINGS_FASTMODE_VALUE_INT)) {
 			canny(mat_in, mat_out);
 		} else {
 			/*===============================================================================================================================================================================*/
-			logger((char*)logger_level_warning, (char*)logger_message_fMode);
+			logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_FAST_MODE);
 		}
 	} else {
-		logger((char*)logger_level_warning, (char*)logger_message_lDetection);
+		logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_LINE_DETECTION);
 	}
 }
 
 void databaseAdd(string filename) {
 	vector<string> stringVector;
 	FileStorage fsIn;
-	fsIn.open((database_name + string("\\") + database_file_name), FileStorage::READ);
-	fsIn[database_name] >> stringVector;
+	fsIn.open((NAME_DATABASE + string("\\") + FILE_NAME_DATABASE), FileStorage::READ);
+	fsIn[NAME_DATABASE] >> stringVector;
 	fsIn.release(); //idk
 
 	stringVector.insert(stringVector.end(), filename);
 
-	FileStorage fsOut((database_name + string("\\") + database_file_name), FileStorage::WRITE);
-	fsOut << database_name << stringVector;
+	FileStorage fsOut((NAME_DATABASE + string("\\") + FILE_NAME_DATABASE), FileStorage::WRITE);
+	fsOut << NAME_DATABASE << stringVector;
 	fsOut.release();
 }
 
@@ -138,11 +138,11 @@ void help() {
 }
 
 void detection(const Mat& mat_logo) {
-	if (getSettings((char*)settings_block_core, (char*)use_detection, use_detection_value_int)) {
+	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_DETECTION, SETTINGS_DETECTION_VALUE_INT)) {
 		vector<string> stringVector;
 		FileStorage fsIn;
-		fsIn.open((database_name + string("\\") + database_file_name), FileStorage::READ);
-		fsIn[database_name] >> stringVector;
+		fsIn.open((NAME_DATABASE + string("\\") + FILE_NAME_DATABASE), FileStorage::READ);
+		fsIn[NAME_DATABASE] >> stringVector;
 		fsIn.release();
 
 		vector<bool> boolVector;
@@ -205,27 +205,27 @@ void fastNoiseRemoval(const Mat& mat_in, Mat& mat_out) {
 //	Settings
 ///////////////////////////////////////////////////////////////////////////////
 string getSettingsString(char *block, char *value) {
-	char text[buffer_size];
-	GetPrivateProfileString(block, value, settings_block_default, text, buffer_size, settings_file_name);
+	char text[BUFFER_SIZE];
+	GetPrivateProfileString(block, value, BLOCK_DEFAULT, text, BUFFER_SIZE, FILE_NAME_CONFIG);
 	return text;
 }
 
 string getSettingsString(char *block, char *value, char *ch_return_default) {
-	char text[buffer_size];
-	GetPrivateProfileString(block, value, ch_return_default, text, buffer_size, settings_file_name);
+	char text[BUFFER_SIZE];
+	GetPrivateProfileString(block, value, ch_return_default, text, BUFFER_SIZE, FILE_NAME_CONFIG);
 	return text;
 }
 
 int getSettings(char *block, char *value) {
-	return GetPrivateProfileInt(block, value, -1, settings_file_name);
+	return GetPrivateProfileInt(block, value, -1, FILE_NAME_CONFIG);
 }
 
 int getSettings(char *block, char *value, int i_return_default) {
-	return GetPrivateProfileInt(block, value, i_return_default, settings_file_name);
+	return GetPrivateProfileInt(block, value, i_return_default, FILE_NAME_CONFIG);
 }
 
 void setSettings(char *block, char *value, char *text) {
-	WritePrivateProfileString(block, value, text, settings_file_name);
+	WritePrivateProfileString(block, value, text, FILE_NAME_CONFIG);
 }
 
 bool check_file(char *filename) {
@@ -248,35 +248,35 @@ bool check_file(string filename) {
 }
 
 void settings_initialization() {
-	if ((_mkdir((char*)database_name)) == 0) {
-		logger((char*)logger_level_warning, (char*)logger_message_cDir);
+	if ((_mkdir((char*)NAME_DATABASE)) == 0) {
+		logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_CREATE_DIR);
 	} else {
-		logger((char*)logger_level_warning, (char*)logger_message_cDir_not);
+		logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_CREATE_DIR_NOT);
 	}
-	if (!check_file((char*)settings_file_name)) {
-		createFile((char*)settings_file_name);
+	if (!check_file((char*)FILE_NAME_CONFIG)) {
+		createFile((char*)FILE_NAME_CONFIG);
 
-		setSettings((char*)settings_block_core, (char*)settings_fastmode, (char*)settings_fastmode_value);
-		setSettings((char*)settings_block_core, (char*)settings_noiseReduction, (char*)settings_noiseReduction_value);
-		setSettings((char*)settings_block_core, (char*)settings_machineLearning, (char*)settings_machineLearning_value);
-		setSettings((char*)settings_block_core, (char*)use_detection, (char*)use_detection_value);
-		setSettings((char*)settings_block_core, (char*)save_processed_image, (char*)save_processed_image_value);
+		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_FASTMODE, (char*)SETTINGS_FASTMODE_VALUE);
+		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_NOISE_REDUCTION, (char*)SETTINGS_NOISE_REDUCTION_VALUE);
+		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_MACHINE_LEARNING, (char*)SETTINGS_MACHINE_LEARNING_VALUE);
+		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_DETECTION, (char*)SETTINGS_DETECTION_VALUE);
+		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE_VALUE);
 
-		setSettings((char*)settings_block_logger, (char*)settings_log, (char*)settings_log_value);
-		setSettings((char*)settings_block_logger, (char*)settings_logTime, (char*)settings_logTime_value);
+		setSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG, (char*)SETTINGS_LOG_VALUE);
+		setSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG_TIME, (char*)SETTINGS_LOG_TIME_VALUE);
 
-		setSettings((char*)settings_block_carModel, (char*)settings_carModel_example, (char*)settings_carModel_example_description);
+		setSettings((char*)BLOCK_CARMODEL, (char*)settings_carModel_example, (char*)settings_carModel_example_description);
 
 		setSettings((char*)settings_block_description, (char*)settings_carModel_example_file, (char*)settings_description_example);
 
 	}
-	if (!check_file(database_name + string("\\") + database_file_name)) {
+	if (!check_file(NAME_DATABASE + string("\\") + FILE_NAME_DATABASE)) {
 		vector<string> stringVector;
-		FileStorage fsOut((database_name + string("\\") + database_file_name), FileStorage::WRITE);
-		fsOut << database_name << stringVector;
+		FileStorage fsOut((NAME_DATABASE + string("\\") + FILE_NAME_DATABASE), FileStorage::WRITE);
+		fsOut << NAME_DATABASE << stringVector;
 		fsOut.release();
 	}
-	if (!check_file(database_name + string("\\") + settings_carModel_example_file)) {
+	if (!check_file(NAME_DATABASE + string("\\") + settings_carModel_example_file)) {
 		databaseAdd(settings_carModel_example_file);
 	}
 }
@@ -305,9 +305,9 @@ void createDir(string namedir) {
 	///
 	///		Возможно это связано с тем, что нет прав на создание директории или директория уже есть
 	if ((_mkdir(namedir.c_str())) == 0) {
-		logger((char*)logger_level_warning, (char*)logger_message_cDir);
+		logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_CREATE_DIR);
 	} else {
-		logger((char*)logger_level_warning, (char*)logger_message_cDir_not);
+		logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_CREATE_DIR_NOT);
 	}
 }
 

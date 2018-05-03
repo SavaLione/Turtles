@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
 	src = imread(imagename, 1);
 
 	settings_initialization();
-	clearning((database_name + std::string("\\") + database_file_name), database_name);
+	clearning((NAME_DATABASE + std::string("\\") + FILE_NAME_DATABASE), NAME_DATABASE);
 
 
 	resize(src, dst, Size(settings_size_photo, settings_size_photo));
@@ -44,8 +44,8 @@ int main(int argc, char* argv[]) {
 
 	detection(src);
 
-	if (getSettings((char*)settings_block_core, (char*)save_processed_image, save_processed_image_value_int)) {
-		imwrite((char*)save_processed_image_name, src);
+	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE, SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT)) {
+		imwrite((char*)SETTINGS_SAVE_PROCESSED_IMAGE_NAME, src);
 	}
 
 	system("pause");

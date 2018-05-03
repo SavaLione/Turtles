@@ -27,12 +27,12 @@ using namespace yenot;
 */
 void logger(char *level, char *text) {
 	/// Проверяем, нужно ли логировать.
-	if (getSettings((char*)settings_block_logger, (char*)settings_log)) {
+	if (getSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG)) {
 		/// Проверка наличия файла с выводом лога в папке.
 		///
 		/// Если файл не найден, то создаём его
-		if (!check_file((char*)logger_file_name)) {
-			ofstream fout(logger_file_name);
+		if (!check_file((char*)FILE_NAME_LOGGER)) {
+			ofstream fout(FILE_NAME_LOGGER);
 			fout.close();
 		}
 		/// Проверка, нужно ли логировать с выводом времени
@@ -60,7 +60,7 @@ void logger(char *level, char *text) {
 		///		Записываем данные в файл
 		///
 		///		Закрываем файл
-		if (getSettings((char*)settings_block_logger, (char*)settings_logTime)) {
+		if (getSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG_TIME)) {
 			char *year = "", *month = "", *day = "", *hour = "", *minute = "", *second = "";
 			SYSTEMTIME time;
 			GetLocalTime(&time);
@@ -72,7 +72,7 @@ void logger(char *level, char *text) {
 			if (time.wMinute < 10) { minute = "0"; }
 			if (time.wSecond < 10) { second = "0"; }
 
-			ofstream fout(logger_file_name, ios_base::app);
+			ofstream fout(FILE_NAME_LOGGER, ios_base::app);
 			
 			/// Записываем данные в файл.
 			///
@@ -92,7 +92,7 @@ void logger(char *level, char *text) {
 				<< "\n";
 			fout.close();
 		} else {
-			ofstream fout(logger_file_name, ios_base::app);
+			ofstream fout(FILE_NAME_LOGGER, ios_base::app);
 			/// Записываем данные в файл.
 			///
 			///	Пример:
@@ -128,8 +128,8 @@ void logger_xy(double x, int y) {
 	///
 	/// Закрываем файл
 	/// @code
-	if (getSettings((char*)settings_block_logger, (char*)settings_log)) {
-		ofstream fout(logger_file_name, ios_base::app);
+	if (getSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG)) {
+		ofstream fout(FILE_NAME_LOGGER, ios_base::app);
 		char ch_x[1024];
 
 		sprintf(ch_x, "%f", x);
