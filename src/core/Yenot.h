@@ -96,29 +96,19 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	//	Filters
 	///////////////////////////////////////////////////////////////////////////////
-	const int diameter_each_pixel = 9;
-	const int sigmaColor = 75;
-	const int sigmaSpace = 75;
+	const int DIAMETER__EACH_PIXEL = 9;
+	const int SIGMA_COLOR = 75;
+	const int SIGMA_SPACE = 75;
 	
-	/// Фильтр Гаусса. Размер ядра по x
+	/// Фильтр. Размер ядра по x
 	///
 	/// Число не чётное
-	const int gaussianblur_kernel_x = 5; // KERNEL_X
+	const int KERNEL_X = 5;
 	
-	/// Фильтр Гаусса. Размер ядра по x
+	/// Фильтр. Размер ядра по x
 	///
 	/// Число не чётное
-	const int gaussianblur_kernel_y = 5; // KERNEL_Y
-	
-	/// Размытие. Размер ядра по x
-	///
-	/// Число не чётное
-	const int blur_kernel_x = 5;
-	
-	/// Размытие. Размер ядра по x
-	///
-	/// Число не чётное
-	const int blur_kernel_y = 5;
+	const int KERNEL_Y = 5;
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Logger

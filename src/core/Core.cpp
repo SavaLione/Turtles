@@ -43,9 +43,9 @@ void noiseRemoval(const Mat& mat_in, Mat& mat_out) {
 	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_NOISE_REDUCTION, SETTINGS_NOISE_REDUCTION_VALUE_INT)) {
 		// If no fast
 		if (!getSettings((char*)BLOCK_CORE, (char*)SETTINGS_FASTMODE, SETTINGS_FASTMODE_VALUE_INT)) {
-			bilateralFilter(mat_in, mat_out, diameter_each_pixel, sigmaColor, sigmaSpace);
+			bilateralFilter(mat_in, mat_out, DIAMETER__EACH_PIXEL, SIGMA_COLOR, SIGMA_SPACE);
 		} else {
-			GaussianBlur(mat_in, mat_out, Size(gaussianblur_kernel_x, gaussianblur_kernel_y), 0, 0);
+			GaussianBlur(mat_in, mat_out, Size(KERNEL_X, KERNEL_Y), 0, 0);
 			logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_FAST_MODE);
 		}
 	} else {
@@ -174,7 +174,7 @@ void detection(const Mat& mat_logo) {
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
 void blur(const Mat& mat_in, Mat& mat_out) {
-	blur(mat_in, mat_out, Size(blur_kernel_x, blur_kernel_y));
+	blur(mat_in, mat_out, Size(KERNEL_X, KERNEL_Y));
 }
 
 /**
