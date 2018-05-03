@@ -68,10 +68,6 @@ namespace yenot {
 	const char SETTINGS_NOISE_REDUCTION_VALUE[] = "1";
 	const int SETTINGS_NOISE_REDUCTION_VALUE_INT = 1;
 
-	const char SETTINGS_MACHINE_LEARNING[] = "mLearning";
-	const char SETTINGS_MACHINE_LEARNING_VALUE[] = "1";
-	const int SETTINGS_MACHINE_LEARNING_VALUE_INT = 1;
-
 	const char SETTINGS_LINE_DETECTION[] = "lDetection";
 	const char SETTINGS_LINE_DETECTION_VALUE[] = "1";
 	const int SETTINGS_LINE_DETECTION_VALUE_INT = 1;

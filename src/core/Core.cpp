@@ -5,17 +5,19 @@
 	@date 12 Apr 2018
 */
 #include <Windows.h>
-#include <fstream>
-#include <string>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/highgui/highgui_c.h>
-#include <cstdlib>
-#include <cstdio>
-#include <direct.h>
-#include <vector>
 
-#include "Yenot.h"
-#include "Core.h"
+//#include <fstream>
+//#include <string>
+//#include <opencv2/imgproc/imgproc.hpp>
+//#include <opencv2/highgui/highgui_c.h>
+//#include <cstdlib>
+//#include <cstdio>
+//#include <vector>
+
+#include <direct.h>
+
+#include "..\core\Yenot.h"
+#include "..\core\Core.h"
 #include "..\io\Logger.h"
 
 using namespace cv;
@@ -258,7 +260,6 @@ void settings_initialization() {
 
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_FASTMODE, (char*)SETTINGS_FASTMODE_VALUE);
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_NOISE_REDUCTION, (char*)SETTINGS_NOISE_REDUCTION_VALUE);
-		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_MACHINE_LEARNING, (char*)SETTINGS_MACHINE_LEARNING_VALUE);
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_DETECTION, (char*)SETTINGS_DETECTION_VALUE);
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE_VALUE);
 
