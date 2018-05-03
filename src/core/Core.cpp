@@ -5,15 +5,6 @@
 	@date 12 Apr 2018
 */
 #include <Windows.h>
-
-//#include <fstream>
-//#include <string>
-//#include <opencv2/imgproc/imgproc.hpp>
-//#include <opencv2/highgui/highgui_c.h>
-//#include <cstdlib>
-//#include <cstdio>
-//#include <vector>
-
 #include <direct.h>
 
 #include "..\core\Yenot.h"

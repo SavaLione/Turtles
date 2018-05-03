@@ -4,17 +4,8 @@
 	@author SavaLione
 	@date 28 Mar 2018
 */
-#include <iostream>
-#include <Windows.h>
 
-#include <opencv\highgui.h>
-#include <opencv\cv.h>
-#include <opencv2\opencv.hpp>
-
-#include <ctime>
-#include <filesystem>
-
-#include "Yenot.h"
+#include "..\core\Yenot.h"
 #include "..\core\Core.h"
 #include "..\io\Logger.h"
 
@@ -47,7 +38,5 @@ int main(int argc, char* argv[]) {
 	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE, SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT)) {
 		imwrite((char*)SETTINGS_SAVE_PROCESSED_IMAGE_NAME, src);
 	}
-
-	system("pause");
 	return i_return;
 }

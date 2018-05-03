@@ -7,8 +7,6 @@
 #ifndef YENOT_H
 #define YENOT_H
 
-#include <opencv2/opencv.hpp>
-
 /**
 	@brief Пространство имён с константами
 	

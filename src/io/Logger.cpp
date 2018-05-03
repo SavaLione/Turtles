@@ -4,12 +4,7 @@
 	@author SavaLione
 	@date 1 Apr 2018
 */
-#include <string>
-#include <fstream>
 #include <windows.h>
-#include <stdio.h>
-
-#include <iostream>
 
 #include "..\core\Yenot.h"
 #include "..\core\Core.h"
