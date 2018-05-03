@@ -128,8 +128,8 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	//	Errors
 	///////////////////////////////////////////////////////////////////////////////
-	const int ERROR_IMAGE = -100;
-	const int ERROR_INIT = -200;
+	const int ERROR_INIT = -100;
+	const int ERROR_IMAGE = -200;
 	const int ERROR_CLEARNING = -300;
 	const int ERROR_RESIZE = -400;
 	const int ERROR_NOISE_REMOVAL = -500;

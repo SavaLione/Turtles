@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
 	} catch (string& e) {
 		cerr << e;
 		error = true;
-		i_return = -1;
+		i_return = ERROR_INIT;
 	}
 	
 	if (!error)
@@ -44,7 +44,7 @@ int main(int argc, char* argv[]) {
 		} catch (string& e) {
 			logger((char*)LOGGER_LEVEL_ERROR, (char*)e.c_str());
 			error = true;
-			i_return = -1;
+			i_return = ERROR_IMAGE;
 		}
 
 	if (!error) {
@@ -57,7 +57,7 @@ int main(int argc, char* argv[]) {
 		} catch (string& e) {
 			logger((char*)LOGGER_LEVEL_ERROR, (char*)e.c_str());
 			error = true;
-			i_return = -1;
+			i_return = ERROR_CLEARNING;
 		}
 	
 	if (!error)
@@ -67,7 +67,7 @@ int main(int argc, char* argv[]) {
 		} catch (string& e) {
 			logger((char*)LOGGER_LEVEL_ERROR, (char*)e.c_str());
 			error = true;
-			i_return = -1;
+			i_return = ERROR_RESIZE;
 		}
 	
 	if (!error)
@@ -77,7 +77,7 @@ int main(int argc, char* argv[]) {
 		} catch (string& e) {
 			logger((char*)LOGGER_LEVEL_ERROR, (char*)e.c_str());
 			error = true;
-			i_return = -1;
+			i_return = ERROR_NOISE_REMOVAL;
 		}
 
 	if (!error)
@@ -87,7 +87,7 @@ int main(int argc, char* argv[]) {
 		} catch (string& e) {
 			logger((char*)LOGGER_LEVEL_ERROR, (char*)e.c_str());
 			error = true;
-			i_return = -1;
+			i_return = ERROR_LINE_DETECTION;
 		}
 
 	if (!error)
@@ -96,7 +96,7 @@ int main(int argc, char* argv[]) {
 		} catch (string& e) {
 			logger((char*)LOGGER_LEVEL_ERROR, (char*)e.c_str());
 			error = true;
-			i_return = -1;
+			i_return = ERROR_DETECTION;
 		}
 
 	if (!error)
@@ -104,6 +104,5 @@ int main(int argc, char* argv[]) {
 			imwrite((char*)SETTINGS_SAVE_PROCESSED_IMAGE_NAME, src);
 		}
 	
-	system("pause");
 	return i_return;
 }
