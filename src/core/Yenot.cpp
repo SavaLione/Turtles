@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
 
 	src = imread(imagename, 1);
 
-	settings_initialization();
+	settingsInitialization();
 	clearning((NAME_DATABASE + std::string("\\") + FILE_NAME_DATABASE), NAME_DATABASE);
 
 

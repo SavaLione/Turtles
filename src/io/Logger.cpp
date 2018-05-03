@@ -26,7 +26,7 @@ void logger(char *level, char *text) {
 		/// Проверка наличия файла с выводом лога в папке.
 		///
 		/// Если файл не найден, то создаём его
-		if (!check_file((char*)FILE_NAME_LOGGER)) {
+		if (!checkFile((char*)FILE_NAME_LOGGER)) {
 			ofstream fout(FILE_NAME_LOGGER);
 			fout.close();
 		}
@@ -108,7 +108,7 @@ void logger(char *level, char *text) {
 	@param [in] x Время
 	@param [in] y Итерация
 */
-void logger_xy(double x, int y) {
+void loggerXY(double x, int y) {
 	/// Проверяем, нужно ли логировать.
 	///
 	/// Открываем файл для вывода лога в конце и для записи

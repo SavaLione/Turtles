@@ -24,7 +24,6 @@ void help();
 //	Filters
 ///////////////////////////////////////////////////////////////////////////////
 void blur(const cv::Mat& mat_in, cv::Mat& mat_out);
-void fastNoiseRemovalGrey(const cv::Mat& mat_in, cv::Mat& mat_out);
 void fastNoiseRemoval(const cv::Mat& mat_in, cv::Mat& mat_out);
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -40,9 +39,9 @@ std::string getSettingsString(char *block, char *value, char *ch_return_default)
 int getSettings(char *block, char *value);
 int getSettings(char *block, char *value, int i_return_default);
 void setSettings(char *block, char *value, char *text);
-bool check_file(char *filename);
-bool check_file(std::string filename);
-void settings_initialization();
+bool checkFile(char *filename);
+bool checkFile(std::string filename);
+void settingsInitialization();
 void createFile(char *file_name);
 void createDir(std::string namedir);
 std::string description(std::string value);

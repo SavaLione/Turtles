@@ -25,6 +25,6 @@ void logger(char *level, char *text);
 	@param [in] x Время
 	@param [in] y Итерация
 */
-void logger_xy(double x, int y);
+void loggerXY(double x, int y);
 
 #endif // LOGGER_H

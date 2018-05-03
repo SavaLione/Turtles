@@ -178,18 +178,6 @@ void blur(const Mat& mat_in, Mat& mat_out) {
 	@param [in] mat_in Матрица с изображением для обработки
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
-void fastNoiseRemovalGrey(const Mat& mat_in, Mat& mat_out) {
-	fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
-}
-
-/**
-	@brief Функция для обработки изображений.
-	
-	Быстрый фильтр для размытия изображений в оттенках серого.
-	
-	@param [in] mat_in Матрица с изображением для обработки
-	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
-*/
 void fastNoiseRemoval(const Mat& mat_in, Mat& mat_out) {
 	fastNlMeansDenoising(mat_in, mat_out, 3.0f, 7, 21);
 }
@@ -221,7 +209,7 @@ void setSettings(char *block, char *value, char *text) {
 	WritePrivateProfileString(block, value, text, FILE_NAME_CONFIG);
 }
 
-bool check_file(char *filename) {
+bool checkFile(char *filename) {
 	bool b_return = false;
 	ifstream file;
 	file.open(filename);
@@ -230,7 +218,7 @@ bool check_file(char *filename) {
 	}
 	return b_return;
 }
-bool check_file(string filename) {
+bool checkFile(string filename) {
 	bool b_return = false;
 	ifstream file;
 	file.open(filename);
@@ -240,13 +228,13 @@ bool check_file(string filename) {
 	return b_return;
 }
 
-void settings_initialization() {
+void settingsInitialization() {
 	if ((_mkdir((char*)NAME_DATABASE)) == 0) {
 		logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_CREATE_DIR);
 	} else {
 		logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_CREATE_DIR_NOT);
 	}
-	if (!check_file((char*)FILE_NAME_CONFIG)) {
+	if (!checkFile((char*)FILE_NAME_CONFIG)) {
 		createFile((char*)FILE_NAME_CONFIG);
 
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_FASTMODE, (char*)SETTINGS_FASTMODE_VALUE);
@@ -262,13 +250,13 @@ void settings_initialization() {
 		setSettings((char*)settings_block_description, (char*)settings_carModel_example_file, (char*)settings_description_example);
 
 	}
-	if (!check_file(NAME_DATABASE + string("\\") + FILE_NAME_DATABASE)) {
+	if (!checkFile(NAME_DATABASE + string("\\") + FILE_NAME_DATABASE)) {
 		vector<string> stringVector;
 		FileStorage fsOut((NAME_DATABASE + string("\\") + FILE_NAME_DATABASE), FileStorage::WRITE);
 		fsOut << NAME_DATABASE << stringVector;
 		fsOut.release();
 	}
-	if (!check_file(NAME_DATABASE + string("\\") + settings_carModel_example_file)) {
+	if (!checkFile(NAME_DATABASE + string("\\") + settings_carModel_example_file)) {
 		databaseAdd(settings_carModel_example_file);
 	}
 }
@@ -353,6 +341,6 @@ void v_test() {
 
 		double d = (double)search_time / 1000.0;
 
-		logger_xy(d, i);
+		loggerXY(d, i);
 	}
 }
