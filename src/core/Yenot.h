@@ -121,7 +121,17 @@ namespace yenot {
 	const char LOGGER_MESSAGE_FAST_MODE[] = "Fast mode enabled.";
 	const char LOGGER_MESSAGE_CREATE_DIR[] = "Folder created.";
 	const char LOGGER_MESSAGE_CREATE_DIR_NOT[] = "Folder not created.";
-
+	
+	const char LOGGER_MESSAGE_ERROR_PICTURE[] = "Error related to image. Wrong format or not specified.";
+	const char LOGGER_MESSAGE_ERROR_PICTURE_NOT_SPECIFIED[] = "Error. Image not specified."; 
+	
+	///////////////////////////////////////////////////////////////////////////////
+	//	Errors
+	///////////////////////////////////////////////////////////////////////////////
+	const int ERROR_IMAGE = -100;
+	const int ERROR_INIT = -200;
+	const int ERROR_CLEARNING = -300;
+	
 	///////////////////////////////////////////////////////////////////////////////
 	//	Car model
 	///////////////////////////////////////////////////////////////////////////////
