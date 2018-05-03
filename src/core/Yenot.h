@@ -30,68 +30,68 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	
 	/// Файл с настройками
-	const char FILE_NAME_CONFIG[] = "./config.ini"; // FILE_NAME_CONFIG
+	const char FILE_NAME_CONFIG[] = "./config.ini";
 	
 	/// Файл с логами
-	const char FILE_NAME_LOGGER[] = "Yenot.log"; // FILE_NAME_LOGGER
+	const char FILE_NAME_LOGGER[] = "Yenot.log";
 	
 	/// Файл, в котором хранятся 
-	const char FILE_NAME_DATABASE[] = "database.xml"; // FILE_NAME_DATABASE
+	const char FILE_NAME_DATABASE[] = "database.xml";
 	
 	/// 
-	const char NAME_DATABASE[] = "database"; // NAME_DATABASE
+	const char NAME_DATABASE[] = "database";
 	
 	/// Расширение для хранения данных
 	///
 	/// Поддерживается xml и yaml
-	const char EXTENSIONS_DATABASE_MEMBER[] = ".xml"; // EXTENSIONS_DATABASE_MEMBER
+	const char EXTENSIONS_DATABASE_MEMBER[] = ".xml";
 	
 	/// Расширение для хранения фотографий
 	///
 	///Поддерживается png jpg jpeg
-	const char EXTENSIONS_DATABASE_MEMBER_photo[] = ".png"; // EXTENSIONS_DATABASE_PHOTO
+	const char EXTENSIONS_DATABASE_MEMBER_photo[] = ".png";
 	
 	/// Стандартный размер буфера
-	const int BUFFER_SIZE = 128; // BUFFER_SIZE
+	const int BUFFER_SIZE = 128;
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Core
 	///////////////////////////////////////////////////////////////////////////////
-	const char BLOCK_CORE[] = "Core"; // BLOCK_CORE
-	const char BLOCK_DEFAULT[] = "General"; // BLOCK_DEFAULT
+	const char BLOCK_CORE[] = "Core";
+	const char BLOCK_DEFAULT[] = "General";
 
-	const char SETTINGS_FASTMODE[] = "fMode"; // SETTINGS_FASTMODE
-	const char SETTINGS_FASTMODE_VALUE[] = "0"; // SETTINGS_FASTMODE_VALUE
-	const int SETTINGS_FASTMODE_VALUE_INT = 0; // SETTINGS_FASTMODE_VALUE_INT
+	const char SETTINGS_FASTMODE[] = "fMode";
+	const char SETTINGS_FASTMODE_VALUE[] = "0";
+	const int SETTINGS_FASTMODE_VALUE_INT = 0;
 
-	const char SETTINGS_NOISE_REDUCTION[] = "nReduction"; // SETTINGS_NOISE_REDUCTION
-	const char SETTINGS_NOISE_REDUCTION_VALUE[] = "1"; // SETTINGS_NOISE_REDUCTION_VALUE
-	const int SETTINGS_NOISE_REDUCTION_VALUE_INT = 1; // SETTINGS_NOISE_REDUCTION_VALUE_INT
+	const char SETTINGS_NOISE_REDUCTION[] = "nReduction";
+	const char SETTINGS_NOISE_REDUCTION_VALUE[] = "1";
+	const int SETTINGS_NOISE_REDUCTION_VALUE_INT = 1;
 
-	const char SETTINGS_MACHINE_LEARNING[] = "mLearning"; // SETTINGS_MACHINE_LEARNING
-	const char SETTINGS_MACHINE_LEARNING_VALUE[] = "1"; // SETTINGS_MACHINE_LEARNING_VALUE
-	const int SETTINGS_MACHINE_LEARNING_VALUE_INT = 1; // SETTINGS_MACHINE_LEARNING_VALUE_INT
+	const char SETTINGS_MACHINE_LEARNING[] = "mLearning";
+	const char SETTINGS_MACHINE_LEARNING_VALUE[] = "1";
+	const int SETTINGS_MACHINE_LEARNING_VALUE_INT = 1;
 
-	const char SETTINGS_LINE_DETECTION[] = "lDetection"; // SETTINGS_LINE_DETECTION
-	const char SETTINGS_LINE_DETECTION_VALUE[] = "1"; // SETTINGS_LINE_DETECTION_VALUE
-	const int SETTINGS_LINE_DETECTION_VALUE_INT = 1; // SETTINGS_LINE_DETECTION_VALUE_INT
+	const char SETTINGS_LINE_DETECTION[] = "lDetection";
+	const char SETTINGS_LINE_DETECTION_VALUE[] = "1";
+	const int SETTINGS_LINE_DETECTION_VALUE_INT = 1;
 
-	const char SETTINGS_DETECTION[] = "detection"; // SETTINGS_DETECTION
-	const char SETTINGS_DETECTION_VALUE[] = "1"; // SETTINGS_DETECTION_VALUE
-	const int SETTINGS_DETECTION_VALUE_INT = 1; // SETTINGS_DETECTION_VALUE_INT
+	const char SETTINGS_DETECTION[] = "detection";
+	const char SETTINGS_DETECTION_VALUE[] = "1";
+	const int SETTINGS_DETECTION_VALUE_INT = 1;
 
-	const char SETTINGS_SAVE_PROCESSED_IMAGE[] = "sImage"; // SETTINGS_SAVE_PROCESSED_IMAGE
-	const char SETTINGS_SAVE_PROCESSED_IMAGE_VALUE[] = "0"; // SETTINGS_SAVE_PROCESSED_IMAGE_VALUE
-	const int SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT = 0; // SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT
-	const char SETTINGS_SAVE_PROCESSED_IMAGE_NAME[] = "test.png"; // SETTINGS_SAVE_PROCESSED_IMAGE_NAME
+	const char SETTINGS_SAVE_PROCESSED_IMAGE[] = "sImage";
+	const char SETTINGS_SAVE_PROCESSED_IMAGE_VALUE[] = "0";
+	const int SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT = 0;
+	const char SETTINGS_SAVE_PROCESSED_IMAGE_NAME[] = "test.png";
 
-	const char SETTINGS_LOG[] = "log"; // SETTINGS_LOG
-	const char SETTINGS_LOG_VALUE[] = "1"; // SETTINGS_LOG_VALUE
-	const int SETTINGS_LOG_VALUE_INT = 1; // SETTINGS_LOG_VALUE_INT
+	const char SETTINGS_LOG[] = "log";
+	const char SETTINGS_LOG_VALUE[] = "1";
+	const int SETTINGS_LOG_VALUE_INT = 1;
 	
-	const char SETTINGS_LOG_TIME[] = "lTime"; // SETTINGS_LOG_TIME
-	const char SETTINGS_LOG_TIME_VALUE[] = "1"; // SETTINGS_LOG_TIME_VALUE
-	const int SETTINGS_LOG_TIME_VALUE_INT = 1; // SETTINGS_LOG_TIME_VALUE_INT
+	const char SETTINGS_LOG_TIME[] = "lTime";
+	const char SETTINGS_LOG_TIME_VALUE[] = "1";
+	const int SETTINGS_LOG_TIME_VALUE_INT = 1;
 	
 	///////////////////////////////////////////////////////////////////////////////
 	//	Filters
@@ -123,25 +123,25 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	//	Logger
 	///////////////////////////////////////////////////////////////////////////////
-	const char BLOCK_LOGGER[] = "Logger"; // BLOCK_LOGGER
+	const char BLOCK_LOGGER[] = "Logger";
 
-	const char LOGGER_LEVEL_WARNING[] = "WARN"; // LOGGER_LEVEL_WARNING
-	const char LOGGER_LEVEL_ERROR[] = "ERROR"; // LOGGER_LEVEL_ERROR
-	const char LOGGER_LEVEL_MESSAGE[] = "MSG"; // LOGGER_LEVEL_MESSAGE
+	const char LOGGER_LEVEL_WARNING[] = "WARN";
+	const char LOGGER_LEVEL_ERROR[] = "ERROR";
+	const char LOGGER_LEVEL_MESSAGE[] = "MSG";
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Log messages
 	///////////////////////////////////////////////////////////////////////////////
-	const char LOGGER_MESSAGE_NOISE_REMOVAL[] = "Noise filter is disabled."; // LOGGER_MESSAGE_NOISE_REMOVAL
-	const char LOGGER_MESSAGE_LINE_DETECTION[] = "Line detection is disabled."; // LOGGER_MESSAGE_LINE_DETECTION
-	const char LOGGER_MESSAGE_FAST_MODE[] = "Fast mode enabled."; // LOGGER_MESSAGE_FAST_MODE
-	const char LOGGER_MESSAGE_CREATE_DIR[] = "Folder created."; // LOGGER_MESSAGE_CREATE_DIR
-	const char LOGGER_MESSAGE_CREATE_DIR_NOT[] = "Folder not created."; // LOGGER_MESSAGE_CREATE_DIR_NOT
+	const char LOGGER_MESSAGE_NOISE_REMOVAL[] = "Noise filter is disabled.";
+	const char LOGGER_MESSAGE_LINE_DETECTION[] = "Line detection is disabled.";
+	const char LOGGER_MESSAGE_FAST_MODE[] = "Fast mode enabled.";
+	const char LOGGER_MESSAGE_CREATE_DIR[] = "Folder created.";
+	const char LOGGER_MESSAGE_CREATE_DIR_NOT[] = "Folder not created.";
 
 	///////////////////////////////////////////////////////////////////////////////
 	//	Car model
 	///////////////////////////////////////////////////////////////////////////////
-	const char BLOCK_CARMODEL[] = "carmodel"; // BLOCK_CARMODEL
+	const char BLOCK_CARMODEL[] = "carmodel";
 	const char settings_carModel_listphoto[] = "listphoto";
 
 	const char settings_carModel_example[] = "example";
