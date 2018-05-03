@@ -100,14 +100,8 @@ int main(int argc, char* argv[]) {
 		}
 
 	if (!error)
-		try {
-			if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE, SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT)) {
-				imwrite((char*)SETTINGS_SAVE_PROCESSED_IMAGE_NAME, src);
-			}
-		} catch (string& e) {
-			logger((char*)LOGGER_LEVEL_ERROR, (char*)e.c_str());
-			error = true;
-			i_return = -1;
+		if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE, SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT)) {
+			imwrite((char*)SETTINGS_SAVE_PROCESSED_IMAGE_NAME, src);
 		}
 	
 	system("pause");

@@ -131,6 +131,10 @@ namespace yenot {
 	const int ERROR_IMAGE = -100;
 	const int ERROR_INIT = -200;
 	const int ERROR_CLEARNING = -300;
+	const int ERROR_RESIZE = -400;
+	const int ERROR_NOISE_REMOVAL = -500;
+	const int ERROR_LINE_DETECTION = -600;
+	const int ERROR_DETECTION = -700;
 	
 	///////////////////////////////////////////////////////////////////////////////
 	//	Car model
