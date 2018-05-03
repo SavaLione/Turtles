@@ -36,7 +36,7 @@ void noiseRemoval(const Mat& mat_in, Mat& mat_out) {
 	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_NOISE_REDUCTION, SETTINGS_NOISE_REDUCTION_VALUE_INT)) {
 		// If no fast
 		if (!getSettings((char*)BLOCK_CORE, (char*)SETTINGS_FASTMODE, SETTINGS_FASTMODE_VALUE_INT)) {
-			bilateralFilter(mat_in, mat_out, DIAMETER__EACH_PIXEL, SIGMA_COLOR, SIGMA_SPACE);
+			bilateralFilter(mat_in, mat_out, DIAMETER_EACH_PIXEL, SIGMA_COLOR, SIGMA_SPACE);
 		} else {
 			GaussianBlur(mat_in, mat_out, Size(KERNEL_X, KERNEL_Y), 0, 0);
 			logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_FAST_MODE);
@@ -55,19 +55,12 @@ void noiseRemoval(const Mat& mat_in, Mat& mat_out) {
 	
 	Для обычного режима используется - canny(mat_in, mat_out);
 	
-	Для быстрого режима используется - 
-	
 	@param [in] mat_in Матрица с изображением для обработки
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
 void lineDetection(const Mat& mat_in, Mat& mat_out) {
 	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_LINE_DETECTION, SETTINGS_LINE_DETECTION_VALUE_INT)) {
-		if (!getSettings((char*)BLOCK_CORE, (char*)SETTINGS_FASTMODE, SETTINGS_FASTMODE_VALUE_INT)) {
-			canny(mat_in, mat_out);
-		} else {
-			/*===============================================================================================================================================================================*/
-			logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_FAST_MODE);
-		}
+		canny(mat_in, mat_out);
 	} else {
 		logger((char*)LOGGER_LEVEL_WARNING, (char*)LOGGER_MESSAGE_LINE_DETECTION);
 	}
@@ -78,7 +71,7 @@ void databaseAdd(string filename) {
 	FileStorage fsIn;
 	fsIn.open((NAME_DATABASE + string("\\") + FILE_NAME_DATABASE), FileStorage::READ);
 	fsIn[NAME_DATABASE] >> stringVector;
-	fsIn.release(); //idk
+	fsIn.release();
 
 	stringVector.insert(stringVector.end(), filename);
 
@@ -92,7 +85,7 @@ void clearning(string filename, string variable) {
 	FileStorage fsIn;
 	fsIn.open(filename, FileStorage::READ);
 	fsIn[variable] >> stringVector;
-	fsIn.release(); //idk
+	fsIn.release(); 
 
 	sort(stringVector.begin(), stringVector.end());
 	stringVector.resize(unique(stringVector.begin(), stringVector.end()) - stringVector.begin());
