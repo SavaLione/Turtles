@@ -6,7 +6,7 @@
 */
 #include "..\core\Yenot.h"
 #include "..\core\Core.h"
-#include "..\io\Logger.h"
+#include "..\core\Logger.h"
 
 using namespace cv;
 using namespace std;

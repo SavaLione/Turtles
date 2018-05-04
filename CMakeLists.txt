@@ -52,31 +52,15 @@ link_directories(${OPENCV_LIB_LINK})
 set(CORE_SOURCES
 		src/core/Yenot.cpp
 		src/core/Core.cpp
+		src/core/Logger.cpp
 )
 set(CORE_HEADERS
 		src/core/Yenot.h
 		src/core/Core.h
+		src/core/Logger.h
+		
 )
 set (YENOT_CORE ${CORE_SOURCES} ${CORE_HEADERS})
-
-# IO
-# ===================================================
-set(IO_SOURCES
-		src/io/Logger.cpp
-)
-
-set(IO_HEADERS
-		src/io/Logger.h
-)
-
-set (YENOT_IO ${IO_SOURCES} ${IO_HEADERS})
-
-# Yenot sources
-# ===================================================
-set(YENOT_SOURCES
-		${YENOT_CORE}
-		${YENOT_IO}
-)
 
 # Information
 # ===================================================
@@ -102,6 +86,6 @@ if (YENOT_INFORMATION OR YENOT_INFORMATION_SOURCE)
 	message(STATUS "============================")
 endif()
 project (${PROJECT})
-add_executable (${PROJECT} ${YENOT_SOURCES})
+add_executable (${PROJECT} ${YENOT_CORE})
 
 target_link_libraries(${PROJECT} ${CMAKE_SOURCE_DIR}/lib/opencv/x64/vc15/lib/opencv_world341.lib)
