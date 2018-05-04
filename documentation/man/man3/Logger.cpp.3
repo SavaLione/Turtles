@@ -1,4 +1,4 @@
-.TH "Logger.cpp" 3 "Ср 2 Май 2018" "Yenot" \" -*- nroff -*-
+.TH "Logger.cpp" 3 "Пт 4 Май 2018" "Yenot" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -7,15 +7,7 @@ Logger.cpp \- Модуль логирования\&. Поддерживает л
 .SH SYNOPSIS
 .br
 .PP
-\fC#include <string>\fP
-.br
-\fC#include <fstream>\fP
-.br
 \fC#include <windows\&.h>\fP
-.br
-\fC#include <stdio\&.h>\fP
-.br
-\fC#include <iostream>\fP
 .br
 \fC#include '\&.\&.\\core\\Yenot\&.h'\fP
 .br
@@ -29,10 +21,6 @@ Logger.cpp \- Модуль логирования\&. Поддерживает л
 .RI "void \fBlogger\fP (char *level, char *text)"
 .br
 .RI "Основная функция для логирования "
-.ti -1c
-.RI "void \fBlogger_xy\fP (double x, int y)"
-.br
-.RI "Функция для простого логирования\&. "
 .in -1c
 .SH "Подробное описание"
 .PP 
@@ -132,49 +120,7 @@ SavaLione
 .PP
  
 .PP
-См\&. определение в файле Logger\&.cpp строка 28
-.SS "void logger_xy (double x, int y)"
-
-.PP
-Функция для простого логирования\&. Используется для записи значений скорости выполнения алгоритмов в файл\&.
-.PP
-\fBАргументы:\fP
-.RS 4
-\fIx\fP Время 
-.br
-\fIy\fP Итерация 
-.RE
-.PP
-Проверяем, нужно ли логировать\&.
-.PP
-Открываем файл для вывода лога в конце и для записи
-.PP
-Создаём буфер - массив символов char для вывода времени с плавающей запятой
-.PP
-Присваиваем массиву символов время, полученное с переменной x
-.PP
-Открываем файл для логирования\&. Файл открываем для записи в конце\&.
-.PP
-Записываем данные в файл
-.PP
-Закрываем файл 
-.PP
-.nf
-if (getSettings((char*)settings_block_logger, (char*)settings_log)) {
-    ofstream fout(logger_file_name, ios_base::app);
-    char ch_x[1024];
-
-    sprintf(ch_x, "%f", x);
-
-    fout << ch_x << " " << y << "\n";
-    fout\&.close();
-}
-
-.fi
-.PP
- 
-.PP
-См\&. определение в файле Logger\&.cpp строка 116
+См\&. определение в файле Logger\&.cpp строка 23
 .SH "Автор"
 .PP 
 Автоматически создано Doxygen для Yenot из исходного текста\&.

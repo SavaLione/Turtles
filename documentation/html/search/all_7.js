@@ -4,14 +4,12 @@ var searchData=
   ['logger',['logger',['../_logger_8cpp.html#a0d6abeb129096910c85ae6cba8bb59cf',1,'logger(char *level, char *text):&#160;Logger.cpp'],['../_logger_8h.html#a0d6abeb129096910c85ae6cba8bb59cf',1,'logger(char *level, char *text):&#160;Logger.cpp']]],
   ['logger_2ecpp',['Logger.cpp',['../_logger_8cpp.html',1,'']]],
   ['logger_2eh',['Logger.h',['../_logger_8h.html',1,'']]],
-  ['logger_5ffile_5fname',['logger_file_name',['../namespaceyenot.html#ab82af39640477c63378716f6699d49fe',1,'yenot']]],
-  ['logger_5flevel_5ferror',['logger_level_error',['../namespaceyenot.html#a9624d76c2385fbb9861e403225b1d698',1,'yenot']]],
-  ['logger_5flevel_5fmessage',['logger_level_message',['../namespaceyenot.html#a536380830aa21975126348216a729b08',1,'yenot']]],
-  ['logger_5flevel_5fwarning',['logger_level_warning',['../namespaceyenot.html#ab09d0dabe8840893fe9dc4a855ffc2fa',1,'yenot']]],
-  ['logger_5fmessage_5fcdir',['logger_message_cDir',['../namespaceyenot.html#a674d34d95501a1071db0ac7b39c64f57',1,'yenot']]],
-  ['logger_5fmessage_5fcdir_5fnot',['logger_message_cDir_not',['../namespaceyenot.html#a16669256cbc1918ac8500a364e0ba21d',1,'yenot']]],
-  ['logger_5fmessage_5ffmode',['logger_message_fMode',['../namespaceyenot.html#a5cb3756995a6e5a93819405ca99eb35a',1,'yenot']]],
-  ['logger_5fmessage_5fldetection',['logger_message_lDetection',['../namespaceyenot.html#a7ba035b0bd5ec0ca88a1741671cf6818',1,'yenot']]],
-  ['logger_5fmessage_5fnoiseremoval',['logger_message_noiseRemoval',['../namespaceyenot.html#a27e7d588bfc41ad2d47d044d4541dad5',1,'yenot']]],
-  ['logger_5fxy',['logger_xy',['../_logger_8cpp.html#a5e632a6ec68609b973a180293035b94b',1,'logger_xy(double x, int y):&#160;Logger.cpp'],['../_logger_8h.html#a5e632a6ec68609b973a180293035b94b',1,'logger_xy(double x, int y):&#160;Logger.cpp']]]
+  ['logger_5flevel_5ferror',['LOGGER_LEVEL_ERROR',['../namespaceyenot.html#a08c0d88b074bcba3b7d79d019211a1ac',1,'yenot']]],
+  ['logger_5flevel_5fmessage',['LOGGER_LEVEL_MESSAGE',['../namespaceyenot.html#a75d435531623705520a8bd478ae6e3ed',1,'yenot']]],
+  ['logger_5flevel_5fwarning',['LOGGER_LEVEL_WARNING',['../namespaceyenot.html#a1133c576c0c3eebe5aa6c43529a56f21',1,'yenot']]],
+  ['logger_5fmessage_5fcreate_5fdir',['LOGGER_MESSAGE_CREATE_DIR',['../namespaceyenot.html#ace626bb1b7477b39cf2864aa0d0924e9',1,'yenot']]],
+  ['logger_5fmessage_5fcreate_5fdir_5fnot',['LOGGER_MESSAGE_CREATE_DIR_NOT',['../namespaceyenot.html#ae73ee066dad5c6455cb406ab3aa0473f',1,'yenot']]],
+  ['logger_5fmessage_5ffast_5fmode',['LOGGER_MESSAGE_FAST_MODE',['../namespaceyenot.html#a23d265aa1784a96ebe7ce76bedd308a6',1,'yenot']]],
+  ['logger_5fmessage_5fline_5fdetection',['LOGGER_MESSAGE_LINE_DETECTION',['../namespaceyenot.html#a3cc24a045a30435ab78be6014ff26a16',1,'yenot']]],
+  ['logger_5fmessage_5fnoise_5fremoval',['LOGGER_MESSAGE_NOISE_REMOVAL',['../namespaceyenot.html#ae3c6bd195ef1c9bdcbd48e5b44e17aaf',1,'yenot']]]
 ];

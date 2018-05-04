@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['help',['help',['../_core_8cpp.html#a97ee70a8770dc30d06c744b24eb2fcfc',1,'help():&#160;Core.cpp'],['../_core_8h.html#a97ee70a8770dc30d06c744b24eb2fcfc',1,'help():&#160;Core.cpp']]]
+  ['kernel_5fx',['KERNEL_X',['../namespaceyenot.html#aa753d0e3e99fb4b37b3930996bdfe563',1,'yenot']]],
+  ['kernel_5fy',['KERNEL_Y',['../namespaceyenot.html#a33a5af73a30e2b5684ee02cc4bf4c374',1,'yenot']]]
 ];

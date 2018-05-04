@@ -1,4 +1,4 @@
-.TH "Core.cpp" 3 "Ср 2 Май 2018" "Yenot" \" -*- nroff -*-
+.TH "Core.cpp" 3 "Пт 4 Май 2018" "Yenot" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -9,25 +9,11 @@ Core.cpp \- Ядро проекта\&. Содержит все главные и
 .PP
 \fC#include <Windows\&.h>\fP
 .br
-\fC#include <fstream>\fP
-.br
-\fC#include <string>\fP
-.br
-\fC#include <opencv2/imgproc/imgproc\&.hpp>\fP
-.br
-\fC#include <opencv2/highgui/highgui_c\&.h>\fP
-.br
-\fC#include <cstdlib>\fP
-.br
-\fC#include <cstdio>\fP
-.br
 \fC#include <direct\&.h>\fP
 .br
-\fC#include <vector>\fP
+\fC#include '\&.\&.\\core\\Yenot\&.h'\fP
 .br
-\fC#include 'Yenot\&.h'\fP
-.br
-\fC#include 'Core\&.h'\fP
+\fC#include '\&.\&.\\core\\Core\&.h'\fP
 .br
 \fC#include '\&.\&.\\io\\Logger\&.h'\fP
 .br
@@ -53,25 +39,7 @@ Core.cpp \- Ядро проекта\&. Содержит все главные и
 .RI "bool \fBdetectionLogo\fP (const Mat &mat_logo, string cascadefile)"
 .br
 .ti -1c
-.RI "void \fBhelp\fP ()"
-.br
-.ti -1c
 .RI "void \fBdetection\fP (const Mat &mat_logo)"
-.br
-.ti -1c
-.RI "void \fBblur\fP (const Mat &mat_in, Mat &mat_out)"
-.br
-.RI "Функция для обработки изображений\&. "
-.ti -1c
-.RI "void \fBfastNoiseRemovalGrey\fP (const Mat &mat_in, Mat &mat_out)"
-.br
-.RI "Функция для обработки изображений\&. "
-.ti -1c
-.RI "void \fBfastNoiseRemoval\fP (const Mat &mat_in, Mat &mat_out)"
-.br
-.RI "Функция для обработки изображений\&. "
-.ti -1c
-.RI "string \fBgetSettingsString\fP (char *block, char *value)"
 .br
 .ti -1c
 .RI "string \fBgetSettingsString\fP (char *block, char *value, char *ch_return_default)"
@@ -86,13 +54,13 @@ Core.cpp \- Ядро проекта\&. Содержит все главные и
 .RI "void \fBsetSettings\fP (char *block, char *value, char *text)"
 .br
 .ti -1c
-.RI "bool \fBcheck_file\fP (char *filename)"
+.RI "bool \fBcheckFile\fP (char *filename)"
 .br
 .ti -1c
-.RI "bool \fBcheck_file\fP (string filename)"
+.RI "bool \fBcheckFile\fP (string filename)"
 .br
 .ti -1c
-.RI "void \fBsettings_initialization\fP ()"
+.RI "void \fBsettingsInitialization\fP ()"
 .br
 .ti -1c
 .RI "void \fBcreateFile\fP (char *file_name)"
@@ -110,10 +78,6 @@ Core.cpp \- Ядро проекта\&. Содержит все главные и
 .RI "void \fBcanny\fP (const Mat &mat_in, Mat &mat_out)"
 .br
 .RI "Функция для обработки изображений\&. "
-.ti -1c
-.RI "void \fBv_test\fP ()"
-.br
-.RI "Функция для проведения тестов\&. Замер скорости выполнения алгоритмов\&. "
 .in -1c
 .SH "Подробное описание"
 .PP 
@@ -136,21 +100,6 @@ SavaLione
 См\&. определение в файле \fBCore\&.cpp\fP
 .SH "Функции"
 .PP 
-.SS "void blur (const Mat & mat_in, Mat & mat_out)"
-
-.PP
-Функция для обработки изображений\&. Фильтр для размытия изображений\&.
-.PP
-\fBАргументы:\fP
-.RS 4
-\fImat_in\fP Матрица с изображением для обработки 
-.br
-\fImat_out\fP Матрица с обработанным изображением, которая будет возвращена 
-.RE
-.PP
-
-.PP
-См\&. определение в файле Core\&.cpp строка 176
 .SS "void canny (const Mat & mat_in, Mat & mat_out)"
 
 .PP
@@ -165,19 +114,19 @@ SavaLione
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 336
-.SS "bool check_file (char * filename)"
+См\&. определение в файле Core\&.cpp строка 274
+.SS "bool checkFile (char * filename)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 231
-.SS "bool check_file (string filename)"
+См\&. определение в файле Core\&.cpp строка 170
+.SS "bool checkFile (string filename)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 240
+См\&. определение в файле Core\&.cpp строка 179
 .SS "void clearning (string filename, string variable)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 97
+См\&. определение в файле Core\&.cpp строка 85
 .SS "void createDir (string namedir)"
 
 .PP
@@ -206,7 +155,7 @@ SavaLione
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 297
+См\&. определение в файле Core\&.cpp строка 235
 .SS "void createFile (char * file_name)"
 
 .PP
@@ -219,11 +168,11 @@ SavaLione
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 288
+См\&. определение в файле Core\&.cpp строка 226
 .SS "void databaseAdd (string filename)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 83
+См\&. определение в файле Core\&.cpp строка 69
 .SS "string description (string value)"
 
 .PP
@@ -241,65 +190,27 @@ SavaLione
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 319
+См\&. определение в файле Core\&.cpp строка 257
 .SS "void detection (const Mat & mat_logo)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 140
+См\&. определение в файле Core\&.cpp строка 124
 .SS "bool detectionLogo (const Mat & mat_logo, string cascadefile)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 112
-.SS "void fastNoiseRemoval (const Mat & mat_in, Mat & mat_out)"
-
-.PP
-Функция для обработки изображений\&. Быстрый фильтр для размытия изображений в оттенках серого\&.
-.PP
-\fBАргументы:\fP
-.RS 4
-\fImat_in\fP Матрица с изображением для обработки 
-.br
-\fImat_out\fP Матрица с обработанным изображением, которая будет возвращена 
-.RE
-.PP
-
-.PP
-См\&. определение в файле Core\&.cpp строка 200
-.SS "void fastNoiseRemovalGrey (const Mat & mat_in, Mat & mat_out)"
-
-.PP
-Функция для обработки изображений\&. Быстрый фильтр для размытия изображений в оттенках серого\&.
-.PP
-\fBАргументы:\fP
-.RS 4
-\fImat_in\fP Матрица с изображением для обработки 
-.br
-\fImat_out\fP Матрица с обработанным изображением, которая будет возвращена 
-.RE
-.PP
-
-.PP
-См\&. определение в файле Core\&.cpp строка 188
+См\&. определение в файле Core\&.cpp строка 100
 .SS "int getSettings (char * block, char * value)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 219
+См\&. определение в файле Core\&.cpp строка 158
 .SS "int getSettings (char * block, char * value, int i_return_default)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 223
-.SS "string getSettingsString (char * block, char * value)"
-
-.PP
-См\&. определение в файле Core\&.cpp строка 207
+См\&. определение в файле Core\&.cpp строка 162
 .SS "string getSettingsString (char * block, char * value, char * ch_return_default)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 213
-.SS "void help ()"
-
-.PP
-См\&. определение в файле Core\&.cpp строка 136
+См\&. определение в файле Core\&.cpp строка 152
 .SS "void lineDetection (const Mat & mat_in, Mat & mat_out)"
 
 .PP
@@ -309,8 +220,6 @@ SavaLione
 .PP
 Для обычного режима используется - canny(mat_in, mat_out);
 .PP
-Для быстрого режима используется -
-.PP
 \fBАргументы:\fP
 .RS 4
 \fImat_in\fP Матрица с изображением для обработки 
@@ -320,7 +229,7 @@ SavaLione
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 70
+См\&. определение в файле Core\&.cpp строка 61
 .SS "void noiseRemoval (const Mat & mat_in, Mat & mat_out)"
 
 .PP
@@ -341,21 +250,15 @@ SavaLione
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 42
+См\&. определение в файле Core\&.cpp строка 35
 .SS "void setSettings (char * block, char * value, char * text)"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 227
-.SS "void settings_initialization ()"
+См\&. определение в файле Core\&.cpp строка 166
+.SS "void settingsInitialization ()"
 
 .PP
-См\&. определение в файле Core\&.cpp строка 250
-.SS "void v_test ()"
-
-.PP
-Функция для проведения тестов\&. Замер скорости выполнения алгоритмов\&. 
-.PP
-См\&. определение в файле Core\&.cpp строка 349
+См\&. определение в файле Core\&.cpp строка 189
 .SH "Автор"
 .PP 
 Автоматически создано Doxygen для Yenot из исходного текста\&.

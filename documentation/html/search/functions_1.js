@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['canny',['canny',['../_core_8cpp.html#afe1c5d9570a4ccddf9b5105997e3ddb4',1,'canny(const Mat &amp;mat_in, Mat &amp;mat_out):&#160;Core.cpp'],['../_core_8h.html#aff2d42310702a0aab15af5ad62a59f2b',1,'canny(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out):&#160;Core.h']]],
-  ['check_5ffile',['check_file',['../_core_8cpp.html#a96c018612a57329cdb94506523f5b7ec',1,'check_file(char *filename):&#160;Core.cpp'],['../_core_8cpp.html#ad0a55567f006a236b894f86f5f2e8917',1,'check_file(string filename):&#160;Core.cpp'],['../_core_8h.html#a96c018612a57329cdb94506523f5b7ec',1,'check_file(char *filename):&#160;Core.cpp'],['../_core_8h.html#a041e0f6c7598005e2e71f7da64197d65',1,'check_file(std::string filename):&#160;Core.h']]],
-  ['clearning',['clearning',['../_core_8cpp.html#a78cdbfbe907847e78cfb387df76d99f9',1,'clearning(string filename, string variable):&#160;Core.cpp'],['../_core_8h.html#aebd676a1476aa4d75b280db8ae09d11c',1,'clearning(std::string filename, std::string variable):&#160;Core.h']]],
-  ['createdir',['createDir',['../_core_8cpp.html#a5ac0cd45ecb6e65e3ace40687d6ee8bc',1,'createDir(string namedir):&#160;Core.cpp'],['../_core_8h.html#a912b67f6f6b05abadd055a379dd84864',1,'createDir(std::string namedir):&#160;Core.h']]],
-  ['createfile',['createFile',['../_core_8cpp.html#a8f34a2030acfb5567678ab2bba25f3c1',1,'createFile(char *file_name):&#160;Core.cpp'],['../_core_8h.html#a8f34a2030acfb5567678ab2bba25f3c1',1,'createFile(char *file_name):&#160;Core.cpp']]]
+  ['databaseadd',['databaseAdd',['../_core_8cpp.html#a10a0271bceabc9c1a0d736ab93113212',1,'databaseAdd(string filename):&#160;Core.cpp'],['../_core_8h.html#a5a4a30ca6128e13ce1ec6efaa23dd6c7',1,'databaseAdd(std::string filename):&#160;Core.h']]],
+  ['description',['description',['../_core_8cpp.html#aa85ae460901348b74381239ce0517d5f',1,'description(string value):&#160;Core.cpp'],['../_core_8h.html#aad0390ab7aa8f0cac1eee4492e919baf',1,'description(std::string value):&#160;Core.h']]],
+  ['detection',['detection',['../_core_8cpp.html#ae99907f19e7f09055012f68347a57d05',1,'detection(const Mat &amp;mat_logo):&#160;Core.cpp'],['../_core_8h.html#a0ef39a5ada0921b3abf8906957746b86',1,'detection(const cv::Mat &amp;mat_logo):&#160;Core.h']]],
+  ['detectionlogo',['detectionLogo',['../_core_8cpp.html#a76b0b7de3d9fa0de10d66740466ebc14',1,'detectionLogo(const Mat &amp;mat_logo, string cascadefile):&#160;Core.cpp'],['../_core_8h.html#ad1ae53e92ff9edcee7a9f35d2956ae57',1,'detectionLogo(const cv::Mat &amp;mat_logo, std::string cascadefile):&#160;Core.h']]]
 ];

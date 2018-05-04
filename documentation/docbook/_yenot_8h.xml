@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_yenot_8h">
     <title>Yenot.h File Reference</title>
-    <programlisting>#include &lt;opencv2/opencv.hpp&gt;</programlisting>
 <para>Include dependency diagram for Yenot.h</para>
 <para>
     <figure>

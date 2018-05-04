@@ -1,14 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_yenot_8cpp">
     <title>Yenot.cpp File Reference</title>
-    <programlisting>#include &lt;iostream&gt;</programlisting>
-    <programlisting>#include &lt;Windows.h&gt;</programlisting>
-    <programlisting>#include &lt;opencv\highgui.h&gt;</programlisting>
-    <programlisting>#include &lt;opencv\cv.h&gt;</programlisting>
-    <programlisting>#include &lt;opencv2\opencv.hpp&gt;</programlisting>
-    <programlisting>#include &lt;ctime&gt;</programlisting>
-    <programlisting>#include &lt;filesystem&gt;</programlisting>
-    <programlisting>#include &quot;Yenot.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Yenot.h&quot;</programlisting>
     <programlisting>#include &quot;..\core\Core.h&quot;</programlisting>
     <programlisting>#include &quot;..\io\Logger.h&quot;</programlisting>
 <para>Include dependency diagram for Yenot.cpp</para>

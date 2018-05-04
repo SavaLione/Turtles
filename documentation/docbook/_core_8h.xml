@@ -77,48 +77,8 @@ const cv::Mat &amp; mat_logo)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8h_1a97ee70a8770dc30d06c744b24eb2fcfc">help</link> (
-)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_core_8h_1a64b67e9219ba96b984256d89bc46c2f5">blur</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_core_8h_1a39eb2014e38b68bd4e6453a24e51d896">fastNoiseRemovalGrey</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_core_8h_1ab5eb0c124067d093b9001373071f4636">fastNoiseRemoval</link> (
-const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
                         <para>void <link linkend="_core_8h_1aff2d42310702a0aab15af5ad62a59f2b">canny</link> (
 const cv::Mat &amp; mat_in, cv::Mat &amp; mat_out)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>std::string <link linkend="_core_8h_1a33e1cb874acab9d31a98a12cdd1472ce">getSettingsString</link> (
-char * block, char * value)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -157,7 +117,7 @@ char * block, char * value, char * text)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>bool <link linkend="_core_8h_1a96c018612a57329cdb94506523f5b7ec">check_file</link> (
+                        <para>bool <link linkend="_core_8h_1a2dd1bc039652a0480c444957d416b6a6">checkFile</link> (
 char * filename)</para>
                     </listitem>
                 </itemizedlist>
@@ -165,7 +125,7 @@ char * filename)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>bool <link linkend="_core_8h_1a041e0f6c7598005e2e71f7da64197d65">check_file</link> (
+                        <para>bool <link linkend="_core_8h_1a147bed619c6314e960320c1bcb40ed91">checkFile</link> (
 std::string filename)</para>
                     </listitem>
                 </itemizedlist>
@@ -173,7 +133,7 @@ std::string filename)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8h_1a8ba7f398362c96368015412b023565d0">settings_initialization</link> (
+                        <para>void <link linkend="_core_8h_1a242d25c7a9a1b7212bb890023c8131f5">settingsInitialization</link> (
 )</para>
                     </listitem>
                 </itemizedlist>
@@ -200,15 +160,6 @@ std::string namedir)</para>
                     <listitem>
                         <para>std::string <link linkend="_core_8h_1aad0390ab7aa8f0cac1eee4492e919baf">description</link> (
 std::string value)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_core_8h_1aafaa59e41cfa4f5fda8c4d703394f26a">v_test</link> (
-)<para><emphasis>Функция для проведения тестов. Замер скорости выполнения алгоритмов.</emphasis></para>
-</para>
                     </listitem>
                 </itemizedlist>
             </para>

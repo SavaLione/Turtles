@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['databaseadd',['databaseAdd',['../_core_8cpp.html#a10a0271bceabc9c1a0d736ab93113212',1,'databaseAdd(string filename):&#160;Core.cpp'],['../_core_8h.html#a5a4a30ca6128e13ce1ec6efaa23dd6c7',1,'databaseAdd(std::string filename):&#160;Core.h']]],
-  ['description',['description',['../_core_8cpp.html#aa85ae460901348b74381239ce0517d5f',1,'description(string value):&#160;Core.cpp'],['../_core_8h.html#aad0390ab7aa8f0cac1eee4492e919baf',1,'description(std::string value):&#160;Core.h']]],
-  ['detection',['detection',['../_core_8cpp.html#ae99907f19e7f09055012f68347a57d05',1,'detection(const Mat &amp;mat_logo):&#160;Core.cpp'],['../_core_8h.html#a0ef39a5ada0921b3abf8906957746b86',1,'detection(const cv::Mat &amp;mat_logo):&#160;Core.h']]],
-  ['detectionlogo',['detectionLogo',['../_core_8cpp.html#a76b0b7de3d9fa0de10d66740466ebc14',1,'detectionLogo(const Mat &amp;mat_logo, string cascadefile):&#160;Core.cpp'],['../_core_8h.html#ad1ae53e92ff9edcee7a9f35d2956ae57',1,'detectionLogo(const cv::Mat &amp;mat_logo, std::string cascadefile):&#160;Core.h']]]
+  ['getsettings',['getSettings',['../_core_8cpp.html#a68b4d9ed6be7aaa93d9a6fe8fd683862',1,'getSettings(char *block, char *value):&#160;Core.cpp'],['../_core_8cpp.html#a0a2fe94de4037eda33c49fe332970891',1,'getSettings(char *block, char *value, int i_return_default):&#160;Core.cpp'],['../_core_8h.html#a68b4d9ed6be7aaa93d9a6fe8fd683862',1,'getSettings(char *block, char *value):&#160;Core.cpp'],['../_core_8h.html#a0a2fe94de4037eda33c49fe332970891',1,'getSettings(char *block, char *value, int i_return_default):&#160;Core.cpp']]],
+  ['getsettingsstring',['getSettingsString',['../_core_8cpp.html#a50535cebf45c8d7cbffd29274699e5f5',1,'getSettingsString(char *block, char *value, char *ch_return_default):&#160;Core.cpp'],['../_core_8h.html#a3a0f1e87eb01bdd16c4a7e365aa283eb',1,'getSettingsString(char *block, char *value, char *ch_return_default):&#160;Core.cpp']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['setsettings',['setSettings',['../_core_8cpp.html#a463e32ccb37f9478b0e62ee0d21c5999',1,'setSettings(char *block, char *value, char *text):&#160;Core.cpp'],['../_core_8h.html#a463e32ccb37f9478b0e62ee0d21c5999',1,'setSettings(char *block, char *value, char *text):&#160;Core.cpp']]],
   ['settings_5fblock_5fdescription',['settings_block_description',['../namespaceyenot.html#aea7e9eb4d5b9e645f22e83e2d5fe893e',1,'yenot']]],
   ['settings_5fcarmodel_5fexample',['settings_carModel_example',['../namespaceyenot.html#af238d0e227de22ee3c26114077153efc',1,'yenot']]],
   ['settings_5fcarmodel_5fexample_5fdescription',['settings_carModel_example_description',['../namespaceyenot.html#a5f4aa342b4a3e3f87069f6fef812594a',1,'yenot']]],
@@ -31,7 +30,6 @@ var searchData=
   ['settings_5fsave_5fprocessed_5fimage_5fvalue',['SETTINGS_SAVE_PROCESSED_IMAGE_VALUE',['../namespaceyenot.html#a2e3ae4b394042b1c4cbc4ae56a4af012',1,'yenot']]],
   ['settings_5fsave_5fprocessed_5fimage_5fvalue_5fint',['SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT',['../namespaceyenot.html#a58502c9277df0f0d680ddc344e5cea3e',1,'yenot']]],
   ['settings_5fsize_5fphoto',['settings_size_photo',['../namespaceyenot.html#a4e9a58fa114bcb3d3ae09fb62129f2c9',1,'yenot']]],
-  ['settingsinitialization',['settingsInitialization',['../_core_8cpp.html#a242d25c7a9a1b7212bb890023c8131f5',1,'settingsInitialization():&#160;Core.cpp'],['../_core_8h.html#a242d25c7a9a1b7212bb890023c8131f5',1,'settingsInitialization():&#160;Core.cpp']]],
   ['sigma_5fcolor',['SIGMA_COLOR',['../namespaceyenot.html#affd7404833d15c98fbd85249f43f98da',1,'yenot']]],
   ['sigma_5fspace',['SIGMA_SPACE',['../namespaceyenot.html#ad45191f613b95ca3398e6eab5e202406',1,'yenot']]]
 ];

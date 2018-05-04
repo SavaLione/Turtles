@@ -12,8 +12,6 @@ using namespace cv;
 using namespace std;
 using namespace yenot;
 
-void test();
-
 int main(int argc, char* argv[]) {
 	bool error = false;
 	int i_return = 0;
@@ -28,12 +26,6 @@ int main(int argc, char* argv[]) {
 		error = true;
 		i_return = ERROR_INIT;
 	}
-	
-	//-
-	error = true;
-	test();
-	//-
-	
 	
 	if (!error)
 		try {
@@ -107,29 +99,4 @@ int main(int argc, char* argv[]) {
 		}
 	
 	return i_return;
-}
-
-void test() {
-	for (int i = 1; i <= 128; i++) {
-		unsigned int start_time = clock();
-
-		///////////////////////////////////////////////////////////////////////////////
-		
-		cv::Mat image, out;
-		image = cv::imread("test.png", 1);
-		bilateralFilter(image, out, DIAMETER_EACH_PIXEL, SIGMA_COLOR, SIGMA_SPACE);
-		GaussianBlur(image, out, Size(KERNEL_X, KERNEL_Y), 0, 0);
-		
-		///////////////////////////////////////////////////////////////////////////////
-
-		unsigned int end_time = clock();
-		unsigned int search_time = end_time - start_time;
-
-		double d = (double)search_time / 1000.0;
-
-		std::ofstream fout("Gaussian.txt", std::ios_base::app);
-
-		fout << d << " " << i << "\n";
-		fout.close();
-	}
 }

@@ -6,16 +6,9 @@
 
 
 {\ttfamily \#include $<$Windows.\+h$>$}\newline
-{\ttfamily \#include $<$fstream$>$}\newline
-{\ttfamily \#include $<$string$>$}\newline
-{\ttfamily \#include $<$opencv2/imgproc/imgproc.\+hpp$>$}\newline
-{\ttfamily \#include $<$opencv2/highgui/highgui\+\_\+c.\+h$>$}\newline
-{\ttfamily \#include $<$cstdlib$>$}\newline
-{\ttfamily \#include $<$cstdio$>$}\newline
 {\ttfamily \#include $<$direct.\+h$>$}\newline
-{\ttfamily \#include $<$vector$>$}\newline
-{\ttfamily \#include \char`\"{}Yenot.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}Core.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Yenot.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Core.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}..\textbackslash{}io\textbackslash{}\+Logger.\+h\char`\"{}}\newline
 Граф включаемых заголовочных файлов для Core.\+cpp\+:
 \nopagebreak
@@ -38,17 +31,7 @@ void \mbox{\hyperlink{_core_8cpp_a78cdbfbe907847e78cfb387df76d99f9}{clearning}} 
 \item 
 bool \mbox{\hyperlink{_core_8cpp_a76b0b7de3d9fa0de10d66740466ebc14}{detection\+Logo}} (const Mat \&mat\+\_\+logo, string cascadefile)
 \item 
-void \mbox{\hyperlink{_core_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}{help}} ()
-\item 
 void \mbox{\hyperlink{_core_8cpp_ae99907f19e7f09055012f68347a57d05}{detection}} (const Mat \&mat\+\_\+logo)
-\item 
-void \mbox{\hyperlink{_core_8cpp_a52e35dcbe19501f48a77bffff1ab742d}{blur}} (const Mat \&mat\+\_\+in, Mat \&mat\+\_\+out)
-\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_core_8cpp_aede9a861af03b2d343843baa70ab729e}{fast\+Noise\+Removal\+Grey}} (const Mat \&mat\+\_\+in, Mat \&mat\+\_\+out)
-\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_core_8cpp_a9c94d105a9b6a7a8209f68dee9432133}{fast\+Noise\+Removal}} (const Mat \&mat\+\_\+in, Mat \&mat\+\_\+out)
-\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
-string \mbox{\hyperlink{_core_8cpp_a61e05ff7e764817705d59ccef670c81e}{get\+Settings\+String}} (char $\ast$block, char $\ast$value)
 \item 
 string \mbox{\hyperlink{_core_8cpp_a50535cebf45c8d7cbffd29274699e5f5}{get\+Settings\+String}} (char $\ast$block, char $\ast$value, char $\ast$ch\+\_\+return\+\_\+default)
 \item 
@@ -58,11 +41,11 @@ int \mbox{\hyperlink{_core_8cpp_a0a2fe94de4037eda33c49fe332970891}{get\+Settings
 \item 
 void \mbox{\hyperlink{_core_8cpp_a463e32ccb37f9478b0e62ee0d21c5999}{set\+Settings}} (char $\ast$block, char $\ast$value, char $\ast$text)
 \item 
-bool \mbox{\hyperlink{_core_8cpp_a96c018612a57329cdb94506523f5b7ec}{check\+\_\+file}} (char $\ast$filename)
+bool \mbox{\hyperlink{_core_8cpp_a2dd1bc039652a0480c444957d416b6a6}{check\+File}} (char $\ast$filename)
 \item 
-bool \mbox{\hyperlink{_core_8cpp_ad0a55567f006a236b894f86f5f2e8917}{check\+\_\+file}} (string filename)
+bool \mbox{\hyperlink{_core_8cpp_a64f8c9899c815dc180b2b564c0d05762}{check\+File}} (string filename)
 \item 
-void \mbox{\hyperlink{_core_8cpp_a8ba7f398362c96368015412b023565d0}{settings\+\_\+initialization}} ()
+void \mbox{\hyperlink{_core_8cpp_a242d25c7a9a1b7212bb890023c8131f5}{settings\+Initialization}} ()
 \item 
 void \mbox{\hyperlink{_core_8cpp_a8f34a2030acfb5567678ab2bba25f3c1}{create\+File}} (char $\ast$file\+\_\+name)
 \begin{DoxyCompactList}\small\item\em Функция для создания файла \end{DoxyCompactList}\item 
@@ -71,9 +54,7 @@ void \mbox{\hyperlink{_core_8cpp_a5ac0cd45ecb6e65e3ace40687d6ee8bc}{create\+Dir}
 string \mbox{\hyperlink{_core_8cpp_aa85ae460901348b74381239ce0517d5f}{description}} (string value)
 \begin{DoxyCompactList}\small\item\em Функция для поиска описания марки по файлу с каскадом Хаара \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_core_8cpp_afe1c5d9570a4ccddf9b5105997e3ddb4}{canny}} (const Mat \&mat\+\_\+in, Mat \&mat\+\_\+out)
-\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_core_8cpp_aafaa59e41cfa4f5fda8c4d703394f26a}{v\+\_\+test}} ()
-\begin{DoxyCompactList}\small\item\em Функция для проведения тестов. Замер скорости выполнения алгоритмов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Подробное описание}
@@ -88,29 +69,6 @@ Sava\+Lione
 
 
 \subsection{Функции}
-\mbox{\Hypertarget{_core_8cpp_a52e35dcbe19501f48a77bffff1ab742d}\label{_core_8cpp_a52e35dcbe19501f48a77bffff1ab742d}} 
-\index{Core.\+cpp@{Core.\+cpp}!blur@{blur}}
-\index{blur@{blur}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{blur()}{blur()}}
-{\footnotesize\ttfamily void blur (\begin{DoxyParamCaption}\item[{const Mat \&}]{mat\+\_\+in,  }\item[{Mat \&}]{mat\+\_\+out }\end{DoxyParamCaption})}
-
-
-
-Функция для обработки изображений. 
-
-Фильтр для размытия изображений.
-
-
-\begin{DoxyParams}[1]{Аргументы}
-\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
-\hline
-\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
-\hline
-\end{DoxyParams}
-
-
-См. определение в файле Core.\+cpp строка 176
-
 \mbox{\Hypertarget{_core_8cpp_afe1c5d9570a4ccddf9b5105997e3ddb4}\label{_core_8cpp_afe1c5d9570a4ccddf9b5105997e3ddb4}} 
 \index{Core.\+cpp@{Core.\+cpp}!canny@{canny}}
 \index{canny@{canny}!Core.\+cpp@{Core.\+cpp}}
@@ -132,27 +90,27 @@ Sava\+Lione
 \end{DoxyParams}
 
 
-См. определение в файле Core.\+cpp строка 336
+См. определение в файле Core.\+cpp строка 274
 
-\mbox{\Hypertarget{_core_8cpp_a96c018612a57329cdb94506523f5b7ec}\label{_core_8cpp_a96c018612a57329cdb94506523f5b7ec}} 
-\index{Core.\+cpp@{Core.\+cpp}!check\+\_\+file@{check\+\_\+file}}
-\index{check\+\_\+file@{check\+\_\+file}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{check\+\_\+file()}{check\_file()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool check\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
-
-
-
-См. определение в файле Core.\+cpp строка 231
-
-\mbox{\Hypertarget{_core_8cpp_ad0a55567f006a236b894f86f5f2e8917}\label{_core_8cpp_ad0a55567f006a236b894f86f5f2e8917}} 
-\index{Core.\+cpp@{Core.\+cpp}!check\+\_\+file@{check\+\_\+file}}
-\index{check\+\_\+file@{check\+\_\+file}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{check\+\_\+file()}{check\_file()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool check\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_core_8cpp_a2dd1bc039652a0480c444957d416b6a6}\label{_core_8cpp_a2dd1bc039652a0480c444957d416b6a6}} 
+\index{Core.\+cpp@{Core.\+cpp}!check\+File@{check\+File}}
+\index{check\+File@{check\+File}!Core.\+cpp@{Core.\+cpp}}
+\subsubsection{\texorpdfstring{check\+File()}{checkFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool check\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
 
 
 
-См. определение в файле Core.\+cpp строка 240
+См. определение в файле Core.\+cpp строка 170
+
+\mbox{\Hypertarget{_core_8cpp_a64f8c9899c815dc180b2b564c0d05762}\label{_core_8cpp_a64f8c9899c815dc180b2b564c0d05762}} 
+\index{Core.\+cpp@{Core.\+cpp}!check\+File@{check\+File}}
+\index{check\+File@{check\+File}!Core.\+cpp@{Core.\+cpp}}
+\subsubsection{\texorpdfstring{check\+File()}{checkFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool check\+File (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле Core.\+cpp строка 179
 
 \mbox{\Hypertarget{_core_8cpp_a78cdbfbe907847e78cfb387df76d99f9}\label{_core_8cpp_a78cdbfbe907847e78cfb387df76d99f9}} 
 \index{Core.\+cpp@{Core.\+cpp}!clearning@{clearning}}
@@ -162,7 +120,7 @@ Sava\+Lione
 
 
 
-См. определение в файле Core.\+cpp строка 97
+См. определение в файле Core.\+cpp строка 85
 
 \mbox{\Hypertarget{_core_8cpp_a5ac0cd45ecb6e65e3ace40687d6ee8bc}\label{_core_8cpp_a5ac0cd45ecb6e65e3ace40687d6ee8bc}} 
 \index{Core.\+cpp@{Core.\+cpp}!create\+Dir@{create\+Dir}}
@@ -188,7 +146,7 @@ Sava\+Lione
 Возможно это связано с тем, что нет прав на создание директории или директория уже есть  \end{DoxyVerb}
 
 
-См. определение в файле Core.\+cpp строка 297
+См. определение в файле Core.\+cpp строка 235
 
 \mbox{\Hypertarget{_core_8cpp_a8f34a2030acfb5567678ab2bba25f3c1}\label{_core_8cpp_a8f34a2030acfb5567678ab2bba25f3c1}} 
 \index{Core.\+cpp@{Core.\+cpp}!create\+File@{create\+File}}
@@ -207,7 +165,7 @@ Sava\+Lione
 \end{DoxyParams}
 
 
-См. определение в файле Core.\+cpp строка 288
+См. определение в файле Core.\+cpp строка 226
 
 \mbox{\Hypertarget{_core_8cpp_a10a0271bceabc9c1a0d736ab93113212}\label{_core_8cpp_a10a0271bceabc9c1a0d736ab93113212}} 
 \index{Core.\+cpp@{Core.\+cpp}!database\+Add@{database\+Add}}
@@ -217,7 +175,7 @@ Sava\+Lione
 
 
 
-См. определение в файле Core.\+cpp строка 83
+См. определение в файле Core.\+cpp строка 69
 
 \mbox{\Hypertarget{_core_8cpp_aa85ae460901348b74381239ce0517d5f}\label{_core_8cpp_aa85ae460901348b74381239ce0517d5f}} 
 \index{Core.\+cpp@{Core.\+cpp}!description@{description}}
@@ -239,7 +197,7 @@ Sava\+Lione
 \end{DoxyReturn}
 
 
-См. определение в файле Core.\+cpp строка 319
+См. определение в файле Core.\+cpp строка 257
 
 \mbox{\Hypertarget{_core_8cpp_ae99907f19e7f09055012f68347a57d05}\label{_core_8cpp_ae99907f19e7f09055012f68347a57d05}} 
 \index{Core.\+cpp@{Core.\+cpp}!detection@{detection}}
@@ -249,7 +207,7 @@ Sava\+Lione
 
 
 
-См. определение в файле Core.\+cpp строка 140
+См. определение в файле Core.\+cpp строка 124
 
 \mbox{\Hypertarget{_core_8cpp_a76b0b7de3d9fa0de10d66740466ebc14}\label{_core_8cpp_a76b0b7de3d9fa0de10d66740466ebc14}} 
 \index{Core.\+cpp@{Core.\+cpp}!detection\+Logo@{detection\+Logo}}
@@ -259,53 +217,7 @@ Sava\+Lione
 
 
 
-См. определение в файле Core.\+cpp строка 112
-
-\mbox{\Hypertarget{_core_8cpp_a9c94d105a9b6a7a8209f68dee9432133}\label{_core_8cpp_a9c94d105a9b6a7a8209f68dee9432133}} 
-\index{Core.\+cpp@{Core.\+cpp}!fast\+Noise\+Removal@{fast\+Noise\+Removal}}
-\index{fast\+Noise\+Removal@{fast\+Noise\+Removal}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{fast\+Noise\+Removal()}{fastNoiseRemoval()}}
-{\footnotesize\ttfamily void fast\+Noise\+Removal (\begin{DoxyParamCaption}\item[{const Mat \&}]{mat\+\_\+in,  }\item[{Mat \&}]{mat\+\_\+out }\end{DoxyParamCaption})}
-
-
-
-Функция для обработки изображений. 
-
-Быстрый фильтр для размытия изображений в оттенках серого.
-
-
-\begin{DoxyParams}[1]{Аргументы}
-\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
-\hline
-\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
-\hline
-\end{DoxyParams}
-
-
-См. определение в файле Core.\+cpp строка 200
-
-\mbox{\Hypertarget{_core_8cpp_aede9a861af03b2d343843baa70ab729e}\label{_core_8cpp_aede9a861af03b2d343843baa70ab729e}} 
-\index{Core.\+cpp@{Core.\+cpp}!fast\+Noise\+Removal\+Grey@{fast\+Noise\+Removal\+Grey}}
-\index{fast\+Noise\+Removal\+Grey@{fast\+Noise\+Removal\+Grey}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{fast\+Noise\+Removal\+Grey()}{fastNoiseRemovalGrey()}}
-{\footnotesize\ttfamily void fast\+Noise\+Removal\+Grey (\begin{DoxyParamCaption}\item[{const Mat \&}]{mat\+\_\+in,  }\item[{Mat \&}]{mat\+\_\+out }\end{DoxyParamCaption})}
-
-
-
-Функция для обработки изображений. 
-
-Быстрый фильтр для размытия изображений в оттенках серого.
-
-
-\begin{DoxyParams}[1]{Аргументы}
-\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
-\hline
-\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
-\hline
-\end{DoxyParams}
-
-
-См. определение в файле Core.\+cpp строка 188
+См. определение в файле Core.\+cpp строка 100
 
 \mbox{\Hypertarget{_core_8cpp_a68b4d9ed6be7aaa93d9a6fe8fd683862}\label{_core_8cpp_a68b4d9ed6be7aaa93d9a6fe8fd683862}} 
 \index{Core.\+cpp@{Core.\+cpp}!get\+Settings@{get\+Settings}}
@@ -315,7 +227,7 @@ Sava\+Lione
 
 
 
-См. определение в файле Core.\+cpp строка 219
+См. определение в файле Core.\+cpp строка 158
 
 \mbox{\Hypertarget{_core_8cpp_a0a2fe94de4037eda33c49fe332970891}\label{_core_8cpp_a0a2fe94de4037eda33c49fe332970891}} 
 \index{Core.\+cpp@{Core.\+cpp}!get\+Settings@{get\+Settings}}
@@ -325,37 +237,17 @@ Sava\+Lione
 
 
 
-См. определение в файле Core.\+cpp строка 223
-
-\mbox{\Hypertarget{_core_8cpp_a61e05ff7e764817705d59ccef670c81e}\label{_core_8cpp_a61e05ff7e764817705d59ccef670c81e}} 
-\index{Core.\+cpp@{Core.\+cpp}!get\+Settings\+String@{get\+Settings\+String}}
-\index{get\+Settings\+String@{get\+Settings\+String}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{get\+Settings\+String()}{getSettingsString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily string get\+Settings\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{block,  }\item[{char $\ast$}]{value }\end{DoxyParamCaption})}
-
-
-
-См. определение в файле Core.\+cpp строка 207
+См. определение в файле Core.\+cpp строка 162
 
 \mbox{\Hypertarget{_core_8cpp_a50535cebf45c8d7cbffd29274699e5f5}\label{_core_8cpp_a50535cebf45c8d7cbffd29274699e5f5}} 
 \index{Core.\+cpp@{Core.\+cpp}!get\+Settings\+String@{get\+Settings\+String}}
 \index{get\+Settings\+String@{get\+Settings\+String}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{get\+Settings\+String()}{getSettingsString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{get\+Settings\+String()}{getSettingsString()}}
 {\footnotesize\ttfamily string get\+Settings\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{block,  }\item[{char $\ast$}]{value,  }\item[{char $\ast$}]{ch\+\_\+return\+\_\+default }\end{DoxyParamCaption})}
 
 
 
-См. определение в файле Core.\+cpp строка 213
-
-\mbox{\Hypertarget{_core_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}\label{_core_8cpp_a97ee70a8770dc30d06c744b24eb2fcfc}} 
-\index{Core.\+cpp@{Core.\+cpp}!help@{help}}
-\index{help@{help}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{help()}{help()}}
-{\footnotesize\ttfamily void help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-См. определение в файле Core.\+cpp строка 136
+См. определение в файле Core.\+cpp строка 152
 
 \mbox{\Hypertarget{_core_8cpp_a9e277d82296b5ed9eda6266d8dcc24a3}\label{_core_8cpp_a9e277d82296b5ed9eda6266d8dcc24a3}} 
 \index{Core.\+cpp@{Core.\+cpp}!line\+Detection@{line\+Detection}}
@@ -373,8 +265,6 @@ Sava\+Lione
 
 Для обычного режима используется -\/ canny(mat\+\_\+in, mat\+\_\+out);
 
-Для быстрого режима используется -\/
-
 
 \begin{DoxyParams}[1]{Аргументы}
 \mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
@@ -384,7 +274,7 @@ Sava\+Lione
 \end{DoxyParams}
 
 
-См. определение в файле Core.\+cpp строка 70
+См. определение в файле Core.\+cpp строка 61
 
 \mbox{\Hypertarget{_core_8cpp_ab8ed3baad2f1d9b6b82bf74da9dd3d3a}\label{_core_8cpp_ab8ed3baad2f1d9b6b82bf74da9dd3d3a}} 
 \index{Core.\+cpp@{Core.\+cpp}!noise\+Removal@{noise\+Removal}}
@@ -413,7 +303,7 @@ Sava\+Lione
 \end{DoxyParams}
 
 
-См. определение в файле Core.\+cpp строка 42
+См. определение в файле Core.\+cpp строка 35
 
 \mbox{\Hypertarget{_core_8cpp_a463e32ccb37f9478b0e62ee0d21c5999}\label{_core_8cpp_a463e32ccb37f9478b0e62ee0d21c5999}} 
 \index{Core.\+cpp@{Core.\+cpp}!set\+Settings@{set\+Settings}}
@@ -423,29 +313,15 @@ Sava\+Lione
 
 
 
-См. определение в файле Core.\+cpp строка 227
+См. определение в файле Core.\+cpp строка 166
 
-\mbox{\Hypertarget{_core_8cpp_a8ba7f398362c96368015412b023565d0}\label{_core_8cpp_a8ba7f398362c96368015412b023565d0}} 
-\index{Core.\+cpp@{Core.\+cpp}!settings\+\_\+initialization@{settings\+\_\+initialization}}
-\index{settings\+\_\+initialization@{settings\+\_\+initialization}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{settings\+\_\+initialization()}{settings\_initialization()}}
-{\footnotesize\ttfamily void settings\+\_\+initialization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-См. определение в файле Core.\+cpp строка 250
-
-\mbox{\Hypertarget{_core_8cpp_aafaa59e41cfa4f5fda8c4d703394f26a}\label{_core_8cpp_aafaa59e41cfa4f5fda8c4d703394f26a}} 
-\index{Core.\+cpp@{Core.\+cpp}!v\+\_\+test@{v\+\_\+test}}
-\index{v\+\_\+test@{v\+\_\+test}!Core.\+cpp@{Core.\+cpp}}
-\subsubsection{\texorpdfstring{v\+\_\+test()}{v\_test()}}
-{\footnotesize\ttfamily void v\+\_\+test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_core_8cpp_a242d25c7a9a1b7212bb890023c8131f5}\label{_core_8cpp_a242d25c7a9a1b7212bb890023c8131f5}} 
+\index{Core.\+cpp@{Core.\+cpp}!settings\+Initialization@{settings\+Initialization}}
+\index{settings\+Initialization@{settings\+Initialization}!Core.\+cpp@{Core.\+cpp}}
+\subsubsection{\texorpdfstring{settings\+Initialization()}{settingsInitialization()}}
+{\footnotesize\ttfamily void settings\+Initialization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Функция для проведения тестов. Замер скорости выполнения алгоритмов. 
-
-
-
-См. определение в файле Core.\+cpp строка 349
+См. определение в файле Core.\+cpp строка 189
 

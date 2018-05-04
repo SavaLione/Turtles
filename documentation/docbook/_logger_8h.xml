@@ -34,15 +34,6 @@ char * level, char * text)<para><emphasis>Основная функция для
                     </listitem>
                 </itemizedlist>
             </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_logger_8h_1a5e632a6ec68609b973a180293035b94b">logger_xy</link> (
-double x, int y)<para><emphasis>Функция для простого логирования.</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
         </section>
     <simplesect>
         <title>Подробное описание</title>

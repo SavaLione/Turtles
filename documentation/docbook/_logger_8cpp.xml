@@ -1,11 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_logger_8cpp">
     <title>Logger.cpp File Reference</title>
-    <programlisting>#include &lt;string&gt;</programlisting>
-    <programlisting>#include &lt;fstream&gt;</programlisting>
     <programlisting>#include &lt;windows.h&gt;</programlisting>
-    <programlisting>#include &lt;stdio.h&gt;</programlisting>
-    <programlisting>#include &lt;iostream&gt;</programlisting>
     <programlisting>#include &quot;..\core\Yenot.h&quot;</programlisting>
     <programlisting>#include &quot;..\core\Core.h&quot;</programlisting>
 <para>Include dependency diagram for Logger.cpp</para>
@@ -37,15 +33,6 @@
                     <listitem>
                         <para>void <link linkend="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf">logger</link> (
 char * level, char * text)<para><emphasis>Основная функция для логирования</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_logger_8cpp_1a5e632a6ec68609b973a180293035b94b">logger_xy</link> (
-double x, int y)<para><emphasis>Функция для простого логирования.</emphasis></para>
 </para>
                     </listitem>
                 </itemizedlist>

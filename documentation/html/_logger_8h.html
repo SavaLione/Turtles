@@ -88,9 +88,6 @@ $(function() {
 <tr class="memitem:a0d6abeb129096910c85ae6cba8bb59cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a0d6abeb129096910c85ae6cba8bb59cf">logger</a> (char *level, char *text)</td></tr>
 <tr class="memdesc:a0d6abeb129096910c85ae6cba8bb59cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная функция для логирования  <a href="#a0d6abeb129096910c85ae6cba8bb59cf">Подробнее...</a><br /></td></tr>
 <tr class="separator:a0d6abeb129096910c85ae6cba8bb59cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e632a6ec68609b973a180293035b94b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a5e632a6ec68609b973a180293035b94b">logger_xy</a> (double x, int y)</td></tr>
-<tr class="memdesc:a5e632a6ec68609b973a180293035b94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для простого логирования.  <a href="#a5e632a6ec68609b973a180293035b94b">Подробнее...</a><br /></td></tr>
-<tr class="separator:a5e632a6ec68609b973a180293035b94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Заголовочный файл модуля логирования </p>
@@ -161,53 +158,7 @@ $(function() {
 <p>Пример: </p><div class="fragment"><div class="line">[2018/05/02 17:17:03] [WARN]Folder created.</div></div><!-- fragment --><p> <br />
  Записываем данные в файл.</p>
 <p>Пример: </p><div class="fragment"><div class="line">[WARN]Folder created.</div></div><!-- fragment --> 
-<p class="definition">См. определение в файле <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> строка <a class="el" href="_logger_8cpp_source.html#l00028">28</a></p>
-
-</div>
-</div>
-<a id="a5e632a6ec68609b973a180293035b94b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e632a6ec68609b973a180293035b94b">&#9670;&nbsp;</a></span>logger_xy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void logger_xy </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция для простого логирования. </p>
-<p>Используется для записи значений скорости выполнения алгоритмов в файл.</p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>Время </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>Итерация </td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Проверяем, нужно ли логировать.</p>
-<p>Открываем файл для вывода лога в конце и для записи</p>
-<p>Создаём буфер - массив символов char для вывода времени с плавающей запятой</p>
-<p>Присваиваем массиву символов время, полученное с переменной x</p>
-<p>Открываем файл для логирования. Файл открываем для записи в конце.</p>
-<p>Записываем данные в файл</p>
-<p>Закрываем файл </p><div class="fragment"><div class="line"><span class="keywordflow">if</span> (<a class="code" href="_core_8cpp.html#a68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a>((<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#a13c8b24e2bbaab0c3bf3fe14e3f495bb">settings_block_logger</a>, (<span class="keywordtype">char</span>*)<a class="code" href="namespaceyenot.html#ad8a7ef4466cc151f6f380b4c4ccbfa66">settings_log</a>)) {</div><div class="line">    ofstream fout(<a class="code" href="namespaceyenot.html#ab82af39640477c63378716f6699d49fe">logger_file_name</a>, ios_base::app);</div><div class="line">    <span class="keywordtype">char</span> ch_x[1024];</div><div class="line"></div><div class="line">    sprintf(ch_x, <span class="stringliteral">&quot;%f&quot;</span>, x);</div><div class="line"></div><div class="line">    fout &lt;&lt; ch_x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; y &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line">    fout.close();</div><div class="line">}</div></div><!-- fragment --> 
-<p class="definition">См. определение в файле <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> строка <a class="el" href="_logger_8cpp_source.html#l00116">116</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> строка <a class="el" href="_logger_8cpp_source.html#l00023">23</a></p>
 
 </div>
 </div>

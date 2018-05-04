@@ -75,21 +75,14 @@ $(function() {
 <p>Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля  
 <a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &lt;Windows.h&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;opencv2/imgproc/imgproc.hpp&gt;</code><br />
-<code>#include &lt;opencv2/highgui/highgui_c.h&gt;</code><br />
-<code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;direct.h&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="_yenot_8h_source.html">Yenot.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_core_8h_source.html">Core.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_yenot_8h_source.html">..\core\Yenot.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_core_8h_source.html">..\core\Core.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_logger_8h_source.html">..\io\Logger.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Граф включаемых заголовочных файлов для Core.cpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_core_8cpp__incl.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_core_8cpp__incl.svg" width="568" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -109,21 +102,8 @@ $(function() {
 <tr class="separator:a78cdbfbe907847e78cfb387df76d99f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b0b7de3d9fa0de10d66740466ebc14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a76b0b7de3d9fa0de10d66740466ebc14">detectionLogo</a> (const Mat &amp;mat_logo, string cascadefile)</td></tr>
 <tr class="separator:a76b0b7de3d9fa0de10d66740466ebc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97ee70a8770dc30d06c744b24eb2fcfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a97ee70a8770dc30d06c744b24eb2fcfc">help</a> ()</td></tr>
-<tr class="separator:a97ee70a8770dc30d06c744b24eb2fcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99907f19e7f09055012f68347a57d05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#ae99907f19e7f09055012f68347a57d05">detection</a> (const Mat &amp;mat_logo)</td></tr>
 <tr class="separator:ae99907f19e7f09055012f68347a57d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52e35dcbe19501f48a77bffff1ab742d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a52e35dcbe19501f48a77bffff1ab742d">blur</a> (const Mat &amp;mat_in, Mat &amp;mat_out)</td></tr>
-<tr class="memdesc:a52e35dcbe19501f48a77bffff1ab742d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для обработки изображений.  <a href="#a52e35dcbe19501f48a77bffff1ab742d">Подробнее...</a><br /></td></tr>
-<tr class="separator:a52e35dcbe19501f48a77bffff1ab742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aede9a861af03b2d343843baa70ab729e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#aede9a861af03b2d343843baa70ab729e">fastNoiseRemovalGrey</a> (const Mat &amp;mat_in, Mat &amp;mat_out)</td></tr>
-<tr class="memdesc:aede9a861af03b2d343843baa70ab729e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для обработки изображений.  <a href="#aede9a861af03b2d343843baa70ab729e">Подробнее...</a><br /></td></tr>
-<tr class="separator:aede9a861af03b2d343843baa70ab729e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c94d105a9b6a7a8209f68dee9432133"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a9c94d105a9b6a7a8209f68dee9432133">fastNoiseRemoval</a> (const Mat &amp;mat_in, Mat &amp;mat_out)</td></tr>
-<tr class="memdesc:a9c94d105a9b6a7a8209f68dee9432133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для обработки изображений.  <a href="#a9c94d105a9b6a7a8209f68dee9432133">Подробнее...</a><br /></td></tr>
-<tr class="separator:a9c94d105a9b6a7a8209f68dee9432133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e05ff7e764817705d59ccef670c81e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a61e05ff7e764817705d59ccef670c81e">getSettingsString</a> (char *block, char *value)</td></tr>
-<tr class="separator:a61e05ff7e764817705d59ccef670c81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50535cebf45c8d7cbffd29274699e5f5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a50535cebf45c8d7cbffd29274699e5f5">getSettingsString</a> (char *block, char *value, char *ch_return_default)</td></tr>
 <tr class="separator:a50535cebf45c8d7cbffd29274699e5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68b4d9ed6be7aaa93d9a6fe8fd683862"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a> (char *block, char *value)</td></tr>
@@ -132,12 +112,12 @@ $(function() {
 <tr class="separator:a0a2fe94de4037eda33c49fe332970891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a463e32ccb37f9478b0e62ee0d21c5999"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a463e32ccb37f9478b0e62ee0d21c5999">setSettings</a> (char *block, char *value, char *text)</td></tr>
 <tr class="separator:a463e32ccb37f9478b0e62ee0d21c5999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96c018612a57329cdb94506523f5b7ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a96c018612a57329cdb94506523f5b7ec">check_file</a> (char *filename)</td></tr>
-<tr class="separator:a96c018612a57329cdb94506523f5b7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0a55567f006a236b894f86f5f2e8917"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#ad0a55567f006a236b894f86f5f2e8917">check_file</a> (string filename)</td></tr>
-<tr class="separator:ad0a55567f006a236b894f86f5f2e8917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba7f398362c96368015412b023565d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a8ba7f398362c96368015412b023565d0">settings_initialization</a> ()</td></tr>
-<tr class="separator:a8ba7f398362c96368015412b023565d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd1bc039652a0480c444957d416b6a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a2dd1bc039652a0480c444957d416b6a6">checkFile</a> (char *filename)</td></tr>
+<tr class="separator:a2dd1bc039652a0480c444957d416b6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f8c9899c815dc180b2b564c0d05762"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a64f8c9899c815dc180b2b564c0d05762">checkFile</a> (string filename)</td></tr>
+<tr class="separator:a64f8c9899c815dc180b2b564c0d05762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242d25c7a9a1b7212bb890023c8131f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a242d25c7a9a1b7212bb890023c8131f5">settingsInitialization</a> ()</td></tr>
+<tr class="separator:a242d25c7a9a1b7212bb890023c8131f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f34a2030acfb5567678ab2bba25f3c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#a8f34a2030acfb5567678ab2bba25f3c1">createFile</a> (char *file_name)</td></tr>
 <tr class="memdesc:a8f34a2030acfb5567678ab2bba25f3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для создания файла  <a href="#a8f34a2030acfb5567678ab2bba25f3c1">Подробнее...</a><br /></td></tr>
 <tr class="separator:a8f34a2030acfb5567678ab2bba25f3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,9 +130,6 @@ $(function() {
 <tr class="memitem:afe1c5d9570a4ccddf9b5105997e3ddb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#afe1c5d9570a4ccddf9b5105997e3ddb4">canny</a> (const Mat &amp;mat_in, Mat &amp;mat_out)</td></tr>
 <tr class="memdesc:afe1c5d9570a4ccddf9b5105997e3ddb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для обработки изображений.  <a href="#afe1c5d9570a4ccddf9b5105997e3ddb4">Подробнее...</a><br /></td></tr>
 <tr class="separator:afe1c5d9570a4ccddf9b5105997e3ddb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafaa59e41cfa4f5fda8c4d703394f26a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_core_8cpp.html#aafaa59e41cfa4f5fda8c4d703394f26a">v_test</a> ()</td></tr>
-<tr class="memdesc:aafaa59e41cfa4f5fda8c4d703394f26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для проведения тестов. Замер скорости выполнения алгоритмов.  <a href="#aafaa59e41cfa4f5fda8c4d703394f26a">Подробнее...</a><br /></td></tr>
-<tr class="separator:aafaa59e41cfa4f5fda8c4d703394f26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля </p>
@@ -161,46 +138,6 @@ $(function() {
 
 <p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a></p>
 </div><h2 class="groupheader">Функции</h2>
-<a id="a52e35dcbe19501f48a77bffff1ab742d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52e35dcbe19501f48a77bffff1ab742d">&#9670;&nbsp;</a></span>blur()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void blur </td>
-          <td>(</td>
-          <td class="paramtype">const Mat &amp;&#160;</td>
-          <td class="paramname"><em>mat_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Mat &amp;&#160;</td>
-          <td class="paramname"><em>mat_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция для обработки изображений. </p>
-<p>Фильтр для размытия изображений.</p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mat_in</td><td>Матрица с изображением для обработки </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">mat_out</td><td>Матрица с обработанным изображением, которая будет возвращена </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00176">176</a></p>
-
-</div>
-</div>
 <a id="afe1c5d9570a4ccddf9b5105997e3ddb4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe1c5d9570a4ccddf9b5105997e3ddb4">&#9670;&nbsp;</a></span>canny()</h2>
 
@@ -237,18 +174,18 @@ $(function() {
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00336">336</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00274">274</a></p>
 
 </div>
 </div>
-<a id="a96c018612a57329cdb94506523f5b7ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96c018612a57329cdb94506523f5b7ec">&#9670;&nbsp;</a></span>check_file() <span class="overload">[1/2]</span></h2>
+<a id="a2dd1bc039652a0480c444957d416b6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd1bc039652a0480c444957d416b6a6">&#9670;&nbsp;</a></span>checkFile() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool check_file </td>
+          <td class="memname">bool checkFile </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -257,18 +194,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00231">231</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00170">170</a></p>
 
 </div>
 </div>
-<a id="ad0a55567f006a236b894f86f5f2e8917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0a55567f006a236b894f86f5f2e8917">&#9670;&nbsp;</a></span>check_file() <span class="overload">[2/2]</span></h2>
+<a id="a64f8c9899c815dc180b2b564c0d05762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f8c9899c815dc180b2b564c0d05762">&#9670;&nbsp;</a></span>checkFile() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool check_file </td>
+          <td class="memname">bool checkFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -277,7 +214,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00240">240</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00179">179</a></p>
 
 </div>
 </div>
@@ -307,7 +244,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00097">97</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00085">85</a></p>
 
 </div>
 </div>
@@ -338,7 +275,7 @@ $(function() {
 </pre><p>иначе: </p><pre class="fragment">Вывод в лог, что не получилось создать директорию
 
 Возможно это связано с тем, что нет прав на создание директории или директория уже есть  </pre>
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00297">297</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00235">235</a></p>
 
 </div>
 </div>
@@ -366,7 +303,7 @@ $(function() {
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00288">288</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00226">226</a></p>
 
 </div>
 </div>
@@ -386,7 +323,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00083">83</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00069">69</a></p>
 
 </div>
 </div>
@@ -415,7 +352,7 @@ $(function() {
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>Искомое описание марки </dd></dl>
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00319">319</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00257">257</a></p>
 
 </div>
 </div>
@@ -435,7 +372,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00140">140</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00124">124</a></p>
 
 </div>
 </div>
@@ -465,87 +402,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00112">112</a></p>
-
-</div>
-</div>
-<a id="a9c94d105a9b6a7a8209f68dee9432133"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c94d105a9b6a7a8209f68dee9432133">&#9670;&nbsp;</a></span>fastNoiseRemoval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fastNoiseRemoval </td>
-          <td>(</td>
-          <td class="paramtype">const Mat &amp;&#160;</td>
-          <td class="paramname"><em>mat_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Mat &amp;&#160;</td>
-          <td class="paramname"><em>mat_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция для обработки изображений. </p>
-<p>Быстрый фильтр для размытия изображений в оттенках серого.</p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mat_in</td><td>Матрица с изображением для обработки </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">mat_out</td><td>Матрица с обработанным изображением, которая будет возвращена </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00200">200</a></p>
-
-</div>
-</div>
-<a id="aede9a861af03b2d343843baa70ab729e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aede9a861af03b2d343843baa70ab729e">&#9670;&nbsp;</a></span>fastNoiseRemovalGrey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fastNoiseRemovalGrey </td>
-          <td>(</td>
-          <td class="paramtype">const Mat &amp;&#160;</td>
-          <td class="paramname"><em>mat_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Mat &amp;&#160;</td>
-          <td class="paramname"><em>mat_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция для обработки изображений. </p>
-<p>Быстрый фильтр для размытия изображений в оттенках серого.</p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mat_in</td><td>Матрица с изображением для обработки </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">mat_out</td><td>Матрица с обработанным изображением, которая будет возвращена </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00188">188</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00100">100</a></p>
 
 </div>
 </div>
@@ -575,7 +432,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00219">219</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00158">158</a></p>
 
 </div>
 </div>
@@ -611,42 +468,12 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00223">223</a></p>
-
-</div>
-</div>
-<a id="a61e05ff7e764817705d59ccef670c81e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61e05ff7e764817705d59ccef670c81e">&#9670;&nbsp;</a></span>getSettingsString() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string getSettingsString </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>block</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00207">207</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00162">162</a></p>
 
 </div>
 </div>
 <a id="a50535cebf45c8d7cbffd29274699e5f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50535cebf45c8d7cbffd29274699e5f5">&#9670;&nbsp;</a></span>getSettingsString() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a50535cebf45c8d7cbffd29274699e5f5">&#9670;&nbsp;</a></span>getSettingsString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -677,26 +504,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00213">213</a></p>
-
-</div>
-</div>
-<a id="a97ee70a8770dc30d06c744b24eb2fcfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97ee70a8770dc30d06c744b24eb2fcfc">&#9670;&nbsp;</a></span>help()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void help </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00136">136</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00152">152</a></p>
 
 </div>
 </div>
@@ -730,7 +538,6 @@ $(function() {
 <p>Проверяет, нужно ли находить линии на изображении.</p>
 <p>Также проверяем режим обработки изображений. Быстрый или нет.</p>
 <p>Для обычного режима используется - canny(mat_in, mat_out);</p>
-<p>Для быстрого режима используется -</p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mat_in</td><td>Матрица с изображением для обработки </td></tr>
@@ -739,7 +546,7 @@ $(function() {
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00070">70</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00061">61</a></p>
 
 </div>
 </div>
@@ -782,7 +589,7 @@ $(function() {
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00042">42</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00035">35</a></p>
 
 </div>
 </div>
@@ -818,18 +625,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00227">227</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00166">166</a></p>
 
 </div>
 </div>
-<a id="a8ba7f398362c96368015412b023565d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ba7f398362c96368015412b023565d0">&#9670;&nbsp;</a></span>settings_initialization()</h2>
+<a id="a242d25c7a9a1b7212bb890023c8131f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a242d25c7a9a1b7212bb890023c8131f5">&#9670;&nbsp;</a></span>settingsInitialization()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void settings_initialization </td>
+          <td class="memname">void settingsInitialization </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -837,28 +644,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00250">250</a></p>
-
-</div>
-</div>
-<a id="aafaa59e41cfa4f5fda8c4d703394f26a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafaa59e41cfa4f5fda8c4d703394f26a">&#9670;&nbsp;</a></span>v_test()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void v_test </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция для проведения тестов. Замер скорости выполнения алгоритмов. </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00349">349</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_core_8cpp_source.html">Core.cpp</a> строка <a class="el" href="_core_8cpp_source.html#l00189">189</a></p>
 
 </div>
 </div>

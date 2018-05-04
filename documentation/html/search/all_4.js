@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['fastnoiseremoval',['fastNoiseRemoval',['../_core_8cpp.html#a9c94d105a9b6a7a8209f68dee9432133',1,'fastNoiseRemoval(const Mat &amp;mat_in, Mat &amp;mat_out):&#160;Core.cpp'],['../_core_8h.html#ab5eb0c124067d093b9001373071f4636',1,'fastNoiseRemoval(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out):&#160;Core.h']]],
-  ['fastnoiseremovalgrey',['fastNoiseRemovalGrey',['../_core_8cpp.html#aede9a861af03b2d343843baa70ab729e',1,'fastNoiseRemovalGrey(const Mat &amp;mat_in, Mat &amp;mat_out):&#160;Core.cpp'],['../_core_8h.html#a39eb2014e38b68bd4e6453a24e51d896',1,'fastNoiseRemovalGrey(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out):&#160;Core.h']]]
+  ['file_5fname_5fconfig',['FILE_NAME_CONFIG',['../namespaceyenot.html#a376e7adfbabcae01c8305ed17d47d576',1,'yenot']]],
+  ['file_5fname_5fdatabase',['FILE_NAME_DATABASE',['../namespaceyenot.html#ae254e34a07790b92c8085e559be10f38',1,'yenot']]],
+  ['file_5fname_5flogger',['FILE_NAME_LOGGER',['../namespaceyenot.html#a6fdda6751433c679b7976669aff150b8',1,'yenot']]]
 ];
