@@ -13,6 +13,16 @@
     </figure>
 </para>
         <simplesect>
+            <title> Алфавитный указатель директорий </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>dir <link linkend="dir_feabc155523ba6842abc981241f427d6">database</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
             <title> Файл </title>
             <para>
                 <itemizedlist>

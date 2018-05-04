@@ -1,6 +1,8 @@
 var searchData=
 [
   ['error_5fclearning',['ERROR_CLEARNING',['../namespaceyenot.html#a9b11e5890ebee4b3ace81f058483b7af',1,'yenot']]],
+  ['error_5fdatabase',['ERROR_DATABASE',['../namespaceyenot.html#a34fbed9d403672deb1f0f73139f26ee6',1,'yenot']]],
+  ['error_5fdatabase_5fadd_5farguments',['ERROR_DATABASE_ADD_ARGUMENTS',['../namespaceyenot.html#adec37b1319feb436842ed87c9741df97',1,'yenot']]],
   ['error_5fdetection',['ERROR_DETECTION',['../namespaceyenot.html#af6dc289a999d852dd3da0134f47cda0f',1,'yenot']]],
   ['error_5fimage',['ERROR_IMAGE',['../namespaceyenot.html#a3c1c146cfa3fc68ce0e1950b93270849',1,'yenot']]],
   ['error_5finit',['ERROR_INIT',['../namespaceyenot.html#a8206ed93e65c9e89395c2823a5f18786',1,'yenot']]],

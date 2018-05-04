@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_yenot_database_8cpp" kind="file" language="C++">
+    <compoundname>YenotDatabase.cpp</compoundname>
+    <includes refid="_yenot_8h" local="yes">..\Yenot.h</includes>
+    <includes refid="_core_8h" local="yes">..\Core.h</includes>
+    <includes refid="_logger_8h" local="yes">..\Logger.h</includes>
+    <incdepgraph>
+      <node id="63">
+        <label>opencv2/opencv.hpp</label>
+      </node>
+      <node id="62">
+        <label>..\Core.h</label>
+        <link refid="_core_8h"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>..\Yenot.h</label>
+        <link refid="_yenot_8h"/>
+      </node>
+      <node id="64">
+        <label>..\Logger.h</label>
+        <link refid="_logger_8h"/>
+      </node>
+      <node id="60">
+        <label>YenotDatabase.cpp</label>
+        <link refid="_yenot_database_8cpp"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__yenotdatabasecpp_1ga0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/database/YenotDatabase.cpp" line="19" column="1" bodyfile="src/core/database/YenotDatabase.cpp" bodystart="19" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Удобное добавление trainhaar.xml файлов </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>SavaLione </para></simplesect>
+<simplesect kind="date"><para>25 Apr 2018 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&quot;..\Yenot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\Core.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\Logger.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceyenot" kindref="compound">yenot</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="group__yenotdatabasecpp_1ga0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__yenotdatabasecpp_1ga0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_return<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((strcmp(argv[1],<sp/></highlight><highlight class="stringliteral">&quot;-add&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(argc<sp/>&gt;<sp/>1))<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__corecpp_1ga10a0271bceabc9c1a0d736ab93113212" kindref="member">databaseAdd</ref>(argv[2]);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="namespaceyenot_1adec37b1319feb436842ed87c9741df97" kindref="member">ERROR_DATABASE_ADD_ARGUMENTS</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/>e;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__loggercpp_1ga0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)e.c_str());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i_return<sp/>=<sp/><ref refid="namespaceyenot_1a34fbed9d403672deb1f0f73139f26ee6" kindref="member">ERROR_DATABASE</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i_return;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/core/database/YenotDatabase.cpp"/>
+  </compounddef>
+</doxygen>

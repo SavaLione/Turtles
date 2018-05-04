@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_feabc155523ba6842abc981241f427d6">
+    <title>Содержание директории database</title>
+<para>Directory dependency diagram for database</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="dir_feabc155523ba6842abc981241f427d6_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Файл </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="_yenot_database_8cpp">YenotDatabase.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Подробное описание</title>
+    <para>Directory location is D:/work/git/Yenot/src/core/database/</para>
+    </simplesect>
+</section>

@@ -3,30 +3,37 @@
   <compounddef id="_logger_8h" kind="file" language="C++">
     <compoundname>Logger.h</compoundname>
     <includedby refid="_core_8cpp" local="yes">Core.cpp</includedby>
+    <includedby refid="_yenot_database_8cpp" local="yes">YenotDatabase.cpp</includedby>
     <includedby refid="_settings_8cpp" local="yes">Settings.cpp</includedby>
     <includedby refid="_yenot_8cpp" local="yes">Yenot.cpp</includedby>
     <invincdepgraph>
-      <node id="25">
+      <node id="27">
         <label>Settings.cpp</label>
         <link refid="_settings_8cpp"/>
       </node>
-      <node id="24">
+      <node id="25">
         <label>Core.cpp</label>
         <link refid="_core_8cpp"/>
       </node>
-      <node id="26">
+      <node id="28">
         <label>Yenot.cpp</label>
         <link refid="_yenot_8cpp"/>
       </node>
-      <node id="23">
+      <node id="24">
         <label>Logger.h</label>
         <link refid="_logger_8h"/>
-        <childnode refid="24" relation="include">
-        </childnode>
         <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
         </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>YenotDatabase.cpp</label>
+        <link refid="_yenot_database_8cpp"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">

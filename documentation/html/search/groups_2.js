@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['settings_2ecpp',['Settings.cpp',['../group__settingscpp.html',1,'']]],
-  ['settings_2eh',['Settings.h',['../group__settingsh.html',1,'']]]
+  ['logger_2ecpp',['Logger.cpp',['../group__loggercpp.html',1,'']]],
+  ['logger_2eh',['Logger.h',['../group__loggerh.html',1,'']]]
 ];

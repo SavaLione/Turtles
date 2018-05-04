@@ -8,42 +8,42 @@
     <includedby refid="_settings_8cpp" local="yes">Settings.cpp</includedby>
     <includedby refid="_yenot_8cpp" local="yes">Yenot.cpp</includedby>
     <incdepgraph>
-      <node id="37">
-        <label>string</label>
-      </node>
-      <node id="36">
-        <label>Settings.h</label>
-        <link refid="_settings_8h"/>
-        <childnode refid="37" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="41">
-        <label>Settings.cpp</label>
-        <link refid="_settings_8cpp"/>
-      </node>
       <node id="39">
-        <label>Core.cpp</label>
-        <link refid="_core_8cpp"/>
-      </node>
-      <node id="40">
-        <label>Logger.cpp</label>
-        <link refid="_logger_8cpp"/>
+        <label>string</label>
       </node>
       <node id="38">
         <label>Settings.h</label>
         <link refid="_settings_8h"/>
         <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="43">
+        <label>Settings.cpp</label>
+        <link refid="_settings_8cpp"/>
+      </node>
+      <node id="41">
+        <label>Core.cpp</label>
+        <link refid="_core_8cpp"/>
+      </node>
+      <node id="42">
+        <label>Logger.cpp</label>
+        <link refid="_logger_8cpp"/>
+      </node>
+      <node id="40">
+        <label>Settings.h</label>
+        <link refid="_settings_8h"/>
         <childnode refid="41" relation="include">
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
       </node>
-      <node id="42">
+      <node id="44">
         <label>Yenot.cpp</label>
         <link refid="_yenot_8cpp"/>
       </node>

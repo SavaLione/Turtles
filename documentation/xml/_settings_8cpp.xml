@@ -9,13 +9,9 @@
     <includes refid="_logger_8h" local="yes">..\core\Logger.h</includes>
     <includes refid="_settings_8h" local="yes">..\core\Settings.h</includes>
     <incdepgraph>
-      <node id="27">
+      <node id="29">
         <label>Settings.cpp</label>
         <link refid="_settings_8cpp"/>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
         <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="31" relation="include">
@@ -24,30 +20,34 @@
         </childnode>
         <childnode refid="33" relation="include">
         </childnode>
-      </node>
-      <node id="28">
-        <label>Windows.h</label>
-      </node>
-      <node id="34">
-        <label>string</label>
-      </node>
-      <node id="29">
-        <label>direct.h</label>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
       </node>
       <node id="30">
-        <label>fstream</label>
+        <label>Windows.h</label>
+      </node>
+      <node id="36">
+        <label>string</label>
       </node>
       <node id="31">
+        <label>direct.h</label>
+      </node>
+      <node id="32">
+        <label>fstream</label>
+      </node>
+      <node id="33">
         <label>..\core\Yenot.h</label>
         <link refid="_yenot_8h"/>
       </node>
-      <node id="33">
+      <node id="35">
         <label>..\core\Settings.h</label>
         <link refid="_settings_8h"/>
-        <childnode refid="34" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="34">
         <label>..\core\Logger.h</label>
         <link refid="_logger_8h"/>
       </node>

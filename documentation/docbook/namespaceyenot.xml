@@ -367,7 +367,21 @@
             <para>
                 <itemizedlist>
                     <listitem>
+                        <para>const int <link linkend="namespaceyenot_1a34fbed9d403672deb1f0f73139f26ee6">ERROR_DATABASE</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
                         <para>const char <link linkend="namespaceyenot_1af958287fcf5b41e632a87bd1a795c74b">ERROR_INIT_DATABASE_ADD</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char <link linkend="namespaceyenot_1adec37b1319feb436842ed87c9741df97">ERROR_DATABASE_ADD_ARGUMENTS</link></para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -455,7 +469,7 @@
 <para>Errors - Ошибки</para>
 
 <para>Car model - Пример </para>
-                <para>Definition at line 44 of file Yenot.h</para>
+                <para>Definition at line 48 of file Yenot.h</para>
                 <para>The Documentation for this struct was generated from the following file: </para>
                 <para><itemizedlist><listitem><para>Yenot.h</para></listitem></itemizedlist></para>
         </simplesect>

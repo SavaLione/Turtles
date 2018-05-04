@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir">
     <compoundname>core</compoundname>
+    <innerdir refid="dir_feabc155523ba6842abc981241f427d6">database</innerdir>
     <innerfile refid="_core_8cpp">Core.cpp</innerfile>
     <innerfile refid="_core_8h">Core.h</innerfile>
     <innerfile refid="_logger_8cpp">Logger.cpp</innerfile>

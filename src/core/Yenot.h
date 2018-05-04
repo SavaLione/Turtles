@@ -17,6 +17,10 @@
 	@brief Сервер. Должен принимать фото
 */
 /**
+	@defgroup database Database
+	@brief Удобное добавление trainhaar.xml файлов
+*/
+/**
 	@defgroup yenoth Yenot.h
 	@ingroup yenot
 	@{
@@ -238,8 +242,10 @@ namespace yenot {
 	const int ERROR_NOISE_REMOVAL = -500;
 	const int ERROR_LINE_DETECTION = -600;
 	const int ERROR_DETECTION = -700;
+	const int ERROR_DATABASE = -800;
 	
 	const char ERROR_INIT_DATABASE_ADD[] = "The file name can not be empty.";
+	const char ERROR_DATABASE_ADD_ARGUMENTS[] = "Few arguments";
 	
 	///////////////////////////////////////////////////////////////////////////////
 	//	Car model

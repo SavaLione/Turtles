@@ -14,6 +14,7 @@
         <xi:include href="group__yenot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="group__core.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="group__server.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="group__database.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
     <chapter>
         <title>Файлы</title>
@@ -25,12 +26,14 @@
         <xi:include href="_settings_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_yenot_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_yenot_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_yenot_database_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_yenot_server_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_yenot_server_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
     <chapter>
         <title>Директории</title>
         <xi:include href="dir_aebb8dcc11953d78e620bbef0b9e2183.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_feabc155523ba6842abc981241f427d6.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="dir_68267d1309a1af8e8297ef4c3efbcdba.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="dir_5ceb4429e36b40aa17cb4224c37bec70.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>

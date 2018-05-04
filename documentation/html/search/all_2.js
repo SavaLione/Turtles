@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['database',['Database',['../group__database.html',1,'']]],
   ['databaseadd',['databaseAdd',['../group__corecpp.html#ga10a0271bceabc9c1a0d736ab93113212',1,'databaseAdd(string filename):&#160;Core.cpp'],['../group__coreh.html#ga5a4a30ca6128e13ce1ec6efaa23dd6c7',1,'databaseAdd(std::string filename):&#160;Core.h']]],
   ['description',['description',['../group__corecpp.html#gaa85ae460901348b74381239ce0517d5f',1,'description(string value):&#160;Core.cpp'],['../group__coreh.html#gaad0390ab7aa8f0cac1eee4492e919baf',1,'description(std::string value):&#160;Core.h']]],
   ['detection',['detection',['../group__corecpp.html#gae99907f19e7f09055012f68347a57d05',1,'detection(const Mat &amp;mat_logo):&#160;Core.cpp'],['../group__coreh.html#ga0ef39a5ada0921b3abf8906957746b86',1,'detection(const cv::Mat &amp;mat_logo):&#160;Core.h']]],

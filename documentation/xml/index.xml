@@ -56,7 +56,9 @@
     <member refid="namespaceyenot_1a0699d20f9a904f7faf8b63cc7fc31c63" kind="variable"><name>ERROR_NOISE_REMOVAL</name></member>
     <member refid="namespaceyenot_1ab63291c5dfdea5865dc7a32401095215" kind="variable"><name>ERROR_LINE_DETECTION</name></member>
     <member refid="namespaceyenot_1af6dc289a999d852dd3da0134f47cda0f" kind="variable"><name>ERROR_DETECTION</name></member>
+    <member refid="namespaceyenot_1a34fbed9d403672deb1f0f73139f26ee6" kind="variable"><name>ERROR_DATABASE</name></member>
     <member refid="namespaceyenot_1af958287fcf5b41e632a87bd1a795c74b" kind="variable"><name>ERROR_INIT_DATABASE_ADD</name></member>
+    <member refid="namespaceyenot_1adec37b1319feb436842ed87c9741df97" kind="variable"><name>ERROR_DATABASE_ADD_ARGUMENTS</name></member>
     <member refid="namespaceyenot_1a3c950090a29f01a39ec562e1e30452b9" kind="variable"><name>BLOCK_CARMODEL</name></member>
     <member refid="namespaceyenot_1a0a2414e62514c20e76cf0c522ebf38a3" kind="variable"><name>settings_carModel_listphoto</name></member>
     <member refid="namespaceyenot_1af238d0e227de22ee3c26114077153efc" kind="variable"><name>settings_carModel_example</name></member>
@@ -120,6 +122,9 @@
   </compound>
   <compound refid="_yenot_8h" kind="file"><name>Yenot.h</name>
   </compound>
+  <compound refid="_yenot_database_8cpp" kind="file"><name>YenotDatabase.cpp</name>
+    <member refid="group__yenotdatabasecpp_1ga0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
   <compound refid="_yenot_server_8cpp" kind="file"><name>YenotServer.cpp</name>
     <member refid="group__serveryenotservercpp_1gae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
     <member refid="group__serveryenotservercpp_1ga3bf507bc2b43ea8ed45bdfeaf8d11171" kind="function"><name>some</name></member>
@@ -148,6 +153,9 @@
     <member refid="group__coreh_1gaff2d42310702a0aab15af5ad62a59f2b" kind="function"><name>canny</name></member>
     <member refid="group__coreh_1ga242d25c7a9a1b7212bb890023c8131f5" kind="function"><name>settingsInitialization</name></member>
     <member refid="group__coreh_1gaad0390ab7aa8f0cac1eee4492e919baf" kind="function"><name>description</name></member>
+  </compound>
+  <compound refid="group__yenotdatabasecpp" kind="group"><name>yenotdatabasecpp</name>
+    <member refid="group__yenotdatabasecpp_1ga0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
   <compound refid="group__loggercpp" kind="group"><name>loggercpp</name>
     <member refid="group__loggercpp_1ga0d6abeb129096910c85ae6cba8bb59cf" kind="function"><name>logger</name></member>
@@ -184,6 +192,8 @@
   </compound>
   <compound refid="group__server" kind="group"><name>server</name>
   </compound>
+  <compound refid="group__database" kind="group"><name>database</name>
+  </compound>
   <compound refid="group__yenoth" kind="group"><name>yenoth</name>
   </compound>
   <compound refid="group__serveryenotservercpp" kind="group"><name>serveryenotservercpp</name>
@@ -194,6 +204,8 @@
     <member refid="group__serveryenotserverh_1ga3bf507bc2b43ea8ed45bdfeaf8d11171" kind="function"><name>some</name></member>
   </compound>
   <compound refid="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir"><name>core</name>
+  </compound>
+  <compound refid="dir_feabc155523ba6842abc981241f427d6" kind="dir"><name>database</name>
   </compound>
   <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
   </compound>

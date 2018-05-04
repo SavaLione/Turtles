@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="158" column="1" bodyfile="src/core/Core.cpp" bodystart="158" bodyend="189"/>
+        <location file="src/core/Core.cpp" line="158" column="1" bodyfile="src/core/Core.cpp" bodystart="158" bodyend="190"/>
       </memberdef>
       <memberdef kind="function" id="group__corecpp_1gaa85ae460901348b74381239ce0517d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -191,7 +191,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="196" column="1" bodyfile="src/core/Core.cpp" bodystart="196" bodyend="200"/>
+        <location file="src/core/Core.cpp" line="197" column="1" bodyfile="src/core/Core.cpp" bodystart="197" bodyend="201"/>
       </memberdef>
       <memberdef kind="function" id="group__corecpp_1gafe1c5d9570a4ccddf9b5105997e3ddb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -227,7 +227,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="213" column="1" bodyfile="src/core/Core.cpp" bodystart="213" bodyend="218"/>
+        <location file="src/core/Core.cpp" line="214" column="1" bodyfile="src/core/Core.cpp" bodystart="214" bodyend="219"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
