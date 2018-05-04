@@ -122,9 +122,6 @@ namespace yenot {
 	const char LOGGER_MESSAGE_CREATE_DIR[] = "Folder created.";
 	const char LOGGER_MESSAGE_CREATE_DIR_NOT[] = "Folder not created.";
 	
-	const char LOGGER_MESSAGE_ERROR_PICTURE[] = "Error related to image. Wrong format or not specified.";
-	const char LOGGER_MESSAGE_ERROR_PICTURE_NOT_SPECIFIED[] = "Error. Image not specified."; 
-	
 	///////////////////////////////////////////////////////////////////////////////
 	//	Errors
 	///////////////////////////////////////////////////////////////////////////////
@@ -135,6 +132,8 @@ namespace yenot {
 	const int ERROR_NOISE_REMOVAL = -500;
 	const int ERROR_LINE_DETECTION = -600;
 	const int ERROR_DETECTION = -700;
+	
+	const char ERROR_INIT_DATABASE_ADD[] = "The file name can not be empty.";
 	
 	///////////////////////////////////////////////////////////////////////////////
 	//	Car model

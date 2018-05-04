@@ -18,7 +18,6 @@ void databaseAdd(std::string filename);
 void clearning(std::string filename, std::string variable);
 bool detectionLogo(const cv::Mat& mat_logo, std::string cascadefile);
 void detection(const cv::Mat& mat_logo);
-void help();
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Line detector

@@ -67,6 +67,8 @@ void lineDetection(const Mat& mat_in, Mat& mat_out) {
 }
 
 void databaseAdd(string filename) {
+	if (filename == "")
+		throw ERROR_INIT_DATABASE_ADD;
 	vector<string> stringVector;
 	FileStorage fsIn;
 	fsIn.open((NAME_DATABASE + string("\\") + FILE_NAME_DATABASE), FileStorage::READ);
@@ -112,15 +114,11 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(settings_size_photo, settings_size_photo));
 
 	if (detectObject.size() != 0) {
-		// ≈сть на фото
+		// Есть на фото
 		cout << detectObject.size() << endl;
 		b_return = true;
 	}
 	return b_return;
-}
-
-void help() {
-	cout << " Usage: Yenot.exe <image>" << endl;
 }
 
 void detection(const Mat& mat_logo) {

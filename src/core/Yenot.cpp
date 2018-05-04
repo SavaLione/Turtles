@@ -4,13 +4,6 @@
 	@author SavaLione
 	@date 28 Mar 2018
 */
-//-
-#include <Windows.h>
-#include <iostream>
-#include <string>
-//-
-
-
 #include "..\core\Yenot.h"
 #include "..\core\Core.h"
 #include "..\io\Logger.h"
