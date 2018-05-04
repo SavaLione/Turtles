@@ -49,12 +49,13 @@ set(CORE_SOURCES
 		src/core/Yenot.cpp
 		src/core/Core.cpp
 		src/core/Logger.cpp
+		src/core/Settings.cpp
 )
 set(CORE_HEADERS
 		src/core/Yenot.h
 		src/core/Core.h
 		src/core/Logger.h
-		
+		src/core/Settings.h
 )
 set (YENOT_CORE ${CORE_SOURCES} ${CORE_HEADERS})
 
@@ -93,10 +94,15 @@ set (PROJECT Server)
 
 set(SERVER_SOURCES
 		src/srv/YenotServer.cpp
+		src/core/Logger.cpp
+		src/core/Settings.cpp
 )
 
 set(SERVER_HEADERS
 		src/srv/YenotServer.h
+		src/core/Logger.h
+		src/core/Settings.h
+		src/core/Yenot.h
 )
 
 set(SERVER ${SERVER_SOURCES} ${SERVER_HEADERS})

@@ -27,15 +27,7 @@ void canny(const cv::Mat& mat_in, cv::Mat& mat_out);
 ///////////////////////////////////////////////////////////////////////////////
 //	Settings
 ///////////////////////////////////////////////////////////////////////////////
-std::string getSettingsString(char *block, char *value, char *ch_return_default);
-int getSettings(char *block, char *value);
-int getSettings(char *block, char *value, int i_return_default);
-void setSettings(char *block, char *value, char *text);
-bool checkFile(char *filename);
-bool checkFile(std::string filename);
 void settingsInitialization();
-void createFile(char *file_name);
-void createDir(std::string namedir);
 std::string description(std::string value);
 
 #endif // CORE_H

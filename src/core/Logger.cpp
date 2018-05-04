@@ -4,10 +4,11 @@
 	@author SavaLione
 	@date 1 Apr 2018
 */
-#include <windows.h>
+#include <Windows.h>
+#include <fstream>
 
 #include "..\core\Yenot.h"
-#include "..\core\Core.h"
+#include "..\core\Settings.h"
 
 using namespace std;
 using namespace yenot;
