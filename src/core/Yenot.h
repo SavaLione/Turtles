@@ -20,6 +20,8 @@
 	
 	Log messages - Сообщения для вывода в логами
 	
+	Errors - Ошибки
+	
 	Car model - Пример
 */
 namespace yenot {
@@ -55,15 +57,40 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	//	Core
 	///////////////////////////////////////////////////////////////////////////////
+	
+	/// Блок настроек ядра.
+	///
+	///	ini файл
+	/// @code
+	///	[core]
+	/// ...
+	/// @endcode
 	const char BLOCK_CORE[] = "Core";
-	const char BLOCK_DEFAULT[] = "General";
-
+	
+	/// Быстрый режим.
+	///
+	/// Немного ускоряет работу программы
 	const char SETTINGS_FASTMODE[] = "fMode";
+	/// Быстрый режим.
+	///
+	/// Стандартное значение
 	const char SETTINGS_FASTMODE_VALUE[] = "0";
+	/// Быстрый режим.
+	///
+	/// Стандартное значение
 	const int SETTINGS_FASTMODE_VALUE_INT = 0;
 
+	/// Алгоритм очистки изображения от шума.
+	///
+	/// Замедляет работу программы
 	const char SETTINGS_NOISE_REDUCTION[] = "nReduction";
+	/// Алгоритм очистки изображения от шума.
+	///
+	/// Стандартное значение
 	const char SETTINGS_NOISE_REDUCTION_VALUE[] = "1";
+	/// Алгоритм очистки изображения от шума.
+	///
+	/// Стандартное значение
 	const int SETTINGS_NOISE_REDUCTION_VALUE_INT = 1;
 
 	const char SETTINGS_LINE_DETECTION[] = "lDetection";
@@ -120,7 +147,7 @@ namespace yenot {
 	const char LOGGER_MESSAGE_LINE_DETECTION[] = "Line detection is disabled.";
 	const char LOGGER_MESSAGE_FAST_MODE[] = "Fast mode enabled.";
 	const char LOGGER_MESSAGE_CREATE_DIR[] = "Folder created.";
-	const char LOGGER_MESSAGE_CREATE_DIR_NOT[] = "Folder not created.";
+	const char LOGGER_MESSAGE_CREATE_DIR_NOT[] = "Folder creation failed.";
 	
 	///////////////////////////////////////////////////////////////////////////////
 	//	Errors
@@ -142,12 +169,12 @@ namespace yenot {
 	const char settings_carModel_listphoto[] = "listphoto";
 
 	const char settings_carModel_example[] = "example";
-	const char settings_carModel_example_description[] = "The car of model \"Example\"";
+	const char settings_carModel_example_description[] = "Brand: \"Example\"";
 	const char settings_carModel_example_file[] = "example.xml";
 
 	const char settings_block_description[] = "description";
 	const char settings_description_ifnotfound[] = "Not found";
-	const char settings_description_example[] = "Example brand";
+	const char settings_description_example[] = "Sample brand";
 
 	const int settings_size_photo = 512;
 }

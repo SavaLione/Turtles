@@ -27,7 +27,6 @@ void canny(const cv::Mat& mat_in, cv::Mat& mat_out);
 ///////////////////////////////////////////////////////////////////////////////
 //	Settings
 ///////////////////////////////////////////////////////////////////////////////
-std::string getSettingsString(char *block, char *value);
 std::string getSettingsString(char *block, char *value, char *ch_return_default);
 int getSettings(char *block, char *value);
 int getSettings(char *block, char *value, int i_return_default);

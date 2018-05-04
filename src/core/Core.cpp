@@ -148,11 +148,6 @@ void detection(const Mat& mat_logo) {
 ///////////////////////////////////////////////////////////////////////////////
 //	Settings
 ///////////////////////////////////////////////////////////////////////////////
-string getSettingsString(char *block, char *value) {
-	char text[BUFFER_SIZE];
-	GetPrivateProfileString(block, value, BLOCK_DEFAULT, text, BUFFER_SIZE, FILE_NAME_CONFIG);
-	return text;
-}
 
 string getSettingsString(char *block, char *value, char *ch_return_default) {
 	char text[BUFFER_SIZE];
