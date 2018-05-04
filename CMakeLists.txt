@@ -1,9 +1,5 @@
 # ----------------------------------------------------------------------------
 #  Yenot
-#
-#    comment
-#      comment
-#
 # ----------------------------------------------------------------------------
 cmake_minimum_required (VERSION 2.6)
 
@@ -89,3 +85,21 @@ project (${PROJECT})
 add_executable (${PROJECT} ${YENOT_CORE})
 
 target_link_libraries(${PROJECT} ${CMAKE_SOURCE_DIR}/lib/opencv/x64/vc15/lib/opencv_world341.lib)
+
+# Server
+# ===================================================
+
+set (PROJECT Server)
+
+set(SERVER_SOURCES
+		src/srv/YenotServer.cpp
+)
+
+set(SERVER_HEADERS
+		src/srv/YenotServer.h
+)
+
+set(SERVER ${SERVER_SOURCES} ${SERVER_HEADERS})
+
+project (${PROJECT})
+add_executable (${PROJECT} ${SERVER})
