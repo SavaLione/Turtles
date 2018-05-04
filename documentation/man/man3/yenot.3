@@ -218,16 +218,26 @@ Car model - Пример
 .SH "Переменные"
 .PP 
 .SS "const char yenot::BLOCK_CARMODEL[] = 'carmodel'"
-
+Блок модуля поиска логотипа
 .PP
-См\&. определение в файле Yenot\&.h строка 185
+ini файл 
+.PP
+.nf
+[carmodel]
+\&.\&.\&.
+
+.fi
+.PP
+ 
+.PP
+См\&. определение в файле Yenot\&.h строка 255
 .SS "const char yenot::BLOCK_CORE[] = 'Core'"
 Блок настроек ядра\&.
 .PP
 ini файл 
 .PP
 .nf
-[core]
+[Core]
 \&.\&.\&.
 
 .fi
@@ -236,9 +246,19 @@ ini файл
 .PP
 См\&. определение в файле Yenot\&.h строка 85
 .SS "const char yenot::BLOCK_LOGGER[] = 'Logger'"
-
+Блок модуля логирования\&.
 .PP
-См\&. определение в файле Yenot\&.h строка 154
+ini файл 
+.PP
+.nf
+[Logger]
+\&.\&.\&.
+
+.fi
+.PP
+ 
+.PP
+См\&. определение в файле Yenot\&.h строка 216
 .SS "const int yenot::BUFFER_SIZE = 128"
 
 .PP
@@ -248,39 +268,39 @@ ini файл
 .SS "const int yenot::DIAMETER_EACH_PIXEL = 9"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 137
+См\&. определение в файле Yenot\&.h строка 191
 .SS "const int yenot::ERROR_CLEARNING = \-300"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 174
+См\&. определение в файле Yenot\&.h строка 236
 .SS "const int yenot::ERROR_DETECTION = \-700"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 178
+См\&. определение в файле Yenot\&.h строка 240
 .SS "const int yenot::ERROR_IMAGE = \-200"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 173
+См\&. определение в файле Yenot\&.h строка 235
 .SS "const int yenot::ERROR_INIT = \-100"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 172
+См\&. определение в файле Yenot\&.h строка 234
 .SS "const char yenot::ERROR_INIT_DATABASE_ADD[] = 'The file name can not be empty\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 180
+См\&. определение в файле Yenot\&.h строка 242
 .SS "const int yenot::ERROR_LINE_DETECTION = \-600"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 177
+См\&. определение в файле Yenot\&.h строка 239
 .SS "const int yenot::ERROR_NOISE_REMOVAL = \-500"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 176
+См\&. определение в файле Yenot\&.h строка 238
 .SS "const int yenot::ERROR_RESIZE = \-400"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 175
+См\&. определение в файле Yenot\&.h строка 237
 .SS "const char yenot::EXTENSIONS_DATABASE_MEMBER[] = '\&.xml'"
 Расширение для хранения данных
 .PP
@@ -316,45 +336,45 @@ ini файл
 .PP
 Число не чётное 
 .PP
-См\&. определение в файле Yenot\&.h строка 144
+См\&. определение в файле Yenot\&.h строка 198
 .SS "const int yenot::KERNEL_Y = 5"
 Фильтр\&. Размер ядра по x
 .PP
 Число не чётное 
 .PP
-См\&. определение в файле Yenot\&.h строка 149
+См\&. определение в файле Yenot\&.h строка 203
 .SS "const char yenot::LOGGER_LEVEL_ERROR[] = 'ERROR'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 157
+См\&. определение в файле Yenot\&.h строка 219
 .SS "const char yenot::LOGGER_LEVEL_MESSAGE[] = 'MSG'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 158
+См\&. определение в файле Yenot\&.h строка 220
 .SS "const char yenot::LOGGER_LEVEL_WARNING[] = 'WARN'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 156
+См\&. определение в файле Yenot\&.h строка 218
 .SS "const char yenot::LOGGER_MESSAGE_CREATE_DIR[] = 'Folder created\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 166
+См\&. определение в файле Yenot\&.h строка 228
 .SS "const char yenot::LOGGER_MESSAGE_CREATE_DIR_NOT[] = 'Folder creation failed\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 167
+См\&. определение в файле Yenot\&.h строка 229
 .SS "const char yenot::LOGGER_MESSAGE_FAST_MODE[] = 'Fast mode enabled\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 165
+См\&. определение в файле Yenot\&.h строка 227
 .SS "const char yenot::LOGGER_MESSAGE_LINE_DETECTION[] = 'Line \fBdetection\fP is disabled\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 164
+См\&. определение в файле Yenot\&.h строка 226
 .SS "const char yenot::LOGGER_MESSAGE_NOISE_REMOVAL[] = 'Noise filter is disabled\&.'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 163
+См\&. определение в файле Yenot\&.h строка 225
 .SS "const char yenot::NAME_DATABASE[] = 'database'"
 
 .PP
@@ -362,143 +382,181 @@ ini файл
 .SS "const char yenot::settings_block_description[] = 'description'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 192
+См\&. определение в файле Yenot\&.h строка 262
 .SS "const char yenot::settings_carModel_example[] = 'example'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 188
+См\&. определение в файле Yenot\&.h строка 258
 .SS "const char yenot::settings_carModel_example_description[] = 'Brand: \\'Example\\''"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 189
+См\&. определение в файле Yenot\&.h строка 259
 .SS "const char yenot::settings_carModel_example_file[] = 'example\&.xml'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 190
+См\&. определение в файле Yenot\&.h строка 260
 .SS "const char yenot::settings_carModel_listphoto[] = 'listphoto'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 186
+См\&. определение в файле Yenot\&.h строка 256
 .SS "const char yenot::settings_description_example[] = 'Sample brand'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 194
+См\&. определение в файле Yenot\&.h строка 264
 .SS "const char yenot::settings_description_ifnotfound[] = 'Not found'"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 193
+См\&. определение в файле Yenot\&.h строка 263
 .SS "const char yenot::SETTINGS_DETECTION[] = 'detection'"
-
+Алгоритм поиска объекта на изображении
 .PP
-См\&. определение в файле Yenot\&.h строка 117
+Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 135
 .SS "const char yenot::SETTINGS_DETECTION_VALUE[] = '1'"
-
+Алгоритм поиска объекта на изображении
 .PP
-См\&. определение в файле Yenot\&.h строка 118
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 139
 .SS "const int yenot::SETTINGS_DETECTION_VALUE_INT = 1"
-
+Алгоритм поиска объекта на изображении
 .PP
-См\&. определение в файле Yenot\&.h строка 119
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 143
 .SS "const char yenot::SETTINGS_FASTMODE[] = 'fMode'"
 Быстрый режим\&.
 .PP
+Название параметра
+.PP
 Немного ускоряет работу программы 
 .PP
-См\&. определение в файле Yenot\&.h строка 90
+См\&. определение в файле Yenot\&.h строка 92
 .SS "const char yenot::SETTINGS_FASTMODE_VALUE[] = '0'"
 Быстрый режим\&.
 .PP
 Стандартное значение 
 .PP
-См\&. определение в файле Yenot\&.h строка 94
+См\&. определение в файле Yenot\&.h строка 96
 .SS "const int yenot::SETTINGS_FASTMODE_VALUE_INT = 0"
 Быстрый режим\&.
 .PP
 Стандартное значение 
 .PP
-См\&. определение в файле Yenot\&.h строка 98
+См\&. определение в файле Yenot\&.h строка 100
 .SS "const char yenot::SETTINGS_LINE_DETECTION[] = 'lDetection'"
-
+Поиск линий на изображении
 .PP
-См\&. определение в файле Yenot\&.h строка 113
-.SS "const char yenot::SETTINGS_LINE_DETECTION_VALUE[] = '1'"
-
-.PP
-См\&. определение в файле Yenot\&.h строка 114
-.SS "const int yenot::SETTINGS_LINE_DETECTION_VALUE_INT = 1"
-
-.PP
-См\&. определение в файле Yenot\&.h строка 115
-.SS "const char yenot::SETTINGS_LOG[] = 'log'"
-
-.PP
-См\&. определение в файле Yenot\&.h строка 126
-.SS "const char yenot::SETTINGS_LOG_TIME[] = 'lTime'"
-
-.PP
-См\&. определение в файле Yenot\&.h строка 130
-.SS "const char yenot::SETTINGS_LOG_TIME_VALUE[] = '1'"
-
-.PP
-См\&. определение в файле Yenot\&.h строка 131
-.SS "const int yenot::SETTINGS_LOG_TIME_VALUE_INT = 1"
-
-.PP
-См\&. определение в файле Yenot\&.h строка 132
-.SS "const char yenot::SETTINGS_LOG_VALUE[] = '1'"
-
-.PP
-См\&. определение в файле Yenot\&.h строка 127
-.SS "const int yenot::SETTINGS_LOG_VALUE_INT = 1"
-
-.PP
-См\&. определение в файле Yenot\&.h строка 128
-.SS "const char yenot::SETTINGS_NOISE_REDUCTION[] = 'nReduction'"
-Алгоритм очистки изображения от шума\&.
+Название параметра
 .PP
 Замедляет работу программы 
 .PP
-См\&. определение в файле Yenot\&.h строка 103
+См\&. определение в файле Yenot\&.h строка 122
+.SS "const char yenot::SETTINGS_LINE_DETECTION_VALUE[] = '1'"
+Поиск линий на изображении
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 126
+.SS "const int yenot::SETTINGS_LINE_DETECTION_VALUE_INT = 1"
+Поиск линий на изображении
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 130
+.SS "const char yenot::SETTINGS_LOG[] = 'log'"
+Модуль логирования
+.PP
+Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 165
+.SS "const char yenot::SETTINGS_LOG_TIME[] = 'lTime'"
+Модуль логирования\&. Логирование с выводом времени
+.PP
+Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 178
+.SS "const char yenot::SETTINGS_LOG_TIME_VALUE[] = '1'"
+Модуль логирования\&. Логирование с выводом времени
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 182
+.SS "const int yenot::SETTINGS_LOG_TIME_VALUE_INT = 1"
+Модуль логирования\&. Логирование с выводом времени
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 186
+.SS "const char yenot::SETTINGS_LOG_VALUE[] = '1'"
+Модуль логирования
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 169
+.SS "const int yenot::SETTINGS_LOG_VALUE_INT = 1"
+Модуль логирования
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 173
+.SS "const char yenot::SETTINGS_NOISE_REDUCTION[] = 'nReduction'"
+Алгоритм очистки изображения от шума\&.
+.PP
+Название параметра
+.PP
+Замедляет работу программы 
+.PP
+См\&. определение в файле Yenot\&.h строка 107
 .SS "const char yenot::SETTINGS_NOISE_REDUCTION_VALUE[] = '1'"
 Алгоритм очистки изображения от шума\&.
 .PP
 Стандартное значение 
 .PP
-См\&. определение в файле Yenot\&.h строка 107
+См\&. определение в файле Yenot\&.h строка 111
 .SS "const int yenot::SETTINGS_NOISE_REDUCTION_VALUE_INT = 1"
 Алгоритм очистки изображения от шума\&.
 .PP
 Стандартное значение 
 .PP
-См\&. определение в файле Yenot\&.h строка 111
+См\&. определение в файле Yenot\&.h строка 115
 .SS "const char yenot::SETTINGS_SAVE_PROCESSED_IMAGE[] = 'sImage'"
-
+Нужно ли сохранять изображение после работы алгоритма
 .PP
-См\&. определение в файле Yenot\&.h строка 121
+Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 148
 .SS "const char yenot::SETTINGS_SAVE_PROCESSED_IMAGE_NAME[] = 'test\&.png'"
-
+Нужно ли сохранять изображение после работы алгоритма
 .PP
-См\&. определение в файле Yenot\&.h строка 124
+Название файла 
+.PP
+См\&. определение в файле Yenot\&.h строка 160
 .SS "const char yenot::SETTINGS_SAVE_PROCESSED_IMAGE_VALUE[] = '0'"
-
+Нужно ли сохранять изображение после работы алгоритма
 .PP
-См\&. определение в файле Yenot\&.h строка 122
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 152
 .SS "const int yenot::SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT = 0"
-
+Нужно ли сохранять изображение после работы алгоритма
 .PP
-См\&. определение в файле Yenot\&.h строка 123
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 156
 .SS "const int yenot::settings_size_photo = 512"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 196
+См\&. определение в файле Yenot\&.h строка 266
 .SS "const int yenot::SIGMA_COLOR = 75"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 138
+См\&. определение в файле Yenot\&.h строка 192
 .SS "const int yenot::SIGMA_SPACE = 75"
 
 .PP
-См\&. определение в файле Yenot\&.h строка 139
+См\&. определение в файле Yenot\&.h строка 193
 .SH "Автор"
 .PP 
 Автоматически создано Doxygen для Yenot из исходного текста\&.

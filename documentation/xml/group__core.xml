@@ -7,7 +7,7 @@
     <innergroup refid="group__coreh">Core.h</innergroup>
     <innergroup refid="group__yenotcpp">Yenot.cpp</innergroup>
     <briefdescription>
-<para>Работа с изображениеми, xml(yaml) файлами </para>    </briefdescription>
+<para>Работа с изображениями, xml(yaml) файлами </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
   </compounddef>
