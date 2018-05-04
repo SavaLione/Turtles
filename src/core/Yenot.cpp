@@ -30,6 +30,7 @@ int main(int argc, char* argv[]) {
 	if (!error)
 		try {
 			if (argc < 2) {
+				cerr << ("Usage: " + (string)argv[0] + " image.png");
 				throw ("Usage: " + (string)argv[0] + " image.png");
 			} else {
 				imagename = argv[1];
