@@ -10,7 +10,7 @@
 */
 /**
 	@defgroup core Core
-	@brief Работа с изображениеми, xml(yaml) файлами
+	@brief Работа с изображениями, xml(yaml) файлами
 */
 /**
 	@defgroup server Сервер
@@ -79,12 +79,14 @@ namespace yenot {
 	///
 	///	ini файл
 	/// @code
-	///	[core]
+	///	[Core]
 	/// ...
 	/// @endcode
 	const char BLOCK_CORE[] = "Core";
 	
 	/// Быстрый режим.
+	///
+	/// Название параметра
 	///
 	/// Немного ускоряет работу программы
 	const char SETTINGS_FASTMODE[] = "fMode";
@@ -99,6 +101,8 @@ namespace yenot {
 
 	/// Алгоритм очистки изображения от шума.
 	///
+	/// Название параметра
+	///
 	/// Замедляет работу программы
 	const char SETTINGS_NOISE_REDUCTION[] = "nReduction";
 	/// Алгоритм очистки изображения от шума.
@@ -110,25 +114,75 @@ namespace yenot {
 	/// Стандартное значение
 	const int SETTINGS_NOISE_REDUCTION_VALUE_INT = 1;
 
+	/// Поиск линий на изображении
+	///
+	/// Название параметра
+	///
+	/// Замедляет работу программы
 	const char SETTINGS_LINE_DETECTION[] = "lDetection";
+	/// Поиск линий на изображении
+	///
+	/// Стандартное значение
 	const char SETTINGS_LINE_DETECTION_VALUE[] = "1";
+	/// Поиск линий на изображении
+	///
+	/// Стандартное значение
 	const int SETTINGS_LINE_DETECTION_VALUE_INT = 1;
 
+	/// Алгоритм поиска объекта на изображении
+	///
+	/// Название параметра
 	const char SETTINGS_DETECTION[] = "detection";
+	/// Алгоритм поиска объекта на изображении
+	///
+	/// Стандартное значение
 	const char SETTINGS_DETECTION_VALUE[] = "1";
+	/// Алгоритм поиска объекта на изображении
+	///
+	/// Стандартное значение
 	const int SETTINGS_DETECTION_VALUE_INT = 1;
 
+	/// Нужно ли сохранять изображение после работы алгоритма
+	///
+	/// Название параметра
 	const char SETTINGS_SAVE_PROCESSED_IMAGE[] = "sImage";
+	/// Нужно ли сохранять изображение после работы алгоритма
+	///
+	/// Стандартное значение
 	const char SETTINGS_SAVE_PROCESSED_IMAGE_VALUE[] = "0";
+	/// Нужно ли сохранять изображение после работы алгоритма
+	///
+	/// Стандартное значение
 	const int SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT = 0;
+	/// Нужно ли сохранять изображение после работы алгоритма
+	///
+	/// Название файла
 	const char SETTINGS_SAVE_PROCESSED_IMAGE_NAME[] = "test.png";
 
+	/// Модуль логирования
+	///
+	/// Название параметра
 	const char SETTINGS_LOG[] = "log";
+	/// Модуль логирования
+	///
+	/// Стандартное значение
 	const char SETTINGS_LOG_VALUE[] = "1";
+	/// Модуль логирования
+	///
+	/// Стандартное значение
 	const int SETTINGS_LOG_VALUE_INT = 1;
 	
+	/// Модуль логирования. Логирование с выводом времени
+	///
+	/// Название параметра
 	const char SETTINGS_LOG_TIME[] = "lTime";
+	/// Модуль логирования. Логирование с выводом времени
+	///
+	/// Стандартное значение
 	const char SETTINGS_LOG_TIME_VALUE[] = "1";
+	/// Модуль логирования. Логирование с выводом времени
+	///
+	/// Стандартное значение
 	const int SETTINGS_LOG_TIME_VALUE_INT = 1;
 	
 	///////////////////////////////////////////////////////////////////////////////
@@ -151,6 +205,14 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	//	Logger
 	///////////////////////////////////////////////////////////////////////////////
+	
+	/// Блок модуля логирования.
+	///
+	///	ini файл
+	/// @code
+	///	[Logger]
+	/// ...
+	/// @endcode
 	const char BLOCK_LOGGER[] = "Logger";
 
 	const char LOGGER_LEVEL_WARNING[] = "WARN";
@@ -182,6 +244,14 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	//	Car model
 	///////////////////////////////////////////////////////////////////////////////
+	
+	/// Блок модуля поиска логотипа
+	///
+	///	ini файл
+	/// @code
+	///	[carmodel]
+	/// ...
+	/// @endcode
 	const char BLOCK_CARMODEL[] = "carmodel";
 	const char settings_carModel_listphoto[] = "listphoto";
 

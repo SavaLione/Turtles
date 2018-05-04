@@ -107,4 +107,11 @@ set(SERVER_HEADERS
 
 set(SERVER ${SERVER_SOURCES} ${SERVER_HEADERS})
 
+# Lib
+# ===================================================
+set ( BOOST_LIB "lib/boost")
+
+include_directories(${BOOST_LIB})
+link_directories(${BOOST_LIB})
+
 add_executable (${YENOT_SERVER} ${SERVER})
