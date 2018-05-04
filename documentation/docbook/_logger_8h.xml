@@ -28,7 +28,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_logger_8h_1a0d6abeb129096910c85ae6cba8bb59cf">logger</link> (
+                        <para>void <link linkend="group__loggerh_1ga0d6abeb129096910c85ae6cba8bb59cf">logger</link> (
 char * level, char * text)<para><emphasis>Основная функция для логирования</emphasis></para>
 </para>
                     </listitem>

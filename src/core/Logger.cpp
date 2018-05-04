@@ -4,6 +4,11 @@
 	@author SavaLione
 	@date 1 Apr 2018
 */
+/**
+	@defgroup loggercpp Logger.cpp
+	@ingroup yenot
+	@{
+*/
 #include <Windows.h>
 #include <fstream>
 
@@ -100,3 +105,4 @@ void logger(char *level, char *text) {
 		}
 	}
 }
+/** @} */

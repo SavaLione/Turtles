@@ -4,6 +4,11 @@
 	@author SavaLione
 	@date 20 Apr 2018
 */
+/**
+	@defgroup settingscpp Settings.cpp
+	@ingroup yenot
+	@{
+*/
 #include <Windows.h>
 #include <direct.h>
 #include <fstream>
@@ -81,3 +86,4 @@ void createFile(char *file_name) {
 	ofstream fout(file_name);
 	fout.close();
 }
+/** @} */

@@ -4,6 +4,10 @@
     <compoundname>core</compoundname>
     <innerfile refid="_core_8cpp">Core.cpp</innerfile>
     <innerfile refid="_core_8h">Core.h</innerfile>
+    <innerfile refid="_logger_8cpp">Logger.cpp</innerfile>
+    <innerfile refid="_logger_8h">Logger.h</innerfile>
+    <innerfile refid="_settings_8cpp">Settings.cpp</innerfile>
+    <innerfile refid="_settings_8h">Settings.h</innerfile>
     <innerfile refid="_yenot_8cpp">Yenot.cpp</innerfile>
     <innerfile refid="_yenot_8h">Yenot.h</innerfile>
     <briefdescription>

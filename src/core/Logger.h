@@ -4,6 +4,11 @@
 	@author SavaLione
 	@date 1 Apr 2018
 */
+/**
+	@defgroup loggerh Logger.h
+	@ingroup yenot
+	@{
+*/
 #ifndef LOGGER_H
 #define LOGGER_H
 
@@ -18,3 +23,4 @@
 void logger(char *level, char *text);
 
 #endif // LOGGER_H
+/** @} */

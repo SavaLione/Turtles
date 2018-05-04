@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__loggerh" kind="group">
+    <compoundname>loggerh</compoundname>
+    <title>Logger.h</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__loggerh_1ga0d6abeb129096910c85ae6cba8bb59cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void logger</definition>
+        <argsstring>(char *level, char *text)</argsstring>
+        <name>logger</name>
+        <param>
+          <type>char *</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Основная функция для логирования </para>        </briefdescription>
+        <detaileddescription>
+<para>Логирование возможно с разными уровнями и с выводом времени</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Уровень логирования </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Текст для логирования </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Проверяем, нужно ли логировать.</para><para>Проверка наличия файла с выводом лога в папке.</para><para>Если файл не найден, то создаём его <linebreak/>
+<linebreak/>
+<linebreak/>
+ Проверка, нужно ли логировать с выводом времени</para><para>Если нужно ли логировать с выводом времени, то <verbatim>Создаём строки, которые будут хранить в себе значения текущего времени
+
+Создаём структуру SYSTEMTIME из которой будем брать текущее время
+
+Получаем текущее время системы и по адресу присваиваем значение структуре time
+
+Помещаем текущее время системы в строки.
+
+Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл
+</verbatim></para><para>иначе <verbatim>Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл  </verbatim></para><para>Записываем данные в файл.</para><para>Пример: <programlisting><codeline><highlight class="normal">[2018/05/02<sp/>17:17:03]<sp/>[WARN]Folder<sp/>created.</highlight></codeline>
+</programlisting> <linebreak/>
+ Записываем данные в файл.</para><para>Пример: <programlisting><codeline><highlight class="normal">[WARN]Folder<sp/>created.</highlight></codeline>
+</programlisting> </para>        </inbodydescription>
+        <location file="src/core/Logger.h" line="23" column="1" bodyfile="src/core/Logger.cpp" bodystart="29" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

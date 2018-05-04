@@ -4,6 +4,23 @@
 	@author SavaLione
 	@date 3 Apr 2018
 */
+/**
+	@defgroup yenot Yenot
+	@brief Общие файлы
+*/
+/**
+	@defgroup core Core
+	@brief Работа с изображениеми, xml(yaml) файлами
+*/
+/**
+	@defgroup server Сервер
+	@brief Сервер. Должен принимать фото
+*/
+/**
+	@defgroup yenoth Yenot.h
+	@ingroup yenot
+	@{
+*/
 #ifndef YENOT_H
 #define YENOT_H
 
@@ -180,3 +197,4 @@ namespace yenot {
 }
 
 #endif // YENOT_H
+/** @} */

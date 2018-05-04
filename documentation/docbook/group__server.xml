@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="group__server">
+    <title>Сервер</title>
+<para>Collaboration diagram for Сервер</para>
+<para>
+    <figure>
+        <title>Group Collaboration diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="group__server.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+
+<para>Сервер. Должен принимать фото </para>
+        <section>
+            <title>Подробное описание</title>
+        </section>
+    <simplesect>
+        <title>Группы</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="group__serveryenotservercpp">YenotServer.cpp</link></para></listitem>
+            <listitem><para><link linkend="group__serveryenotserverh">YenotServer.h</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="group__serveryenotservercpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="group__serveryenotserverh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

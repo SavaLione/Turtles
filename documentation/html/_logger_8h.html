@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c184e51c84f2c3f0345bbc8a0d75d3e1.html">io</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,7 +77,7 @@ $(function() {
 <div class="textblock"><div class="dynheader">
 Граф файлов, в которые включается этот файл:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="_logger_8h__dep__incl.svg" width="192" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="_logger_8h__dep__incl.svg" width="311" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -85,9 +85,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:a0d6abeb129096910c85ae6cba8bb59cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a0d6abeb129096910c85ae6cba8bb59cf">logger</a> (char *level, char *text)</td></tr>
-<tr class="memdesc:a0d6abeb129096910c85ae6cba8bb59cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная функция для логирования  <a href="#a0d6abeb129096910c85ae6cba8bb59cf">Подробнее...</a><br /></td></tr>
-<tr class="separator:a0d6abeb129096910c85ae6cba8bb59cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d6abeb129096910c85ae6cba8bb59cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__loggerh.html#ga0d6abeb129096910c85ae6cba8bb59cf">logger</a> (char *level, char *text)</td></tr>
+<tr class="memdesc:ga0d6abeb129096910c85ae6cba8bb59cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная функция для логирования  <a href="group__loggerh.html#ga0d6abeb129096910c85ae6cba8bb59cf">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0d6abeb129096910c85ae6cba8bb59cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Заголовочный файл модуля логирования </p>
@@ -95,74 +95,7 @@ $(function() {
 <dl class="section date"><dt>Дата</dt><dd>1 Apr 2018 </dd></dl>
 
 <p class="definition">См. определение в файле <a class="el" href="_logger_8h_source.html">Logger.h</a></p>
-</div><h2 class="groupheader">Функции</h2>
-<a id="a0d6abeb129096910c85ae6cba8bb59cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d6abeb129096910c85ae6cba8bb59cf">&#9670;&nbsp;</a></span>logger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void logger </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>text</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Основная функция для логирования </p>
-<p>Логирование возможно с разными уровнями и с выводом времени</p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>Уровень логирования </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Текст для логирования </td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Проверяем, нужно ли логировать.</p>
-<p>Проверка наличия файла с выводом лога в папке.</p>
-<p>Если файл не найден, то создаём его <br />
-<br />
-<br />
- Проверка, нужно ли логировать с выводом времени</p>
-<p>Если нужно ли логировать с выводом времени, то </p><pre class="fragment">Создаём строки, которые будут хранить в себе значения текущего времени
-
-Создаём структуру SYSTEMTIME из которой будем брать текущее время
-
-Получаем текущее время системы и по адресу присваиваем значение структуре time
-
-Помещаем текущее время системы в строки.
-
-Открываем файл для логирования. Открываем файл для записи в конце.
-
-Записываем данные в файл
-
-Закрываем файл
-</pre><p>иначе </p><pre class="fragment">Открываем файл для логирования. Открываем файл для записи в конце.
-
-Записываем данные в файл
-
-Закрываем файл  </pre><p>Записываем данные в файл.</p>
-<p>Пример: </p><div class="fragment"><div class="line">[2018/05/02 17:17:03] [WARN]Folder created.</div></div><!-- fragment --><p> <br />
- Записываем данные в файл.</p>
-<p>Пример: </p><div class="fragment"><div class="line">[WARN]Folder created.</div></div><!-- fragment --> 
-<p class="definition">См. определение в файле <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a> строка <a class="el" href="_logger_8cpp_source.html#l00023">23</a></p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Создано системой &#160;<a href="http://www.doxygen.org/index.html">

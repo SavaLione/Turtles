@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_yenot_server_8cpp">
+    <title>YenotServer.cpp File Reference</title>
+<para>Include dependency diagram for YenotServer.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_yenot_server_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for YenotServer.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_yenot_server_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="group__serveryenotservercpp_1gae66f6b31b5ad750f1fe042a706a4e3d4">main</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__serveryenotservercpp_1ga3bf507bc2b43ea8ed45bdfeaf8d11171">some</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Подробное описание</title>
+
+<para><formalpara><title>Автор: </title>
+
+<para>SavaLione </para>
+</formalpara>
+<formalpara><title>Дата: </title>
+
+<para>20 Apr 2018 </para>
+</formalpara>
+</para>
+    <para>Definition in file YenotServer.cpp</para>
+    </simplesect>
+</section>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_settings_8cpp">
+    <title>Settings.cpp File Reference</title>
+    <programlisting>#include &lt;Windows.h&gt;</programlisting>
+    <programlisting>#include &lt;direct.h&gt;</programlisting>
+    <programlisting>#include &lt;fstream&gt;</programlisting>
+    <programlisting>#include &quot;..\core\Yenot.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Logger.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Settings.h&quot;</programlisting>
+<para>Include dependency diagram for Settings.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_settings_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Settings.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_settings_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="group__settingscpp_1ga50535cebf45c8d7cbffd29274699e5f5">getSettingsString</link> (
+char * block, char * value, char * ch_return_default)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="group__settingscpp_1ga68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</link> (
+char * block, char * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="group__settingscpp_1ga0a2fe94de4037eda33c49fe332970891">getSettings</link> (
+char * block, char * value, int i_return_default)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999">setSettings</link> (
+char * block, char * value, char * text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="group__settingscpp_1ga2dd1bc039652a0480c444957d416b6a6">checkFile</link> (
+char * filename)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="group__settingscpp_1ga64f8c9899c815dc180b2b564c0d05762">checkFile</link> (
+string filename)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__settingscpp_1ga5ac0cd45ecb6e65e3ace40687d6ee8bc">createDir</link> (
+string namedir)<para><emphasis>Функция для создания директории</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__settingscpp_1ga8f34a2030acfb5567678ab2bba25f3c1">createFile</link> (
+char * file_name)<para><emphasis>Функция для создания файла</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Подробное описание</title>
+
+<para>Модуль работы с ini файлами </para>
+
+<para><formalpara><title>Автор: </title>
+
+<para>SavaLione </para>
+</formalpara>
+<formalpara><title>Дата: </title>
+
+<para>20 Apr 2018 </para>
+</formalpara>
+</para>
+    <para>Definition in file Settings.cpp</para>
+    </simplesect>
+</section>

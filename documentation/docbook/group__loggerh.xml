@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="group__loggerh">
+    <title>Logger.h</title>
+<para>Collaboration diagram for Logger.h</para>
+<para>
+    <figure>
+        <title>Group Collaboration diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="group__loggerh.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Подробное описание</title>
+        </section>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__loggerh_1ga0d6abeb129096910c85ae6cba8bb59cf">logger</link> (
+char * level, char * text)<para><emphasis>Основная функция для логирования</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Функции</title>
+            <section xml:id="group__loggerh_1ga0d6abeb129096910c85ae6cba8bb59cf">
+                <title>void logger (char *level, char *text)</title> <emphasis>Основная функция для логирования</emphasis>
+                
+<para>Логирование возможно с разными уровнями и с выводом времени</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Аргументы                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>level</entry>
+                                <entry>
+<para>Уровень логирования </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>text</entry>
+                                <entry>
+<para>Текст для логирования </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+        </section>
+</section>

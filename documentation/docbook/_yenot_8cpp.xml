@@ -3,7 +3,8 @@
     <title>Yenot.cpp File Reference</title>
     <programlisting>#include &quot;..\core\Yenot.h&quot;</programlisting>
     <programlisting>#include &quot;..\core\Core.h&quot;</programlisting>
-    <programlisting>#include &quot;..\io\Logger.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Logger.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Settings.h&quot;</programlisting>
 <para>Include dependency diagram for Yenot.cpp</para>
 <para>
     <figure>
@@ -31,7 +32,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>int <link linkend="_yenot_8cpp_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (
+                        <para>int <link linkend="group__yenotcpp_1ga0ddf1224851353fc92bfbff6f499fa97">main</link> (
 int argc, char * argv)</para>
                     </listitem>
                 </itemizedlist>

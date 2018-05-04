@@ -5,7 +5,8 @@
     <programlisting>#include &lt;direct.h&gt;</programlisting>
     <programlisting>#include &quot;..\core\Yenot.h&quot;</programlisting>
     <programlisting>#include &quot;..\core\Core.h&quot;</programlisting>
-    <programlisting>#include &quot;..\io\Logger.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Logger.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Settings.h&quot;</programlisting>
 <para>Include dependency diagram for Core.cpp</para>
 <para>
     <figure>
@@ -50,7 +51,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1ab8ed3baad2f1d9b6b82bf74da9dd3d3a">noiseRemoval</link> (
+                        <para>void <link linkend="group__corecpp_1gab8ed3baad2f1d9b6b82bf74da9dd3d3a">noiseRemoval</link> (
 const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
 </para>
                     </listitem>
@@ -59,7 +60,7 @@ const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для 
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a9e277d82296b5ed9eda6266d8dcc24a3">lineDetection</link> (
+                        <para>void <link linkend="group__corecpp_1ga9e277d82296b5ed9eda6266d8dcc24a3">lineDetection</link> (
 const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
 </para>
                     </listitem>
@@ -68,7 +69,7 @@ const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для 
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a10a0271bceabc9c1a0d736ab93113212">databaseAdd</link> (
+                        <para>void <link linkend="group__corecpp_1ga10a0271bceabc9c1a0d736ab93113212">databaseAdd</link> (
 string filename)</para>
                     </listitem>
                 </itemizedlist>
@@ -76,7 +77,7 @@ string filename)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a78cdbfbe907847e78cfb387df76d99f9">clearning</link> (
+                        <para>void <link linkend="group__corecpp_1ga78cdbfbe907847e78cfb387df76d99f9">clearning</link> (
 string filename, string variable)</para>
                     </listitem>
                 </itemizedlist>
@@ -84,7 +85,7 @@ string filename, string variable)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>bool <link linkend="_core_8cpp_1a76b0b7de3d9fa0de10d66740466ebc14">detectionLogo</link> (
+                        <para>bool <link linkend="group__corecpp_1ga76b0b7de3d9fa0de10d66740466ebc14">detectionLogo</link> (
 const Mat &amp; mat_logo, string cascadefile)</para>
                     </listitem>
                 </itemizedlist>
@@ -92,7 +93,7 @@ const Mat &amp; mat_logo, string cascadefile)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1ae99907f19e7f09055012f68347a57d05">detection</link> (
+                        <para>void <link linkend="group__corecpp_1gae99907f19e7f09055012f68347a57d05">detection</link> (
 const Mat &amp; mat_logo)</para>
                     </listitem>
                 </itemizedlist>
@@ -100,55 +101,7 @@ const Mat &amp; mat_logo)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>string <link linkend="_core_8cpp_1a50535cebf45c8d7cbffd29274699e5f5">getSettingsString</link> (
-char * block, char * value, char * ch_return_default)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>int <link linkend="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</link> (
-char * block, char * value)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>int <link linkend="_core_8cpp_1a0a2fe94de4037eda33c49fe332970891">getSettings</link> (
-char * block, char * value, int i_return_default)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999">setSettings</link> (
-char * block, char * value, char * text)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>bool <link linkend="_core_8cpp_1a2dd1bc039652a0480c444957d416b6a6">checkFile</link> (
-char * filename)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>bool <link linkend="_core_8cpp_1a64f8c9899c815dc180b2b564c0d05762">checkFile</link> (
-string filename)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_core_8cpp_1a242d25c7a9a1b7212bb890023c8131f5">settingsInitialization</link> (
+                        <para>void <link linkend="group__corecpp_1ga242d25c7a9a1b7212bb890023c8131f5">settingsInitialization</link> (
 )</para>
                     </listitem>
                 </itemizedlist>
@@ -156,25 +109,7 @@ string filename)</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1a8f34a2030acfb5567678ab2bba25f3c1">createFile</link> (
-char * file_name)<para><emphasis>Функция для создания файла</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_core_8cpp_1a5ac0cd45ecb6e65e3ace40687d6ee8bc">createDir</link> (
-string namedir)<para><emphasis>Функция для создания директории</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>string <link linkend="_core_8cpp_1aa85ae460901348b74381239ce0517d5f">description</link> (
+                        <para>string <link linkend="group__corecpp_1gaa85ae460901348b74381239ce0517d5f">description</link> (
 string value)<para><emphasis>Функция для поиска описания марки по файлу с каскадом Хаара</emphasis></para>
 </para>
                     </listitem>
@@ -183,7 +118,7 @@ string value)<para><emphasis>Функция для поиска описания
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_core_8cpp_1afe1c5d9570a4ccddf9b5105997e3ddb4">canny</link> (
+                        <para>void <link linkend="group__corecpp_1gafe1c5d9570a4ccddf9b5105997e3ddb4">canny</link> (
 const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
 </para>
                     </listitem>

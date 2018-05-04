@@ -31,6 +31,34 @@
             <para>
                 <itemizedlist>
                     <listitem>
+                        <para>file <link linkend="_logger_8cpp">Logger.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="_logger_8h">Logger.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="_settings_8cpp">Settings.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="_settings_8h">Settings.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
                         <para>file <link linkend="_yenot_8cpp">Yenot.cpp</link></para>
                     </listitem>
                 </itemizedlist>

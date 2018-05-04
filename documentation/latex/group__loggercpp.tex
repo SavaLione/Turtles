@@ -1,0 +1,89 @@
+\hypertarget{group__loggercpp}{}\section{Logger.\+cpp}
+\label{group__loggercpp}\index{Logger.\+cpp@{Logger.\+cpp}}
+Граф связей класса Logger.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{group__loggercpp}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__loggercpp_ga0d6abeb129096910c85ae6cba8bb59cf}{logger}} (char $\ast$level, char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Основная функция для логирования \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{group__loggercpp_ga0d6abeb129096910c85ae6cba8bb59cf}\label{group__loggercpp_ga0d6abeb129096910c85ae6cba8bb59cf}} 
+\index{Logger.\+cpp@{Logger.\+cpp}!logger@{logger}}
+\index{logger@{logger}!Logger.\+cpp@{Logger.\+cpp}}
+\subsubsection{\texorpdfstring{logger()}{logger()}}
+{\footnotesize\ttfamily void logger (\begin{DoxyParamCaption}\item[{char $\ast$}]{level,  }\item[{char $\ast$}]{text }\end{DoxyParamCaption})}
+
+
+
+Основная функция для логирования 
+
+Логирование возможно с разными уровнями и с выводом времени
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em level} & Уровень логирования \\
+\hline
+\mbox{\tt in}  & {\em text} & Текст для логирования \\
+\hline
+\end{DoxyParams}
+Проверяем, нужно ли логировать.
+
+Проверка наличия файла с выводом лога в папке.
+
+Если файл не найден, то создаём его ~\newline
+~\newline
+~\newline
+ Проверка, нужно ли логировать с выводом времени
+
+Если нужно ли логировать с выводом времени, то \begin{DoxyVerb}Создаём строки, которые будут хранить в себе значения текущего времени
+
+Создаём структуру SYSTEMTIME из которой будем брать текущее время
+
+Получаем текущее время системы и по адресу присваиваем значение структуре time
+
+Помещаем текущее время системы в строки.
+
+Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл
+\end{DoxyVerb}
+
+
+иначе \begin{DoxyVerb}Открываем файл для логирования. Открываем файл для записи в конце.
+
+Записываем данные в файл
+
+Закрываем файл  \end{DoxyVerb}
+
+
+Записываем данные в файл.
+
+Пример\+: 
+\begin{DoxyCode}
+[2018/05/02 17:17:03] [WARN]Folder created.
+\end{DoxyCode}
+ ~\newline
+ Записываем данные в файл.
+
+Пример\+: 
+\begin{DoxyCode}
+[WARN]Folder created.
+\end{DoxyCode}
+ 
+
+См. определение в файле Logger.\+cpp строка 29
+

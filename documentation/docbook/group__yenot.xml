@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="group__yenot">
+    <title>Yenot</title>
+<para>Collaboration diagram for Yenot</para>
+<para>
+    <figure>
+        <title>Group Collaboration diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="group__yenot.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+
+<para>Общие файлы </para>
+        <section>
+            <title>Подробное описание</title>
+        </section>
+    <simplesect>
+        <title>Группы</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="group__loggercpp">Logger.cpp</link></para></listitem>
+            <listitem><para><link linkend="group__loggerh">Logger.h</link></para></listitem>
+            <listitem><para><link linkend="group__settingscpp">Settings.cpp</link></para></listitem>
+            <listitem><para><link linkend="group__settingsh">Settings.h</link></para></listitem>
+            <listitem><para><link linkend="group__yenoth">Yenot.h</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="group__loggercpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="group__loggerh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="group__settingscpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="group__settingsh.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="group__yenoth.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

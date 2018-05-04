@@ -4,6 +4,11 @@
 	@author SavaLione
 	@date 28 Mar 2018
 */
+/**
+	@defgroup yenotcpp Yenot.cpp
+	@ingroup core
+	@{
+*/
 #include "..\core\Yenot.h"
 #include "..\core\Core.h"
 #include "..\core\Logger.h"
@@ -101,3 +106,4 @@ int main(int argc, char* argv[]) {
 	
 	return i_return;
 }
+/** @} */

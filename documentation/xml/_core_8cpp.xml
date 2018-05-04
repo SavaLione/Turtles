@@ -6,17 +6,17 @@
     <includes local="no">direct.h</includes>
     <includes refid="_yenot_8h" local="yes">..\core\Yenot.h</includes>
     <includes refid="_core_8h" local="yes">..\core\Core.h</includes>
-    <includes refid="_logger_8h" local="yes">..\io\Logger.h</includes>
+    <includes refid="_logger_8h" local="yes">..\core\Logger.h</includes>
+    <includes refid="_settings_8h" local="yes">..\core\Settings.h</includes>
     <incdepgraph>
-      <node id="6">
-        <label>..\io\Logger.h</label>
-        <link refid="_logger_8h"/>
-      </node>
       <node id="1">
         <label>Windows.h</label>
       </node>
       <node id="5">
         <label>opencv2/opencv.hpp</label>
+      </node>
+      <node id="8">
+        <label>string</label>
       </node>
       <node id="2">
         <label>direct.h</label>
@@ -40,16 +40,28 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>..\core\Yenot.h</label>
         <link refid="_yenot_8h"/>
       </node>
+      <node id="7">
+        <label>..\core\Settings.h</label>
+        <link refid="_settings_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>..\core\Logger.h</label>
+        <link refid="_logger_8h"/>
+      </node>
     </incdepgraph>
     <innernamespace refid="namespacecv">cv</innernamespace>
     <innernamespace refid="namespacestd">std</innernamespace>
       <sectiondef kind="func">
-      <memberdef kind="function" id="_core_8cpp_1ab8ed3baad2f1d9b6b82bf74da9dd3d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__corecpp_1gab8ed3baad2f1d9b6b82bf74da9dd3d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void noiseRemoval</definition>
         <argsstring>(const Mat &amp;mat_in, Mat &amp;mat_out)</argsstring>
@@ -83,9 +95,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="35" column="1" bodyfile="src/core/Core.cpp" bodystart="35" bodyend="47"/>
+        <location file="src/core/Core.cpp" line="41" column="1" bodyfile="src/core/Core.cpp" bodystart="41" bodyend="53"/>
       </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a9e277d82296b5ed9eda6266d8dcc24a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__corecpp_1ga9e277d82296b5ed9eda6266d8dcc24a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void lineDetection</definition>
         <argsstring>(const Mat &amp;mat_in, Mat &amp;mat_out)</argsstring>
@@ -119,9 +131,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="61" column="1" bodyfile="src/core/Core.cpp" bodystart="61" bodyend="67"/>
+        <location file="src/core/Core.cpp" line="67" column="1" bodyfile="src/core/Core.cpp" bodystart="67" bodyend="73"/>
       </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a10a0271bceabc9c1a0d736ab93113212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__corecpp_1ga10a0271bceabc9c1a0d736ab93113212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void databaseAdd</definition>
         <argsstring>(string filename)</argsstring>
@@ -136,9 +148,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="69" column="1" bodyfile="src/core/Core.cpp" bodystart="69" bodyend="83"/>
+        <location file="src/core/Core.cpp" line="75" column="1" bodyfile="src/core/Core.cpp" bodystart="75" bodyend="89"/>
       </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a78cdbfbe907847e78cfb387df76d99f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__corecpp_1ga78cdbfbe907847e78cfb387df76d99f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void clearning</definition>
         <argsstring>(string filename, string variable)</argsstring>
@@ -157,9 +169,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="85" column="1" bodyfile="src/core/Core.cpp" bodystart="85" bodyend="98"/>
+        <location file="src/core/Core.cpp" line="91" column="1" bodyfile="src/core/Core.cpp" bodystart="91" bodyend="104"/>
       </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a76b0b7de3d9fa0de10d66740466ebc14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__corecpp_1ga76b0b7de3d9fa0de10d66740466ebc14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool detectionLogo</definition>
         <argsstring>(const Mat &amp;mat_logo, string cascadefile)</argsstring>
@@ -178,9 +190,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="100" column="1" bodyfile="src/core/Core.cpp" bodystart="100" bodyend="122"/>
+        <location file="src/core/Core.cpp" line="106" column="1" bodyfile="src/core/Core.cpp" bodystart="106" bodyend="128"/>
       </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1ae99907f19e7f09055012f68347a57d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__corecpp_1gae99907f19e7f09055012f68347a57d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void detection</definition>
         <argsstring>(const Mat &amp;mat_logo)</argsstring>
@@ -195,139 +207,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="124" column="1" bodyfile="src/core/Core.cpp" bodystart="124" bodyend="146"/>
+        <location file="src/core/Core.cpp" line="130" column="1" bodyfile="src/core/Core.cpp" bodystart="130" bodyend="152"/>
       </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a50535cebf45c8d7cbffd29274699e5f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>string</type>
-        <definition>string getSettingsString</definition>
-        <argsstring>(char *block, char *value, char *ch_return_default)</argsstring>
-        <name>getSettingsString</name>
-        <param>
-          <type>char *</type>
-          <declname>block</declname>
-        </param>
-        <param>
-          <type>char *</type>
-          <declname>value</declname>
-        </param>
-        <param>
-          <type>char *</type>
-          <declname>ch_return_default</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/Core.cpp" line="152" column="1" bodyfile="src/core/Core.cpp" bodystart="152" bodyend="156"/>
-      </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int getSettings</definition>
-        <argsstring>(char *block, char *value)</argsstring>
-        <name>getSettings</name>
-        <param>
-          <type>char *</type>
-          <declname>block</declname>
-        </param>
-        <param>
-          <type>char *</type>
-          <declname>value</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/Core.cpp" line="158" column="1" bodyfile="src/core/Core.cpp" bodystart="158" bodyend="160"/>
-      </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a0a2fe94de4037eda33c49fe332970891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int getSettings</definition>
-        <argsstring>(char *block, char *value, int i_return_default)</argsstring>
-        <name>getSettings</name>
-        <param>
-          <type>char *</type>
-          <declname>block</declname>
-        </param>
-        <param>
-          <type>char *</type>
-          <declname>value</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>i_return_default</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/Core.cpp" line="162" column="1" bodyfile="src/core/Core.cpp" bodystart="162" bodyend="164"/>
-      </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void setSettings</definition>
-        <argsstring>(char *block, char *value, char *text)</argsstring>
-        <name>setSettings</name>
-        <param>
-          <type>char *</type>
-          <declname>block</declname>
-        </param>
-        <param>
-          <type>char *</type>
-          <declname>value</declname>
-        </param>
-        <param>
-          <type>char *</type>
-          <declname>text</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/Core.cpp" line="166" column="1" bodyfile="src/core/Core.cpp" bodystart="166" bodyend="168"/>
-      </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a2dd1bc039652a0480c444957d416b6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool checkFile</definition>
-        <argsstring>(char *filename)</argsstring>
-        <name>checkFile</name>
-        <param>
-          <type>char *</type>
-          <declname>filename</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/Core.cpp" line="170" column="1" bodyfile="src/core/Core.cpp" bodystart="170" bodyend="178"/>
-      </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a64f8c9899c815dc180b2b564c0d05762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool checkFile</definition>
-        <argsstring>(string filename)</argsstring>
-        <name>checkFile</name>
-        <param>
-          <type>string</type>
-          <declname>filename</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/Core.cpp" line="179" column="1" bodyfile="src/core/Core.cpp" bodystart="179" bodyend="187"/>
-      </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a242d25c7a9a1b7212bb890023c8131f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__corecpp_1ga242d25c7a9a1b7212bb890023c8131f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void settingsInitialization</definition>
         <argsstring>()</argsstring>
@@ -338,62 +220,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="189" column="1" bodyfile="src/core/Core.cpp" bodystart="189" bodyend="220"/>
+        <location file="src/core/Core.cpp" line="158" column="1" bodyfile="src/core/Core.cpp" bodystart="158" bodyend="189"/>
       </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a8f34a2030acfb5567678ab2bba25f3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void createFile</definition>
-        <argsstring>(char *file_name)</argsstring>
-        <name>createFile</name>
-        <param>
-          <type>char *</type>
-          <declname>file_name</declname>
-        </param>
-        <briefdescription>
-<para>Функция для создания файла </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername direction="in">file_name</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Путь и название файла </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/core/Core.cpp" line="226" column="1" bodyfile="src/core/Core.cpp" bodystart="226" bodyend="229"/>
-      </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1a5ac0cd45ecb6e65e3ace40687d6ee8bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void createDir</definition>
-        <argsstring>(string namedir)</argsstring>
-        <name>createDir</name>
-        <param>
-          <type>string</type>
-          <declname>namedir</declname>
-        </param>
-        <briefdescription>
-<para>Функция для создания директории </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername direction="in">namedir</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Путь и название директории </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-<para>Если успешно создали директорию, то: <verbatim>Вывод в лог, что получилось создать директорию
-</verbatim></para><para>иначе: <verbatim>Вывод в лог, что не получилось создать директорию
-
-Возможно это связано с тем, что нет прав на создание директории или директория уже есть  </verbatim> </para>        </inbodydescription>
-        <location file="src/core/Core.cpp" line="235" column="1" bodyfile="src/core/Core.cpp" bodystart="235" bodyend="250"/>
-      </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1aa85ae460901348b74381239ce0517d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__corecpp_1gaa85ae460901348b74381239ce0517d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
         <definition>string description</definition>
         <argsstring>(string value)</argsstring>
@@ -417,9 +246,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="257" column="1" bodyfile="src/core/Core.cpp" bodystart="257" bodyend="261"/>
+        <location file="src/core/Core.cpp" line="196" column="1" bodyfile="src/core/Core.cpp" bodystart="196" bodyend="200"/>
       </memberdef>
-      <memberdef kind="function" id="_core_8cpp_1afe1c5d9570a4ccddf9b5105997e3ddb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__corecpp_1gafe1c5d9570a4ccddf9b5105997e3ddb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void canny</definition>
         <argsstring>(const Mat &amp;mat_in, Mat &amp;mat_out)</argsstring>
@@ -453,7 +282,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.cpp" line="274" column="1" bodyfile="src/core/Core.cpp" bodystart="274" bodyend="279"/>
+        <location file="src/core/Core.cpp" line="213" column="1" bodyfile="src/core/Core.cpp" bodystart="213" bodyend="218"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -464,219 +293,170 @@
 </para>    </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
-<codeline lineno="7"><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;direct.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Yenot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Core.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\io\Logger.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecv" kindref="compound">cv</ref>;</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceyenot" kindref="compound">yenot</ref>;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="comment">//<sp/><sp/>Core</highlight></codeline>
-<codeline lineno="21"><highlight class="comment"></highlight></codeline>
-<codeline lineno="35" refid="_core_8cpp_1ab8ed3baad2f1d9b6b82bf74da9dd3d3a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1ab8ed3baad2f1d9b6b82bf74da9dd3d3a" kindref="member">noiseRemoval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_in,<sp/>Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a01aebb6f9dc4632eabd3ef606f5c75fb" kindref="member">SETTINGS_NOISE_REDUCTION</ref>,<sp/><ref refid="namespaceyenot_1aaaef89f90413ee7a52a64d043e068136" kindref="member">SETTINGS_NOISE_REDUCTION_VALUE_INT</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>no<sp/>fast</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a254a74c9007fa3d541605ff059a74add" kindref="member">SETTINGS_FASTMODE</ref>,<sp/><ref refid="namespaceyenot_1aef79e343f25022f42e779be319348eec" kindref="member">SETTINGS_FASTMODE_VALUE_INT</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bilateralFilter(mat_in,<sp/>mat_out,<sp/><ref refid="namespaceyenot_1ad85720cad8409ab5ef5cc47afc84645c" kindref="member">DIAMETER_EACH_PIXEL</ref>,<sp/><ref refid="namespaceyenot_1affd7404833d15c98fbd85249f43f98da" kindref="member">SIGMA_COLOR</ref>,<sp/><ref refid="namespaceyenot_1ad45191f613b95ca3398e6eab5e202406" kindref="member">SIGMA_SPACE</ref>);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GaussianBlur(mat_in,<sp/>mat_out,<sp/>Size(<ref refid="namespaceyenot_1aa753d0e3e99fb4b37b3930996bdfe563" kindref="member">KERNEL_X</ref>,<sp/><ref refid="namespaceyenot_1a33a5af73a30e2b5684ee02cc4bf4c374" kindref="member">KERNEL_Y</ref>),<sp/>0,<sp/>0);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a23d265aa1784a96ebe7ce76bedd308a6" kindref="member">LOGGER_MESSAGE_FAST_MODE</ref>);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ae3c6bd195ef1c9bdcbd48e5b44e17aaf" kindref="member">LOGGER_MESSAGE_NOISE_REMOVAL</ref>);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="_core_8cpp_1a9e277d82296b5ed9eda6266d8dcc24a3" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a9e277d82296b5ed9eda6266d8dcc24a3" kindref="member">lineDetection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_in,<sp/>Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a6d4d3d03406bad7102e67e0f0d81edc2" kindref="member">SETTINGS_LINE_DETECTION</ref>,<sp/><ref refid="namespaceyenot_1a07cb3f48df07dea977024678d96871f8" kindref="member">SETTINGS_LINE_DETECTION_VALUE_INT</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1afe1c5d9570a4ccddf9b5105997e3ddb4" kindref="member">canny</ref>(mat_in,<sp/>mat_out);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a3cc24a045a30435ab78be6014ff26a16" kindref="member">LOGGER_MESSAGE_LINE_DETECTION</ref>);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="_core_8cpp_1a10a0271bceabc9c1a0d736ab93113212" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a10a0271bceabc9c1a0d736ab93113212" kindref="member">databaseAdd</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename)<sp/>{</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(filename<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="namespaceyenot_1af958287fcf5b41e632a87bd1a795c74b" kindref="member">ERROR_INIT_DATABASE_ADD</ref>;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>FileStorage<sp/>fsIn;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.open((<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>),<sp/>FileStorage::READ);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn[<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref>]<sp/>&gt;&gt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.release();</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>stringVector.insert(stringVector.end(),<sp/>filename);</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>FileStorage<sp/>fsOut((<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>),<sp/>FileStorage::WRITE);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut<sp/>&lt;&lt;<sp/><ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>&lt;&lt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut.release();</highlight></codeline>
-<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85" refid="_core_8cpp_1a78cdbfbe907847e78cfb387df76d99f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a78cdbfbe907847e78cfb387df76d99f9" kindref="member">clearning</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>variable)<sp/>{</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>FileStorage<sp/>fsIn;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.open(filename,<sp/>FileStorage::READ);</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn[variable]<sp/>&gt;&gt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.release();<sp/></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>sort(stringVector.begin(),<sp/>stringVector.end());</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>stringVector.resize(unique(stringVector.begin(),<sp/>stringVector.end())<sp/>-<sp/>stringVector.begin());</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>FileStorage<sp/>fsOut(filename,<sp/>FileStorage::WRITE);</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut<sp/>&lt;&lt;<sp/>variable<sp/>&lt;&lt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut.release();</highlight></codeline>
-<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100" refid="_core_8cpp_1a76b0b7de3d9fa0de10d66740466ebc14" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a76b0b7de3d9fa0de10d66740466ebc14" kindref="member">detectionLogo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_logo,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cascadefile)<sp/>{</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>image<sp/>=<sp/>mat_logo;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>cascade<sp/>(.xml<sp/>file)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>CascadeClassifier<sp/>logo_cascade;</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>logo_cascade.load(cascadefile);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(logo_cascade.empty())<sp/>{</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>Loading<sp/>XML<sp/>file&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Detect<sp/>object</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Rect&gt;<sp/>detectObject;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>logo_cascade.detectMultiScale(image,<sp/>detectObject,<sp/>1.1,<sp/>2,<sp/>0<sp/>|<sp/>CV_HAAR_SCALE_IMAGE,<sp/>Size(<ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">settings_size_photo</ref>,<sp/><ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">settings_size_photo</ref>));</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(detectObject.size()<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Есть<sp/>на<sp/>фото</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>detectObject.size()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b_return;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124" refid="_core_8cpp_1ae99907f19e7f09055012f68347a57d05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1ae99907f19e7f09055012f68347a57d05" kindref="member">detection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_logo)<sp/>{</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a6a7294929420d7790b72f733c98bcf56" kindref="member">SETTINGS_DETECTION</ref>,<sp/><ref refid="namespaceyenot_1a3043cfcdd8cc01993a692d71244049f6" kindref="member">SETTINGS_DETECTION_VALUE_INT</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FileStorage<sp/>fsIn;</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsIn.open((<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>),<sp/>FileStorage::READ);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsIn[<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref>]<sp/>&gt;&gt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsIn.release();</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;bool&gt;<sp/>boolVector;</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;=<sp/>(stringVector.size()<sp/>-<sp/>1);<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_core_8cpp_1a76b0b7de3d9fa0de10d66740466ebc14" kindref="member">detectionLogo</ref>(mat_logo,<sp/>stringVector[i]))<sp/>{</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boolVector[i]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;direct.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Yenot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Core.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Logger.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\core\Settings.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecv" kindref="compound">cv</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceyenot" kindref="compound">yenot</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment">//<sp/><sp/>Core</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="41" refid="group__corecpp_1gab8ed3baad2f1d9b6b82bf74da9dd3d3a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__corecpp_1gab8ed3baad2f1d9b6b82bf74da9dd3d3a" kindref="member">noiseRemoval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_in,<sp/>Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__settingscpp_1ga68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a01aebb6f9dc4632eabd3ef606f5c75fb" kindref="member">SETTINGS_NOISE_REDUCTION</ref>,<sp/><ref refid="namespaceyenot_1aaaef89f90413ee7a52a64d043e068136" kindref="member">SETTINGS_NOISE_REDUCTION_VALUE_INT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>no<sp/>fast</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="group__settingscpp_1ga68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a254a74c9007fa3d541605ff059a74add" kindref="member">SETTINGS_FASTMODE</ref>,<sp/><ref refid="namespaceyenot_1aef79e343f25022f42e779be319348eec" kindref="member">SETTINGS_FASTMODE_VALUE_INT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bilateralFilter(mat_in,<sp/>mat_out,<sp/><ref refid="namespaceyenot_1ad85720cad8409ab5ef5cc47afc84645c" kindref="member">DIAMETER_EACH_PIXEL</ref>,<sp/><ref refid="namespaceyenot_1affd7404833d15c98fbd85249f43f98da" kindref="member">SIGMA_COLOR</ref>,<sp/><ref refid="namespaceyenot_1ad45191f613b95ca3398e6eab5e202406" kindref="member">SIGMA_SPACE</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GaussianBlur(mat_in,<sp/>mat_out,<sp/>Size(<ref refid="namespaceyenot_1aa753d0e3e99fb4b37b3930996bdfe563" kindref="member">KERNEL_X</ref>,<sp/><ref refid="namespaceyenot_1a33a5af73a30e2b5684ee02cc4bf4c374" kindref="member">KERNEL_Y</ref>),<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__loggercpp_1ga0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a23d265aa1784a96ebe7ce76bedd308a6" kindref="member">LOGGER_MESSAGE_FAST_MODE</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__loggercpp_1ga0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ae3c6bd195ef1c9bdcbd48e5b44e17aaf" kindref="member">LOGGER_MESSAGE_NOISE_REMOVAL</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="group__corecpp_1ga9e277d82296b5ed9eda6266d8dcc24a3" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__corecpp_1ga9e277d82296b5ed9eda6266d8dcc24a3" kindref="member">lineDetection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_in,<sp/>Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__settingscpp_1ga68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a6d4d3d03406bad7102e67e0f0d81edc2" kindref="member">SETTINGS_LINE_DETECTION</ref>,<sp/><ref refid="namespaceyenot_1a07cb3f48df07dea977024678d96871f8" kindref="member">SETTINGS_LINE_DETECTION_VALUE_INT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__corecpp_1gafe1c5d9570a4ccddf9b5105997e3ddb4" kindref="member">canny</ref>(mat_in,<sp/>mat_out);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__loggercpp_1ga0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a3cc24a045a30435ab78be6014ff26a16" kindref="member">LOGGER_MESSAGE_LINE_DETECTION</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="group__corecpp_1ga10a0271bceabc9c1a0d736ab93113212" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__corecpp_1ga10a0271bceabc9c1a0d736ab93113212" kindref="member">databaseAdd</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(filename<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="namespaceyenot_1af958287fcf5b41e632a87bd1a795c74b" kindref="member">ERROR_INIT_DATABASE_ADD</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>FileStorage<sp/>fsIn;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.open((<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>),<sp/>FileStorage::READ);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn[<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref>]<sp/>&gt;&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.release();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>stringVector.insert(stringVector.end(),<sp/>filename);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>FileStorage<sp/>fsOut((<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>),<sp/>FileStorage::WRITE);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut<sp/>&lt;&lt;<sp/><ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>&lt;&lt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut.release();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="group__corecpp_1ga78cdbfbe907847e78cfb387df76d99f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__corecpp_1ga78cdbfbe907847e78cfb387df76d99f9" kindref="member">clearning</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>variable)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>FileStorage<sp/>fsIn;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.open(filename,<sp/>FileStorage::READ);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn[variable]<sp/>&gt;&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>fsIn.release();<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>sort(stringVector.begin(),<sp/>stringVector.end());</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>stringVector.resize(unique(stringVector.begin(),<sp/>stringVector.end())<sp/>-<sp/>stringVector.begin());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>FileStorage<sp/>fsOut(filename,<sp/>FileStorage::WRITE);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut<sp/>&lt;&lt;<sp/>variable<sp/>&lt;&lt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>fsOut.release();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="group__corecpp_1ga76b0b7de3d9fa0de10d66740466ebc14" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__corecpp_1ga76b0b7de3d9fa0de10d66740466ebc14" kindref="member">detectionLogo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_logo,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cascadefile)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>image<sp/>=<sp/>mat_logo;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>cascade<sp/>(.xml<sp/>file)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>CascadeClassifier<sp/>logo_cascade;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>logo_cascade.load(cascadefile);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(logo_cascade.empty())<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>Loading<sp/>XML<sp/>file&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Detect<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Rect&gt;<sp/>detectObject;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>logo_cascade.detectMultiScale(image,<sp/>detectObject,<sp/>1.1,<sp/>2,<sp/>0<sp/>|<sp/>CV_HAAR_SCALE_IMAGE,<sp/>Size(<ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">settings_size_photo</ref>,<sp/><ref refid="namespaceyenot_1a4e9a58fa114bcb3d3ae09fb62129f2c9" kindref="member">settings_size_photo</ref>));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(detectObject.size()<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Есть<sp/>на<sp/>фото</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>detectObject.size()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b_return;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="group__corecpp_1gae99907f19e7f09055012f68347a57d05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__corecpp_1gae99907f19e7f09055012f68347a57d05" kindref="member">detection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_logo)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__settingscpp_1ga68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a6a7294929420d7790b72f733c98bcf56" kindref="member">SETTINGS_DETECTION</ref>,<sp/><ref refid="namespaceyenot_1a3043cfcdd8cc01993a692d71244049f6" kindref="member">SETTINGS_DETECTION_VALUE_INT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FileStorage<sp/>fsIn;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsIn.open((<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>),<sp/>FileStorage::READ);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsIn[<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref>]<sp/>&gt;&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsIn.release();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;bool&gt;<sp/>boolVector;</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;=<sp/>(stringVector.size()<sp/>-<sp/>1);<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(boolVector[i])<sp/>{</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="_core_8cpp_1aa85ae460901348b74381239ce0517d5f" kindref="member">description</ref>(stringVector[i])<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__corecpp_1ga76b0b7de3d9fa0de10d66740466ebc14" kindref="member">detectionLogo</ref>(mat_logo,<sp/>stringVector[i]))<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boolVector[i]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="comment">//<sp/><sp/>Settings</highlight></codeline>
-<codeline lineno="151"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152" refid="_core_8h_1a3a0f1e87eb01bdd16c4a7e365aa283eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a50535cebf45c8d7cbffd29274699e5f5" kindref="member">getSettingsString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ch_return_default)<sp/>{</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>text[<ref refid="namespaceyenot_1a08846c7b8addedd4db68b5cf3721bda1" kindref="member">BUFFER_SIZE</ref>];</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>GetPrivateProfileString(block,<sp/>value,<sp/>ch_return_default,<sp/>text,<sp/><ref refid="namespaceyenot_1a08846c7b8addedd4db68b5cf3721bda1" kindref="member">BUFFER_SIZE</ref>,<sp/><ref refid="namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576" kindref="member">FILE_NAME_CONFIG</ref>);</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>text;</highlight></codeline>
-<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight></codeline>
-<codeline lineno="158" refid="_core_8h_1a68b4d9ed6be7aaa93d9a6fe8fd683862" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value)<sp/>{</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GetPrivateProfileInt(block,<sp/>value,<sp/>-1,<sp/><ref refid="namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576" kindref="member">FILE_NAME_CONFIG</ref>);</highlight></codeline>
-<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"></highlight></codeline>
-<codeline lineno="162" refid="_core_8h_1a0a2fe94de4037eda33c49fe332970891" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a68b4d9ed6be7aaa93d9a6fe8fd683862" kindref="member">getSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_return_default)<sp/>{</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GetPrivateProfileInt(block,<sp/>value,<sp/>i_return_default,<sp/><ref refid="namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576" kindref="member">FILE_NAME_CONFIG</ref>);</highlight></codeline>
-<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166" refid="_core_8h_1a463e32ccb37f9478b0e62ee0d21c5999" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text)<sp/>{</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>WritePrivateProfileString(block,<sp/>value,<sp/>text,<sp/><ref refid="namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576" kindref="member">FILE_NAME_CONFIG</ref>);</highlight></codeline>
-<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170" refid="_core_8h_1a2dd1bc039652a0480c444957d416b6a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename)<sp/>{</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>file;</highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>file.open(filename);</highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(file)<sp/>{</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b_return;</highlight></codeline>
-<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="179" refid="_core_8cpp_1a64f8c9899c815dc180b2b564c0d05762" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename)<sp/>{</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>file;</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>file.open(filename);</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(file)<sp/>{</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b_return<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;=<sp/>(stringVector.size()<sp/>-<sp/>1);<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(boolVector[i])<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="group__corecpp_1gaa85ae460901348b74381239ce0517d5f" kindref="member">description</ref>(stringVector[i])<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="comment">//<sp/><sp/>Settings</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="group__coreh_1ga242d25c7a9a1b7212bb890023c8131f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__corecpp_1ga242d25c7a9a1b7212bb890023c8131f5" kindref="member">settingsInitialization</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((_mkdir((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref>))<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__loggercpp_1ga0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ace626bb1b7477b39cf2864aa0d0924e9" kindref="member">LOGGER_MESSAGE_CREATE_DIR</ref>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__loggercpp_1ga0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ae73ee066dad5c6455cb406ab3aa0473f" kindref="member">LOGGER_MESSAGE_CREATE_DIR_NOT</ref>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="group__settingscpp_1ga2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576" kindref="member">FILE_NAME_CONFIG</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__settingscpp_1ga8f34a2030acfb5567678ab2bba25f3c1" kindref="member">createFile</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576" kindref="member">FILE_NAME_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a254a74c9007fa3d541605ff059a74add" kindref="member">SETTINGS_FASTMODE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a7afad42fc42152730906aa57ef688c9a" kindref="member">SETTINGS_FASTMODE_VALUE</ref>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a01aebb6f9dc4632eabd3ef606f5c75fb" kindref="member">SETTINGS_NOISE_REDUCTION</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a557e3ad9f3290543eed07f92644f1e33" kindref="member">SETTINGS_NOISE_REDUCTION_VALUE</ref>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a6a7294929420d7790b72f733c98bcf56" kindref="member">SETTINGS_DETECTION</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a7d631c2848347b1df2d133225075ced0" kindref="member">SETTINGS_DETECTION_VALUE</ref>);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a68308c1bd5623fffdc0992da59a687b3" kindref="member">SETTINGS_SAVE_PROCESSED_IMAGE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2e3ae4b394042b1c4cbc4ae56a4af012" kindref="member">SETTINGS_SAVE_PROCESSED_IMAGE_VALUE</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a73be0cdcde2af378cd4043f56d4776e2" kindref="member">BLOCK_LOGGER</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a353e320b6fbef3dc210fd42ad10ff83c" kindref="member">SETTINGS_LOG</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab2eea8a981ab7baa7755cc64508671a0" kindref="member">SETTINGS_LOG_VALUE</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a73be0cdcde2af378cd4043f56d4776e2" kindref="member">BLOCK_LOGGER</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a420dc7e6e8223c7cd5ec7127995d46a0" kindref="member">SETTINGS_LOG_TIME</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ae00932245c3089d385ef8ee3463df8ca" kindref="member">SETTINGS_LOG_TIME_VALUE</ref>);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a3c950090a29f01a39ec562e1e30452b9" kindref="member">BLOCK_CARMODEL</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1af238d0e227de22ee3c26114077153efc" kindref="member">settings_carModel_example</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a5f4aa342b4a3e3f87069f6fef812594a" kindref="member">settings_carModel_example_description</ref>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1aea7e9eb4d5b9e645f22e83e2d5fe893e" kindref="member">settings_block_description</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" kindref="member">settings_carModel_example_file</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a37f90b0081fe0617055470d46489ea0f" kindref="member">settings_description_example</ref>);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="group__settingscpp_1ga2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>(<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FileStorage<sp/>fsOut((<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>),<sp/>FileStorage::WRITE);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsOut<sp/>&lt;&lt;<sp/><ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>&lt;&lt;<sp/>stringVector;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsOut.release();</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b_return;</highlight></codeline>
-<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight></codeline>
-<codeline lineno="189" refid="_core_8h_1a242d25c7a9a1b7212bb890023c8131f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a242d25c7a9a1b7212bb890023c8131f5" kindref="member">settingsInitialization</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((_mkdir((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref>))<sp/>==<sp/>0)<sp/>{</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ace626bb1b7477b39cf2864aa0d0924e9" kindref="member">LOGGER_MESSAGE_CREATE_DIR</ref>);</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ae73ee066dad5c6455cb406ab3aa0473f" kindref="member">LOGGER_MESSAGE_CREATE_DIR_NOT</ref>);</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576" kindref="member">FILE_NAME_CONFIG</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a8f34a2030acfb5567678ab2bba25f3c1" kindref="member">createFile</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576" kindref="member">FILE_NAME_CONFIG</ref>);</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a254a74c9007fa3d541605ff059a74add" kindref="member">SETTINGS_FASTMODE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a7afad42fc42152730906aa57ef688c9a" kindref="member">SETTINGS_FASTMODE_VALUE</ref>);</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a01aebb6f9dc4632eabd3ef606f5c75fb" kindref="member">SETTINGS_NOISE_REDUCTION</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a557e3ad9f3290543eed07f92644f1e33" kindref="member">SETTINGS_NOISE_REDUCTION_VALUE</ref>);</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a6a7294929420d7790b72f733c98bcf56" kindref="member">SETTINGS_DETECTION</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a7d631c2848347b1df2d133225075ced0" kindref="member">SETTINGS_DETECTION_VALUE</ref>);</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" kindref="member">BLOCK_CORE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a68308c1bd5623fffdc0992da59a687b3" kindref="member">SETTINGS_SAVE_PROCESSED_IMAGE</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a2e3ae4b394042b1c4cbc4ae56a4af012" kindref="member">SETTINGS_SAVE_PROCESSED_IMAGE_VALUE</ref>);</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"></highlight></codeline>
-<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a73be0cdcde2af378cd4043f56d4776e2" kindref="member">BLOCK_LOGGER</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a353e320b6fbef3dc210fd42ad10ff83c" kindref="member">SETTINGS_LOG</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ab2eea8a981ab7baa7755cc64508671a0" kindref="member">SETTINGS_LOG_VALUE</ref>);</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a73be0cdcde2af378cd4043f56d4776e2" kindref="member">BLOCK_LOGGER</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a420dc7e6e8223c7cd5ec7127995d46a0" kindref="member">SETTINGS_LOG_TIME</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ae00932245c3089d385ef8ee3463df8ca" kindref="member">SETTINGS_LOG_TIME_VALUE</ref>);</highlight></codeline>
-<codeline lineno="205"><highlight class="normal"></highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a3c950090a29f01a39ec562e1e30452b9" kindref="member">BLOCK_CARMODEL</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1af238d0e227de22ee3c26114077153efc" kindref="member">settings_carModel_example</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a5f4aa342b4a3e3f87069f6fef812594a" kindref="member">settings_carModel_example_description</ref>);</highlight></codeline>
-<codeline lineno="207"><highlight class="normal"></highlight></codeline>
-<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1aea7e9eb4d5b9e645f22e83e2d5fe893e" kindref="member">settings_block_description</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" kindref="member">settings_carModel_example_file</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a37f90b0081fe0617055470d46489ea0f" kindref="member">settings_description_example</ref>);</highlight></codeline>
-<codeline lineno="209"><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>(<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FileStorage<sp/>fsOut((<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" kindref="member">FILE_NAME_DATABASE</ref>),<sp/>FileStorage::WRITE);</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsOut<sp/>&lt;&lt;<sp/><ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>&lt;&lt;<sp/>stringVector;</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fsOut.release();</highlight></codeline>
-<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_core_8cpp_1a2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>(<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" kindref="member">settings_carModel_example_file</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_core_8cpp_1a10a0271bceabc9c1a0d736ab93113212" kindref="member">databaseAdd</ref>(<ref refid="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" kindref="member">settings_carModel_example_file</ref>);</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="220"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="221"><highlight class="normal"></highlight></codeline>
-<codeline lineno="226" refid="_core_8h_1a8f34a2030acfb5567678ab2bba25f3c1" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a8f34a2030acfb5567678ab2bba25f3c1" kindref="member">createFile</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name)<sp/>{</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>ofstream<sp/>fout(file_name);</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>fout.close();</highlight></codeline>
-<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="230"><highlight class="normal"></highlight></codeline>
-<codeline lineno="235" refid="_core_8cpp_1a5ac0cd45ecb6e65e3ace40687d6ee8bc" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1a5ac0cd45ecb6e65e3ace40687d6ee8bc" kindref="member">createDir</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>namedir)<sp/>{</highlight></codeline>
-<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((_mkdir(namedir.c_str()))<sp/>==<sp/>0)<sp/>{</highlight></codeline>
-<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ace626bb1b7477b39cf2864aa0d0924e9" kindref="member">LOGGER_MESSAGE_CREATE_DIR</ref>);</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a0d6abeb129096910c85ae6cba8bb59cf" kindref="member">logger</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" kindref="member">LOGGER_LEVEL_WARNING</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1ae73ee066dad5c6455cb406ab3aa0473f" kindref="member">LOGGER_MESSAGE_CREATE_DIR_NOT</ref>);</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"></highlight></codeline>
-<codeline lineno="257" refid="_core_8cpp_1aa85ae460901348b74381239ce0517d5f" refkind="member"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1aa85ae460901348b74381239ce0517d5f" kindref="member">description</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>value)<sp/>{</highlight></codeline>
-<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s_ret<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>s_ret<sp/>=<sp/><ref refid="_core_8cpp_1a50535cebf45c8d7cbffd29274699e5f5" kindref="member">getSettingsString</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1aea7e9eb4d5b9e645f22e83e2d5fe893e" kindref="member">settings_block_description</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)value.c_str(),<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a53b4bd62fd7a6e3abedfdfb47db53284" kindref="member">settings_description_ifnotfound</ref>);</highlight></codeline>
-<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s_ret;</highlight></codeline>
-<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"></highlight></codeline>
-<codeline lineno="264"><highlight class="comment">//<sp/><sp/>Line<sp/>detector</highlight></codeline>
-<codeline lineno="266"><highlight class="comment"></highlight></codeline>
-<codeline lineno="274" refid="_core_8cpp_1afe1c5d9570a4ccddf9b5105997e3ddb4" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_core_8cpp_1afe1c5d9570a4ccddf9b5105997e3ddb4" kindref="member">canny</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_in,<sp/>Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
-<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>gray,<sp/>edge,<sp/>draw;</highlight></codeline>
-<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>cvtColor(mat_in,<sp/>gray,<sp/>CV_BGR2GRAY);</highlight></codeline>
-<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>Canny(gray,<sp/>edge,<sp/>50,<sp/>150,<sp/>3);</highlight></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>edge.convertTo(mat_out,<sp/>CV_8U);</highlight></codeline>
-<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="group__settingscpp_1ga2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>(<ref refid="namespaceyenot_1af2253e95acd84452c01f492019f814f0" kindref="member">NAME_DATABASE</ref><sp/>+<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;\\&quot;</highlight><highlight class="normal">)<sp/>+<sp/><ref refid="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" kindref="member">settings_carModel_example_file</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__corecpp_1ga10a0271bceabc9c1a0d736ab93113212" kindref="member">databaseAdd</ref>(<ref refid="namespaceyenot_1acd910e59eb17aa18802af8f4544aab48" kindref="member">settings_carModel_example_file</ref>);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="group__corecpp_1gaa85ae460901348b74381239ce0517d5f" refkind="member"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="group__corecpp_1gaa85ae460901348b74381239ce0517d5f" kindref="member">description</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s_ret<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>s_ret<sp/>=<sp/><ref refid="group__settingscpp_1ga50535cebf45c8d7cbffd29274699e5f5" kindref="member">getSettingsString</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1aea7e9eb4d5b9e645f22e83e2d5fe893e" kindref="member">settings_block_description</ref>,<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)value.c_str(),<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="namespaceyenot_1a53b4bd62fd7a6e3abedfdfb47db53284" kindref="member">settings_description_ifnotfound</ref>);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s_ret;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="comment">//<sp/><sp/>Line<sp/>detector</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"></highlight></codeline>
+<codeline lineno="213" refid="group__corecpp_1gafe1c5d9570a4ccddf9b5105997e3ddb4" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__corecpp_1gafe1c5d9570a4ccddf9b5105997e3ddb4" kindref="member">canny</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Mat&amp;<sp/>mat_in,<sp/>Mat&amp;<sp/>mat_out)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>Mat<sp/>gray,<sp/>edge,<sp/>draw;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>cvtColor(mat_in,<sp/>gray,<sp/>CV_BGR2GRAY);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>Canny(gray,<sp/>edge,<sp/>50,<sp/>150,<sp/>3);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>edge.convertTo(mat_out,<sp/>CV_8U);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/core/Core.cpp"/>
   </compounddef>

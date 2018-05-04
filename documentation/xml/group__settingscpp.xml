@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__settingscpp" kind="group">
+    <compoundname>settingscpp</compoundname>
+    <title>Settings.cpp</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__settingscpp_1ga50535cebf45c8d7cbffd29274699e5f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string getSettingsString</definition>
+        <argsstring>(char *block, char *value, char *ch_return_default)</argsstring>
+        <name>getSettingsString</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>ch_return_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.cpp" line="23" column="1" bodyfile="src/core/Settings.cpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingscpp_1ga68b4d9ed6be7aaa93d9a6fe8fd683862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getSettings</definition>
+        <argsstring>(char *block, char *value)</argsstring>
+        <name>getSettings</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.cpp" line="29" column="1" bodyfile="src/core/Settings.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingscpp_1ga0a2fe94de4037eda33c49fe332970891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getSettings</definition>
+        <argsstring>(char *block, char *value, int i_return_default)</argsstring>
+        <name>getSettings</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i_return_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.cpp" line="33" column="1" bodyfile="src/core/Settings.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setSettings</definition>
+        <argsstring>(char *block, char *value, char *text)</argsstring>
+        <name>setSettings</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.cpp" line="37" column="1" bodyfile="src/core/Settings.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingscpp_1ga2dd1bc039652a0480c444957d416b6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool checkFile</definition>
+        <argsstring>(char *filename)</argsstring>
+        <name>checkFile</name>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.cpp" line="41" column="1" bodyfile="src/core/Settings.cpp" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingscpp_1ga64f8c9899c815dc180b2b564c0d05762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool checkFile</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>checkFile</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.cpp" line="50" column="1" bodyfile="src/core/Settings.cpp" bodystart="50" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingscpp_1ga5ac0cd45ecb6e65e3ace40687d6ee8bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void createDir</definition>
+        <argsstring>(string namedir)</argsstring>
+        <name>createDir</name>
+        <param>
+          <type>string</type>
+          <declname>namedir</declname>
+        </param>
+        <briefdescription>
+<para>Функция для создания директории </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">namedir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь и название директории </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Если успешно создали директорию, то: <verbatim>Вывод в лог, что получилось создать директорию
+</verbatim></para><para>иначе: <verbatim>Вывод в лог, что не получилось создать директорию
+
+Возможно это связано с тем, что нет прав на создание директории или директория уже есть  </verbatim> </para>        </inbodydescription>
+        <location file="src/core/Settings.cpp" line="64" column="1" bodyfile="src/core/Settings.cpp" bodystart="64" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingscpp_1ga8f34a2030acfb5567678ab2bba25f3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void createFile</definition>
+        <argsstring>(char *file_name)</argsstring>
+        <name>createFile</name>
+        <param>
+          <type>char *</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Функция для создания файла </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь и название файла </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.cpp" line="85" column="1" bodyfile="src/core/Settings.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

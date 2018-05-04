@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['yenot_2ecpp',['Yenot.cpp',['../_yenot_8cpp.html',1,'']]],
-  ['yenot_2eh',['Yenot.h',['../_yenot_8h.html',1,'']]]
+  ['settings_2ecpp',['Settings.cpp',['../_settings_8cpp.html',1,'']]],
+  ['settings_2eh',['Settings.h',['../_settings_8h.html',1,'']]]
 ];

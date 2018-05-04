@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Yenot: Исходный файл Settings.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Yenot
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Settings.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_settings_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef SETTINGS_H</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define SETTINGS_H</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;std::string <a class="code" href="group__settingsh.html#ga3a0f1e87eb01bdd16c4a7e365aa283eb">getSettingsString</a>(<span class="keywordtype">char</span> *block, <span class="keywordtype">char</span> *value, <span class="keywordtype">char</span> *ch_return_default);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__settingsh.html#ga68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a>(<span class="keywordtype">char</span> *block, <span class="keywordtype">char</span> *value);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__settingsh.html#ga68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a>(<span class="keywordtype">char</span> *block, <span class="keywordtype">char</span> *value, <span class="keywordtype">int</span> i_return_default);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__settingsh.html#ga463e32ccb37f9478b0e62ee0d21c5999">setSettings</a>(<span class="keywordtype">char</span> *block, <span class="keywordtype">char</span> *value, <span class="keywordtype">char</span> *text);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__settingsh.html#ga2dd1bc039652a0480c444957d416b6a6">checkFile</a>(<span class="keywordtype">char</span> *filename);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__settingsh.html#ga2dd1bc039652a0480c444957d416b6a6">checkFile</a>(std::string filename);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__settingsh.html#ga8f34a2030acfb5567678ab2bba25f3c1">createFile</a>(<span class="keywordtype">char</span> *file_name);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__settingsh.html#ga912b67f6f6b05abadd055a379dd84864">createDir</a>(std::string namedir);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // SETTINGS_H</span></div><div class="ttc" id="group__settingsh_html_ga912b67f6f6b05abadd055a379dd84864"><div class="ttname"><a href="group__settingsh.html#ga912b67f6f6b05abadd055a379dd84864">createDir</a></div><div class="ttdeci">void createDir(std::string namedir)</div></div>
+<div class="ttc" id="group__settingsh_html_ga68b4d9ed6be7aaa93d9a6fe8fd683862"><div class="ttname"><a href="group__settingsh.html#ga68b4d9ed6be7aaa93d9a6fe8fd683862">getSettings</a></div><div class="ttdeci">int getSettings(char *block, char *value)</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cpp_source.html#l00029">Settings.cpp:29</a></div></div>
+<div class="ttc" id="group__settingsh_html_ga3a0f1e87eb01bdd16c4a7e365aa283eb"><div class="ttname"><a href="group__settingsh.html#ga3a0f1e87eb01bdd16c4a7e365aa283eb">getSettingsString</a></div><div class="ttdeci">std::string getSettingsString(char *block, char *value, char *ch_return_default)</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cpp_source.html#l00023">Settings.cpp:23</a></div></div>
+<div class="ttc" id="group__settingsh_html_ga2dd1bc039652a0480c444957d416b6a6"><div class="ttname"><a href="group__settingsh.html#ga2dd1bc039652a0480c444957d416b6a6">checkFile</a></div><div class="ttdeci">bool checkFile(char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cpp_source.html#l00041">Settings.cpp:41</a></div></div>
+<div class="ttc" id="group__settingsh_html_ga463e32ccb37f9478b0e62ee0d21c5999"><div class="ttname"><a href="group__settingsh.html#ga463e32ccb37f9478b0e62ee0d21c5999">setSettings</a></div><div class="ttdeci">void setSettings(char *block, char *value, char *text)</div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cpp_source.html#l00037">Settings.cpp:37</a></div></div>
+<div class="ttc" id="group__settingsh_html_ga8f34a2030acfb5567678ab2bba25f3c1"><div class="ttname"><a href="group__settingsh.html#ga8f34a2030acfb5567678ab2bba25f3c1">createFile</a></div><div class="ttdeci">void createFile(char *file_name)</div><div class="ttdoc">Функция для создания файла </div><div class="ttdef"><b>Definition:</b> <a href="_settings_8cpp_source.html#l00085">Settings.cpp:85</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

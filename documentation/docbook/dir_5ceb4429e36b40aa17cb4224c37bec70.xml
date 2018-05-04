@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_5ceb4429e36b40aa17cb4224c37bec70">
+    <title>Содержание директории srv</title>
+<para>Directory dependency diagram for srv</para>
+<para>
+    <figure>
+        <title>Directory Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="dir_5ceb4429e36b40aa17cb4224c37bec70_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Файл </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="_yenot_server_8cpp">YenotServer.cpp</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="_yenot_server_8h">YenotServer.h</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Подробное описание</title>
+    <para>Directory location is D:/work/git/Yenot/src/srv/</para>
+    </simplesect>
+</section>

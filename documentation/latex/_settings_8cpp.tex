@@ -1,0 +1,51 @@
+\hypertarget{_settings_8cpp}{}\section{Файл Settings.\+cpp}
+\label{_settings_8cpp}\index{Settings.\+cpp@{Settings.\+cpp}}
+
+
+Модуль работы с ini файлами  
+
+
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$direct.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Yenot.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Logger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Settings.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для Settings.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_settings_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{group__settingscpp_ga50535cebf45c8d7cbffd29274699e5f5}{get\+Settings\+String}} (char $\ast$block, char $\ast$value, char $\ast$ch\+\_\+return\+\_\+default)
+\item 
+int \mbox{\hyperlink{group__settingscpp_ga68b4d9ed6be7aaa93d9a6fe8fd683862}{get\+Settings}} (char $\ast$block, char $\ast$value)
+\item 
+int \mbox{\hyperlink{group__settingscpp_ga0a2fe94de4037eda33c49fe332970891}{get\+Settings}} (char $\ast$block, char $\ast$value, int i\+\_\+return\+\_\+default)
+\item 
+void \mbox{\hyperlink{group__settingscpp_ga463e32ccb37f9478b0e62ee0d21c5999}{set\+Settings}} (char $\ast$block, char $\ast$value, char $\ast$text)
+\item 
+bool \mbox{\hyperlink{group__settingscpp_ga2dd1bc039652a0480c444957d416b6a6}{check\+File}} (char $\ast$filename)
+\item 
+bool \mbox{\hyperlink{group__settingscpp_ga64f8c9899c815dc180b2b564c0d05762}{check\+File}} (string filename)
+\item 
+void \mbox{\hyperlink{group__settingscpp_ga5ac0cd45ecb6e65e3ace40687d6ee8bc}{create\+Dir}} (string namedir)
+\begin{DoxyCompactList}\small\item\em Функция для создания директории \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__settingscpp_ga8f34a2030acfb5567678ab2bba25f3c1}{create\+File}} (char $\ast$file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Функция для создания файла \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Модуль работы с ini файлами 
+
+\begin{DoxyAuthor}{Автор}
+Sava\+Lione 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Дата}
+20 Apr 2018 
+\end{DoxyDate}

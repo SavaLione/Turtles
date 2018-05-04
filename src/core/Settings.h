@@ -4,6 +4,11 @@
 	@author SavaLione
 	@date 20 Apr 2018
 */
+/**
+	@defgroup settingsh Settings.h
+	@ingroup yenot
+	@{
+*/
 #ifndef SETTINGS_H
 #define SETTINGS_H
 
@@ -19,3 +24,4 @@ void createFile(char *file_name);
 void createDir(std::string namedir);
 
 #endif // SETTINGS_H
+/** @} */

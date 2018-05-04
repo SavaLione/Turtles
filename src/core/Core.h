@@ -4,6 +4,11 @@
 	@author SavaLione
 	@date 12 Apr 2018
 */
+/**
+	@defgroup coreh Core.h
+	@ingroup core
+	@{
+*/
 #ifndef CORE_H
 #define CORE_H
 
@@ -31,3 +36,4 @@ void settingsInitialization();
 std::string description(std::string value);
 
 #endif // CORE_H
+/** @} */

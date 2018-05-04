@@ -10,18 +10,28 @@
         <xi:include href="namespaceyenot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
     <chapter>
+        <title>Группы</title>
+        <xi:include href="group__yenot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="group__core.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="group__server.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
         <title>Файлы</title>
         <xi:include href="_core_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_core_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_logger_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_logger_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_settings_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_settings_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_yenot_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_yenot_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_yenot_server_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_yenot_server_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
     <chapter>
         <title>Директории</title>
         <xi:include href="dir_aebb8dcc11953d78e620bbef0b9e2183.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="dir_c184e51c84f2c3f0345bbc8a0d75d3e1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="dir_68267d1309a1af8e8297ef4c3efbcdba.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_5ceb4429e36b40aa17cb4224c37bec70.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
 </book>

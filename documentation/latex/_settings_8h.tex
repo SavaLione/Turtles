@@ -1,0 +1,54 @@
+\hypertarget{_settings_8h}{}\section{Файл Settings.\+h}
+\label{_settings_8h}\index{Settings.\+h@{Settings.\+h}}
+
+
+Заголовочный файл модуля работы с ini файлами  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+Граф включаемых заголовочных файлов для Settings.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{_settings_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_settings_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{group__settingsh_ga3a0f1e87eb01bdd16c4a7e365aa283eb}{get\+Settings\+String}} (char $\ast$block, char $\ast$value, char $\ast$ch\+\_\+return\+\_\+default)
+\item 
+int \mbox{\hyperlink{group__settingsh_ga68b4d9ed6be7aaa93d9a6fe8fd683862}{get\+Settings}} (char $\ast$block, char $\ast$value)
+\item 
+int \mbox{\hyperlink{group__settingsh_ga0a2fe94de4037eda33c49fe332970891}{get\+Settings}} (char $\ast$block, char $\ast$value, int i\+\_\+return\+\_\+default)
+\item 
+void \mbox{\hyperlink{group__settingsh_ga463e32ccb37f9478b0e62ee0d21c5999}{set\+Settings}} (char $\ast$block, char $\ast$value, char $\ast$text)
+\item 
+bool \mbox{\hyperlink{group__settingsh_ga2dd1bc039652a0480c444957d416b6a6}{check\+File}} (char $\ast$filename)
+\item 
+bool \mbox{\hyperlink{group__settingsh_ga147bed619c6314e960320c1bcb40ed91}{check\+File}} (std\+::string filename)
+\item 
+void \mbox{\hyperlink{group__settingsh_ga8f34a2030acfb5567678ab2bba25f3c1}{create\+File}} (char $\ast$file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Функция для создания файла \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__settingsh_ga912b67f6f6b05abadd055a379dd84864}{create\+Dir}} (std\+::string namedir)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Заголовочный файл модуля работы с ini файлами 
+
+\begin{DoxyAuthor}{Автор}
+Sava\+Lione 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Дата}
+20 Apr 2018 
+\end{DoxyDate}

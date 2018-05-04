@@ -4,6 +4,11 @@
 	@author SavaLione
 	@date 12 Apr 2018
 */
+/**
+	@defgroup corecpp Core.cpp
+	@ingroup core
+	@{
+*/
 #include <Windows.h>
 #include <direct.h>
 
@@ -211,3 +216,4 @@ void canny(const Mat& mat_in, Mat& mat_out) {
 	Canny(gray, edge, 50, 150, 3);
 	edge.convertTo(mat_out, CV_8U);
 }
+/** @} */
