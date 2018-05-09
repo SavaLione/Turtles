@@ -109,29 +109,24 @@ set(SERVER ${SERVER_SOURCES} ${SERVER_HEADERS})
 
 add_executable (${YENOT_SERVER} ${SERVER})
 
-# Database
+# Client
 # ===================================================
-set (YENOT_DATABASE Database)
 
-set(DATABASE_SOURCES
-		src/core/Core.cpp
+set (YENOT_CLIENT Client)
+
+set(CLIENT_SOURCES
+		src/client/YenotClient.cpp
 		src/core/Logger.cpp
 		src/core/Settings.cpp
-		src/core/database/YenotDatabase.cpp
 )
 
-set(DATABASE_HEADERS
-		src/core/Yenot.h
-		src/core/Core.h
+set(CLIENT_HEADERS
+		src/client/YenotClient.h
 		src/core/Logger.h
 		src/core/Settings.h
+		src/core/Yenot.h
 )
 
-set(DATABASE ${DATABASE_SOURCES} ${DATABASE_HEADERS})
+set(CLIENT ${CLIENT_SOURCES} ${CLIENT_HEADERS})
 
-include_directories(${OPENCV_LIB})
-link_directories(${OPENCV_LIB_LINK})
-
-add_executable (${YENOT_DATABASE} ${DATABASE})
-
-target_link_libraries(${YENOT_DATABASE} ${CMAKE_SOURCE_DIR}/lib/opencv/x64/vc15/lib/opencv_world341.lib)
+add_executable (${YENOT_CLIENT} ${CLIENT})
