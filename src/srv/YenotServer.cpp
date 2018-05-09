@@ -27,7 +27,17 @@
 #define DEFAULT_BUFLEN 512
 #define DEFAULT_PORT "27015"
 
+int server();
+
 int main() {
+	int i = 0;
+	while (i == 0) {
+		i = server();
+	}
+	return i;
+}
+
+int server() {
 	WSADATA wsaData;
 	int iResult;
 
