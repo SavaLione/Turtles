@@ -189,6 +189,18 @@ namespace yenot {
 	/// Стандартное значение
 	const int SETTINGS_LOG_TIME_VALUE_INT = 1;
 	
+	/// Модуль распознования логотипа на фото
+	///
+	/// Размер шаблона
+	const char SETTINGS_TEMPLATE_SIZE[] = "templatesize";
+	/// Модуль логирования
+	///
+	/// Стандартное значение
+	const char TEMPLATE_SIZE_STR[] = "20";
+	/// Модуль логирования
+	///
+	/// Стандартное значение
+	const int TEMPLATE_SIZE = 20;
 	///////////////////////////////////////////////////////////////////////////////
 	//	Filters
 	///////////////////////////////////////////////////////////////////////////////
@@ -268,8 +280,6 @@ namespace yenot {
 	const char DESCRIPTION_NOT_FOUND[] = "The brand name is not set";
 	
 	const int SIZE_PHOTO = 512;
-	
-	const int TEMPLATE_SIZE = 20;
 }
 
 #endif // YENOT_H

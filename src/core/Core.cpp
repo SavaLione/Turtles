@@ -117,7 +117,9 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 
 	// Detect object
 	vector<Rect> detectObject;
-	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(TEMPLATE_SIZE, TEMPLATE_SIZE));
+	
+	int tSize = getSettings((char*)BLOCK_CORE, (char*)SETTINGS_TEMPLATE_SIZE, TEMPLATE_SIZE);
+	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(tSize, tSize));
 	
 	if (detectObject.size() != 0) {
 		// Есть на фото
@@ -164,6 +166,7 @@ void settingsInitialization() {
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_LINE_DETECTION, (char*)SETTINGS_LINE_DETECTION_VALUE);
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_DETECTION, (char*)SETTINGS_DETECTION_VALUE);
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE_VALUE);
+		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_TEMPLATE_SIZE, (char*)TEMPLATE_SIZE_STR);
 
 		setSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG, (char*)SETTINGS_LOG_VALUE);
 		setSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG_TIME, (char*)SETTINGS_LOG_TIME_VALUE);
