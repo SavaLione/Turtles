@@ -267,7 +267,7 @@ namespace yenot {
 
 	const char DESCRIPTION_NOT_FOUND[] = "The brand name is not set";
 	
-	const int settings_size_photo = 512;
+	const int SIZE_PHOTO = 512;
 	
 	const int TEMPLATE_SIZE = 20;
 }
