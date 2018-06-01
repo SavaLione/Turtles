@@ -65,7 +65,8 @@ int main(int argc, char* argv[]) {
 	
 	if (!error)
 		try {
-			resize(src, dst, Size(SIZE_PHOTO, SIZE_PHOTO));
+			int pSize = getSettings((char*)BLOCK_CORE, (char*)SETTINGS_SIZE_PHOTO, SIZE_PHOTO);
+			resize(src, dst, Size(pSize, pSize));
 			if (dst.data) { src = dst.clone(); }
 		} catch (string& e) {
 			logger((char*)LOGGER_LEVEL_ERROR, (char*)e.c_str());

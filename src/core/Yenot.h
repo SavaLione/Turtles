@@ -191,7 +191,7 @@ namespace yenot {
 	
 	/// Модуль распознования логотипа на фото
 	///
-	/// Размер шаблона
+	/// Размер шаблона. Название параметра
 	const char SETTINGS_TEMPLATE_SIZE[] = "templatesize";
 	/// Модуль логирования
 	///
@@ -201,6 +201,19 @@ namespace yenot {
 	///
 	/// Стандартное значение
 	const int TEMPLATE_SIZE = 20;
+	
+	/// Размер фото
+	///
+	/// Размер фото. Название параметра
+	const char SETTINGS_SIZE_PHOTO[] = "sizePhoto";
+	/// Модуль логирования
+	///
+	/// Стандартное значение
+	const char SIZE_PHOTO_STR[] = "512";
+	/// Модуль логирования
+	///
+	/// Стандартное значение
+	const int SIZE_PHOTO = 512;
 	///////////////////////////////////////////////////////////////////////////////
 	//	Filters
 	///////////////////////////////////////////////////////////////////////////////
@@ -217,7 +230,7 @@ namespace yenot {
 	///
 	/// Число не чётное
 	const int KERNEL_Y = 5;
-
+	
 	///////////////////////////////////////////////////////////////////////////////
 	//	Logger
 	///////////////////////////////////////////////////////////////////////////////
@@ -278,8 +291,6 @@ namespace yenot {
 	const char CAR_MODEL_EXAMPLE_FILE[] = "example.xml";
 
 	const char DESCRIPTION_NOT_FOUND[] = "The brand name is not set";
-	
-	const int SIZE_PHOTO = 512;
 }
 
 #endif // YENOT_H

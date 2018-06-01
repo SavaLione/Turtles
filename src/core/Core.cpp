@@ -167,6 +167,7 @@ void settingsInitialization() {
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_DETECTION, (char*)SETTINGS_DETECTION_VALUE);
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE, (char*)SETTINGS_SAVE_PROCESSED_IMAGE_VALUE);
 		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_TEMPLATE_SIZE, (char*)TEMPLATE_SIZE_STR);
+		setSettings((char*)BLOCK_CORE, (char*)SETTINGS_SIZE_PHOTO, (char*)SIZE_PHOTO_STR);
 
 		setSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG, (char*)SETTINGS_LOG_VALUE);
 		setSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG_TIME, (char*)SETTINGS_LOG_TIME_VALUE);
