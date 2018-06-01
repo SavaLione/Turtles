@@ -217,8 +217,20 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	//	Filters
 	///////////////////////////////////////////////////////////////////////////////
+	
+	/// Фильтр.
+	///
+	/// Диаметр каждого пикселя
 	const int DIAMETER_EACH_PIXEL = 9;
+	
+	/// Фильтр.
+	///
+	/// Цвет
 	const int SIGMA_COLOR = 75;
+	
+	/// Фильтр.
+	///
+	/// Пространство
 	const int SIGMA_SPACE = 75;
 	
 	/// Фильтр. Размер ядра по x
@@ -243,9 +255,20 @@ namespace yenot {
 	/// ...
 	/// @endcode
 	const char BLOCK_LOGGER[] = "Logger";
-
+	
+	/// Модуль логирования
+	///
+	/// Уровень предупреждения
 	const char LOGGER_LEVEL_WARNING[] = "WARN";
+	
+	/// Модуль логирования
+	///
+	/// Уровень ошибки
 	const char LOGGER_LEVEL_ERROR[] = "ERROR";
+	
+	/// Модуль логирования
+	///
+	/// Уровень сообщение
 	const char LOGGER_LEVEL_MESSAGE[] = "MSG";
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -283,7 +306,6 @@ namespace yenot {
 	///	[description]
 	/// ...
 	/// @endcode
-
 	const char BLOCK_DESCRIPTION[] = "description";
 	
 	const char CAR_MODEL_EXAMPLE[] = "example";
