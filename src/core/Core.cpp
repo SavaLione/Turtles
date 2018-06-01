@@ -89,6 +89,25 @@ void databaseAdd(string filename) {
 }
 
 void clearning(string filename, string variable) {
+	/// Создаём вектор
+	///
+	/// Создаём файловое хранилище
+	///
+	/// Открываем файловое хранилище для чтения
+	///
+	/// Записываем данные из файлового хранилища в вектор
+	///
+	/// Очищаем файловое хранилище
+	///
+	/// Сортируем значения вектора
+	///
+	/// Изменяем размер вектора, удаляя дубликаты
+	/// 
+	/// Создаём файловое хранилище для записи
+	///
+	/// Записываем в файловое хранилище обработанный вектор
+	///
+	/// Очищаем файловое хранилище
 	vector<string> stringVector;
 	FileStorage fsIn;
 	fsIn.open(filename, FileStorage::READ);
@@ -104,10 +123,33 @@ void clearning(string filename, string variable) {
 }
 
 bool detectionLogo(const Mat& mat_logo, string cascadefile) {
+	/// Создаём 2 переменные.
+	/// 
+	/// 	b_return - возвращаемое значение функции
+	///
+	/// 		true - объект найден на фото
+	///
+	/// 		true - объект не найден на фото
+	///
+	///		image - матрица с изображением
+	///
+	///	Создаём переменную для хранения каскада logo_cascade
+	///
+	/// Загружаем каскад (.xml файл)
+	///
+	/// Если каскад пустой, то возвращаем ошибку
+	///
+	/// Создаём переменную для распознавания объекта
+	///
+	///	Загружаем размер шаблона из настроек
+	///
+	///	Ищем объект на фото
+	///
+	/// Если объект есть на фото, то возвращаем положительное значение
+	
 	bool b_return = false;
 	Mat image = mat_logo;
 
-	// Load cascade (.xml file)
 	CascadeClassifier logo_cascade;
 	logo_cascade.load(NAME_DATABASE + string("\\") + cascadefile);
 
@@ -122,9 +164,6 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(tSize, tSize));
 	
 	if (detectObject.size() != 0) {
-		// Есть на фото
-		// Вывод описания
-		//cout << "[FOUND] " << getSettingsString((char*)BLOCK_DESCRIPTION, (char*)cascadefile.c_str(), (char*)DESCRIPTION_NOT_FOUND) << endl;
 		b_return = true;
 	}
 	return b_return;
