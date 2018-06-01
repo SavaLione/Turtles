@@ -73,6 +73,26 @@ void lineDetection(const Mat& mat_in, Mat& mat_out) {
 }
 
 void databaseAdd(string filename) {
+	/// Если название файла не задано, то возвращаем ошибку
+	///
+	/// Создаём вектор
+	///
+	/// Создаём файловое хранилище
+	///
+	/// Открываем файловое хранилище для чтения
+	///
+	/// Записываем данные из файлового хранилища в вектор
+	///
+	/// Очищаем файловое хранилище
+	/// 
+	/// Записываем переменную filename в конец вектора
+	///
+	/// Создаём файловое хранилище для записи
+	///
+	/// Записываем в файловое хранилище обработанный вектор
+	///
+	/// Очищаем файловое хранилище
+	
 	if (filename == "")
 		throw ERROR_INIT_DATABASE_ADD;
 	vector<string> stringVector;
@@ -170,7 +190,25 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 }
 
 void detection(const Mat& mat_logo) {
+	/// Проверяем. Нужно ли распознавать объект
 	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_DETECTION, SETTINGS_DETECTION_VALUE_INT)) {
+			/// Создаём вектор
+		///
+		/// Создаём файловое хранилище
+		///
+		/// Открываем файловое хранилище для чтения
+		///
+		/// Записываем данные из файлового хранилища в вектор
+		///
+		/// Очищаем файловое хранилище
+		///
+		///	Ищем объект на фото
+		///
+		/// Если объект есть на фото, то пишем в консоль, что объект найден, иначе пишем, что обхект не найден
+		///
+		///		[FOUND] [example.xml] description.
+		///
+		///		[NOT FOUND] [example.xml]
 		vector<string> stringVector;
 		FileStorage fsIn;
 		fsIn.open((NAME_DATABASE + string("\\") + FILE_NAME_DATABASE), FileStorage::READ);
