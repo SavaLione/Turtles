@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_yenot_8cpp">
+    <title>Yenot.cpp File Reference</title>
+    <programlisting>#include &quot;..\core\Yenot.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Core.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Logger.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Settings.h&quot;</programlisting>
+<para>Include dependency diagram for Yenot.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_yenot_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Yenot.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_yenot_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="group__yenotcpp_1ga0ddf1224851353fc92bfbff6f499fa97">main</link> (
+int argc, char * argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Подробное описание</title>
+
+<para>Основной задачей нашего проекта является разработка самообучающегося приложения для выделения и распознавания логотипов автомобилей по фото. </para>
+
+<para><formalpara><title>Автор: </title>
+
+<para>SavaLione </para>
+</formalpara>
+<formalpara><title>Дата: </title>
+
+<para>28 Mar 2018 </para>
+</formalpara>
+</para>
+    <para>Definition in file Yenot.cpp</para>
+    </simplesect>
+</section>

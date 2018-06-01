@@ -1,0 +1,66 @@
+.TH "Settings.h" 3 "Сб 2 Июн 2018" "Yenot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Settings.h \- Заголовочный файл модуля работы с ini файлами  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string>\fP
+.br
+
+.SS "Функции"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBgetSettingsString\fP (char *block, char *value, char *ch_return_default)"
+.br
+.RI "Получить строку из файла настроек "
+.ti -1c
+.RI "int \fBgetSettings\fP (char *block, char *value, int i_return_default)"
+.br
+.RI "Получить число из файла настроек "
+.ti -1c
+.RI "void \fBsetSettings\fP (char *block, char *value, char *text)"
+.br
+.RI "Сохранить переменную в файл настроек "
+.ti -1c
+.RI "bool \fBcheckFile\fP (char *filename)"
+.br
+.RI "Проверка файла "
+.ti -1c
+.RI "bool \fBcheckFile\fP (std::string filename)"
+.br
+.RI "Проверка файла "
+.ti -1c
+.RI "void \fBcreateDir\fP (std::string namedir)"
+.br
+.RI "Функция для создания директории "
+.ti -1c
+.RI "void \fBcreateFile\fP (char *file_name)"
+.br
+.RI "Функция для создания файла "
+.in -1c
+.SH "Подробное описание"
+.PP 
+Заголовочный файл модуля работы с ini файлами 
+
+
+.PP
+\fBАвтор:\fP
+.RS 4
+SavaLione 
+.RE
+.PP
+\fBДата:\fP
+.RS 4
+20 Apr 2018 
+.RE
+.PP
+
+.PP
+См\&. определение в файле \fBSettings\&.h\fP
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Yenot из исходного текста\&.

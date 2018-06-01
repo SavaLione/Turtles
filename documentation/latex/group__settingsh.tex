@@ -1,0 +1,182 @@
+\hypertarget{group__settingsh}{}\section{Settings.\+h}
+\label{group__settingsh}\index{Settings.\+h@{Settings.\+h}}
+Граф связей класса Settings.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{group__settingsh}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{group__settingsh_ga3a0f1e87eb01bdd16c4a7e365aa283eb}{get\+Settings\+String}} (char $\ast$block, char $\ast$value, char $\ast$ch\+\_\+return\+\_\+default)
+\begin{DoxyCompactList}\small\item\em Получить строку из файла настроек \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__settingsh_ga0a2fe94de4037eda33c49fe332970891}{get\+Settings}} (char $\ast$block, char $\ast$value, int i\+\_\+return\+\_\+default)
+\begin{DoxyCompactList}\small\item\em Получить число из файла настроек \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__settingsh_ga463e32ccb37f9478b0e62ee0d21c5999}{set\+Settings}} (char $\ast$block, char $\ast$value, char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Сохранить переменную в файл настроек \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__settingsh_ga2dd1bc039652a0480c444957d416b6a6}{check\+File}} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Проверка файла \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__settingsh_ga147bed619c6314e960320c1bcb40ed91}{check\+File}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Проверка файла \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__settingsh_ga912b67f6f6b05abadd055a379dd84864}{create\+Dir}} (std\+::string namedir)
+\begin{DoxyCompactList}\small\item\em Функция для создания директории \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__settingsh_ga8f34a2030acfb5567678ab2bba25f3c1}{create\+File}} (char $\ast$file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Функция для создания файла \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{group__settingsh_ga2dd1bc039652a0480c444957d416b6a6}\label{group__settingsh_ga2dd1bc039652a0480c444957d416b6a6}} 
+\index{Settings.\+h@{Settings.\+h}!check\+File@{check\+File}}
+\index{check\+File@{check\+File}!Settings.\+h@{Settings.\+h}}
+\subsubsection{\texorpdfstring{check\+File()}{checkFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool check\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Проверка файла 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em filename} & Название файла \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ файл найден, false -\/ файл не найден. 
+\end{DoxyReturn}
+
+
+См. определение в файле Settings.\+cpp строка 62
+
+\mbox{\Hypertarget{group__settingsh_ga147bed619c6314e960320c1bcb40ed91}\label{group__settingsh_ga147bed619c6314e960320c1bcb40ed91}} 
+\index{Settings.\+h@{Settings.\+h}!check\+File@{check\+File}}
+\index{check\+File@{check\+File}!Settings.\+h@{Settings.\+h}}
+\subsubsection{\texorpdfstring{check\+File()}{checkFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool check\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Проверка файла 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em filename} & Название файла \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ файл найден, false -\/ файл не найден. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__settingsh_ga912b67f6f6b05abadd055a379dd84864}\label{group__settingsh_ga912b67f6f6b05abadd055a379dd84864}} 
+\index{Settings.\+h@{Settings.\+h}!create\+Dir@{create\+Dir}}
+\index{create\+Dir@{create\+Dir}!Settings.\+h@{Settings.\+h}}
+\subsubsection{\texorpdfstring{create\+Dir()}{createDir()}}
+{\footnotesize\ttfamily void create\+Dir (\begin{DoxyParamCaption}\item[{std\+::string}]{namedir }\end{DoxyParamCaption})}
+
+
+
+Функция для создания директории 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em namedir} & Путь и название директории \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__settingsh_ga8f34a2030acfb5567678ab2bba25f3c1}\label{group__settingsh_ga8f34a2030acfb5567678ab2bba25f3c1}} 
+\index{Settings.\+h@{Settings.\+h}!create\+File@{create\+File}}
+\index{create\+File@{create\+File}!Settings.\+h@{Settings.\+h}}
+\subsubsection{\texorpdfstring{create\+File()}{createFile()}}
+{\footnotesize\ttfamily void create\+File (\begin{DoxyParamCaption}\item[{char $\ast$}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Функция для создания файла 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em file\+\_\+name} & Путь и название файла \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле Settings.\+cpp строка 111
+
+\mbox{\Hypertarget{group__settingsh_ga0a2fe94de4037eda33c49fe332970891}\label{group__settingsh_ga0a2fe94de4037eda33c49fe332970891}} 
+\index{Settings.\+h@{Settings.\+h}!get\+Settings@{get\+Settings}}
+\index{get\+Settings@{get\+Settings}!Settings.\+h@{Settings.\+h}}
+\subsubsection{\texorpdfstring{get\+Settings()}{getSettings()}}
+{\footnotesize\ttfamily int get\+Settings (\begin{DoxyParamCaption}\item[{char $\ast$}]{block,  }\item[{char $\ast$}]{value,  }\item[{int}]{i\+\_\+return\+\_\+default }\end{DoxyParamCaption})}
+
+
+
+Получить число из файла настроек 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em block} & Блок файла настроек \\
+\hline
+\mbox{\tt in}  & {\em value} & Искомая переменная \\
+\hline
+\mbox{\tt in}  & {\em i\+\_\+return\+\_\+default} & Значение, если переменная не найдена в файле настроек \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Число из файла настроек 
+\end{DoxyReturn}
+
+
+См. определение в файле Settings.\+cpp строка 43
+
+\mbox{\Hypertarget{group__settingsh_ga3a0f1e87eb01bdd16c4a7e365aa283eb}\label{group__settingsh_ga3a0f1e87eb01bdd16c4a7e365aa283eb}} 
+\index{Settings.\+h@{Settings.\+h}!get\+Settings\+String@{get\+Settings\+String}}
+\index{get\+Settings\+String@{get\+Settings\+String}!Settings.\+h@{Settings.\+h}}
+\subsubsection{\texorpdfstring{get\+Settings\+String()}{getSettingsString()}}
+{\footnotesize\ttfamily std\+::string get\+Settings\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{block,  }\item[{char $\ast$}]{value,  }\item[{char $\ast$}]{ch\+\_\+return\+\_\+default }\end{DoxyParamCaption})}
+
+
+
+Получить строку из файла настроек 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em block} & Блок файла настроек \\
+\hline
+\mbox{\tt in}  & {\em value} & Искомая переменная \\
+\hline
+\mbox{\tt in}  & {\em ch\+\_\+return\+\_\+default} & Значение, если переменная не найдена в файле настроек \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка из файла настроек 
+\end{DoxyReturn}
+
+
+См. определение в файле Settings.\+cpp строка 30
+
+\mbox{\Hypertarget{group__settingsh_ga463e32ccb37f9478b0e62ee0d21c5999}\label{group__settingsh_ga463e32ccb37f9478b0e62ee0d21c5999}} 
+\index{Settings.\+h@{Settings.\+h}!set\+Settings@{set\+Settings}}
+\index{set\+Settings@{set\+Settings}!Settings.\+h@{Settings.\+h}}
+\subsubsection{\texorpdfstring{set\+Settings()}{setSettings()}}
+{\footnotesize\ttfamily void set\+Settings (\begin{DoxyParamCaption}\item[{char $\ast$}]{block,  }\item[{char $\ast$}]{value,  }\item[{char $\ast$}]{text }\end{DoxyParamCaption})}
+
+
+
+Сохранить переменную в файл настроек 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em block} & Блок файла настроек \\
+\hline
+\mbox{\tt in}  & {\em value} & Переменная \\
+\hline
+\mbox{\tt in}  & {\em text} & Значение переменной \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле Settings.\+cpp строка 53
+

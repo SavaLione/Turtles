@@ -1,0 +1,664 @@
+.TH "yenot" 3 "Сб 2 Июн 2018" "Yenot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+yenot \- Пространство имён с константами  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Переменные"
+
+.in +1c
+.ti -1c
+.RI "const char \fBFILE_NAME_CONFIG\fP [] = '\&./config\&.ini'"
+.br
+.RI "Файл с настройками "
+.ti -1c
+.RI "const char \fBFILE_NAME_LOGGER\fP [] = 'Yenot\&.log'"
+.br
+.RI "Файл с логами "
+.ti -1c
+.RI "const char \fBFILE_NAME_DATABASE\fP [] = 'database\&.xml'"
+.br
+.RI "Файл, в котором хранятся "
+.ti -1c
+.RI "const char \fBNAME_DATABASE\fP [] = 'database'"
+.br
+.ti -1c
+.RI "const char \fBEXTENSIONS_DATABASE_MEMBER\fP [] = '\&.xml'"
+.br
+.ti -1c
+.RI "const char \fBEXTENSIONS_DATABASE_MEMBER_photo\fP [] = '\&.png'"
+.br
+.ti -1c
+.RI "const int \fBBUFFER_SIZE\fP = 128"
+.br
+.RI "Стандартный размер буфера "
+.ti -1c
+.RI "const char \fBBLOCK_CORE\fP [] = 'Core'"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_FASTMODE\fP [] = 'fMode'"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_FASTMODE_VALUE\fP [] = '0'"
+.br
+.ti -1c
+.RI "const int \fBSETTINGS_FASTMODE_VALUE_INT\fP = 0"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_NOISE_REDUCTION\fP [] = 'nReduction'"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_NOISE_REDUCTION_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fBSETTINGS_NOISE_REDUCTION_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_LINE_DETECTION\fP [] = 'lDetection'"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_LINE_DETECTION_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fBSETTINGS_LINE_DETECTION_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_DETECTION\fP [] = 'detection'"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_DETECTION_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fBSETTINGS_DETECTION_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_SAVE_PROCESSED_IMAGE\fP [] = 'sImage'"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_SAVE_PROCESSED_IMAGE_VALUE\fP [] = '0'"
+.br
+.ti -1c
+.RI "const int \fBSETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT\fP = 0"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_SAVE_PROCESSED_IMAGE_NAME\fP [] = 'test\&.png'"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_LOG\fP [] = 'log'"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_LOG_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fBSETTINGS_LOG_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_LOG_TIME\fP [] = 'lTime'"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_LOG_TIME_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fBSETTINGS_LOG_TIME_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_TEMPLATE_SIZE\fP [] = 'templatesize'"
+.br
+.ti -1c
+.RI "const char \fBTEMPLATE_SIZE_STR\fP [] = '20'"
+.br
+.ti -1c
+.RI "const int \fBTEMPLATE_SIZE\fP = 20"
+.br
+.ti -1c
+.RI "const char \fBSETTINGS_SIZE_PHOTO\fP [] = 'sizePhoto'"
+.br
+.ti -1c
+.RI "const char \fBSIZE_PHOTO_STR\fP [] = '512'"
+.br
+.ti -1c
+.RI "const int \fBSIZE_PHOTO\fP = 512"
+.br
+.ti -1c
+.RI "const int \fBDIAMETER_EACH_PIXEL\fP = 9"
+.br
+.ti -1c
+.RI "const int \fBSIGMA_COLOR\fP = 75"
+.br
+.ti -1c
+.RI "const int \fBSIGMA_SPACE\fP = 75"
+.br
+.ti -1c
+.RI "const int \fBKERNEL_X\fP = 5"
+.br
+.ti -1c
+.RI "const int \fBKERNEL_Y\fP = 5"
+.br
+.ti -1c
+.RI "const char \fBBLOCK_LOGGER\fP [] = 'Logger'"
+.br
+.ti -1c
+.RI "const char \fBLOGGER_LEVEL_WARNING\fP [] = 'WARN'"
+.br
+.RI "Уровень предупреждения "
+.ti -1c
+.RI "const char \fBLOGGER_LEVEL_ERROR\fP [] = 'ERROR'"
+.br
+.RI "Уровень ошибки "
+.ti -1c
+.RI "const char \fBLOGGER_LEVEL_MESSAGE\fP [] = 'MSG'"
+.br
+.RI "Уровень сообщение "
+.ti -1c
+.RI "const char \fBLOGGER_MESSAGE_NOISE_REMOVAL\fP [] = 'Noise filter is disabled\&.'"
+.br
+.RI "Сообщение в лог о том, что фильтр шума отключен "
+.ti -1c
+.RI "const char \fBLOGGER_MESSAGE_LINE_DETECTION\fP [] = 'Line \fBdetection\fP is disabled\&.'"
+.br
+.RI "Сообщение в лог о том, что детектор границ отключен "
+.ti -1c
+.RI "const char \fBLOGGER_MESSAGE_FAST_MODE\fP [] = 'Fast mode enabled\&.'"
+.br
+.RI "Сообщение в лог о том, что быстрый режим включен "
+.ti -1c
+.RI "const char \fBLOGGER_MESSAGE_CREATE_DIR\fP [] = 'Folder created\&.'"
+.br
+.RI "Сообщение в лог о том, что папка создана "
+.ti -1c
+.RI "const char \fBLOGGER_MESSAGE_CREATE_DIR_NOT\fP [] = 'Folder creation failed\&.'"
+.br
+.RI "Сообщение в лог о том, что не удалось создать папку "
+.ti -1c
+.RI "const int \fBERROR_INIT\fP = \-100"
+.br
+.RI "Ошибка инициализации "
+.ti -1c
+.RI "const int \fBERROR_IMAGE\fP = \-200"
+.br
+.RI "Ошибка связанная с входным изображением\&. Возможно не достаточно аргументов "
+.ti -1c
+.RI "const int \fBERROR_CLEARNING\fP = \-300"
+.br
+.RI "Ошибка связанная с очисткой дубликатов "
+.ti -1c
+.RI "const int \fBERROR_RESIZE\fP = \-400"
+.br
+.RI "Ошибка связанная с изменением размера фотографии "
+.ti -1c
+.RI "const int \fBERROR_NOISE_REMOVAL\fP = \-500"
+.br
+.RI "Ошибка связанная с фильтвом шума "
+.ti -1c
+.RI "const int \fBERROR_LINE_DETECTION\fP = \-600"
+.br
+.RI "Ошибка связанная с детектором границ "
+.ti -1c
+.RI "const int \fBERROR_DETECTION\fP = \-700"
+.br
+.RI "Ошибка "
+.ti -1c
+.RI "const int \fBERROR_DATABASE\fP = \-800"
+.br
+.RI "Ошибка в модуле распознавания логотипов "
+.ti -1c
+.RI "const char \fBERROR_INIT_DATABASE_ADD\fP [] = 'The file name can not be empty\&.'"
+.br
+.RI "Сообщение в лог о том, что название файла с каскадом не может быть пустым "
+.ti -1c
+.RI "const char \fBERROR_DATABASE_ADD_ARGUMENTS\fP [] = 'Few arguments'"
+.br
+.RI "Сообщение в лог о том, что не достаточно аргументов для запуска программы "
+.ti -1c
+.RI "const char \fBBLOCK_DESCRIPTION\fP [] = 'description'"
+.br
+.ti -1c
+.RI "const char \fBCAR_MODEL_EXAMPLE_DESCRIPTION\fP [] = 'Brand: \\'Example\\''"
+.br
+.RI "Пример описания логотипа "
+.ti -1c
+.RI "const char \fBCAR_MODEL_EXAMPLE_FILE\fP [] = 'example\&.xml'"
+.br
+.RI "Пример файла с каскадом "
+.ti -1c
+.RI "const char \fBDESCRIPTION_NOT_FOUND\fP [] = 'The brand name is not set'"
+.br
+.RI "Сообщение о том, что для данного логотипа нет описания "
+.in -1c
+.SH "Подробное описание"
+.PP 
+Пространство имён с константами 
+
+General - Основные константы
+.PP
+Core - Ядро
+.PP
+Filters - Фильтры
+.PP
+Logger - Модуль логирования
+.PP
+Log messages - Сообщения для вывода в логами
+.PP
+Errors - Ошибки
+.PP
+Car model - Пример 
+.SH "Переменные"
+.PP 
+.SS "const char yenot::BLOCK_CORE[] = 'Core'"
+Блок настроек ядра\&.
+.PP
+ini файл 
+.PP
+.nf
+[Core]
+\&.\&.\&.
+
+.fi
+.PP
+ 
+.PP
+См\&. определение в файле Yenot\&.h строка 81
+.SS "const char yenot::BLOCK_DESCRIPTION[] = 'description'"
+Блок модуля поиска описания логотипа
+.PP
+ini файл 
+.PP
+.nf
+[description]
+\&.\&.\&.
+
+.fi
+.PP
+ 
+.PP
+См\&. определение в файле Yenot\&.h строка 324
+.SS "const char yenot::BLOCK_LOGGER[] = 'Logger'"
+Блок модуля логирования\&.
+.PP
+ini файл 
+.PP
+.nf
+[Logger]
+\&.\&.\&.
+
+.fi
+.PP
+ 
+.PP
+См\&. определение в файле Yenot\&.h строка 249
+.SS "const int yenot::BUFFER_SIZE = 128"
+
+.PP
+Стандартный размер буфера 
+.PP
+См\&. определение в файле Yenot\&.h строка 68
+.SS "const char yenot::CAR_MODEL_EXAMPLE_DESCRIPTION[] = 'Brand: \\'Example\\''"
+
+.PP
+Пример описания логотипа 
+.PP
+См\&. определение в файле Yenot\&.h строка 327
+.SS "const char yenot::CAR_MODEL_EXAMPLE_FILE[] = 'example\&.xml'"
+
+.PP
+Пример файла с каскадом 
+.PP
+См\&. определение в файле Yenot\&.h строка 330
+.SS "const char yenot::DESCRIPTION_NOT_FOUND[] = 'The brand name is not set'"
+
+.PP
+Сообщение о том, что для данного логотипа нет описания 
+.PP
+См\&. определение в файле Yenot\&.h строка 333
+.SS "const int yenot::DIAMETER_EACH_PIXEL = 9"
+Фильтр\&.
+.PP
+Диаметр каждого пикселя 
+.PP
+См\&. определение в файле Yenot\&.h строка 216
+.SS "const int yenot::ERROR_CLEARNING = \-300"
+
+.PP
+Ошибка связанная с очисткой дубликатов 
+.PP
+См\&. определение в файле Yenot\&.h строка 290
+.SS "const int yenot::ERROR_DATABASE = \-800"
+
+.PP
+Ошибка в модуле распознавания логотипов 
+.PP
+См\&. определение в файле Yenot\&.h строка 305
+.SS "const char yenot::ERROR_DATABASE_ADD_ARGUMENTS[] = 'Few arguments'"
+
+.PP
+Сообщение в лог о том, что не достаточно аргументов для запуска программы 
+.PP
+См\&. определение в файле Yenot\&.h строка 311
+.SS "const int yenot::ERROR_DETECTION = \-700"
+
+.PP
+Ошибка 
+.PP
+См\&. определение в файле Yenot\&.h строка 302
+.SS "const int yenot::ERROR_IMAGE = \-200"
+
+.PP
+Ошибка связанная с входным изображением\&. Возможно не достаточно аргументов 
+.PP
+См\&. определение в файле Yenot\&.h строка 287
+.SS "const int yenot::ERROR_INIT = \-100"
+
+.PP
+Ошибка инициализации 
+.PP
+См\&. определение в файле Yenot\&.h строка 284
+.SS "const char yenot::ERROR_INIT_DATABASE_ADD[] = 'The file name can not be empty\&.'"
+
+.PP
+Сообщение в лог о том, что название файла с каскадом не может быть пустым 
+.PP
+См\&. определение в файле Yenot\&.h строка 308
+.SS "const int yenot::ERROR_LINE_DETECTION = \-600"
+
+.PP
+Ошибка связанная с детектором границ 
+.PP
+См\&. определение в файле Yenot\&.h строка 299
+.SS "const int yenot::ERROR_NOISE_REMOVAL = \-500"
+
+.PP
+Ошибка связанная с фильтвом шума 
+.PP
+См\&. определение в файле Yenot\&.h строка 296
+.SS "const int yenot::ERROR_RESIZE = \-400"
+
+.PP
+Ошибка связанная с изменением размера фотографии 
+.PP
+См\&. определение в файле Yenot\&.h строка 293
+.SS "const char yenot::EXTENSIONS_DATABASE_MEMBER[] = '\&.xml'"
+Расширение для хранения данных
+.PP
+Поддерживается xml и yaml 
+.PP
+См\&. определение в файле Yenot\&.h строка 60
+.SS "const char yenot::EXTENSIONS_DATABASE_MEMBER_photo[] = '\&.png'"
+Расширение для хранения фотографий
+.PP
+Поддерживается png jpg jpeg 
+.PP
+См\&. определение в файле Yenot\&.h строка 65
+.SS "const char yenot::FILE_NAME_CONFIG[] = '\&./config\&.ini'"
+
+.PP
+Файл с настройками 
+.PP
+См\&. определение в файле Yenot\&.h строка 46
+.SS "const char yenot::FILE_NAME_DATABASE[] = 'database\&.xml'"
+
+.PP
+Файл, в котором хранятся 
+.PP
+См\&. определение в файле Yenot\&.h строка 52
+.SS "const char yenot::FILE_NAME_LOGGER[] = 'Yenot\&.log'"
+
+.PP
+Файл с логами 
+.PP
+См\&. определение в файле Yenot\&.h строка 49
+.SS "const int yenot::KERNEL_X = 5"
+Фильтр\&. Размер ядра по x
+.PP
+Число не чётное 
+.PP
+См\&. определение в файле Yenot\&.h строка 231
+.SS "const int yenot::KERNEL_Y = 5"
+Фильтр\&. Размер ядра по x
+.PP
+Число не чётное 
+.PP
+См\&. определение в файле Yenot\&.h строка 236
+.SS "const char yenot::LOGGER_LEVEL_ERROR[] = 'ERROR'"
+
+.PP
+Уровень ошибки 
+.PP
+См\&. определение в файле Yenot\&.h строка 255
+.SS "const char yenot::LOGGER_LEVEL_MESSAGE[] = 'MSG'"
+
+.PP
+Уровень сообщение 
+.PP
+См\&. определение в файле Yenot\&.h строка 258
+.SS "const char yenot::LOGGER_LEVEL_WARNING[] = 'WARN'"
+
+.PP
+Уровень предупреждения 
+.PP
+См\&. определение в файле Yenot\&.h строка 252
+.SS "const char yenot::LOGGER_MESSAGE_CREATE_DIR[] = 'Folder created\&.'"
+
+.PP
+Сообщение в лог о том, что папка создана 
+.PP
+См\&. определение в файле Yenot\&.h строка 274
+.SS "const char yenot::LOGGER_MESSAGE_CREATE_DIR_NOT[] = 'Folder creation failed\&.'"
+
+.PP
+Сообщение в лог о том, что не удалось создать папку 
+.PP
+См\&. определение в файле Yenot\&.h строка 277
+.SS "const char yenot::LOGGER_MESSAGE_FAST_MODE[] = 'Fast mode enabled\&.'"
+
+.PP
+Сообщение в лог о том, что быстрый режим включен 
+.PP
+См\&. определение в файле Yenot\&.h строка 271
+.SS "const char yenot::LOGGER_MESSAGE_LINE_DETECTION[] = 'Line \fBdetection\fP is disabled\&.'"
+
+.PP
+Сообщение в лог о том, что детектор границ отключен 
+.PP
+См\&. определение в файле Yenot\&.h строка 268
+.SS "const char yenot::LOGGER_MESSAGE_NOISE_REMOVAL[] = 'Noise filter is disabled\&.'"
+
+.PP
+Сообщение в лог о том, что фильтр шума отключен 
+.PP
+См\&. определение в файле Yenot\&.h строка 265
+.SS "const char yenot::NAME_DATABASE[] = 'database'"
+
+.PP
+См\&. определение в файле Yenot\&.h строка 55
+.SS "const char yenot::SETTINGS_DETECTION[] = 'detection'"
+Алгоритм поиска объекта на изображении
+.PP
+Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 131
+.SS "const char yenot::SETTINGS_DETECTION_VALUE[] = '1'"
+Алгоритм поиска объекта на изображении
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 135
+.SS "const int yenot::SETTINGS_DETECTION_VALUE_INT = 1"
+Алгоритм поиска объекта на изображении
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 139
+.SS "const char yenot::SETTINGS_FASTMODE[] = 'fMode'"
+Быстрый режим\&.
+.PP
+Название параметра
+.PP
+Немного ускоряет работу программы 
+.PP
+См\&. определение в файле Yenot\&.h строка 88
+.SS "const char yenot::SETTINGS_FASTMODE_VALUE[] = '0'"
+Быстрый режим\&.
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 92
+.SS "const int yenot::SETTINGS_FASTMODE_VALUE_INT = 0"
+Быстрый режим\&.
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 96
+.SS "const char yenot::SETTINGS_LINE_DETECTION[] = 'lDetection'"
+Поиск линий на изображении
+.PP
+Название параметра
+.PP
+Замедляет работу программы 
+.PP
+См\&. определение в файле Yenot\&.h строка 118
+.SS "const char yenot::SETTINGS_LINE_DETECTION_VALUE[] = '1'"
+Поиск линий на изображении
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 122
+.SS "const int yenot::SETTINGS_LINE_DETECTION_VALUE_INT = 1"
+Поиск линий на изображении
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 126
+.SS "const char yenot::SETTINGS_LOG[] = 'log'"
+Модуль логирования
+.PP
+Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 161
+.SS "const char yenot::SETTINGS_LOG_TIME[] = 'lTime'"
+Модуль логирования\&. Логирование с выводом времени
+.PP
+Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 174
+.SS "const char yenot::SETTINGS_LOG_TIME_VALUE[] = '1'"
+Модуль логирования\&. Логирование с выводом времени
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 178
+.SS "const int yenot::SETTINGS_LOG_TIME_VALUE_INT = 1"
+Модуль логирования\&. Логирование с выводом времени
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 182
+.SS "const char yenot::SETTINGS_LOG_VALUE[] = '1'"
+Модуль логирования
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 165
+.SS "const int yenot::SETTINGS_LOG_VALUE_INT = 1"
+Модуль логирования
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 169
+.SS "const char yenot::SETTINGS_NOISE_REDUCTION[] = 'nReduction'"
+Алгоритм очистки изображения от шума\&.
+.PP
+Название параметра
+.PP
+Замедляет работу программы 
+.PP
+См\&. определение в файле Yenot\&.h строка 103
+.SS "const char yenot::SETTINGS_NOISE_REDUCTION_VALUE[] = '1'"
+Алгоритм очистки изображения от шума\&.
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 107
+.SS "const int yenot::SETTINGS_NOISE_REDUCTION_VALUE_INT = 1"
+Алгоритм очистки изображения от шума\&.
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 111
+.SS "const char yenot::SETTINGS_SAVE_PROCESSED_IMAGE[] = 'sImage'"
+Нужно ли сохранять изображение после работы алгоритма
+.PP
+Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 144
+.SS "const char yenot::SETTINGS_SAVE_PROCESSED_IMAGE_NAME[] = 'test\&.png'"
+Нужно ли сохранять изображение после работы алгоритма
+.PP
+Название файла 
+.PP
+См\&. определение в файле Yenot\&.h строка 156
+.SS "const char yenot::SETTINGS_SAVE_PROCESSED_IMAGE_VALUE[] = '0'"
+Нужно ли сохранять изображение после работы алгоритма
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 148
+.SS "const int yenot::SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT = 0"
+Нужно ли сохранять изображение после работы алгоритма
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 152
+.SS "const char yenot::SETTINGS_SIZE_PHOTO[] = 'sizePhoto'"
+Размер фото
+.PP
+Размер фото\&. Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 200
+.SS "const char yenot::SETTINGS_TEMPLATE_SIZE[] = 'templatesize'"
+Модуль распознования логотипа на фото
+.PP
+Размер шаблона\&. Название параметра 
+.PP
+См\&. определение в файле Yenot\&.h строка 187
+.SS "const int yenot::SIGMA_COLOR = 75"
+Фильтр\&.
+.PP
+Цвет 
+.PP
+См\&. определение в файле Yenot\&.h строка 221
+.SS "const int yenot::SIGMA_SPACE = 75"
+Фильтр\&.
+.PP
+Пространство 
+.PP
+См\&. определение в файле Yenot\&.h строка 226
+.SS "const int yenot::SIZE_PHOTO = 512"
+Модуль логирования
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 208
+.SS "const char yenot::SIZE_PHOTO_STR[] = '512'"
+Модуль логирования
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 204
+.SS "const int yenot::TEMPLATE_SIZE = 20"
+Модуль логирования
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 195
+.SS "const char yenot::TEMPLATE_SIZE_STR[] = '20'"
+Модуль логирования
+.PP
+Стандартное значение 
+.PP
+См\&. определение в файле Yenot\&.h строка 191
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Yenot из исходного текста\&.

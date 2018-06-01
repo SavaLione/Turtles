@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_core_8cpp">
+    <title>Core.cpp File Reference</title>
+    <programlisting>#include &lt;Windows.h&gt;</programlisting>
+    <programlisting>#include &lt;direct.h&gt;</programlisting>
+    <programlisting>#include &quot;..\core\Yenot.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Core.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Logger.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Settings.h&quot;</programlisting>
+<para>Include dependency diagram for Core.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_core_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Core.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_core_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Пространства имен </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespacecv">cv</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespacestd">std</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__corecpp_1gab8ed3baad2f1d9b6b82bf74da9dd3d3a">noiseRemoval</link> (
+const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__corecpp_1ga9e277d82296b5ed9eda6266d8dcc24a3">lineDetection</link> (
+const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__corecpp_1ga10a0271bceabc9c1a0d736ab93113212">databaseAdd</link> (
+string filename)<para><emphasis>Функция для добавления файла с каскадом в файл с информацией о каскадах</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__corecpp_1ga78cdbfbe907847e78cfb387df76d99f9">clearning</link> (
+string filename, string variable)<para><emphasis>Функция для очистки дубликатов в векторе</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="group__corecpp_1ga76b0b7de3d9fa0de10d66740466ebc14">detectionLogo</link> (
+const Mat &amp; mat_logo, string cascadefile)<para><emphasis>Функция для поиска объекта на фото</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__corecpp_1gae99907f19e7f09055012f68347a57d05">detection</link> (
+const Mat &amp; mat_logo)<para><emphasis>Модуль поиска объектов на фото</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__corecpp_1ga242d25c7a9a1b7212bb890023c8131f5">settingsInitialization</link> (
+)<para><emphasis>Модуль настроек.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="group__corecpp_1gaa85ae460901348b74381239ce0517d5f">description</link> (
+string value)<para><emphasis>Функция для поиска описания марки по файлу с каскадом Хаара</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__corecpp_1gafe1c5d9570a4ccddf9b5105997e3ddb4">canny</link> (
+const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для обработки изображений.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Подробное описание</title>
+
+<para>Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля </para>
+
+<para><formalpara><title>Автор: </title>
+
+<para>SavaLione </para>
+</formalpara>
+<formalpara><title>Дата: </title>
+
+<para>12 Apr 2018 </para>
+</formalpara>
+</para>
+    <para>Definition in file Core.cpp</para>
+    </simplesect>
+</section>

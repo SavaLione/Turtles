@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__corecpp" kind="group">
+    <compoundname>corecpp</compoundname>
+    <title>Core.cpp</title>
+    <innernamespace refid="namespacecv">cv</innernamespace>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__corecpp_1gab8ed3baad2f1d9b6b82bf74da9dd3d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void noiseRemoval</definition>
+        <argsstring>(const Mat &amp;mat_in, Mat &amp;mat_out)</argsstring>
+        <name>noiseRemoval</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+<para>Функция для обработки изображений. </para>        </briefdescription>
+        <detaileddescription>
+<para>Проверяет, нужно ли убирать шум на фотографиях.</para><para>Также проверяем режим обработки изображений. Быстрый или нет.</para><para>Для обычного режима используется двусторонний фильтр - bilateralFilter();</para><para>Для быстрого режима используется Гауссовый фильтр размытия изображений - GaussianBlur();</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением для обработки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mat_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с обработанным изображением, которая будет возвращена </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Проверяем, нужно ли убирать шум на фотографиях.</para><para>Если не нужно убирать шум на фотографиях, то посылаем сообщение в лог</para><para>Проверяем режим обработки изображений. Быстрый или нет. <verbatim>Если режим обработки изображений не быстрый, то используем двусторонний фильтр.
+</verbatim></para><para>иначе <verbatim>Если режим обработки изображений быстрый, то используем Гауссовый фильтр  </verbatim> </para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="41" column="1" bodyfile="src/core/Core.cpp" bodystart="41" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="group__corecpp_1ga9e277d82296b5ed9eda6266d8dcc24a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lineDetection</definition>
+        <argsstring>(const Mat &amp;mat_in, Mat &amp;mat_out)</argsstring>
+        <name>lineDetection</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+<para>Функция для обработки изображений. </para>        </briefdescription>
+        <detaileddescription>
+<para>Проверяет, нужно ли находить линии на изображении.</para><para>Для обычного режима используется - canny(mat_in, mat_out);</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением для обработки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mat_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с обработанным изображением, которая будет возвращена </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Проверяем, нужно ли находить линии на изображении. </para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="76" column="1" bodyfile="src/core/Core.cpp" bodystart="76" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="group__corecpp_1ga10a0271bceabc9c1a0d736ab93113212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void databaseAdd</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>databaseAdd</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Функция для добавления файла с каскадом в файл с информацией о каскадах </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название каскада с расширением </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Если название файла не задано, то возвращаем ошибку</para><para>Создаём вектор</para><para>Создаём файловое хранилище</para><para>Открываем файловое хранилище для чтения</para><para>Записываем данные из файлового хранилища в вектор</para><para>Очищаем файловое хранилище</para><para>Записываем переменную filename в конец вектора</para><para>Создаём файловое хранилище для записи</para><para>Записываем в файловое хранилище обработанный вектор</para><para>Очищаем файловое хранилище </para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="90" column="1" bodyfile="src/core/Core.cpp" bodystart="90" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="group__corecpp_1ga78cdbfbe907847e78cfb387df76d99f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clearning</definition>
+        <argsstring>(string filename, string variable)</argsstring>
+        <name>clearning</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+<para>Функция для очистки дубликатов в векторе </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название и путь к файлу </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вектор, в котором нужно удалить дубликаты </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Создаём вектор</para><para>Создаём файловое хранилище</para><para>Открываем файловое хранилище для чтения</para><para>Записываем данные из файлового хранилища в вектор</para><para>Очищаем файловое хранилище</para><para>Сортируем значения вектора</para><para>Изменяем размер вектора, удаляя дубликаты</para><para>Создаём файловое хранилище для записи</para><para>Записываем в файловое хранилище обработанный вектор</para><para>Очищаем файловое хранилище </para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="132" column="1" bodyfile="src/core/Core.cpp" bodystart="132" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="group__corecpp_1ga76b0b7de3d9fa0de10d66740466ebc14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detectionLogo</definition>
+        <argsstring>(const Mat &amp;mat_logo, string cascadefile)</argsstring>
+        <name>detectionLogo</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>mat_logo</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cascadefile</declname>
+        </param>
+        <briefdescription>
+<para>Функция для поиска объекта на фото </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_logo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cascadefile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Файл с каскадом </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Результат работы. true - объект найден, false - объект не найден </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Создаём 2 переменные. <verbatim>b_return - возвращаемое значение функции
+
+    true - объект найден на фото
+
+    true - объект не найден на фото
+
+image - матрица с изображением
+</verbatim></para><para>Создаём переменную для хранения каскада logo_cascade</para><para>Загружаем каскад (.xml файл)</para><para>Если каскад пустой, то возвращаем ошибку</para><para>Создаём переменную для распознавания объекта</para><para>Загружаем размер шаблона из настроек</para><para>Ищем объект на фото</para><para>Если объект есть на фото, то возвращаем положительное значение </para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="173" column="1" bodyfile="src/core/Core.cpp" bodystart="173" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="group__corecpp_1gae99907f19e7f09055012f68347a57d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void detection</definition>
+        <argsstring>(const Mat &amp;mat_logo)</argsstring>
+        <name>detection</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>mat_logo</declname>
+        </param>
+        <briefdescription>
+<para>Модуль поиска объектов на фото </para>        </briefdescription>
+        <detaileddescription>
+<para>Поиск объектов на фото</para><para>Вывод информации</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_logo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Проверяем. Нужно ли распознавать объект</para><para>Создаём вектор <linebreak/>
+</para><para>Создаём файловое хранилище</para><para>Открываем файловое хранилище для чтения</para><para>Записываем данные из файлового хранилища в вектор</para><para>Очищаем файловое хранилище</para><para>Ищем объект на фото</para><para>Если объект есть на фото, то пишем в консоль, что объект найден, иначе пишем, что обхект не найден <verbatim>[FOUND] [example.xml] description.
+
+[NOT FOUND] [example.xml]  </verbatim> </para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="228" column="1" bodyfile="src/core/Core.cpp" bodystart="228" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="group__corecpp_1ga242d25c7a9a1b7212bb890023c8131f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void settingsInitialization</definition>
+        <argsstring>()</argsstring>
+        <name>settingsInitialization</name>
+        <briefdescription>
+<para>Модуль настроек. </para>        </briefdescription>
+        <detaileddescription>
+<para>При отсутствии файла настроек, создаёт его </para>        </detaileddescription>
+        <inbodydescription>
+<para>Если папка NAME_DATABASE не найдена и получилось её создать <verbatim>Вывод в лог, что папка создана
+</verbatim></para><para>иначе <verbatim>Вывод в лог информации, что папку не получилось создать (возможно не достаточно прав или она уже создана)
+</verbatim></para><para>Проверка наличия файла настроек FILE_NAME_CONFIG</para><para>Если файла нет, то создать его <verbatim>Добавить в файл параметры
+</verbatim></para><para>Проверка наличия файла с информацией о каскадах FILE_NAME_DATABASE</para><para>Если файла нет, то создать его</para><para>Если нет файла CAR_MODEL_EXAMPLE_FILE, то добавить в файл с информацией о каскадах, строку с файлом. Используется для примера </para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="273" column="1" bodyfile="src/core/Core.cpp" bodystart="273" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="group__corecpp_1gaa85ae460901348b74381239ce0517d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string description</definition>
+        <argsstring>(string value)</argsstring>
+        <name>description</name>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Функция для поиска описания марки по файлу с каскадом Хаара </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название файла </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Искомое описание марки </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Создание строковой переменной</para><para>Присвоение переменной значения из файла настроек. При отсутствии данных в файле будет присвоено значение DESCRIPTION_NOT_FOUND</para><para>Возвращение искомого описания марки </para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="331" column="1" bodyfile="src/core/Core.cpp" bodystart="331" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="group__corecpp_1gafe1c5d9570a4ccddf9b5105997e3ddb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void canny</definition>
+        <argsstring>(const Mat &amp;mat_in, Mat &amp;mat_out)</argsstring>
+        <name>canny</name>
+        <param>
+          <type>const Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+<para>Функция для обработки изображений. </para>        </briefdescription>
+        <detaileddescription>
+<para>Поиск границ на изображении. Метод canny.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением для обработки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mat_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с обработанным изображением, которая будет возвращена </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Создаём матрицы <verbatim>gray - матрица с изображением в оттенках серого
+
+edge - матрица с границами
+</verbatim></para><para>Преобразуем изображение в оттенки серого</para><para>Запускаем алгоритм поиска границ</para><para>Возвращаем матрицу с обработанным изображением </para>        </inbodydescription>
+        <location file="src/core/Core.cpp" line="353" column="1" bodyfile="src/core/Core.cpp" bodystart="353" bodyend="369"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

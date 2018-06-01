@@ -1,0 +1,2616 @@
+AutoGen Definitions dummy;
+file = {
+  file-id   = '_core_8cpp';
+  file-name = 'Core.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1gab8ed3baad2f1d9b6b82bf74da9dd3d3a';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'noiseRemoval';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_in';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_out';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-line = '41';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для обработки изображений.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Проверяет, нужно ли убирать шум на фотографиях.
+
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется двусторонний фильтр - bilateralFilter();
+
+Для быстрого режима используется Гауссовый фильтр размытия изображений - GaussianBlur();
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1ga9e277d82296b5ed9eda6266d8dcc24a3';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'lineDetection';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_in';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_out';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-line = '76';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для обработки изображений.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Проверяет, нужно ли находить линии на изображении.
+
+Для обычного режима используется - canny(mat_in, mat_out);
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1ga10a0271bceabc9c1a0d736ab93113212';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'databaseAdd';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-line = '90';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для добавления файла с каскадом в файл с информацией о каскадах
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] filename Название каскада с расширением
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1ga78cdbfbe907847e78cfb387df76d99f9';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'clearning';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'variable';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-line = '132';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для очистки дубликатов в векторе
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] filename Название и путь к файлу
+@param [in] variable Вектор, в котором нужно удалить дубликаты
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1ga76b0b7de3d9fa0de10d66740466ebc14';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'detectionLogo';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_logo';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'cascadefile';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-line = '173';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для поиска объекта на фото
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] mat_logo Матрица с изображением
+@param [in] cascadefile Файл с каскадом
+@return Результат работы. true - объект найден, false - объект не найден
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1gae99907f19e7f09055012f68347a57d05';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'detection';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_logo';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-line = '228';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Модуль поиска объектов на фото
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Поиск объектов на фото
+
+Вывод информации
+
+@param [in] mat_logo Матрица с изображением
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1ga242d25c7a9a1b7212bb890023c8131f5';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'settingsInitialization';
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-line = '273';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Модуль настроек.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+При отсутствии файла настроек, создаёт его
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1gaa85ae460901348b74381239ce0517d5f';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'description';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'value';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-line = '331';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для поиска описания марки по файлу с каскадом Хаара
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] value Название файла
+@return Искомое описание марки
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1gafe1c5d9570a4ccddf9b5105997e3ddb4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'canny';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_in';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_out';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-line = '353';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для обработки изображений.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Поиск границ на изображении. Метод canny.
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/work/git/Yenot/src/core/Core.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 12 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_core_8h';
+  file-name = 'Core.h';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__coreh_1ga438c92819ed0ad4fc2e187ed5f5a2e27';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'noiseRemoval';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const cv::Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_in';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+cv::Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_out';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-line = '35';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для обработки изображений.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Проверяет, нужно ли убирать шум на фотографиях.
+
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется двусторонний фильтр - bilateralFilter();
+
+Для быстрого режима используется Гауссовый фильтр размытия изображений - GaussianBlur();
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__coreh_1gaa7c37c22318217cd913a50800eb336a3';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'lineDetection';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const cv::Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_in';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+cv::Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_out';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-line = '49';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для обработки изображений.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Проверяет, нужно ли находить линии на изображении.
+
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется - canny(mat_in, mat_out);
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__coreh_1ga5a4a30ca6128e13ce1ec6efaa23dd6c7';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'databaseAdd';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-line = '56';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для добавления файла с каскадом в файл с информацией о каскадах
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] filename Название каскада с расширением
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__coreh_1gaebd676a1476aa4d75b280db8ae09d11c';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'clearning';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'variable';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-line = '64';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для очистки дубликатов в векторе
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] filename Название и путь к файлу
+@param [in] variable Вектор, в котором нужно удалить дубликаты
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__coreh_1gad1ae53e92ff9edcee7a9f35d2956ae57';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'detectionLogo';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const cv::Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_logo';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'cascadefile';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-line = '73';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для поиска объекта на фото
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] mat_logo Матрица с изображением
+@param [in] cascadefile Файл с каскадом
+@return Результат работы. true - объект найден, false - объект не найден
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__coreh_1ga0ef39a5ada0921b3abf8906957746b86';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'detection';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const cv::Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_logo';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-line = '84';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Модуль поиска объектов на фото
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Поиск объектов на фото
+
+Вывод информации
+
+@param [in] mat_logo Матрица с изображением
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__coreh_1ga242d25c7a9a1b7212bb890023c8131f5';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'settingsInitialization';
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-line = '95';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Модуль настроек.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+При отсутствии файла настроек, создаёт его
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__coreh_1gaad0390ab7aa8f0cac1eee4492e919baf';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'description';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'value';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-line = '102';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для поиска описания марки по файлу с каскадом Хаара
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] value Название файла
+@return Искомое описание марки
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__coreh_1gaff2d42310702a0aab15af5ad62a59f2b';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'canny';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const cv::Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_in';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+cv::Mat &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'mat_out';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-line = '116';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для обработки изображений.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Поиск границ на изображении. Метод canny.
+
+@param [in] mat_in Матрица с изображением для обработки
+@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/work/git/Yenot/src/core/Core.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 12 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_logger_8cpp';
+  file-name = 'Logger.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__loggercpp_1ga0d6abeb129096910c85ae6cba8bb59cf';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'logger';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'level';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'text';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Logger.cpp';
+      func-mem-desc-line = '29';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Основная функция для логирования
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Логирование возможно с разными уровнями и с выводом времени
+
+@param [in] level Уровень логирования
+@param [in] text Текст для логирования
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/work/git/Yenot/src/core/Logger.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Модуль логирования. Поддерживает логирование со временем и логирование с различными уровнями.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 1 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_logger_8h';
+  file-name = 'Logger.h';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__loggerh_1ga0d6abeb129096910c85ae6cba8bb59cf';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'logger';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'level';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'text';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Logger.h';
+      func-mem-desc-line = '23';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Основная функция для логирования
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Логирование возможно с разными уровнями и с выводом времени
+
+@param [in] level Уровень логирования
+@param [in] text Текст для логирования
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/work/git/Yenot/src/core/Logger.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Заголовочный файл модуля логирования
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 1 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_settings_8cpp';
+  file-name = 'Settings.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingscpp_1ga50535cebf45c8d7cbffd29274699e5f5';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'getSettingsString';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'block';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'value';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'ch_return_default';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-line = '30';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Получить строку из файла настроек
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] block Блок файла настроек
+@param [in] value Искомая переменная
+@param [in] ch_return_default Значение, если переменная не найдена в файле настроек
+@return Строка из файла настроек
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingscpp_1ga0a2fe94de4037eda33c49fe332970891';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'getSettings';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'block';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'value';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'i_return_default';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-line = '43';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Получить число из файла настроек
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] block Блок файла настроек
+@param [in] value Искомая переменная
+@param [in] i_return_default Значение, если переменная не найдена в файле настроек
+@return Число  из файла настроек
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingscpp_1ga463e32ccb37f9478b0e62ee0d21c5999';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'setSettings';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'block';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'value';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'text';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-line = '53';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сохранить переменную в файл настроек
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] block Блок файла настроек
+@param [in] value Переменная
+@param [in] text Значение переменной
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingscpp_1ga2dd1bc039652a0480c444957d416b6a6';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'checkFile';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-line = '62';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Проверка файла
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] filename Название файла
+@return true - файл найден, false - файл не найден.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingscpp_1ga64f8c9899c815dc180b2b564c0d05762';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'checkFile';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-line = '76';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Проверка файла
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] filename Название файла
+@return true - файл найден, false - файл не найден.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingscpp_1ga5ac0cd45ecb6e65e3ace40687d6ee8bc';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'createDir';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'namedir';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-line = '90';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для создания директории
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] namedir Путь и название директории
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingscpp_1ga8f34a2030acfb5567678ab2bba25f3c1';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'createFile';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'file_name';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-line = '111';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для создания файла
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] file_name Путь и название файла
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/work/git/Yenot/src/core/Settings.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Модуль работы с ini файлами
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 20 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_settings_8h';
+  file-name = 'Settings.h';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingsh_1ga3a0f1e87eb01bdd16c4a7e365aa283eb';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'getSettingsString';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'block';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'value';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'ch_return_default';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-line = '24';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Получить строку из файла настроек
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] block Блок файла настроек
+@param [in] value Искомая переменная
+@param [in] ch_return_default Значение, если переменная не найдена в файле настроек
+@return Строка из файла настроек
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingsh_1ga0a2fe94de4037eda33c49fe332970891';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'getSettings';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'block';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'value';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'i_return_default';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-line = '33';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Получить число из файла настроек
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] block Блок файла настроек
+@param [in] value Искомая переменная
+@param [in] i_return_default Значение, если переменная не найдена в файле настроек
+@return Число  из файла настроек
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingsh_1ga463e32ccb37f9478b0e62ee0d21c5999';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'setSettings';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'block';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'value';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'text';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-line = '41';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сохранить переменную в файл настроек
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] block Блок файла настроек
+@param [in] value Переменная
+@param [in] text Значение переменной
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingsh_1ga2dd1bc039652a0480c444957d416b6a6';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'checkFile';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-line = '48';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Проверка файла
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] filename Название файла
+@return true - файл найден, false - файл не найден.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingsh_1ga147bed619c6314e960320c1bcb40ed91';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'checkFile';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-line = '54';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Проверка файла
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] filename Название файла
+@return true - файл найден, false - файл не найден.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingsh_1ga912b67f6f6b05abadd055a379dd84864';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'createDir';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'namedir';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-line = '60';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для создания директории
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] namedir Путь и название директории
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingsh_1ga8f34a2030acfb5567678ab2bba25f3c1';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'createFile';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'file_name';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-line = '66';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Функция для создания файла
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param [in] file_name Путь и название файла
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/work/git/Yenot/src/core/Settings.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Заголовочный файл модуля работы с ini файлами
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 20 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_yenot_8cpp';
+  file-name = 'Yenot.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__yenotcpp_1ga0ddf1224851353fc92bfbff6f499fa97';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argc';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argv';
+        func-mem-param-array = '[]';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.cpp';
+      func-mem-desc-line = '24';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/work/git/Yenot/src/core/Yenot.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Основной задачей нашего проекта является разработка самообучающегося приложения для выделения и распознавания логотипов автомобилей по фото.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 28 Mar 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_yenot_8h';
+  file-name = 'Yenot.h';
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'FILE_NAME_CONFIG';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "./config.ini"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '46';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Файл с настройками
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a6fdda6751433c679b7976669aff150b8';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'FILE_NAME_LOGGER';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Yenot.log"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '49';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Файл с логами
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ae254e34a07790b92c8085e559be10f38';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'FILE_NAME_DATABASE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "database.xml"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '52';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Файл, в котором хранятся
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1af2253e95acd84452c01f492019f814f0';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'NAME_DATABASE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "database"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '55';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1aa5230dc84adb2ca08b014531f83cd3c9';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'EXTENSIONS_DATABASE_MEMBER';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= ".xml"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '60';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Расширение для хранения данных
+
+Поддерживается xml и yaml  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1abf6ea7d0c605b7432754b26575046d32';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'EXTENSIONS_DATABASE_MEMBER_photo';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= ".png"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '65';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ Расширение для хранения фотографий
+
+Поддерживается png jpg jpeg  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a08846c7b8addedd4db68b5cf3721bda1';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'BUFFER_SIZE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 128
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '68';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Стандартный размер буфера
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a2172a9f506029215b790a51a4023e1ac';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'BLOCK_CORE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Core"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '81';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Блок настроек ядра.
+
+ini файл
+@code 
+[Core]
+...
+@endcode  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a254a74c9007fa3d541605ff059a74add';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_FASTMODE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "fMode"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '88';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Быстрый режим.
+
+Название параметра
+
+Немного ускоряет работу программы  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a7afad42fc42152730906aa57ef688c9a';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_FASTMODE_VALUE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "0"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '92';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Быстрый режим.
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1aef79e343f25022f42e779be319348eec';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_FASTMODE_VALUE_INT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '96';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Быстрый режим.
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a01aebb6f9dc4632eabd3ef606f5c75fb';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_NOISE_REDUCTION';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "nReduction"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '103';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Алгоритм очистки изображения от шума.
+
+Название параметра
+
+Замедляет работу программы  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a557e3ad9f3290543eed07f92644f1e33';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_NOISE_REDUCTION_VALUE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "1"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '107';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Алгоритм очистки изображения от шума.
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1aaaef89f90413ee7a52a64d043e068136';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_NOISE_REDUCTION_VALUE_INT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 1
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '111';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Алгоритм очистки изображения от шума.
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a6d4d3d03406bad7102e67e0f0d81edc2';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_LINE_DETECTION';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "lDetection"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '118';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Поиск линий на изображении
+
+Название параметра
+
+Замедляет работу программы  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ae8e9b52935a937554723960a8933df49';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_LINE_DETECTION_VALUE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "1"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '122';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Поиск линий на изображении
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a07cb3f48df07dea977024678d96871f8';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_LINE_DETECTION_VALUE_INT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 1
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '126';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Поиск линий на изображении
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a6a7294929420d7790b72f733c98bcf56';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_DETECTION';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "detection"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '131';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Алгоритм поиска объекта на изображении
+
+Название параметра  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a7d631c2848347b1df2d133225075ced0';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_DETECTION_VALUE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "1"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '135';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Алгоритм поиска объекта на изображении
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a3043cfcdd8cc01993a692d71244049f6';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_DETECTION_VALUE_INT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 1
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '139';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Алгоритм поиска объекта на изображении
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a68308c1bd5623fffdc0992da59a687b3';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_SAVE_PROCESSED_IMAGE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "sImage"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '144';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Нужно ли сохранять изображение после работы алгоритма
+
+Название параметра  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a2e3ae4b394042b1c4cbc4ae56a4af012';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_SAVE_PROCESSED_IMAGE_VALUE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "0"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '148';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Нужно ли сохранять изображение после работы алгоритма
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a58502c9277df0f0d680ddc344e5cea3e';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '152';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Нужно ли сохранять изображение после работы алгоритма
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a6703c9900f97a42185c36c74c4147be3';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_SAVE_PROCESSED_IMAGE_NAME';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "test.png"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '156';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Нужно ли сохранять изображение после работы алгоритма
+
+Название файла  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a353e320b6fbef3dc210fd42ad10ff83c';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_LOG';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "log"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '161';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования
+
+Название параметра  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ab2eea8a981ab7baa7755cc64508671a0';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_LOG_VALUE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "1"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '165';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ab756a3a6fb449bd27e6674cdf402b4d1';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_LOG_VALUE_INT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 1
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '169';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a420dc7e6e8223c7cd5ec7127995d46a0';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_LOG_TIME';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "lTime"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '174';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования. Логирование с выводом времени
+
+Название параметра  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ae00932245c3089d385ef8ee3463df8ca';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_LOG_TIME_VALUE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "1"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '178';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования. Логирование с выводом времени
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1abc8b052e7f097163709fa71c4da4478d';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_LOG_TIME_VALUE_INT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 1
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '182';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования. Логирование с выводом времени
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a347fa05f62ae28e55301db755cf26210';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_TEMPLATE_SIZE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "templatesize"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '187';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль распознования логотипа на фото
+
+Размер шаблона. Название параметра  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1acfc97705229a010013bb0433327bf707';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'TEMPLATE_SIZE_STR';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "20"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '191';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a6c04317b4747d569efcf92266bb1051b';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'TEMPLATE_SIZE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 20
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '195';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a6a132f52235e5b9454c850b4f5343ce3';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SETTINGS_SIZE_PHOTO';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "sizePhoto"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '200';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Размер фото
+
+Размер фото. Название параметра  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a172f1253ba2c664d26caffab97a6253d';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SIZE_PHOTO_STR';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "512"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '204';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a501462c649059c5efe3019823a607670';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SIZE_PHOTO';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 512
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '208';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Модуль логирования
+
+Стандартное значение  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ad85720cad8409ab5ef5cc47afc84645c';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'DIAMETER_EACH_PIXEL';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 9
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '216';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Фильтр.
+
+Диаметр каждого пикселя  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1affd7404833d15c98fbd85249f43f98da';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SIGMA_COLOR';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 75
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '221';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Фильтр.
+
+Цвет  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ad45191f613b95ca3398e6eab5e202406';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'SIGMA_SPACE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 75
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '226';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Фильтр.
+
+Пространство  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1aa753d0e3e99fb4b37b3930996bdfe563';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'KERNEL_X';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 5
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '231';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Фильтр. Размер ядра по x
+
+Число не чётное  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a33a5af73a30e2b5684ee02cc4bf4c374';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'KERNEL_Y';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 5
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '236';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Фильтр. Размер ядра по x
+
+Число не чётное  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a73be0cdcde2af378cd4043f56d4776e2';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'BLOCK_LOGGER';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Logger"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '249';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Блок модуля логирования.
+
+ini файл
+@code 
+[Logger]
+...
+@endcode  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'LOGGER_LEVEL_WARNING';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "WARN"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '252';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Уровень предупреждения
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a08c0d88b074bcba3b7d79d019211a1ac';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'LOGGER_LEVEL_ERROR';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "ERROR"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '255';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Уровень ошибки
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a75d435531623705520a8bd478ae6e3ed';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'LOGGER_LEVEL_MESSAGE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "MSG"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '258';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Уровень сообщение
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ae3c6bd195ef1c9bdcbd48e5b44e17aaf';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'LOGGER_MESSAGE_NOISE_REMOVAL';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Noise filter is disabled."
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '265';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сообщение в лог о том, что фильтр шума отключен
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a3cc24a045a30435ab78be6014ff26a16';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'LOGGER_MESSAGE_LINE_DETECTION';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Line detection is disabled."
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '268';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сообщение в лог о том, что детектор границ отключен
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a23d265aa1784a96ebe7ce76bedd308a6';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'LOGGER_MESSAGE_FAST_MODE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Fast mode enabled."
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '271';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сообщение в лог о том, что быстрый режим включен
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ace626bb1b7477b39cf2864aa0d0924e9';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'LOGGER_MESSAGE_CREATE_DIR';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Folder created."
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '274';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сообщение в лог о том, что папка создана
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ae73ee066dad5c6455cb406ab3aa0473f';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'LOGGER_MESSAGE_CREATE_DIR_NOT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Folder creation failed."
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '277';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сообщение в лог о том, что не удалось создать папку
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a8206ed93e65c9e89395c2823a5f18786';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_INIT';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -100
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '284';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Ошибка инициализации
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a3c1c146cfa3fc68ce0e1950b93270849';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_IMAGE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -200
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '287';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Ошибка связанная с входным изображением. Возможно не достаточно аргументов
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a9b11e5890ebee4b3ace81f058483b7af';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_CLEARNING';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -300
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '290';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Ошибка связанная с очисткой дубликатов
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a787166b1304265d12d6ff10b175a66bc';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_RESIZE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -400
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '293';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Ошибка связанная с изменением размера фотографии
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a0699d20f9a904f7faf8b63cc7fc31c63';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_NOISE_REMOVAL';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -500
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '296';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Ошибка связанная с фильтвом шума
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ab63291c5dfdea5865dc7a32401095215';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_LINE_DETECTION';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -600
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '299';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Ошибка связанная с детектором границ
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1af6dc289a999d852dd3da0134f47cda0f';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_DETECTION';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -700
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '302';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Ошибка
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a34fbed9d403672deb1f0f73139f26ee6';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_DATABASE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= -800
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '305';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Ошибка в модуле распознавания логотипов
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1af958287fcf5b41e632a87bd1a795c74b';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_INIT_DATABASE_ADD';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "The file name can not be empty."
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '308';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сообщение в лог о том, что название файла с каскадом не может быть пустым
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1adec37b1319feb436842ed87c9741df97';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ERROR_DATABASE_ADD_ARGUMENTS';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Few arguments"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '311';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сообщение в лог о том, что не достаточно аргументов для запуска программы
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1abc55bd8e208d61e4d5055b305d998624';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'BLOCK_DESCRIPTION';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "description"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '324';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Блок модуля поиска описания логотипа
+
+ini файл
+@code 
+[description]
+...
+@endcode  
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1a15f1fcc1f696f7e59aaf534d28eeebb9';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'CAR_MODEL_EXAMPLE_DESCRIPTION';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "Brand: \"Example\""
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '327';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Пример описания логотипа
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1ad659efb70fd572b82d45f7ec0d9e7ff3';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'CAR_MODEL_EXAMPLE_FILE';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "example.xml"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '330';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Пример файла с каскадом
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceyenot_1abc01a4ee833e7c083cba257351b21769';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const char
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'DESCRIPTION_NOT_FOUND';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= "The brand name is not set"
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
+      var-mem-desc-line = '333';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Сообщение о том, что для данного логотипа нет описания
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = 'D:/work/git/Yenot/src/core/Yenot.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Заголовочный файл с пространством имён, которое хранит в себе константы.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 3 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */

@@ -1,0 +1,915 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespaceyenot" kind="namespace" language="C++">
+    <compoundname>yenot</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceyenot_1a376e7adfbabcae01c8305ed17d47d576" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::FILE_NAME_CONFIG[]</definition>
+        <argsstring>[]</argsstring>
+        <name>FILE_NAME_CONFIG</name>
+        <initializer>= &quot;./config.ini&quot;</initializer>
+        <briefdescription>
+<para>Файл с настройками </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="46" column="1" bodyfile="src/core/Yenot.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a6fdda6751433c679b7976669aff150b8" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::FILE_NAME_LOGGER[]</definition>
+        <argsstring>[]</argsstring>
+        <name>FILE_NAME_LOGGER</name>
+        <initializer>= &quot;Yenot.log&quot;</initializer>
+        <briefdescription>
+<para>Файл с логами </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="49" column="1" bodyfile="src/core/Yenot.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ae254e34a07790b92c8085e559be10f38" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::FILE_NAME_DATABASE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>FILE_NAME_DATABASE</name>
+        <initializer>= &quot;database.xml&quot;</initializer>
+        <briefdescription>
+<para>Файл, в котором хранятся </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="52" column="1" bodyfile="src/core/Yenot.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1af2253e95acd84452c01f492019f814f0" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::NAME_DATABASE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>NAME_DATABASE</name>
+        <initializer>= &quot;database&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="55" column="1" bodyfile="src/core/Yenot.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1aa5230dc84adb2ca08b014531f83cd3c9" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::EXTENSIONS_DATABASE_MEMBER[]</definition>
+        <argsstring>[]</argsstring>
+        <name>EXTENSIONS_DATABASE_MEMBER</name>
+        <initializer>= &quot;.xml&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Расширение для хранения данных</para><para>Поддерживается xml и yaml </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="60" column="1" bodyfile="src/core/Yenot.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1abf6ea7d0c605b7432754b26575046d32" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::EXTENSIONS_DATABASE_MEMBER_photo[]</definition>
+        <argsstring>[]</argsstring>
+        <name>EXTENSIONS_DATABASE_MEMBER_photo</name>
+        <initializer>= &quot;.png&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Расширение для хранения фотографий</para><para>Поддерживается png jpg jpeg </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="65" column="1" bodyfile="src/core/Yenot.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a08846c7b8addedd4db68b5cf3721bda1" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFFER_SIZE</name>
+        <initializer>= 128</initializer>
+        <briefdescription>
+<para>Стандартный размер буфера </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="68" column="1" bodyfile="src/core/Yenot.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a2172a9f506029215b790a51a4023e1ac" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::BLOCK_CORE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>BLOCK_CORE</name>
+        <initializer>= &quot;Core&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Блок настроек ядра.</para><para>ini файл <programlisting><codeline><highlight class="normal">[Core]</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="81" column="1" bodyfile="src/core/Yenot.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a254a74c9007fa3d541605ff059a74add" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_FASTMODE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_FASTMODE</name>
+        <initializer>= &quot;fMode&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Быстрый режим.</para><para>Название параметра</para><para>Немного ускоряет работу программы </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="88" column="1" bodyfile="src/core/Yenot.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a7afad42fc42152730906aa57ef688c9a" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_FASTMODE_VALUE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_FASTMODE_VALUE</name>
+        <initializer>= &quot;0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Быстрый режим.</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="92" column="1" bodyfile="src/core/Yenot.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1aef79e343f25022f42e779be319348eec" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SETTINGS_FASTMODE_VALUE_INT</definition>
+        <argsstring></argsstring>
+        <name>SETTINGS_FASTMODE_VALUE_INT</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Быстрый режим.</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="96" column="1" bodyfile="src/core/Yenot.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a01aebb6f9dc4632eabd3ef606f5c75fb" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_NOISE_REDUCTION[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_NOISE_REDUCTION</name>
+        <initializer>= &quot;nReduction&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Алгоритм очистки изображения от шума.</para><para>Название параметра</para><para>Замедляет работу программы </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="103" column="1" bodyfile="src/core/Yenot.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a557e3ad9f3290543eed07f92644f1e33" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_NOISE_REDUCTION_VALUE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_NOISE_REDUCTION_VALUE</name>
+        <initializer>= &quot;1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Алгоритм очистки изображения от шума.</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="107" column="1" bodyfile="src/core/Yenot.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1aaaef89f90413ee7a52a64d043e068136" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SETTINGS_NOISE_REDUCTION_VALUE_INT</definition>
+        <argsstring></argsstring>
+        <name>SETTINGS_NOISE_REDUCTION_VALUE_INT</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Алгоритм очистки изображения от шума.</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="111" column="1" bodyfile="src/core/Yenot.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a6d4d3d03406bad7102e67e0f0d81edc2" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_LINE_DETECTION[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_LINE_DETECTION</name>
+        <initializer>= &quot;lDetection&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Поиск линий на изображении</para><para>Название параметра</para><para>Замедляет работу программы </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="118" column="1" bodyfile="src/core/Yenot.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ae8e9b52935a937554723960a8933df49" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_LINE_DETECTION_VALUE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_LINE_DETECTION_VALUE</name>
+        <initializer>= &quot;1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Поиск линий на изображении</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="122" column="1" bodyfile="src/core/Yenot.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a07cb3f48df07dea977024678d96871f8" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SETTINGS_LINE_DETECTION_VALUE_INT</definition>
+        <argsstring></argsstring>
+        <name>SETTINGS_LINE_DETECTION_VALUE_INT</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Поиск линий на изображении</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="126" column="1" bodyfile="src/core/Yenot.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a6a7294929420d7790b72f733c98bcf56" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_DETECTION[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_DETECTION</name>
+        <initializer>= &quot;detection&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Алгоритм поиска объекта на изображении</para><para>Название параметра </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="131" column="1" bodyfile="src/core/Yenot.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a7d631c2848347b1df2d133225075ced0" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_DETECTION_VALUE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_DETECTION_VALUE</name>
+        <initializer>= &quot;1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Алгоритм поиска объекта на изображении</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="135" column="1" bodyfile="src/core/Yenot.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a3043cfcdd8cc01993a692d71244049f6" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SETTINGS_DETECTION_VALUE_INT</definition>
+        <argsstring></argsstring>
+        <name>SETTINGS_DETECTION_VALUE_INT</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Алгоритм поиска объекта на изображении</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="139" column="1" bodyfile="src/core/Yenot.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a68308c1bd5623fffdc0992da59a687b3" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_SAVE_PROCESSED_IMAGE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_SAVE_PROCESSED_IMAGE</name>
+        <initializer>= &quot;sImage&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Нужно ли сохранять изображение после работы алгоритма</para><para>Название параметра </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="144" column="1" bodyfile="src/core/Yenot.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a2e3ae4b394042b1c4cbc4ae56a4af012" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_SAVE_PROCESSED_IMAGE_VALUE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_SAVE_PROCESSED_IMAGE_VALUE</name>
+        <initializer>= &quot;0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Нужно ли сохранять изображение после работы алгоритма</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="148" column="1" bodyfile="src/core/Yenot.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a58502c9277df0f0d680ddc344e5cea3e" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT</definition>
+        <argsstring></argsstring>
+        <name>SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Нужно ли сохранять изображение после работы алгоритма</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="152" column="1" bodyfile="src/core/Yenot.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a6703c9900f97a42185c36c74c4147be3" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_SAVE_PROCESSED_IMAGE_NAME[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_SAVE_PROCESSED_IMAGE_NAME</name>
+        <initializer>= &quot;test.png&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Нужно ли сохранять изображение после работы алгоритма</para><para>Название файла </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="156" column="1" bodyfile="src/core/Yenot.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a353e320b6fbef3dc210fd42ad10ff83c" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_LOG[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_LOG</name>
+        <initializer>= &quot;log&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования</para><para>Название параметра </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="161" column="1" bodyfile="src/core/Yenot.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ab2eea8a981ab7baa7755cc64508671a0" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_LOG_VALUE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_LOG_VALUE</name>
+        <initializer>= &quot;1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="165" column="1" bodyfile="src/core/Yenot.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ab756a3a6fb449bd27e6674cdf402b4d1" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SETTINGS_LOG_VALUE_INT</definition>
+        <argsstring></argsstring>
+        <name>SETTINGS_LOG_VALUE_INT</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="169" column="1" bodyfile="src/core/Yenot.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a420dc7e6e8223c7cd5ec7127995d46a0" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_LOG_TIME[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_LOG_TIME</name>
+        <initializer>= &quot;lTime&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования. Логирование с выводом времени</para><para>Название параметра </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="174" column="1" bodyfile="src/core/Yenot.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ae00932245c3089d385ef8ee3463df8ca" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_LOG_TIME_VALUE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_LOG_TIME_VALUE</name>
+        <initializer>= &quot;1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования. Логирование с выводом времени</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="178" column="1" bodyfile="src/core/Yenot.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1abc8b052e7f097163709fa71c4da4478d" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SETTINGS_LOG_TIME_VALUE_INT</definition>
+        <argsstring></argsstring>
+        <name>SETTINGS_LOG_TIME_VALUE_INT</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования. Логирование с выводом времени</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="182" column="1" bodyfile="src/core/Yenot.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a347fa05f62ae28e55301db755cf26210" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_TEMPLATE_SIZE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_TEMPLATE_SIZE</name>
+        <initializer>= &quot;templatesize&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль распознования логотипа на фото</para><para>Размер шаблона. Название параметра </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="187" column="1" bodyfile="src/core/Yenot.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1acfc97705229a010013bb0433327bf707" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::TEMPLATE_SIZE_STR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>TEMPLATE_SIZE_STR</name>
+        <initializer>= &quot;20&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="191" column="1" bodyfile="src/core/Yenot.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a6c04317b4747d569efcf92266bb1051b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::TEMPLATE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>TEMPLATE_SIZE</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="195" column="1" bodyfile="src/core/Yenot.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a6a132f52235e5b9454c850b4f5343ce3" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SETTINGS_SIZE_PHOTO[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SETTINGS_SIZE_PHOTO</name>
+        <initializer>= &quot;sizePhoto&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Размер фото</para><para>Размер фото. Название параметра </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="200" column="1" bodyfile="src/core/Yenot.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a172f1253ba2c664d26caffab97a6253d" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::SIZE_PHOTO_STR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>SIZE_PHOTO_STR</name>
+        <initializer>= &quot;512&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="204" column="1" bodyfile="src/core/Yenot.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a501462c649059c5efe3019823a607670" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SIZE_PHOTO</definition>
+        <argsstring></argsstring>
+        <name>SIZE_PHOTO</name>
+        <initializer>= 512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль логирования</para><para>Стандартное значение </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="208" column="1" bodyfile="src/core/Yenot.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ad85720cad8409ab5ef5cc47afc84645c" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::DIAMETER_EACH_PIXEL</definition>
+        <argsstring></argsstring>
+        <name>DIAMETER_EACH_PIXEL</name>
+        <initializer>= 9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Фильтр.</para><para>Диаметр каждого пикселя </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="216" column="1" bodyfile="src/core/Yenot.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1affd7404833d15c98fbd85249f43f98da" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SIGMA_COLOR</definition>
+        <argsstring></argsstring>
+        <name>SIGMA_COLOR</name>
+        <initializer>= 75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Фильтр.</para><para>Цвет </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="221" column="1" bodyfile="src/core/Yenot.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ad45191f613b95ca3398e6eab5e202406" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::SIGMA_SPACE</definition>
+        <argsstring></argsstring>
+        <name>SIGMA_SPACE</name>
+        <initializer>= 75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Фильтр.</para><para>Пространство </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="226" column="1" bodyfile="src/core/Yenot.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1aa753d0e3e99fb4b37b3930996bdfe563" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::KERNEL_X</definition>
+        <argsstring></argsstring>
+        <name>KERNEL_X</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Фильтр. Размер ядра по x</para><para>Число не чётное </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="231" column="1" bodyfile="src/core/Yenot.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a33a5af73a30e2b5684ee02cc4bf4c374" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::KERNEL_Y</definition>
+        <argsstring></argsstring>
+        <name>KERNEL_Y</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Фильтр. Размер ядра по x</para><para>Число не чётное </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="236" column="1" bodyfile="src/core/Yenot.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a73be0cdcde2af378cd4043f56d4776e2" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::BLOCK_LOGGER[]</definition>
+        <argsstring>[]</argsstring>
+        <name>BLOCK_LOGGER</name>
+        <initializer>= &quot;Logger&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Блок модуля логирования.</para><para>ini файл <programlisting><codeline><highlight class="normal">[Logger]</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="249" column="1" bodyfile="src/core/Yenot.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a1133c576c0c3eebe5aa6c43529a56f21" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::LOGGER_LEVEL_WARNING[]</definition>
+        <argsstring>[]</argsstring>
+        <name>LOGGER_LEVEL_WARNING</name>
+        <initializer>= &quot;WARN&quot;</initializer>
+        <briefdescription>
+<para>Уровень предупреждения </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="252" column="1" bodyfile="src/core/Yenot.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a08c0d88b074bcba3b7d79d019211a1ac" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::LOGGER_LEVEL_ERROR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>LOGGER_LEVEL_ERROR</name>
+        <initializer>= &quot;ERROR&quot;</initializer>
+        <briefdescription>
+<para>Уровень ошибки </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="255" column="1" bodyfile="src/core/Yenot.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a75d435531623705520a8bd478ae6e3ed" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::LOGGER_LEVEL_MESSAGE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>LOGGER_LEVEL_MESSAGE</name>
+        <initializer>= &quot;MSG&quot;</initializer>
+        <briefdescription>
+<para>Уровень сообщение </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="258" column="1" bodyfile="src/core/Yenot.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ae3c6bd195ef1c9bdcbd48e5b44e17aaf" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::LOGGER_MESSAGE_NOISE_REMOVAL[]</definition>
+        <argsstring>[]</argsstring>
+        <name>LOGGER_MESSAGE_NOISE_REMOVAL</name>
+        <initializer>= &quot;Noise filter is disabled.&quot;</initializer>
+        <briefdescription>
+<para>Сообщение в лог о том, что фильтр шума отключен </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="265" column="1" bodyfile="src/core/Yenot.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a3cc24a045a30435ab78be6014ff26a16" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::LOGGER_MESSAGE_LINE_DETECTION[]</definition>
+        <argsstring>[]</argsstring>
+        <name>LOGGER_MESSAGE_LINE_DETECTION</name>
+        <initializer>= &quot;Line <ref refid="group__coreh_1ga0ef39a5ada0921b3abf8906957746b86" kindref="member">detection</ref> is disabled.&quot;</initializer>
+        <briefdescription>
+<para>Сообщение в лог о том, что детектор границ отключен </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="268" column="1" bodyfile="src/core/Yenot.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a23d265aa1784a96ebe7ce76bedd308a6" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::LOGGER_MESSAGE_FAST_MODE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>LOGGER_MESSAGE_FAST_MODE</name>
+        <initializer>= &quot;Fast mode enabled.&quot;</initializer>
+        <briefdescription>
+<para>Сообщение в лог о том, что быстрый режим включен </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="271" column="1" bodyfile="src/core/Yenot.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ace626bb1b7477b39cf2864aa0d0924e9" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::LOGGER_MESSAGE_CREATE_DIR[]</definition>
+        <argsstring>[]</argsstring>
+        <name>LOGGER_MESSAGE_CREATE_DIR</name>
+        <initializer>= &quot;Folder created.&quot;</initializer>
+        <briefdescription>
+<para>Сообщение в лог о том, что папка создана </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="274" column="1" bodyfile="src/core/Yenot.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ae73ee066dad5c6455cb406ab3aa0473f" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::LOGGER_MESSAGE_CREATE_DIR_NOT[]</definition>
+        <argsstring>[]</argsstring>
+        <name>LOGGER_MESSAGE_CREATE_DIR_NOT</name>
+        <initializer>= &quot;Folder creation failed.&quot;</initializer>
+        <briefdescription>
+<para>Сообщение в лог о том, что не удалось создать папку </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="277" column="1" bodyfile="src/core/Yenot.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a8206ed93e65c9e89395c2823a5f18786" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::ERROR_INIT</definition>
+        <argsstring></argsstring>
+        <name>ERROR_INIT</name>
+        <initializer>= -100</initializer>
+        <briefdescription>
+<para>Ошибка инициализации </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="284" column="1" bodyfile="src/core/Yenot.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a3c1c146cfa3fc68ce0e1950b93270849" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::ERROR_IMAGE</definition>
+        <argsstring></argsstring>
+        <name>ERROR_IMAGE</name>
+        <initializer>= -200</initializer>
+        <briefdescription>
+<para>Ошибка связанная с входным изображением. Возможно не достаточно аргументов </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="287" column="1" bodyfile="src/core/Yenot.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a9b11e5890ebee4b3ace81f058483b7af" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::ERROR_CLEARNING</definition>
+        <argsstring></argsstring>
+        <name>ERROR_CLEARNING</name>
+        <initializer>= -300</initializer>
+        <briefdescription>
+<para>Ошибка связанная с очисткой дубликатов </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="290" column="1" bodyfile="src/core/Yenot.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a787166b1304265d12d6ff10b175a66bc" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::ERROR_RESIZE</definition>
+        <argsstring></argsstring>
+        <name>ERROR_RESIZE</name>
+        <initializer>= -400</initializer>
+        <briefdescription>
+<para>Ошибка связанная с изменением размера фотографии </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="293" column="1" bodyfile="src/core/Yenot.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a0699d20f9a904f7faf8b63cc7fc31c63" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::ERROR_NOISE_REMOVAL</definition>
+        <argsstring></argsstring>
+        <name>ERROR_NOISE_REMOVAL</name>
+        <initializer>= -500</initializer>
+        <briefdescription>
+<para>Ошибка связанная с фильтвом шума </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="296" column="1" bodyfile="src/core/Yenot.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ab63291c5dfdea5865dc7a32401095215" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::ERROR_LINE_DETECTION</definition>
+        <argsstring></argsstring>
+        <name>ERROR_LINE_DETECTION</name>
+        <initializer>= -600</initializer>
+        <briefdescription>
+<para>Ошибка связанная с детектором границ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="299" column="1" bodyfile="src/core/Yenot.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1af6dc289a999d852dd3da0134f47cda0f" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::ERROR_DETECTION</definition>
+        <argsstring></argsstring>
+        <name>ERROR_DETECTION</name>
+        <initializer>= -700</initializer>
+        <briefdescription>
+<para>Ошибка </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="302" column="1" bodyfile="src/core/Yenot.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a34fbed9d403672deb1f0f73139f26ee6" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int yenot::ERROR_DATABASE</definition>
+        <argsstring></argsstring>
+        <name>ERROR_DATABASE</name>
+        <initializer>= -800</initializer>
+        <briefdescription>
+<para>Ошибка в модуле распознавания логотипов </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="305" column="1" bodyfile="src/core/Yenot.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1af958287fcf5b41e632a87bd1a795c74b" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::ERROR_INIT_DATABASE_ADD[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ERROR_INIT_DATABASE_ADD</name>
+        <initializer>= &quot;The file name can not be empty.&quot;</initializer>
+        <briefdescription>
+<para>Сообщение в лог о том, что название файла с каскадом не может быть пустым </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="308" column="1" bodyfile="src/core/Yenot.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1adec37b1319feb436842ed87c9741df97" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::ERROR_DATABASE_ADD_ARGUMENTS[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ERROR_DATABASE_ADD_ARGUMENTS</name>
+        <initializer>= &quot;Few arguments&quot;</initializer>
+        <briefdescription>
+<para>Сообщение в лог о том, что не достаточно аргументов для запуска программы </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="311" column="1" bodyfile="src/core/Yenot.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1abc55bd8e208d61e4d5055b305d998624" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::BLOCK_DESCRIPTION[]</definition>
+        <argsstring>[]</argsstring>
+        <name>BLOCK_DESCRIPTION</name>
+        <initializer>= &quot;description&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Блок модуля поиска описания логотипа</para><para>ini файл <programlisting><codeline><highlight class="normal">[description]</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="324" column="1" bodyfile="src/core/Yenot.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1a15f1fcc1f696f7e59aaf534d28eeebb9" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::CAR_MODEL_EXAMPLE_DESCRIPTION[]</definition>
+        <argsstring>[]</argsstring>
+        <name>CAR_MODEL_EXAMPLE_DESCRIPTION</name>
+        <initializer>= &quot;Brand: \&quot;Example\&quot;&quot;</initializer>
+        <briefdescription>
+<para>Пример описания логотипа </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="327" column="1" bodyfile="src/core/Yenot.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1ad659efb70fd572b82d45f7ec0d9e7ff3" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::CAR_MODEL_EXAMPLE_FILE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>CAR_MODEL_EXAMPLE_FILE</name>
+        <initializer>= &quot;example.xml&quot;</initializer>
+        <briefdescription>
+<para>Пример файла с каскадом </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="330" column="1" bodyfile="src/core/Yenot.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceyenot_1abc01a4ee833e7c083cba257351b21769" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char yenot::DESCRIPTION_NOT_FOUND[]</definition>
+        <argsstring>[]</argsstring>
+        <name>DESCRIPTION_NOT_FOUND</name>
+        <initializer>= &quot;The brand name is not set&quot;</initializer>
+        <briefdescription>
+<para>Сообщение о том, что для данного логотипа нет описания </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Yenot.h" line="333" column="1" bodyfile="src/core/Yenot.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Пространство имён с константами </para>    </briefdescription>
+    <detaileddescription>
+<para>General - Основные константы</para><para>Core - Ядро</para><para>Filters - Фильтры</para><para>Logger - Модуль логирования</para><para>Log messages - Сообщения для вывода в логами</para><para>Errors - Ошибки</para><para>Car model - Пример </para>    </detaileddescription>
+    <location file="src/core/Yenot.h" line="40" column="1"/>
+  </compounddef>
+</doxygen>

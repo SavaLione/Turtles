@@ -1,0 +1,260 @@
+.TH "Yenot.h" 3 "Сб 2 Июн 2018" "Yenot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Yenot.h \- Заголовочный файл с пространством имён, которое хранит в себе константы\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Пространства имен"
+
+.in +1c
+.ti -1c
+.RI " \fByenot\fP"
+.br
+.RI "Пространство имён с константами "
+.in -1c
+.SS "Переменные"
+
+.in +1c
+.ti -1c
+.RI "const char \fByenot::FILE_NAME_CONFIG\fP [] = '\&./config\&.ini'"
+.br
+.RI "Файл с настройками "
+.ti -1c
+.RI "const char \fByenot::FILE_NAME_LOGGER\fP [] = 'Yenot\&.log'"
+.br
+.RI "Файл с логами "
+.ti -1c
+.RI "const char \fByenot::FILE_NAME_DATABASE\fP [] = 'database\&.xml'"
+.br
+.RI "Файл, в котором хранятся "
+.ti -1c
+.RI "const char \fByenot::NAME_DATABASE\fP [] = 'database'"
+.br
+.ti -1c
+.RI "const char \fByenot::EXTENSIONS_DATABASE_MEMBER\fP [] = '\&.xml'"
+.br
+.ti -1c
+.RI "const char \fByenot::EXTENSIONS_DATABASE_MEMBER_photo\fP [] = '\&.png'"
+.br
+.ti -1c
+.RI "const int \fByenot::BUFFER_SIZE\fP = 128"
+.br
+.RI "Стандартный размер буфера "
+.ti -1c
+.RI "const char \fByenot::BLOCK_CORE\fP [] = 'Core'"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_FASTMODE\fP [] = 'fMode'"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_FASTMODE_VALUE\fP [] = '0'"
+.br
+.ti -1c
+.RI "const int \fByenot::SETTINGS_FASTMODE_VALUE_INT\fP = 0"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_NOISE_REDUCTION\fP [] = 'nReduction'"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_NOISE_REDUCTION_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fByenot::SETTINGS_NOISE_REDUCTION_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_LINE_DETECTION\fP [] = 'lDetection'"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_LINE_DETECTION_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fByenot::SETTINGS_LINE_DETECTION_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_DETECTION\fP [] = 'detection'"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_DETECTION_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fByenot::SETTINGS_DETECTION_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_SAVE_PROCESSED_IMAGE\fP [] = 'sImage'"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_SAVE_PROCESSED_IMAGE_VALUE\fP [] = '0'"
+.br
+.ti -1c
+.RI "const int \fByenot::SETTINGS_SAVE_PROCESSED_IMAGE_VALUE_INT\fP = 0"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_SAVE_PROCESSED_IMAGE_NAME\fP [] = 'test\&.png'"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_LOG\fP [] = 'log'"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_LOG_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fByenot::SETTINGS_LOG_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_LOG_TIME\fP [] = 'lTime'"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_LOG_TIME_VALUE\fP [] = '1'"
+.br
+.ti -1c
+.RI "const int \fByenot::SETTINGS_LOG_TIME_VALUE_INT\fP = 1"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_TEMPLATE_SIZE\fP [] = 'templatesize'"
+.br
+.ti -1c
+.RI "const char \fByenot::TEMPLATE_SIZE_STR\fP [] = '20'"
+.br
+.ti -1c
+.RI "const int \fByenot::TEMPLATE_SIZE\fP = 20"
+.br
+.ti -1c
+.RI "const char \fByenot::SETTINGS_SIZE_PHOTO\fP [] = 'sizePhoto'"
+.br
+.ti -1c
+.RI "const char \fByenot::SIZE_PHOTO_STR\fP [] = '512'"
+.br
+.ti -1c
+.RI "const int \fByenot::SIZE_PHOTO\fP = 512"
+.br
+.ti -1c
+.RI "const int \fByenot::DIAMETER_EACH_PIXEL\fP = 9"
+.br
+.ti -1c
+.RI "const int \fByenot::SIGMA_COLOR\fP = 75"
+.br
+.ti -1c
+.RI "const int \fByenot::SIGMA_SPACE\fP = 75"
+.br
+.ti -1c
+.RI "const int \fByenot::KERNEL_X\fP = 5"
+.br
+.ti -1c
+.RI "const int \fByenot::KERNEL_Y\fP = 5"
+.br
+.ti -1c
+.RI "const char \fByenot::BLOCK_LOGGER\fP [] = 'Logger'"
+.br
+.ti -1c
+.RI "const char \fByenot::LOGGER_LEVEL_WARNING\fP [] = 'WARN'"
+.br
+.RI "Уровень предупреждения "
+.ti -1c
+.RI "const char \fByenot::LOGGER_LEVEL_ERROR\fP [] = 'ERROR'"
+.br
+.RI "Уровень ошибки "
+.ti -1c
+.RI "const char \fByenot::LOGGER_LEVEL_MESSAGE\fP [] = 'MSG'"
+.br
+.RI "Уровень сообщение "
+.ti -1c
+.RI "const char \fByenot::LOGGER_MESSAGE_NOISE_REMOVAL\fP [] = 'Noise filter is disabled\&.'"
+.br
+.RI "Сообщение в лог о том, что фильтр шума отключен "
+.ti -1c
+.RI "const char \fByenot::LOGGER_MESSAGE_LINE_DETECTION\fP [] = 'Line \fBdetection\fP is disabled\&.'"
+.br
+.RI "Сообщение в лог о том, что детектор границ отключен "
+.ti -1c
+.RI "const char \fByenot::LOGGER_MESSAGE_FAST_MODE\fP [] = 'Fast mode enabled\&.'"
+.br
+.RI "Сообщение в лог о том, что быстрый режим включен "
+.ti -1c
+.RI "const char \fByenot::LOGGER_MESSAGE_CREATE_DIR\fP [] = 'Folder created\&.'"
+.br
+.RI "Сообщение в лог о том, что папка создана "
+.ti -1c
+.RI "const char \fByenot::LOGGER_MESSAGE_CREATE_DIR_NOT\fP [] = 'Folder creation failed\&.'"
+.br
+.RI "Сообщение в лог о том, что не удалось создать папку "
+.ti -1c
+.RI "const int \fByenot::ERROR_INIT\fP = \-100"
+.br
+.RI "Ошибка инициализации "
+.ti -1c
+.RI "const int \fByenot::ERROR_IMAGE\fP = \-200"
+.br
+.RI "Ошибка связанная с входным изображением\&. Возможно не достаточно аргументов "
+.ti -1c
+.RI "const int \fByenot::ERROR_CLEARNING\fP = \-300"
+.br
+.RI "Ошибка связанная с очисткой дубликатов "
+.ti -1c
+.RI "const int \fByenot::ERROR_RESIZE\fP = \-400"
+.br
+.RI "Ошибка связанная с изменением размера фотографии "
+.ti -1c
+.RI "const int \fByenot::ERROR_NOISE_REMOVAL\fP = \-500"
+.br
+.RI "Ошибка связанная с фильтвом шума "
+.ti -1c
+.RI "const int \fByenot::ERROR_LINE_DETECTION\fP = \-600"
+.br
+.RI "Ошибка связанная с детектором границ "
+.ti -1c
+.RI "const int \fByenot::ERROR_DETECTION\fP = \-700"
+.br
+.RI "Ошибка "
+.ti -1c
+.RI "const int \fByenot::ERROR_DATABASE\fP = \-800"
+.br
+.RI "Ошибка в модуле распознавания логотипов "
+.ti -1c
+.RI "const char \fByenot::ERROR_INIT_DATABASE_ADD\fP [] = 'The file name can not be empty\&.'"
+.br
+.RI "Сообщение в лог о том, что название файла с каскадом не может быть пустым "
+.ti -1c
+.RI "const char \fByenot::ERROR_DATABASE_ADD_ARGUMENTS\fP [] = 'Few arguments'"
+.br
+.RI "Сообщение в лог о том, что не достаточно аргументов для запуска программы "
+.ti -1c
+.RI "const char \fByenot::BLOCK_DESCRIPTION\fP [] = 'description'"
+.br
+.ti -1c
+.RI "const char \fByenot::CAR_MODEL_EXAMPLE_DESCRIPTION\fP [] = 'Brand: \\'Example\\''"
+.br
+.RI "Пример описания логотипа "
+.ti -1c
+.RI "const char \fByenot::CAR_MODEL_EXAMPLE_FILE\fP [] = 'example\&.xml'"
+.br
+.RI "Пример файла с каскадом "
+.ti -1c
+.RI "const char \fByenot::DESCRIPTION_NOT_FOUND\fP [] = 'The brand name is not set'"
+.br
+.RI "Сообщение о том, что для данного логотипа нет описания "
+.in -1c
+.SH "Подробное описание"
+.PP 
+Заголовочный файл с пространством имён, которое хранит в себе константы\&. 
+
+
+.PP
+\fBАвтор:\fP
+.RS 4
+SavaLione 
+.RE
+.PP
+\fBДата:\fP
+.RS 4
+3 Apr 2018 
+.RE
+.PP
+
+.PP
+См\&. определение в файле \fBYenot\&.h\fP
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Yenot из исходного текста\&.

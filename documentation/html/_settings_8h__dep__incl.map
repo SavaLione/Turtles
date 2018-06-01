@@ -1,0 +1,6 @@
+<map id="Settings.h" name="Settings.h">
+<area shape="rect" id="node2" href="$_core_8cpp.html" title="Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля ..." alt="" coords="5,80,80,107"/>
+<area shape="rect" id="node3" href="$_logger_8cpp.html" title="Модуль логирования. Поддерживает логирование со временем и логирование с различными уровнями..." alt="" coords="105,80,191,107"/>
+<area shape="rect" id="node4" href="$_settings_8cpp.html" title="Модуль работы с ini файлами " alt="" coords="215,80,310,107"/>
+<area shape="rect" id="node5" href="$_yenot_8cpp.html" title="Основной задачей нашего проекта является разработка самообучающегося приложения для выделения и распо..." alt="" coords="334,80,415,107"/>
+</map>

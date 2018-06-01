@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__coreh" kind="group">
+    <compoundname>coreh</compoundname>
+    <title>Core.h</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__coreh_1ga438c92819ed0ad4fc2e187ed5f5a2e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void noiseRemoval</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>noiseRemoval</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+<para>Функция для обработки изображений. </para>        </briefdescription>
+        <detaileddescription>
+<para>Проверяет, нужно ли убирать шум на фотографиях.</para><para>Также проверяем режим обработки изображений. Быстрый или нет.</para><para>Для обычного режима используется двусторонний фильтр - bilateralFilter();</para><para>Для быстрого режима используется Гауссовый фильтр размытия изображений - GaussianBlur();</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением для обработки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mat_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с обработанным изображением, которая будет возвращена </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__coreh_1gaa7c37c22318217cd913a50800eb336a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lineDetection</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>lineDetection</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+<para>Функция для обработки изображений. </para>        </briefdescription>
+        <detaileddescription>
+<para>Проверяет, нужно ли находить линии на изображении.</para><para>Также проверяем режим обработки изображений. Быстрый или нет.</para><para>Для обычного режима используется - canny(mat_in, mat_out);</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением для обработки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mat_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с обработанным изображением, которая будет возвращена </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__coreh_1ga5a4a30ca6128e13ce1ec6efaa23dd6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void databaseAdd</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>databaseAdd</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Функция для добавления файла с каскадом в файл с информацией о каскадах </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название каскада с расширением </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__coreh_1gaebd676a1476aa4d75b280db8ae09d11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clearning</definition>
+        <argsstring>(std::string filename, std::string variable)</argsstring>
+        <name>clearning</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+<para>Функция для очистки дубликатов в векторе </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название и путь к файлу </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Вектор, в котором нужно удалить дубликаты </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__coreh_1gad1ae53e92ff9edcee7a9f35d2956ae57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detectionLogo</definition>
+        <argsstring>(const cv::Mat &amp;mat_logo, std::string cascadefile)</argsstring>
+        <name>detectionLogo</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_logo</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>cascadefile</declname>
+        </param>
+        <briefdescription>
+<para>Функция для поиска объекта на фото </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_logo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cascadefile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Файл с каскадом </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Результат работы. true - объект найден, false - объект не найден </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__coreh_1ga0ef39a5ada0921b3abf8906957746b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void detection</definition>
+        <argsstring>(const cv::Mat &amp;mat_logo)</argsstring>
+        <name>detection</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_logo</declname>
+        </param>
+        <briefdescription>
+<para>Модуль поиска объектов на фото </para>        </briefdescription>
+        <detaileddescription>
+<para>Поиск объектов на фото</para><para>Вывод информации</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_logo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__coreh_1ga242d25c7a9a1b7212bb890023c8131f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void settingsInitialization</definition>
+        <argsstring>()</argsstring>
+        <name>settingsInitialization</name>
+        <briefdescription>
+<para>Модуль настроек. </para>        </briefdescription>
+        <detaileddescription>
+<para>При отсутствии файла настроек, создаёт его </para>        </detaileddescription>
+        <inbodydescription>
+<para>Если папка NAME_DATABASE не найдена и получилось её создать <verbatim>Вывод в лог, что папка создана
+</verbatim></para><para>иначе <verbatim>Вывод в лог информации, что папку не получилось создать (возможно не достаточно прав или она уже создана)
+</verbatim></para><para>Проверка наличия файла настроек FILE_NAME_CONFIG</para><para>Если файла нет, то создать его <verbatim>Добавить в файл параметры
+</verbatim></para><para>Проверка наличия файла с информацией о каскадах FILE_NAME_DATABASE</para><para>Если файла нет, то создать его</para><para>Если нет файла CAR_MODEL_EXAMPLE_FILE, то добавить в файл с информацией о каскадах, строку с файлом. Используется для примера </para>        </inbodydescription>
+        <location file="src/core/Core.h" line="95" column="1" bodyfile="src/core/Core.cpp" bodystart="273" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="group__coreh_1gaad0390ab7aa8f0cac1eee4492e919baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string description</definition>
+        <argsstring>(std::string value)</argsstring>
+        <name>description</name>
+        <param>
+          <type>std::string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Функция для поиска описания марки по файлу с каскадом Хаара </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название файла </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Искомое описание марки </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__coreh_1gaff2d42310702a0aab15af5ad62a59f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void canny</definition>
+        <argsstring>(const cv::Mat &amp;mat_in, cv::Mat &amp;mat_out)</argsstring>
+        <name>canny</name>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>mat_in</declname>
+        </param>
+        <param>
+          <type>cv::Mat &amp;</type>
+          <declname>mat_out</declname>
+        </param>
+        <briefdescription>
+<para>Функция для обработки изображений. </para>        </briefdescription>
+        <detaileddescription>
+<para>Поиск границ на изображении. Метод canny.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mat_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с изображением для обработки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mat_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица с обработанным изображением, которая будет возвращена </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Core.h" line="116" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

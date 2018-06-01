@@ -13,10 +13,6 @@
 	@brief Работа с изображениями, xml(yaml) файлами
 */
 /**
-	@defgroup client Client
-	@brief Клиент. Более удобное использование программы
-*/
-/**
 	@defgroup yenoth Yenot.h
 	@ingroup yenot
 	@{

@@ -1,0 +1,56 @@
+\hypertarget{_core_8h}{}\section{Файл Core.\+h}
+\label{_core_8h}\index{Core.\+h@{Core.\+h}}
+
+
+Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля  
+
+
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+Граф включаемых заголовочных файлов для Core.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{_core_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{_core_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__coreh_ga438c92819ed0ad4fc2e187ed5f5a2e27}{noise\+Removal}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_gaa7c37c22318217cd913a50800eb336a3}{line\+Detection}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_ga5a4a30ca6128e13ce1ec6efaa23dd6c7}{database\+Add}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Функция для добавления файла с каскадом в файл с информацией о каскадах \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_gaebd676a1476aa4d75b280db8ae09d11c}{clearning}} (std\+::string filename, std\+::string variable)
+\begin{DoxyCompactList}\small\item\em Функция для очистки дубликатов в векторе \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__coreh_gad1ae53e92ff9edcee7a9f35d2956ae57}{detection\+Logo}} (const cv\+::\+Mat \&mat\+\_\+logo, std\+::string cascadefile)
+\begin{DoxyCompactList}\small\item\em Функция для поиска объекта на фото \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_ga0ef39a5ada0921b3abf8906957746b86}{detection}} (const cv\+::\+Mat \&mat\+\_\+logo)
+\begin{DoxyCompactList}\small\item\em Модуль поиска объектов на фото \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_ga242d25c7a9a1b7212bb890023c8131f5}{settings\+Initialization}} ()
+\begin{DoxyCompactList}\small\item\em Модуль настроек. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{group__coreh_gaad0390ab7aa8f0cac1eee4492e919baf}{description}} (std\+::string value)
+\begin{DoxyCompactList}\small\item\em Функция для поиска описания марки по файлу с каскадом Хаара \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_gaff2d42310702a0aab15af5ad62a59f2b}{canny}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля 
+
+\begin{DoxyAuthor}{Автор}
+Sava\+Lione 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Дата}
+12 Apr 2018 
+\end{DoxyDate}

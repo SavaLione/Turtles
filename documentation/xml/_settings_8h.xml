@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_settings_8h" kind="file" language="C++">
+    <compoundname>Settings.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="_core_8cpp" local="yes">Core.cpp</includedby>
+    <includedby refid="_logger_8cpp" local="yes">Logger.cpp</includedby>
+    <includedby refid="_settings_8cpp" local="yes">Settings.cpp</includedby>
+    <includedby refid="_yenot_8cpp" local="yes">Yenot.cpp</includedby>
+    <incdepgraph>
+      <node id="37">
+        <label>string</label>
+      </node>
+      <node id="36">
+        <label>Settings.h</label>
+        <link refid="_settings_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="41">
+        <label>Settings.cpp</label>
+        <link refid="_settings_8cpp"/>
+      </node>
+      <node id="39">
+        <label>Core.cpp</label>
+        <link refid="_core_8cpp"/>
+      </node>
+      <node id="40">
+        <label>Logger.cpp</label>
+        <link refid="_logger_8cpp"/>
+      </node>
+      <node id="38">
+        <label>Settings.h</label>
+        <link refid="_settings_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>Yenot.cpp</label>
+        <link refid="_yenot_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__settingsh_1ga3a0f1e87eb01bdd16c4a7e365aa283eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getSettingsString</definition>
+        <argsstring>(char *block, char *value, char *ch_return_default)</argsstring>
+        <name>getSettingsString</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>ch_return_default</declname>
+        </param>
+        <briefdescription>
+<para>Получить строку из файла настроек </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Блок файла настроек </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Искомая переменная </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ch_return_default</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение, если переменная не найдена в файле настроек </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Строка из файла настроек </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.h" line="24" column="1" bodyfile="src/core/Settings.cpp" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingsh_1ga0a2fe94de4037eda33c49fe332970891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getSettings</definition>
+        <argsstring>(char *block, char *value, int i_return_default)</argsstring>
+        <name>getSettings</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i_return_default</declname>
+        </param>
+        <briefdescription>
+<para>Получить число из файла настроек </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Блок файла настроек </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Искомая переменная </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">i_return_default</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение, если переменная не найдена в файле настроек </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Число из файла настроек </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.h" line="33" column="1" bodyfile="src/core/Settings.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingsh_1ga463e32ccb37f9478b0e62ee0d21c5999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setSettings</definition>
+        <argsstring>(char *block, char *value, char *text)</argsstring>
+        <name>setSettings</name>
+        <param>
+          <type>char *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Сохранить переменную в файл настроек </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Блок файла настроек </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Переменная </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение переменной </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.h" line="41" column="1" bodyfile="src/core/Settings.cpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingsh_1ga2dd1bc039652a0480c444957d416b6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool checkFile</definition>
+        <argsstring>(char *filename)</argsstring>
+        <name>checkFile</name>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Проверка файла </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название файла </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true - файл найден, false - файл не найден. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.h" line="48" column="1" bodyfile="src/core/Settings.cpp" bodystart="62" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingsh_1ga147bed619c6314e960320c1bcb40ed91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool checkFile</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>checkFile</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Проверка файла </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Название файла </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true - файл найден, false - файл не найден. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingsh_1ga912b67f6f6b05abadd055a379dd84864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void createDir</definition>
+        <argsstring>(std::string namedir)</argsstring>
+        <name>createDir</name>
+        <param>
+          <type>std::string</type>
+          <declname>namedir</declname>
+        </param>
+        <briefdescription>
+<para>Функция для создания директории </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">namedir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь и название директории </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__settingsh_1ga8f34a2030acfb5567678ab2bba25f3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void createFile</definition>
+        <argsstring>(char *file_name)</argsstring>
+        <name>createFile</name>
+        <param>
+          <type>char *</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+<para>Функция для создания файла </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь и название файла </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Settings.h" line="66" column="1" bodyfile="src/core/Settings.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Заголовочный файл модуля работы с ini файлами </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>SavaLione </para></simplesect>
+<simplesect kind="date"><para>20 Apr 2018 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>SETTINGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SETTINGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">std::string<sp/><ref refid="group__settingsh_1ga3a0f1e87eb01bdd16c4a7e365aa283eb" kindref="member">getSettingsString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ch_return_default);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__settingsh_1ga0a2fe94de4037eda33c49fe332970891" kindref="member">getSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_return_default);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__settingsh_1ga463e32ccb37f9478b0e62ee0d21c5999" kindref="member">setSettings</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*block,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__settingsh_1ga2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="54"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__settingsh_1ga2dd1bc039652a0480c444957d416b6a6" kindref="member">checkFile</ref>(std::string<sp/>filename);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__settingsh_1ga912b67f6f6b05abadd055a379dd84864" kindref="member">createDir</ref>(std::string<sp/>namedir);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__settingsh_1ga8f34a2030acfb5567678ab2bba25f3c1" kindref="member">createFile</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SETTINGS_H</highlight></codeline>
+    </programlisting>
+    <location file="src/core/Settings.h"/>
+  </compounddef>
+</doxygen>

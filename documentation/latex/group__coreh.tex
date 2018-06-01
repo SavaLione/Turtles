@@ -1,0 +1,225 @@
+\hypertarget{group__coreh}{}\section{Core.\+h}
+\label{group__coreh}\index{Core.\+h@{Core.\+h}}
+Граф связей класса Core.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{group__coreh}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__coreh_ga438c92819ed0ad4fc2e187ed5f5a2e27}{noise\+Removal}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_gaa7c37c22318217cd913a50800eb336a3}{line\+Detection}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_ga5a4a30ca6128e13ce1ec6efaa23dd6c7}{database\+Add}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Функция для добавления файла с каскадом в файл с информацией о каскадах \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_gaebd676a1476aa4d75b280db8ae09d11c}{clearning}} (std\+::string filename, std\+::string variable)
+\begin{DoxyCompactList}\small\item\em Функция для очистки дубликатов в векторе \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__coreh_gad1ae53e92ff9edcee7a9f35d2956ae57}{detection\+Logo}} (const cv\+::\+Mat \&mat\+\_\+logo, std\+::string cascadefile)
+\begin{DoxyCompactList}\small\item\em Функция для поиска объекта на фото \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_ga0ef39a5ada0921b3abf8906957746b86}{detection}} (const cv\+::\+Mat \&mat\+\_\+logo)
+\begin{DoxyCompactList}\small\item\em Модуль поиска объектов на фото \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_ga242d25c7a9a1b7212bb890023c8131f5}{settings\+Initialization}} ()
+\begin{DoxyCompactList}\small\item\em Модуль настроек. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{group__coreh_gaad0390ab7aa8f0cac1eee4492e919baf}{description}} (std\+::string value)
+\begin{DoxyCompactList}\small\item\em Функция для поиска описания марки по файлу с каскадом Хаара \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__coreh_gaff2d42310702a0aab15af5ad62a59f2b}{canny}} (const cv\+::\+Mat \&mat\+\_\+in, cv\+::\+Mat \&mat\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Функция для обработки изображений. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{group__coreh_gaff2d42310702a0aab15af5ad62a59f2b}\label{group__coreh_gaff2d42310702a0aab15af5ad62a59f2b}} 
+\index{Core.\+h@{Core.\+h}!canny@{canny}}
+\index{canny@{canny}!Core.\+h@{Core.\+h}}
+\subsubsection{\texorpdfstring{canny()}{canny()}}
+{\footnotesize\ttfamily void canny (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{mat\+\_\+in,  }\item[{cv\+::\+Mat \&}]{mat\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Функция для обработки изображений. 
+
+Поиск границ на изображении. Метод canny.
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__coreh_gaebd676a1476aa4d75b280db8ae09d11c}\label{group__coreh_gaebd676a1476aa4d75b280db8ae09d11c}} 
+\index{Core.\+h@{Core.\+h}!clearning@{clearning}}
+\index{clearning@{clearning}!Core.\+h@{Core.\+h}}
+\subsubsection{\texorpdfstring{clearning()}{clearning()}}
+{\footnotesize\ttfamily void clearning (\begin{DoxyParamCaption}\item[{std\+::string}]{filename,  }\item[{std\+::string}]{variable }\end{DoxyParamCaption})}
+
+
+
+Функция для очистки дубликатов в векторе 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em filename} & Название и путь к файлу \\
+\hline
+\mbox{\tt in}  & {\em variable} & Вектор, в котором нужно удалить дубликаты \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__coreh_ga5a4a30ca6128e13ce1ec6efaa23dd6c7}\label{group__coreh_ga5a4a30ca6128e13ce1ec6efaa23dd6c7}} 
+\index{Core.\+h@{Core.\+h}!database\+Add@{database\+Add}}
+\index{database\+Add@{database\+Add}!Core.\+h@{Core.\+h}}
+\subsubsection{\texorpdfstring{database\+Add()}{databaseAdd()}}
+{\footnotesize\ttfamily void database\+Add (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Функция для добавления файла с каскадом в файл с информацией о каскадах 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em filename} & Название каскада с расширением \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__coreh_gaad0390ab7aa8f0cac1eee4492e919baf}\label{group__coreh_gaad0390ab7aa8f0cac1eee4492e919baf}} 
+\index{Core.\+h@{Core.\+h}!description@{description}}
+\index{description@{description}!Core.\+h@{Core.\+h}}
+\subsubsection{\texorpdfstring{description()}{description()}}
+{\footnotesize\ttfamily std\+::string description (\begin{DoxyParamCaption}\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+
+
+Функция для поиска описания марки по файлу с каскадом Хаара 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em value} & Название файла \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Искомое описание марки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__coreh_ga0ef39a5ada0921b3abf8906957746b86}\label{group__coreh_ga0ef39a5ada0921b3abf8906957746b86}} 
+\index{Core.\+h@{Core.\+h}!detection@{detection}}
+\index{detection@{detection}!Core.\+h@{Core.\+h}}
+\subsubsection{\texorpdfstring{detection()}{detection()}}
+{\footnotesize\ttfamily void detection (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{mat\+\_\+logo }\end{DoxyParamCaption})}
+
+
+
+Модуль поиска объектов на фото 
+
+Поиск объектов на фото
+
+Вывод информации
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+logo} & Матрица с изображением \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__coreh_gad1ae53e92ff9edcee7a9f35d2956ae57}\label{group__coreh_gad1ae53e92ff9edcee7a9f35d2956ae57}} 
+\index{Core.\+h@{Core.\+h}!detection\+Logo@{detection\+Logo}}
+\index{detection\+Logo@{detection\+Logo}!Core.\+h@{Core.\+h}}
+\subsubsection{\texorpdfstring{detection\+Logo()}{detectionLogo()}}
+{\footnotesize\ttfamily bool detection\+Logo (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{mat\+\_\+logo,  }\item[{std\+::string}]{cascadefile }\end{DoxyParamCaption})}
+
+
+
+Функция для поиска объекта на фото 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+logo} & Матрица с изображением \\
+\hline
+\mbox{\tt in}  & {\em cascadefile} & Файл с каскадом \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат работы. true -\/ объект найден, false -\/ объект не найден 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__coreh_gaa7c37c22318217cd913a50800eb336a3}\label{group__coreh_gaa7c37c22318217cd913a50800eb336a3}} 
+\index{Core.\+h@{Core.\+h}!line\+Detection@{line\+Detection}}
+\index{line\+Detection@{line\+Detection}!Core.\+h@{Core.\+h}}
+\subsubsection{\texorpdfstring{line\+Detection()}{lineDetection()}}
+{\footnotesize\ttfamily void line\+Detection (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{mat\+\_\+in,  }\item[{cv\+::\+Mat \&}]{mat\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Функция для обработки изображений. 
+
+Проверяет, нужно ли находить линии на изображении.
+
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется -\/ canny(mat\+\_\+in, mat\+\_\+out);
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__coreh_ga438c92819ed0ad4fc2e187ed5f5a2e27}\label{group__coreh_ga438c92819ed0ad4fc2e187ed5f5a2e27}} 
+\index{Core.\+h@{Core.\+h}!noise\+Removal@{noise\+Removal}}
+\index{noise\+Removal@{noise\+Removal}!Core.\+h@{Core.\+h}}
+\subsubsection{\texorpdfstring{noise\+Removal()}{noiseRemoval()}}
+{\footnotesize\ttfamily void noise\+Removal (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{mat\+\_\+in,  }\item[{cv\+::\+Mat \&}]{mat\+\_\+out }\end{DoxyParamCaption})}
+
+
+
+Функция для обработки изображений. 
+
+Проверяет, нужно ли убирать шум на фотографиях.
+
+Также проверяем режим обработки изображений. Быстрый или нет.
+
+Для обычного режима используется двусторонний фильтр -\/ bilateral\+Filter();
+
+Для быстрого режима используется Гауссовый фильтр размытия изображений -\/ Gaussian\+Blur();
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em mat\+\_\+in} & Матрица с изображением для обработки \\
+\hline
+\mbox{\tt out}  & {\em mat\+\_\+out} & Матрица с обработанным изображением, которая будет возвращена \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__coreh_ga242d25c7a9a1b7212bb890023c8131f5}\label{group__coreh_ga242d25c7a9a1b7212bb890023c8131f5}} 
+\index{Core.\+h@{Core.\+h}!settings\+Initialization@{settings\+Initialization}}
+\index{settings\+Initialization@{settings\+Initialization}!Core.\+h@{Core.\+h}}
+\subsubsection{\texorpdfstring{settings\+Initialization()}{settingsInitialization()}}
+{\footnotesize\ttfamily void settings\+Initialization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Модуль настроек. 
+
+При отсутствии файла настроек, создаёт его Если папка N\+A\+M\+E\+\_\+\+D\+A\+T\+A\+B\+A\+SE не найдена и получилось её создать \begin{DoxyVerb}Вывод в лог, что папка создана
+\end{DoxyVerb}
+
+
+иначе \begin{DoxyVerb}Вывод в лог информации, что папку не получилось создать (возможно не достаточно прав или она уже создана)
+\end{DoxyVerb}
+
+
+Проверка наличия файла настроек F\+I\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+C\+O\+N\+F\+IG
+
+Если файла нет, то создать его \begin{DoxyVerb}Добавить в файл параметры
+\end{DoxyVerb}
+
+
+Проверка наличия файла с информацией о каскадах F\+I\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+D\+A\+T\+A\+B\+A\+SE
+
+Если файла нет, то создать его
+
+Если нет файла C\+A\+R\+\_\+\+M\+O\+D\+E\+L\+\_\+\+E\+X\+A\+M\+P\+L\+E\+\_\+\+F\+I\+LE, то добавить в файл с информацией о каскадах, строку с файлом. Используется для примера 
+
+См. определение в файле Core.\+cpp строка 273
+

@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Yenot: Settings.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Yenot
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Settings.cpp<div class="ingroups"><a class="el" href="group__yenot.html">Yenot</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Граф связей класса Settings.cpp:</div>
+<div class="dyncontent">
+<center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="group__settingscpp.svg" width="210" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga50535cebf45c8d7cbffd29274699e5f5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__settingscpp.html#ga50535cebf45c8d7cbffd29274699e5f5">getSettingsString</a> (char *block, char *value, char *ch_return_default)</td></tr>
+<tr class="memdesc:ga50535cebf45c8d7cbffd29274699e5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить строку из файла настроек  <a href="#ga50535cebf45c8d7cbffd29274699e5f5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga50535cebf45c8d7cbffd29274699e5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a2fe94de4037eda33c49fe332970891"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__settingscpp.html#ga0a2fe94de4037eda33c49fe332970891">getSettings</a> (char *block, char *value, int i_return_default)</td></tr>
+<tr class="memdesc:ga0a2fe94de4037eda33c49fe332970891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить число из файла настроек  <a href="#ga0a2fe94de4037eda33c49fe332970891">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga0a2fe94de4037eda33c49fe332970891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga463e32ccb37f9478b0e62ee0d21c5999"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__settingscpp.html#ga463e32ccb37f9478b0e62ee0d21c5999">setSettings</a> (char *block, char *value, char *text)</td></tr>
+<tr class="memdesc:ga463e32ccb37f9478b0e62ee0d21c5999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохранить переменную в файл настроек  <a href="#ga463e32ccb37f9478b0e62ee0d21c5999">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga463e32ccb37f9478b0e62ee0d21c5999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dd1bc039652a0480c444957d416b6a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__settingscpp.html#ga2dd1bc039652a0480c444957d416b6a6">checkFile</a> (char *filename)</td></tr>
+<tr class="memdesc:ga2dd1bc039652a0480c444957d416b6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка файла  <a href="#ga2dd1bc039652a0480c444957d416b6a6">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga2dd1bc039652a0480c444957d416b6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64f8c9899c815dc180b2b564c0d05762"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__settingscpp.html#ga64f8c9899c815dc180b2b564c0d05762">checkFile</a> (string filename)</td></tr>
+<tr class="memdesc:ga64f8c9899c815dc180b2b564c0d05762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка файла  <a href="#ga64f8c9899c815dc180b2b564c0d05762">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga64f8c9899c815dc180b2b564c0d05762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ac0cd45ecb6e65e3ace40687d6ee8bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__settingscpp.html#ga5ac0cd45ecb6e65e3ace40687d6ee8bc">createDir</a> (string namedir)</td></tr>
+<tr class="memdesc:ga5ac0cd45ecb6e65e3ace40687d6ee8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для создания директории  <a href="#ga5ac0cd45ecb6e65e3ace40687d6ee8bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5ac0cd45ecb6e65e3ace40687d6ee8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f34a2030acfb5567678ab2bba25f3c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__settingscpp.html#ga8f34a2030acfb5567678ab2bba25f3c1">createFile</a> (char *file_name)</td></tr>
+<tr class="memdesc:ga8f34a2030acfb5567678ab2bba25f3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для создания файла  <a href="#ga8f34a2030acfb5567678ab2bba25f3c1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga8f34a2030acfb5567678ab2bba25f3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<h2 class="groupheader">Функции</h2>
+<a id="ga2dd1bc039652a0480c444957d416b6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2dd1bc039652a0480c444957d416b6a6">&#9670;&nbsp;</a></span>checkFile() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool checkFile </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Название файла </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - файл найден, false - файл не найден. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_settings_8cpp_source.html">Settings.cpp</a> строка <a class="el" href="_settings_8cpp_source.html#l00062">62</a></p>
+
+</div>
+</div>
+<a id="ga64f8c9899c815dc180b2b564c0d05762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64f8c9899c815dc180b2b564c0d05762">&#9670;&nbsp;</a></span>checkFile() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool checkFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Название файла </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - файл найден, false - файл не найден. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_settings_8cpp_source.html">Settings.cpp</a> строка <a class="el" href="_settings_8cpp_source.html#l00076">76</a></p>
+
+</div>
+</div>
+<a id="ga5ac0cd45ecb6e65e3ace40687d6ee8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ac0cd45ecb6e65e3ace40687d6ee8bc">&#9670;&nbsp;</a></span>createDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void createDir </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>namedir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для создания директории </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">namedir</td><td>Путь и название директории </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Если успешно создали директорию, то: </p><pre class="fragment">Вывод в лог, что получилось создать директорию
+</pre><p>иначе: </p><pre class="fragment">Вывод в лог, что не получилось создать директорию
+
+Возможно это связано с тем, что нет прав на создание директории или директория уже есть  </pre>
+<p class="definition">См. определение в файле <a class="el" href="_settings_8cpp_source.html">Settings.cpp</a> строка <a class="el" href="_settings_8cpp_source.html#l00090">90</a></p>
+
+</div>
+</div>
+<a id="ga8f34a2030acfb5567678ab2bba25f3c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f34a2030acfb5567678ab2bba25f3c1">&#9670;&nbsp;</a></span>createFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void createFile </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для создания файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">file_name</td><td>Путь и название файла </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_settings_8cpp_source.html">Settings.cpp</a> строка <a class="el" href="_settings_8cpp_source.html#l00111">111</a></p>
+
+</div>
+</div>
+<a id="ga0a2fe94de4037eda33c49fe332970891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a2fe94de4037eda33c49fe332970891">&#9670;&nbsp;</a></span>getSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getSettings </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i_return_default</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить число из файла настроек </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>Блок файла настроек </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Искомая переменная </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i_return_default</td><td>Значение, если переменная не найдена в файле настроек </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Число из файла настроек </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_settings_8cpp_source.html">Settings.cpp</a> строка <a class="el" href="_settings_8cpp_source.html#l00043">43</a></p>
+
+</div>
+</div>
+<a id="ga50535cebf45c8d7cbffd29274699e5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50535cebf45c8d7cbffd29274699e5f5">&#9670;&nbsp;</a></span>getSettingsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string getSettingsString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ch_return_default</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить строку из файла настроек </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>Блок файла настроек </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Искомая переменная </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_return_default</td><td>Значение, если переменная не найдена в файле настроек </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка из файла настроек </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_settings_8cpp_source.html">Settings.cpp</a> строка <a class="el" href="_settings_8cpp_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a id="ga463e32ccb37f9478b0e62ee0d21c5999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga463e32ccb37f9478b0e62ee0d21c5999">&#9670;&nbsp;</a></span>setSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setSettings </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сохранить переменную в файл настроек </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>Блок файла настроек </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Переменная </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Значение переменной </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_settings_8cpp_source.html">Settings.cpp</a> строка <a class="el" href="_settings_8cpp_source.html#l00053">53</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
