@@ -117,13 +117,19 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 
 	// Detect object
 	vector<Rect> detectObject;
-	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(settings_size_photo, settings_size_photo));
-
+	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(TEMPLATE_SIZE, TEMPLATE_SIZE));
+	
+	cout << "[START]" << endl;
 	if (detectObject.size() != 0) {
+		cout << "[FOUND]" << endl;
+		// Вывод описания
+		cout << detectObject.size() << endl;
+		cout << getSettingsString((char*)settings_block_description, (char*)cascadefile.c_str(), (char*)settings_description_name_not_set) << endl;
 		// Есть на фото
 		cout << detectObject.size() << endl;
 		b_return = true;
 	}
+	cout << "[END]" << endl;
 	return b_return;
 }
 

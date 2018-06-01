@@ -87,28 +87,6 @@ add_executable (${PROJECT} ${YENOT_CORE})
 
 target_link_libraries(${PROJECT} ${CMAKE_SOURCE_DIR}/lib/opencv/x64/vc15/lib/opencv_world341.lib)
 
-# Server
-# ===================================================
-
-set (YENOT_SERVER Server)
-
-set(SERVER_SOURCES
-		src/srv/YenotServer.cpp
-		src/core/Logger.cpp
-		src/core/Settings.cpp
-)
-
-set(SERVER_HEADERS
-		src/srv/YenotServer.h
-		src/core/Logger.h
-		src/core/Settings.h
-		src/core/Yenot.h
-)
-
-set(SERVER ${SERVER_SOURCES} ${SERVER_HEADERS})
-
-add_executable (${YENOT_SERVER} ${SERVER})
-
 # Client
 # ===================================================
 

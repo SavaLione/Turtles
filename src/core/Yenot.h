@@ -268,8 +268,11 @@ namespace yenot {
 	const char settings_block_description[] = "description";
 	const char settings_description_ifnotfound[] = "Not found";
 	const char settings_description_example[] = "Sample brand";
-
+	const char settings_description_name_not_set[] = "The brand name is not set";
+	
 	const int settings_size_photo = 512;
+	
+	const int TEMPLATE_SIZE = 20;
 }
 
 #endif // YENOT_H
