@@ -248,27 +248,24 @@ namespace yenot {
 	const char ERROR_DATABASE_ADD_ARGUMENTS[] = "Few arguments";
 	
 	///////////////////////////////////////////////////////////////////////////////
-	//	Car model
+	//	Description
 	///////////////////////////////////////////////////////////////////////////////
 	
-	/// Блок модуля поиска логотипа
+	/// Блок модуля поиска описания логотипа
 	///
 	///	ini файл
 	/// @code
-	///	[carmodel]
+	///	[description]
 	/// ...
 	/// @endcode
-	const char BLOCK_CARMODEL[] = "carmodel";
-	const char settings_carModel_listphoto[] = "listphoto";
 
-	const char settings_carModel_example[] = "example";
-	const char settings_carModel_example_description[] = "Brand: \"Example\"";
-	const char settings_carModel_example_file[] = "example.xml";
+	const char BLOCK_DESCRIPTION[] = "description";
+	
+	const char CAR_MODEL_EXAMPLE[] = "example";
+	const char CAR_MODEL_EXAMPLE_DESCRIPTION[] = "Brand: \"Example\"";
+	const char CAR_MODEL_EXAMPLE_FILE[] = "example.xml";
 
-	const char settings_block_description[] = "description";
-	const char settings_description_ifnotfound[] = "Not found";
-	const char settings_description_example[] = "Sample brand";
-	const char settings_description_name_not_set[] = "The brand name is not set";
+	const char DESCRIPTION_NOT_FOUND[] = "The brand name is not set";
 	
 	const int settings_size_photo = 512;
 	

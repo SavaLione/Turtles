@@ -122,7 +122,7 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 	if (detectObject.size() != 0) {
 		// Есть на фото
 		// Вывод описания
-		//cout << "[FOUND] " << getSettingsString((char*)settings_block_description, (char*)cascadefile.c_str(), (char*)settings_description_name_not_set) << endl;
+		//cout << "[FOUND] " << getSettingsString((char*)BLOCK_DESCRIPTION, (char*)cascadefile.c_str(), (char*)DESCRIPTION_NOT_FOUND) << endl;
 		b_return = true;
 	}
 	return b_return;
@@ -168,9 +168,7 @@ void settingsInitialization() {
 		setSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG, (char*)SETTINGS_LOG_VALUE);
 		setSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG_TIME, (char*)SETTINGS_LOG_TIME_VALUE);
 
-		setSettings((char*)BLOCK_CARMODEL, (char*)settings_carModel_example, (char*)settings_carModel_example_description);
-
-		setSettings((char*)settings_block_description, (char*)settings_carModel_example_file, (char*)settings_description_example);
+		setSettings((char*)BLOCK_DESCRIPTION, (char*)CAR_MODEL_EXAMPLE_FILE, (char*)CAR_MODEL_EXAMPLE_DESCRIPTION);
 
 	}
 	if (!checkFile(NAME_DATABASE + string("\\") + FILE_NAME_DATABASE)) {
@@ -179,8 +177,8 @@ void settingsInitialization() {
 		fsOut << NAME_DATABASE << stringVector;
 		fsOut.release();
 	}
-	if (!checkFile(NAME_DATABASE + string("\\") + settings_carModel_example_file)) {
-		databaseAdd(settings_carModel_example_file);
+	if (!checkFile(NAME_DATABASE + string("\\") + CAR_MODEL_EXAMPLE_FILE)) {
+		databaseAdd(CAR_MODEL_EXAMPLE_FILE);
 	}
 }
 
@@ -191,7 +189,7 @@ void settingsInitialization() {
 */
 string description(string value) {
 	string s_ret = "";
-	s_ret = getSettingsString((char*)settings_block_description, (char*)value.c_str(), (char*)settings_description_ifnotfound);
+	s_ret = getSettingsString((char*)BLOCK_DESCRIPTION, (char*)value.c_str(), (char*)DESCRIPTION_NOT_FOUND);
 	return s_ret;
 }
 
