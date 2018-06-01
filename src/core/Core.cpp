@@ -72,6 +72,11 @@ void lineDetection(const Mat& mat_in, Mat& mat_out) {
 	}
 }
 
+/**
+	@brief Функция для добавления файла с каскадом в файл с информацией о каскадах
+	
+	@param [in] filename Название каскада с расширением
+*/
 void databaseAdd(string filename) {
 	/// Если название файла не задано, то возвращаем ошибку
 	///
@@ -108,6 +113,12 @@ void databaseAdd(string filename) {
 	fsOut.release();
 }
 
+/**
+	@brief Функция для очистки дубликатов в векторе
+	
+	@param [in] filename Название и путь к файлу
+	@param [in] variable Вектор, в котором нужно удалить дубликаты
+*/
 void clearning(string filename, string variable) {
 	/// Создаём вектор
 	///
@@ -142,6 +153,13 @@ void clearning(string filename, string variable) {
 	fsOut.release();
 }
 
+/**
+	@brief Функция для поиска объекта на фото
+	
+	@param [in] mat_logo Матрица с изображением
+	@param [in] cascadefile Файл с каскадом
+	@param [out] Результат работы. true - объект найден, false - объект не найден
+*/
 bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 	/// Создаём 2 переменные.
 	/// 
@@ -189,6 +207,15 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 	return b_return;
 }
 
+/**
+	@brief Модуль поиска объектов на фото
+	
+	Поиск объектов на фото
+	
+	Вывод информации
+	
+	@param [in] mat_logo Матрица с изображением
+*/
 void detection(const Mat& mat_logo) {
 	/// Проверяем. Нужно ли распознавать объект
 	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_DETECTION, SETTINGS_DETECTION_VALUE_INT)) {
