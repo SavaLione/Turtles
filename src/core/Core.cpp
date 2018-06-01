@@ -195,7 +195,6 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 		cerr << "Error Loading XML file" << endl;
 	}
 
-	// Detect object
 	vector<Rect> detectObject;
 	
 	int tSize = getSettings((char*)BLOCK_CORE, (char*)SETTINGS_TEMPLATE_SIZE, TEMPLATE_SIZE);
