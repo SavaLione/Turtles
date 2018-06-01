@@ -119,17 +119,12 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 	vector<Rect> detectObject;
 	logo_cascade.detectMultiScale(image, detectObject, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(TEMPLATE_SIZE, TEMPLATE_SIZE));
 	
-	cout << "[START]" << endl;
 	if (detectObject.size() != 0) {
-		cout << "[FOUND]" << endl;
-		// Вывод описания
-		cout << detectObject.size() << endl;
-		cout << getSettingsString((char*)settings_block_description, (char*)cascadefile.c_str(), (char*)settings_description_name_not_set) << endl;
 		// Есть на фото
-		cout << detectObject.size() << endl;
+		// Вывод описания
+		//cout << "[FOUND] " << getSettingsString((char*)settings_block_description, (char*)cascadefile.c_str(), (char*)settings_description_name_not_set) << endl;
 		b_return = true;
 	}
-	cout << "[END]" << endl;
 	return b_return;
 }
 
@@ -140,18 +135,12 @@ void detection(const Mat& mat_logo) {
 		fsIn.open((NAME_DATABASE + string("\\") + FILE_NAME_DATABASE), FileStorage::READ);
 		fsIn[NAME_DATABASE] >> stringVector;
 		fsIn.release();
-
-		vector<bool> boolVector;
-
+		
 		for (int i = 0; i <= (stringVector.size() - 1); i++) {
 			if (detectionLogo(mat_logo, stringVector[i])) {
-				boolVector[i] = true;
-			}
-		}
-
-		for (int i = 0; i <= (stringVector.size() - 1); i++) {
-			if (boolVector[i]) {
-				cout << description(stringVector[i]) << endl;
+				cout << "[FOUND] [" << stringVector[i] << "] " << description(stringVector[i]) << endl;
+			} else {
+				cout << "[NOT FOUND] " << stringVector[i] << endl;
 			}
 		}
 	}
