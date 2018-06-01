@@ -109,7 +109,7 @@ bool detectionLogo(const Mat& mat_logo, string cascadefile) {
 
 	// Load cascade (.xml file)
 	CascadeClassifier logo_cascade;
-	logo_cascade.load(cascadefile);
+	logo_cascade.load(NAME_DATABASE + string("\\") + cascadefile);
 
 	if (logo_cascade.empty()) {
 		cerr << "Error Loading XML file" << endl;
