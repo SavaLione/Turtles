@@ -28,7 +28,7 @@ using namespace yenot;
 */
 void logger(char *level, char *text) {
 	/// Проверяем, нужно ли логировать.
-	if (getSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG)) {
+	if (getSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG, SETTINGS_LOG_VALUE_INT)) {
 		/// Проверка наличия файла с выводом лога в папке.
 		///
 		/// Если файл не найден, то создаём его
@@ -61,7 +61,7 @@ void logger(char *level, char *text) {
 		///		Записываем данные в файл
 		///
 		///		Закрываем файл
-		if (getSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG_TIME)) {
+		if (getSettings((char*)BLOCK_LOGGER, (char*)SETTINGS_LOG_TIME, SETTINGS_LOG_TIME_VALUE_INT)) {
 			char *year = "", *month = "", *day = "", *hour = "", *minute = "", *second = "";
 			SYSTEMTIME time;
 			GetLocalTime(&time);

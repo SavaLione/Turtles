@@ -13,6 +13,10 @@
 	@brief Работа с изображениями, xml(yaml) файлами
 */
 /**
+	@defgroup client Client
+	@brief Клиент. Более удобное использование программы
+*/
+/**
 	@defgroup yenoth Yenot.h
 	@ingroup yenot
 	@{
@@ -248,18 +252,12 @@ namespace yenot {
 	/// @endcode
 	const char BLOCK_LOGGER[] = "Logger";
 	
-	/// Модуль логирования
-	///
 	/// Уровень предупреждения
 	const char LOGGER_LEVEL_WARNING[] = "WARN";
 	
-	/// Модуль логирования
-	///
 	/// Уровень ошибки
 	const char LOGGER_LEVEL_ERROR[] = "ERROR";
 	
-	/// Модуль логирования
-	///
 	/// Уровень сообщение
 	const char LOGGER_LEVEL_MESSAGE[] = "MSG";
 

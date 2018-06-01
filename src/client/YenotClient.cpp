@@ -5,19 +5,19 @@
 	@date 20 Apr 2018
 */
 /**
-	@defgroup serveryenotservercpp YenotServer.cpp
-	@ingroup server
+	@defgroup clientyenotclientcpp YenotClient.cpp
+	@ingroup client
 	@{
 */
 #include <iostream>
 using namespace std;
 
-int main(int argc, char **argv)
-{
-	for (int i = 1; i <= 1024; i++) {
-		cout << "bad\\" << i << ".png" << endl;
-	}
-	system("pause");
+int main(int argc, char **argv) {
+	
 	return 0;
+}
+
+void help() {
+	
 }
 /** @} */

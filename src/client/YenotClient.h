@@ -5,8 +5,8 @@
 	@date 20 Apr 2018
 */
 /**
-	@defgroup serveryenotserverh YenotServer.h
-	@ingroup server
+	@defgroup clientyenotclienth YenotClient.h
+	@ingroup client
 	@{
 */
 #ifndef YENOTCLIENT_H

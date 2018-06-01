@@ -20,24 +20,45 @@
 using namespace std;
 using namespace yenot;
 
+/**
+	@brief Получить строку из файла настроек
+	@param [in] block Блок файла настроек
+	@param [in] value Искомая переменная
+	@param [in] ch_return_default Значение, если переменная не найдена в файле настроек
+	@return Строка из файла настроек
+*/
 string getSettingsString(char *block, char *value, char *ch_return_default) {
 	char text[BUFFER_SIZE];
 	GetPrivateProfileString(block, value, ch_return_default, text, BUFFER_SIZE, FILE_NAME_CONFIG);
 	return text;
 }
 
-int getSettings(char *block, char *value) {
-	return GetPrivateProfileInt(block, value, -1, FILE_NAME_CONFIG);
-}
-
+/**
+	@brief Получить число из файла настроек
+	@param [in] block Блок файла настроек
+	@param [in] value Искомая переменная
+	@param [in] i_return_default Значение, если переменная не найдена в файле настроек
+	@return Число  из файла настроек
+*/
 int getSettings(char *block, char *value, int i_return_default) {
 	return GetPrivateProfileInt(block, value, i_return_default, FILE_NAME_CONFIG);
 }
 
+/**
+	@brief Сохранить переменную в файл настроек
+	@param [in] block Блок файла настроек
+	@param [in] value Переменная
+	@param [in] text Значение переменной
+*/
 void setSettings(char *block, char *value, char *text) {
 	WritePrivateProfileString(block, value, text, FILE_NAME_CONFIG);
 }
 
+/**
+	@brief Проверка файла
+	@param [in] filename Название файла
+	@return true - файл найден, false - файл не найден.
+*/
 bool checkFile(char *filename) {
 	bool b_return = false;
 	ifstream file;
@@ -47,6 +68,11 @@ bool checkFile(char *filename) {
 	}
 	return b_return;
 }
+/**
+	@brief Проверка файла
+	@param [in] filename Название файла
+	@return true - файл найден, false - файл не найден.
+*/
 bool checkFile(string filename) {
 	bool b_return = false;
 	ifstream file;
