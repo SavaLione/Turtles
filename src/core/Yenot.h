@@ -13,14 +13,6 @@
 	@brief Работа с изображениями, xml(yaml) файлами
 */
 /**
-	@defgroup server Сервер
-	@brief Сервер. Должен принимать фото
-*/
-/**
-	@defgroup database Database
-	@brief Удобное добавление trainhaar.xml файлов
-*/
-/**
 	@defgroup yenoth Yenot.h
 	@ingroup yenot
 	@{
@@ -274,25 +266,54 @@ namespace yenot {
 	///////////////////////////////////////////////////////////////////////////////
 	//	Log messages
 	///////////////////////////////////////////////////////////////////////////////
+	
+	/// Сообщение в лог о том, что фильтр шума отключен
 	const char LOGGER_MESSAGE_NOISE_REMOVAL[] = "Noise filter is disabled.";
+	
+	/// Сообщение в лог о том, что детектор границ отключен
 	const char LOGGER_MESSAGE_LINE_DETECTION[] = "Line detection is disabled.";
+	
+	/// Сообщение в лог о том, что быстрый режим включен
 	const char LOGGER_MESSAGE_FAST_MODE[] = "Fast mode enabled.";
+	
+	/// Сообщение в лог о том, что папка создана
 	const char LOGGER_MESSAGE_CREATE_DIR[] = "Folder created.";
+	
+	/// Сообщение в лог о том, что не удалось создать папку
 	const char LOGGER_MESSAGE_CREATE_DIR_NOT[] = "Folder creation failed.";
 	
 	///////////////////////////////////////////////////////////////////////////////
 	//	Errors
 	///////////////////////////////////////////////////////////////////////////////
+	
+	/// Ошибка инициализации
 	const int ERROR_INIT = -100;
+	
+	/// Ошибка связанная с входным изображением. Возможно не достаточно аргументов
 	const int ERROR_IMAGE = -200;
+	
+	/// Ошибка связанная с очисткой дубликатов
 	const int ERROR_CLEARNING = -300;
+	
+	/// Ошибка связанная с изменением размера фотографии
 	const int ERROR_RESIZE = -400;
+	
+	/// Ошибка связанная с фильтвом шума
 	const int ERROR_NOISE_REMOVAL = -500;
+	
+	/// Ошибка связанная с детектором границ
 	const int ERROR_LINE_DETECTION = -600;
+	
+	/// Ошибка 
 	const int ERROR_DETECTION = -700;
+	
+	/// Ошибка в модуле распознавания логотипов
 	const int ERROR_DATABASE = -800;
 	
+	/// Сообщение в лог о том, что название файла с каскадом не может быть пустым
 	const char ERROR_INIT_DATABASE_ADD[] = "The file name can not be empty.";
+	
+	/// Сообщение в лог о том, что не достаточно аргументов для запуска программы
 	const char ERROR_DATABASE_ADD_ARGUMENTS[] = "Few arguments";
 	
 	///////////////////////////////////////////////////////////////////////////////
@@ -308,10 +329,13 @@ namespace yenot {
 	/// @endcode
 	const char BLOCK_DESCRIPTION[] = "description";
 	
-	const char CAR_MODEL_EXAMPLE[] = "example";
+	/// Пример описания логотипа
 	const char CAR_MODEL_EXAMPLE_DESCRIPTION[] = "Brand: \"Example\"";
+	
+	/// Пример файла с каскадом
 	const char CAR_MODEL_EXAMPLE_FILE[] = "example.xml";
 
+	/// Сообщение о том, что для данного логотипа нет описания
 	const char DESCRIPTION_NOT_FOUND[] = "The brand name is not set";
 }
 

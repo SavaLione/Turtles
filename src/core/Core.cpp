@@ -39,8 +39,19 @@ using namespace yenot;
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
 void noiseRemoval(const Mat& mat_in, Mat& mat_out) {
+	/// Проверяем, нужно ли убирать шум на фотографиях.
+	///
+	///	Если не нужно убирать шум на фотографиях, то посылаем сообщение в лог
+	///
+	/// Проверяем режим обработки изображений. Быстрый или нет.
+	///
+	/// 	Если режим обработки изображений не быстрый, то используем двусторонний фильтр.
+	///
+	/// иначе
+	///
+	///		Если режим обработки изображений быстрый, то используем Гауссовый фильтр
+	
 	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_NOISE_REDUCTION, SETTINGS_NOISE_REDUCTION_VALUE_INT)) {
-		// If no fast
 		if (!getSettings((char*)BLOCK_CORE, (char*)SETTINGS_FASTMODE, SETTINGS_FASTMODE_VALUE_INT)) {
 			bilateralFilter(mat_in, mat_out, DIAMETER_EACH_PIXEL, SIGMA_COLOR, SIGMA_SPACE);
 		} else {
@@ -57,14 +68,13 @@ void noiseRemoval(const Mat& mat_in, Mat& mat_out) {
 	
 	Проверяет, нужно ли находить линии на изображении.
 	
-	Также проверяем режим обработки изображений. Быстрый или нет.
-	
 	Для обычного режима используется - canny(mat_in, mat_out);
 	
 	@param [in] mat_in Матрица с изображением для обработки
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
 void lineDetection(const Mat& mat_in, Mat& mat_out) {
+	/// Проверяем, нужно ли находить линии на изображении.
 	if (getSettings((char*)BLOCK_CORE, (char*)SETTINGS_LINE_DETECTION, SETTINGS_LINE_DETECTION_VALUE_INT)) {
 		canny(mat_in, mat_out);
 	} else {
@@ -319,6 +329,11 @@ void settingsInitialization() {
 	@return Искомое описание марки
 */
 string description(string value) {
+	/// Создание строковой переменной
+	///
+	/// Присвоение переменной значения из файла настроек. При отсутствии данных в файле будет присвоено значение DESCRIPTION_NOT_FOUND
+	///
+	/// Возвращение искомого описания марки
 	string s_ret = "";
 	s_ret = getSettingsString((char*)BLOCK_DESCRIPTION, (char*)value.c_str(), (char*)DESCRIPTION_NOT_FOUND);
 	return s_ret;
@@ -336,7 +351,18 @@ string description(string value) {
 	@param [out] mat_out Матрица с обработанным изображением, которая будет возвращена
 */
 void canny(const Mat& mat_in, Mat& mat_out) {
-	Mat gray, edge, draw;
+	/// Создаём матрицы
+	///
+	///		gray - матрица с изображением в оттенках серого
+	///
+	///		edge - матрица с границами
+	///
+	///	Преобразуем изображение в оттенки серого
+	///
+	/// Запускаем алгоритм поиска границ
+	///
+	/// Возвращаем матрицу с обработанным изображением
+	Mat gray, edge;
 	cvtColor(mat_in, gray, CV_BGR2GRAY);
 	Canny(gray, edge, 50, 150, 3);
 	edge.convertTo(mat_out, CV_8U);
