@@ -26,6 +26,14 @@ char * level, char * text)<para><emphasis>Основная функция для
                     </listitem>
                 </itemizedlist>
             </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="group__loggercpp_1ga10abf17037baa88fa1698c6759b8c4ad">TEST</link> (
+yenot_server_logger , inclusion )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
         </section>
         <section>
             <title>Функции</title>
@@ -61,6 +69,10 @@ char * level, char * text)<para><emphasis>Основная функция для
                 </formalpara>
                 </para>
 
+            </section>
+            <section xml:id="group__loggercpp_1ga10abf17037baa88fa1698c6759b8c4ad">
+                <title>TEST (yenot_server_logger, inclusion)</title> <emphasis></emphasis>
+                
             </section>
         </section>
 </section>

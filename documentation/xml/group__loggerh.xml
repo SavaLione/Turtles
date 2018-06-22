@@ -61,7 +61,7 @@
 </programlisting> <linebreak/>
  Записываем данные в файл.</para><para>Пример: <programlisting><codeline><highlight class="normal">[WARN]Folder<sp/>created.</highlight></codeline>
 </programlisting> </para>        </inbodydescription>
-        <location file="src/core/Logger.h" line="23" column="1" bodyfile="src/core/Logger.cpp" bodystart="29" bodyend="107"/>
+        <location file="yenot/server/src/Logger.h" line="23" column="1" bodyfile="yenot/server/src/Logger.cpp" bodystart="29" bodyend="107"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -1,4 +1,4 @@
-.TH "corecpp" 3 "Сб 2 Июн 2018" "Yenot" \" -*- nroff -*-
+.TH "corecpp" 3 "Сб 23 Июн 2018" "Yenot" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -45,6 +45,9 @@ corecpp
 .RI "void \fBcanny\fP (const Mat &mat_in, Mat &mat_out)"
 .br
 .RI "Функция для обработки изображений\&. "
+.ti -1c
+.RI "\fBTEST\fP (yenot_server_core, inclusion)"
+.br
 .in -1c
 .SH "Подробное описание"
 .PP 
@@ -79,7 +82,7 @@ edge - матрица с границами
 .PP
 Возвращаем матрицу с обработанным изображением 
 .PP
-См\&. определение в файле Core\&.cpp строка 353
+См\&. определение в файле server/src/Core\&.cpp строка 353
 .SS "void clearning (string filename, string variable)"
 
 .PP
@@ -112,7 +115,7 @@ edge - матрица с границами
 .PP
 Очищаем файловое хранилище 
 .PP
-См\&. определение в файле Core\&.cpp строка 132
+См\&. определение в файле server/src/Core\&.cpp строка 132
 .SS "void databaseAdd (string filename)"
 
 .PP
@@ -143,7 +146,7 @@ edge - матрица с границами
 .PP
 Очищаем файловое хранилище 
 .PP
-См\&. определение в файле Core\&.cpp строка 90
+См\&. определение в файле server/src/Core\&.cpp строка 90
 .SS "string description (string value)"
 
 .PP
@@ -165,7 +168,7 @@ edge - матрица с границами
 .PP
 Возвращение искомого описания марки 
 .PP
-См\&. определение в файле Core\&.cpp строка 331
+См\&. определение в файле server/src/Core\&.cpp строка 331
 .SS "void detection (const Mat & mat_logo)"
 
 .PP
@@ -203,7 +206,7 @@ edge - матрица с границами
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 228
+См\&. определение в файле server/src/Core\&.cpp строка 228
 .SS "bool detectionLogo (const Mat & mat_logo, string cascadefile)"
 
 .PP
@@ -249,7 +252,7 @@ image - матрица с изображением
 .PP
 Если объект есть на фото, то возвращаем положительное значение 
 .PP
-См\&. определение в файле Core\&.cpp строка 173
+См\&. определение в файле server/src/Core\&.cpp строка 173
 .SS "void lineDetection (const Mat & mat_in, Mat & mat_out)"
 
 .PP
@@ -266,7 +269,7 @@ image - матрица с изображением
 .PP
 Проверяем, нужно ли находить линии на изображении\&. 
 .PP
-См\&. определение в файле Core\&.cpp строка 76
+См\&. определение в файле server/src/Core\&.cpp строка 76
 .SS "void noiseRemoval (const Mat & mat_in, Mat & mat_out)"
 
 .PP
@@ -305,7 +308,7 @@ image - матрица с изображением
 .PP
 
 .PP
-См\&. определение в файле Core\&.cpp строка 41
+См\&. определение в файле server/src/Core\&.cpp строка 41
 .SS "void settingsInitialization ()"
 
 .PP
@@ -341,7 +344,11 @@ image - матрица с изображением
 .PP
 Если нет файла CAR_MODEL_EXAMPLE_FILE, то добавить в файл с информацией о каскадах, строку с файлом\&. Используется для примера 
 .PP
-См\&. определение в файле Core\&.cpp строка 273
+См\&. определение в файле server/src/Core\&.cpp строка 273
+.SS "TEST (yenot_server_core, inclusion)"
+
+.PP
+См\&. определение в файле tests/src/server/Core\&.cpp строка 19
 .SH "Автор"
 .PP 
 Автоматически создано Doxygen для Yenot из исходного текста\&.

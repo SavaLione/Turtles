@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="group__testcpp">
+    <title>Test.cpp</title>
+<para>Collaboration diagram for Test.cpp</para>
+<para>
+    <figure>
+        <title>Group Collaboration diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="group__testcpp.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Подробное описание</title>
+        </section>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="group__testcpp_1ga0c6e823009aa80ab758989270ff8eec2">TEST</link> (
+yenot_test , correct_connection_testing_module )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Функции</title>
+            <section xml:id="group__testcpp_1ga0c6e823009aa80ab758989270ff8eec2">
+                <title>TEST (yenot_test, correct_connection_testing_module)</title> <emphasis></emphasis>
+                
+            </section>
+        </section>
+</section>

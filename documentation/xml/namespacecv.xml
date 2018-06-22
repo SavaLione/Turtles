@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/core/Core.cpp" line="20" column="1"/>
+    <location file="yenot/server/src/Core.cpp" line="20" column="1"/>
   </compounddef>
 </doxygen>

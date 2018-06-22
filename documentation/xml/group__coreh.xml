@@ -38,7 +38,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="35" column="1"/>
+        <location file="yenot/server/src/Core.h" line="35" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__coreh_1gaa7c37c22318217cd913a50800eb336a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -74,7 +74,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="49" column="1"/>
+        <location file="yenot/server/src/Core.h" line="49" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__coreh_1ga5a4a30ca6128e13ce1ec6efaa23dd6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -99,7 +99,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="56" column="1"/>
+        <location file="yenot/server/src/Core.h" line="56" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__coreh_1gaebd676a1476aa4d75b280db8ae09d11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -135,7 +135,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="64" column="1"/>
+        <location file="yenot/server/src/Core.h" line="64" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__coreh_1gad1ae53e92ff9edcee7a9f35d2956ae57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -172,7 +172,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="73" column="1"/>
+        <location file="yenot/server/src/Core.h" line="73" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__coreh_1ga0ef39a5ada0921b3abf8906957746b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -197,7 +197,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="84" column="1"/>
+        <location file="yenot/server/src/Core.h" line="84" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__coreh_1ga242d25c7a9a1b7212bb890023c8131f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -213,7 +213,7 @@
 </verbatim></para><para>иначе <verbatim>Вывод в лог информации, что папку не получилось создать (возможно не достаточно прав или она уже создана)
 </verbatim></para><para>Проверка наличия файла настроек FILE_NAME_CONFIG</para><para>Если файла нет, то создать его <verbatim>Добавить в файл параметры
 </verbatim></para><para>Проверка наличия файла с информацией о каскадах FILE_NAME_DATABASE</para><para>Если файла нет, то создать его</para><para>Если нет файла CAR_MODEL_EXAMPLE_FILE, то добавить в файл с информацией о каскадах, строку с файлом. Используется для примера </para>        </inbodydescription>
-        <location file="src/core/Core.h" line="95" column="1" bodyfile="src/core/Core.cpp" bodystart="273" bodyend="324"/>
+        <location file="yenot/server/src/Core.h" line="95" column="1" bodyfile="yenot/server/src/Core.cpp" bodystart="273" bodyend="324"/>
       </memberdef>
       <memberdef kind="function" id="group__coreh_1gaad0390ab7aa8f0cac1eee4492e919baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -239,7 +239,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="102" column="1"/>
+        <location file="yenot/server/src/Core.h" line="102" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__coreh_1gaff2d42310702a0aab15af5ad62a59f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -275,7 +275,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Core.h" line="116" column="1"/>
+        <location file="yenot/server/src/Core.h" line="116" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

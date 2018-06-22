@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_47149ddf4d37e6ab9ee4bf65114eb69b" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_85eb7e850db59305492b283791b761af">server</innerdir>
+    <innerfile refid="_test_8cpp">Test.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="yenot/tests/src/"/>
+  </compounddef>
+</doxygen>

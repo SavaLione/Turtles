@@ -50,7 +50,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="24" column="1" bodyfile="src/core/Settings.cpp" bodystart="30" bodyend="34"/>
+        <location file="yenot/server/src/Settings.h" line="24" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="30" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga0a2fe94de4037eda33c49fe332970891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -98,7 +98,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="33" column="1" bodyfile="src/core/Settings.cpp" bodystart="43" bodyend="45"/>
+        <location file="yenot/server/src/Settings.h" line="33" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="43" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga463e32ccb37f9478b0e62ee0d21c5999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -145,7 +145,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="41" column="1" bodyfile="src/core/Settings.cpp" bodystart="53" bodyend="55"/>
+        <location file="yenot/server/src/Settings.h" line="41" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="53" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga2dd1bc039652a0480c444957d416b6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -171,7 +171,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="48" column="1" bodyfile="src/core/Settings.cpp" bodystart="62" bodyend="70"/>
+        <location file="yenot/server/src/Settings.h" line="48" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="62" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga147bed619c6314e960320c1bcb40ed91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -197,7 +197,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="54" column="1"/>
+        <location file="yenot/server/src/Settings.h" line="54" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga912b67f6f6b05abadd055a379dd84864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -222,7 +222,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="60" column="1"/>
+        <location file="yenot/server/src/Settings.h" line="60" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga8f34a2030acfb5567678ab2bba25f3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -247,7 +247,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="66" column="1" bodyfile="src/core/Settings.cpp" bodystart="111" bodyend="114"/>
+        <location file="yenot/server/src/Settings.h" line="66" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="111" bodyend="114"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

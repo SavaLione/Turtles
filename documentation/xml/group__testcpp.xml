@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__testcpp" kind="group">
+    <compoundname>testcpp</compoundname>
+    <title>Test.cpp</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__testcpp_1ga0c6e823009aa80ab758989270ff8eec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(yenot_test, correct_connection_testing_module)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>yenot_test</type>
+        </param>
+        <param>
+          <type>correct_connection_testing_module</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="yenot/tests/src/Test.cpp" line="18" column="1" bodyfile="yenot/tests/src/Test.cpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

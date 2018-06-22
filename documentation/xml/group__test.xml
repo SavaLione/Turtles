@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="group__test" kind="group">
+    <compoundname>test</compoundname>
+    <title>Test</title>
+    <innergroup refid="group__corecpp">Core.cpp</innergroup>
+    <innergroup refid="group__loggercpp">Logger.cpp</innergroup>
+    <innergroup refid="group__settingscpp">Settings.cpp</innergroup>
+    <innergroup refid="group__testcpp">Test.cpp</innergroup>
+    <briefdescription>
+<para>Модуль тестирвания </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

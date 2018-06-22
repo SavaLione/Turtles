@@ -1,0 +1,6 @@
+<map id="Test" name="Test">
+<area shape="rect" id="node1" href="$group__testcpp.html" title="Test.cpp" alt="" coords="111,5,183,32"/>
+<area shape="rect" id="node2" href="$group__settingscpp.html" title="Settings.cpp" alt="" coords="100,56,195,83"/>
+<area shape="rect" id="node4" href="$group__corecpp.html" title="Core.cpp" alt="" coords="110,107,185,133"/>
+<area shape="rect" id="node5" href="$group__loggercpp.html" title="Logger.cpp" alt="" coords="104,157,191,184"/>
+</map>

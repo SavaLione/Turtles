@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="tests_2src_2server_2_core_8cpp" kind="file" language="C++">
+    <compoundname>tests/src/server/Core.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes refid="_core_8h" local="no">Core.h</includes>
+    <includes refid="tests_2src_2server_2_core_8cpp" local="no">Core.cpp</includes>
+    <includedby refid="tests_2src_2server_2_core_8cpp" local="no">Core.cpp</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>Core.h</label>
+        <link refid="_core_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Core.cpp</label>
+        <link refid="tests_2src_2server_2_core_8cpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>opencv2/opencv.hpp</label>
+      </node>
+      <node id="12">
+        <label>gtest/gtest.h</label>
+      </node>
+      <node id="11">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15">
+        <label>Core.cpp</label>
+        <link refid="tests_2src_2server_2_core_8cpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__corecpp_1ga62ce880c53a3fc77fad8f0bfb8711fd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(yenot_server_core, inclusion)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>yenot_server_core</type>
+        </param>
+        <param>
+          <type>inclusion</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="yenot/tests/src/server/Core.cpp" line="19" column="1" bodyfile="yenot/tests/src/server/Core.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>SavaLione </para></simplesect>
+<simplesect kind="date"><para>23 Jun 2018 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_core_8h" kindref="compound">Core.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tests_2src_2server_2_core_8cpp" kindref="compound">Core.cpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="group__corecpp_1ga62ce880c53a3fc77fad8f0bfb8711fd9" refkind="member"><highlight class="normal"><ref refid="group__corecpp_1ga62ce880c53a3fc77fad8f0bfb8711fd9" kindref="member">TEST</ref>(yenot_server_core,<sp/>inclusion)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(NULL,<sp/>NULL);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="yenot/tests/src/server/Core.cpp"/>
+  </compounddef>
+</doxygen>

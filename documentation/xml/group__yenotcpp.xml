@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Yenot.cpp" line="24" column="1" bodyfile="src/core/Yenot.cpp" bodystart="24" bodyend="112"/>
+        <location file="yenot/server/src/Yenot.cpp" line="24" column="1" bodyfile="yenot/server/src/Yenot.cpp" bodystart="24" bodyend="112"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

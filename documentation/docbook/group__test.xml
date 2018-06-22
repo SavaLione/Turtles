@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="group__test">
+    <title>Test</title>
+<para>Collaboration diagram for Test</para>
+<para>
+    <figure>
+        <title>Group Collaboration diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="group__test.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+
+<para>Модуль тестирвания </para>
+        <section>
+            <title>Подробное описание</title>
+        </section>
+    <simplesect>
+        <title>Группы</title>
+    </simplesect>
+    <para>
+        <itemizedlist>
+            <listitem><para><link linkend="group__corecpp">Core.cpp</link></para></listitem>
+            <listitem><para><link linkend="group__loggercpp">Logger.cpp</link></para></listitem>
+            <listitem><para><link linkend="group__settingscpp">Settings.cpp</link></para></listitem>
+            <listitem><para><link linkend="group__testcpp">Test.cpp</link></para></listitem>
+        </itemizedlist>
+    </para>
+<xi:include href="group__corecpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="group__loggercpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="group__settingscpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="group__testcpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

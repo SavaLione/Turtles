@@ -80,6 +80,14 @@ char * file_name)<para><emphasis>Функция для создания файл
                     </listitem>
                 </itemizedlist>
             </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="group__settingscpp_1ga1313defba35762697f41324fbd47171d">TEST</link> (
+yenot_server_settings , inclusion )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
         </section>
         <section>
             <title>Функции</title>
@@ -309,6 +317,10 @@ char * file_name)<para><emphasis>Функция для создания файл
                 </formalpara>
                 </para>
 
+            </section>
+            <section xml:id="group__settingscpp_1ga1313defba35762697f41324fbd47171d">
+                <title>TEST (yenot_server_settings, inclusion)</title> <emphasis></emphasis>
+                
             </section>
         </section>
 </section>

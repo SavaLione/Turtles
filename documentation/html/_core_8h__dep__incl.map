@@ -1,4 +1,6 @@
 <map id="Core.h" name="Core.h">
-<area shape="rect" id="node2" href="$_core_8cpp.html" title="Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля ..." alt="" coords="5,80,80,107"/>
+<area shape="rect" id="node2" href="$server_2src_2_core_8cpp.html" title="Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля ..." alt="" coords="5,80,80,107"/>
 <area shape="rect" id="node3" href="$_yenot_8cpp.html" title="Основной задачей нашего проекта является разработка самообучающегося приложения для выделения и распо..." alt="" coords="105,80,186,107"/>
+<area shape="rect" id="node4" href="$tests_2src_2server_2_core_8cpp.html" title="Core.cpp" alt="" coords="211,80,285,107"/>
+<area shape="rect" id="node5" href="$_test_8cpp.html" title="Модуль тестирования " alt="" coords="333,80,405,107"/>
 </map>

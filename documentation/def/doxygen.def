@@ -1,7 +1,7 @@
 AutoGen Definitions dummy;
 file = {
-  file-id   = '_core_8cpp';
-  file-name = 'Core.cpp';
+  file-id   = 'server_2src_2_core_8cpp';
+  file-name = 'server/src/Core.cpp';
     func = {
     func-member = {
       func-mem-kind = 'function';
@@ -24,7 +24,7 @@ Mat &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
       func-mem-desc-line = '41';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для обработки изображений.
@@ -63,7 +63,7 @@ Mat &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
       func-mem-desc-line = '76';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для обработки изображений.
@@ -92,7 +92,7 @@ string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'filename';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
       func-mem-desc-line = '90';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для добавления файла с каскадом в файл с информацией о каскадах
@@ -122,7 +122,7 @@ string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'variable';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
       func-mem-desc-line = '132';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для очистки дубликатов в векторе
@@ -153,7 +153,7 @@ string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'cascadefile';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
       func-mem-desc-line = '173';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для поиска объекта на фото
@@ -179,7 +179,7 @@ const Mat &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_logo';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
       func-mem-desc-line = '228';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Модуль поиска объектов на фото
@@ -201,7 +201,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'settingsInitialization';
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
       func-mem-desc-line = '273';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Модуль настроек.
@@ -225,7 +225,7 @@ string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'value';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
       func-mem-desc-line = '331';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для поиска описания марки по файлу с каскадом Хаара
@@ -256,7 +256,7 @@ Mat &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
       func-mem-desc-line = '353';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для обработки изображений.
@@ -269,7 +269,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = 'D:/work/git/Yenot/src/core/Core.cpp';
+  file-full-name  = 'D:/Files/git/yenot/yenot/server/src/Core.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля
@@ -277,6 +277,49 @@ _EnD_oF_dEf_TeXt_;
   file-documentation = <<_EnD_oF_dEf_TeXt_
 @author SavaLione
 @date 12 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'tests_2src_2server_2_core_8cpp';
+  file-name = 'tests/src/server/Core.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__corecpp_1ga62ce880c53a3fc77fad8f0bfb8711fd9';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+yenot_server_core
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+inclusion
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/tests/src/server/Core.cpp';
+      func-mem-desc-line = '19';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/Files/git/yenot/yenot/tests/src/server/Core.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 23 Jun 2018
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
@@ -304,7 +347,7 @@ cv::Mat &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.h';
       func-mem-desc-line = '35';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для обработки изображений.
@@ -343,7 +386,7 @@ cv::Mat &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.h';
       func-mem-desc-line = '49';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для обработки изображений.
@@ -374,7 +417,7 @@ std::string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'filename';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.h';
       func-mem-desc-line = '56';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для добавления файла с каскадом в файл с информацией о каскадах
@@ -404,7 +447,7 @@ std::string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'variable';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.h';
       func-mem-desc-line = '64';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для очистки дубликатов в векторе
@@ -435,7 +478,7 @@ std::string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'cascadefile';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.h';
       func-mem-desc-line = '73';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для поиска объекта на фото
@@ -461,7 +504,7 @@ const cv::Mat &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_logo';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.h';
       func-mem-desc-line = '84';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Модуль поиска объектов на фото
@@ -483,7 +526,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'settingsInitialization';
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.h';
       func-mem-desc-line = '95';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Модуль настроек.
@@ -507,7 +550,7 @@ std::string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'value';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.h';
       func-mem-desc-line = '102';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для поиска описания марки по файлу с каскадом Хаара
@@ -538,7 +581,7 @@ cv::Mat &
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'mat_out';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Core.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Core.h';
       func-mem-desc-line = '116';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для обработки изображений.
@@ -551,7 +594,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = 'D:/work/git/Yenot/src/core/Core.h';
+  file-full-name  = 'D:/Files/git/yenot/yenot/server/src/Core.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля
@@ -562,8 +605,8 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
-  file-id   = '_logger_8cpp';
-  file-name = 'Logger.cpp';
+  file-id   = 'server_2src_2_logger_8cpp';
+  file-name = 'server/src/Logger.cpp';
     func = {
     func-member = {
       func-mem-kind = 'function';
@@ -586,7 +629,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'text';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Logger.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Logger.cpp';
       func-mem-desc-line = '29';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Основная функция для логирования
@@ -599,7 +642,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = 'D:/work/git/Yenot/src/core/Logger.cpp';
+  file-full-name  = 'D:/Files/git/yenot/yenot/server/src/Logger.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Модуль логирования. Поддерживает логирование со временем и логирование с различными уровнями.
@@ -607,6 +650,49 @@ _EnD_oF_dEf_TeXt_;
   file-documentation = <<_EnD_oF_dEf_TeXt_
 @author SavaLione
 @date 1 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'tests_2src_2server_2_logger_8cpp';
+  file-name = 'tests/src/server/Logger.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__loggercpp_1ga10abf17037baa88fa1698c6759b8c4ad';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+yenot_server_logger
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+inclusion
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/tests/src/server/Logger.cpp';
+      func-mem-desc-line = '19';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/Files/git/yenot/yenot/tests/src/server/Logger.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 23 Jun 2018
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
@@ -634,7 +720,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'text';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Logger.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Logger.h';
       func-mem-desc-line = '23';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Основная функция для логирования
@@ -647,7 +733,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = 'D:/work/git/Yenot/src/core/Logger.h';
+  file-full-name  = 'D:/Files/git/yenot/yenot/server/src/Logger.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Заголовочный файл модуля логирования
@@ -658,8 +744,8 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
-  file-id   = '_settings_8cpp';
-  file-name = 'Settings.cpp';
+  file-id   = 'server_2src_2_settings_8cpp';
+  file-name = 'server/src/Settings.cpp';
     func = {
     func-member = {
       func-mem-kind = 'function';
@@ -688,7 +774,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'ch_return_default';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.cpp';
       func-mem-desc-line = '30';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Получить строку из файла настроек
@@ -727,7 +813,7 @@ int
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'i_return_default';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.cpp';
       func-mem-desc-line = '43';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Получить число из файла настроек
@@ -766,7 +852,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'text';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.cpp';
       func-mem-desc-line = '53';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сохранить переменную в файл настроек
@@ -792,7 +878,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'filename';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.cpp';
       func-mem-desc-line = '62';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Проверка файла
@@ -817,7 +903,7 @@ string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'filename';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.cpp';
       func-mem-desc-line = '76';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Проверка файла
@@ -842,7 +928,7 @@ string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'namedir';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.cpp';
       func-mem-desc-line = '90';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для создания директории
@@ -866,7 +952,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'file_name';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.cpp';
       func-mem-desc-line = '111';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для создания файла
@@ -876,7 +962,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = 'D:/work/git/Yenot/src/core/Settings.cpp';
+  file-full-name  = 'D:/Files/git/yenot/yenot/server/src/Settings.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Модуль работы с ini файлами
@@ -884,6 +970,49 @@ _EnD_oF_dEf_TeXt_;
   file-documentation = <<_EnD_oF_dEf_TeXt_
 @author SavaLione
 @date 20 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'tests_2src_2server_2_settings_8cpp';
+  file-name = 'tests/src/server/Settings.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__settingscpp_1ga1313defba35762697f41324fbd47171d';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+yenot_server_settings
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+inclusion
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/tests/src/server/Settings.cpp';
+      func-mem-desc-line = '19';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/Files/git/yenot/yenot/tests/src/server/Settings.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 23 Jun 2018
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
@@ -917,7 +1046,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'ch_return_default';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.h';
       func-mem-desc-line = '24';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Получить строку из файла настроек
@@ -956,7 +1085,7 @@ int
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'i_return_default';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.h';
       func-mem-desc-line = '33';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Получить число из файла настроек
@@ -995,7 +1124,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'text';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.h';
       func-mem-desc-line = '41';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сохранить переменную в файл настроек
@@ -1021,7 +1150,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'filename';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.h';
       func-mem-desc-line = '48';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Проверка файла
@@ -1046,7 +1175,7 @@ std::string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'filename';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.h';
       func-mem-desc-line = '54';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Проверка файла
@@ -1071,7 +1200,7 @@ std::string
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'namedir';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.h';
       func-mem-desc-line = '60';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для создания директории
@@ -1095,7 +1224,7 @@ char *
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'file_name';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Settings.h';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Settings.h';
       func-mem-desc-line = '66';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Функция для создания файла
@@ -1105,7 +1234,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = 'D:/work/git/Yenot/src/core/Settings.h';
+  file-full-name  = 'D:/Files/git/yenot/yenot/server/src/Settings.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Заголовочный файл модуля работы с ini файлами
@@ -1113,6 +1242,49 @@ _EnD_oF_dEf_TeXt_;
   file-documentation = <<_EnD_oF_dEf_TeXt_
 @author SavaLione
 @date 20 Apr 2018
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_test_8cpp';
+  file-name = 'Test.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'group__testcpp_1ga0c6e823009aa80ab758989270ff8eec2';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+yenot_test
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+correct_connection_testing_module
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/tests/src/Test.cpp';
+      func-mem-desc-line = '18';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'D:/Files/git/yenot/yenot/tests/src/Test.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+Модуль тестирования
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+@author SavaLione
+@date 23 Jun 2018
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
@@ -1141,7 +1313,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'argv';
         func-mem-param-array = '[]';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.cpp';
+      func-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.cpp';
       func-mem-desc-line = '24';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -1151,7 +1323,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = 'D:/work/git/Yenot/src/core/Yenot.cpp';
+  file-full-name  = 'D:/Files/git/yenot/yenot/server/src/Yenot.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Основной задачей нашего проекта является разработка самообучающегося приложения для выделения и распознавания логотипов автомобилей по фото.
@@ -1177,8 +1349,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "./config.ini"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '46';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '50';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Файл с настройками
 _EnD_oF_dEf_TeXt_;
@@ -1198,8 +1370,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Yenot.log"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '49';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '53';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Файл с логами
 _EnD_oF_dEf_TeXt_;
@@ -1219,8 +1391,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "database.xml"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '52';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '56';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Файл, в котором хранятся
 _EnD_oF_dEf_TeXt_;
@@ -1240,8 +1412,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "database"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '55';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '59';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1261,8 +1433,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = ".xml"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '60';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '64';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1284,8 +1456,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = ".png"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '65';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '69';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1307,8 +1479,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 128
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '68';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '72';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Стандартный размер буфера
 _EnD_oF_dEf_TeXt_;
@@ -1328,8 +1500,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Core"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '81';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '85';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1355,8 +1527,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "fMode"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '88';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '92';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1380,8 +1552,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "0"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '92';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '96';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1403,8 +1575,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 0
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '96';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '100';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1426,8 +1598,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "nReduction"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '103';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '107';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1451,8 +1623,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "1"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '107';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '111';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1474,8 +1646,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 1
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '111';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '115';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1497,8 +1669,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "lDetection"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '118';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '122';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1522,8 +1694,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "1"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '122';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '126';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1545,8 +1717,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 1
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '126';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '130';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1568,8 +1740,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "detection"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '131';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '135';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1591,8 +1763,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "1"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '135';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '139';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1614,8 +1786,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 1
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '139';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '143';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1637,8 +1809,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "sImage"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '144';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '148';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1660,8 +1832,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "0"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '148';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '152';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1683,8 +1855,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 0
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '152';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '156';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1706,8 +1878,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "test.png"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '156';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '160';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1729,8 +1901,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "log"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '161';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '165';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1752,8 +1924,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "1"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '165';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '169';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1775,8 +1947,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 1
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '169';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '173';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1798,8 +1970,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "lTime"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '174';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '178';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1821,8 +1993,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "1"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '178';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '182';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1844,8 +2016,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 1
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '182';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '186';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1867,8 +2039,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "templatesize"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '187';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '191';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1890,8 +2062,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "20"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '191';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '195';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1913,8 +2085,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 20
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '195';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '199';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1936,8 +2108,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "sizePhoto"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '200';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '204';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1959,8 +2131,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "512"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '204';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '208';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1982,8 +2154,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 512
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '208';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '212';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2005,8 +2177,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 9
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '216';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '220';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2028,8 +2200,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 75
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '221';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '225';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2051,8 +2223,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 75
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '226';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '230';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2074,8 +2246,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 5
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '231';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '235';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2097,8 +2269,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 5
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '236';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '240';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2120,8 +2292,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Logger"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '249';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '253';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2147,8 +2319,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "WARN"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '252';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '256';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Уровень предупреждения
 _EnD_oF_dEf_TeXt_;
@@ -2168,8 +2340,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "ERROR"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '255';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '259';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Уровень ошибки
 _EnD_oF_dEf_TeXt_;
@@ -2189,8 +2361,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "MSG"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '258';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '262';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Уровень сообщение
 _EnD_oF_dEf_TeXt_;
@@ -2210,8 +2382,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Noise filter is disabled."
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '265';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '269';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сообщение в лог о том, что фильтр шума отключен
 _EnD_oF_dEf_TeXt_;
@@ -2231,8 +2403,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Line detection is disabled."
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '268';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '272';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сообщение в лог о том, что детектор границ отключен
 _EnD_oF_dEf_TeXt_;
@@ -2252,8 +2424,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Fast mode enabled."
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '271';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '275';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сообщение в лог о том, что быстрый режим включен
 _EnD_oF_dEf_TeXt_;
@@ -2273,8 +2445,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Folder created."
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '274';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '278';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сообщение в лог о том, что папка создана
 _EnD_oF_dEf_TeXt_;
@@ -2294,8 +2466,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Folder creation failed."
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '277';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '281';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сообщение в лог о том, что не удалось создать папку
 _EnD_oF_dEf_TeXt_;
@@ -2315,8 +2487,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = -100
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '284';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '288';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Ошибка инициализации
 _EnD_oF_dEf_TeXt_;
@@ -2336,8 +2508,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = -200
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '287';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '291';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Ошибка связанная с входным изображением. Возможно не достаточно аргументов
 _EnD_oF_dEf_TeXt_;
@@ -2357,8 +2529,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = -300
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '290';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '294';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Ошибка связанная с очисткой дубликатов
 _EnD_oF_dEf_TeXt_;
@@ -2378,8 +2550,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = -400
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '293';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '297';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Ошибка связанная с изменением размера фотографии
 _EnD_oF_dEf_TeXt_;
@@ -2399,8 +2571,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = -500
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '296';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '300';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Ошибка связанная с фильтвом шума
 _EnD_oF_dEf_TeXt_;
@@ -2420,8 +2592,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = -600
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '299';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '303';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Ошибка связанная с детектором границ
 _EnD_oF_dEf_TeXt_;
@@ -2441,8 +2613,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = -700
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '302';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '306';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Ошибка
 _EnD_oF_dEf_TeXt_;
@@ -2462,8 +2634,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = -800
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '305';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '309';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Ошибка в модуле распознавания логотипов
 _EnD_oF_dEf_TeXt_;
@@ -2483,8 +2655,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "The file name can not be empty."
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '308';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '312';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сообщение в лог о том, что название файла с каскадом не может быть пустым
 _EnD_oF_dEf_TeXt_;
@@ -2504,8 +2676,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Few arguments"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '311';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '315';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сообщение в лог о том, что не достаточно аргументов для запуска программы
 _EnD_oF_dEf_TeXt_;
@@ -2525,8 +2697,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "description"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '324';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '328';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2552,8 +2724,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "Brand: \"Example\""
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '327';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '331';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Пример описания логотипа
 _EnD_oF_dEf_TeXt_;
@@ -2573,8 +2745,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "example.xml"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '330';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '334';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Пример файла с каскадом
 _EnD_oF_dEf_TeXt_;
@@ -2594,8 +2766,8 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = "The brand name is not set"
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'D:/work/git/Yenot/src/core/Yenot.h';
-      var-mem-desc-line = '333';
+      var-mem-desc-file = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
+      var-mem-desc-line = '337';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Сообщение о том, что для данного логотипа нет описания
 _EnD_oF_dEf_TeXt_;
@@ -2604,7 +2776,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* var-member */
     };
-  file-full-name  = 'D:/work/git/Yenot/src/core/Yenot.h';
+  file-full-name  = 'D:/Files/git/yenot/yenot/server/src/Yenot.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 Заголовочный файл с пространством имён, которое хранит в себе константы.

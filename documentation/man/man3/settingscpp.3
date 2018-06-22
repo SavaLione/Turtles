@@ -1,4 +1,4 @@
-.TH "settingscpp" 3 "Сб 2 Июн 2018" "Yenot" \" -*- nroff -*-
+.TH "settingscpp" 3 "Сб 23 Июн 2018" "Yenot" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -37,6 +37,9 @@ settingscpp
 .RI "void \fBcreateFile\fP (char *file_name)"
 .br
 .RI "Функция для создания файла "
+.ti -1c
+.RI "\fBTEST\fP (yenot_server_settings, inclusion)"
+.br
 .in -1c
 .SH "Подробное описание"
 .PP 
@@ -60,7 +63,7 @@ true - файл найден, false - файл не найден\&.
 .PP
 
 .PP
-См\&. определение в файле Settings\&.cpp строка 62
+См\&. определение в файле server/src/Settings\&.cpp строка 62
 .SS "bool checkFile (string filename)"
 
 .PP
@@ -78,7 +81,7 @@ true - файл найден, false - файл не найден\&.
 .PP
 
 .PP
-См\&. определение в файле Settings\&.cpp строка 76
+См\&. определение в файле server/src/Settings\&.cpp строка 76
 .SS "void createDir (string namedir)"
 
 .PP
@@ -107,7 +110,7 @@ true - файл найден, false - файл не найден\&.
 .PP
 
 .PP
-См\&. определение в файле Settings\&.cpp строка 90
+См\&. определение в файле server/src/Settings\&.cpp строка 90
 .SS "void createFile (char * file_name)"
 
 .PP
@@ -120,7 +123,7 @@ true - файл найден, false - файл не найден\&.
 .PP
 
 .PP
-См\&. определение в файле Settings\&.cpp строка 111
+См\&. определение в файле server/src/Settings\&.cpp строка 111
 .SS "int getSettings (char * block, char * value, int i_return_default)"
 
 .PP
@@ -142,7 +145,7 @@ true - файл найден, false - файл не найден\&.
 .PP
 
 .PP
-См\&. определение в файле Settings\&.cpp строка 43
+См\&. определение в файле server/src/Settings\&.cpp строка 43
 .SS "string getSettingsString (char * block, char * value, char * ch_return_default)"
 
 .PP
@@ -164,7 +167,7 @@ true - файл найден, false - файл не найден\&.
 .PP
 
 .PP
-См\&. определение в файле Settings\&.cpp строка 30
+См\&. определение в файле server/src/Settings\&.cpp строка 30
 .SS "void setSettings (char * block, char * value, char * text)"
 
 .PP
@@ -181,7 +184,11 @@ true - файл найден, false - файл не найден\&.
 .PP
 
 .PP
-См\&. определение в файле Settings\&.cpp строка 53
+См\&. определение в файле server/src/Settings\&.cpp строка 53
+.SS "TEST (yenot_server_settings, inclusion)"
+
+.PP
+См\&. определение в файле tests/src/server/Settings\&.cpp строка 19
 .SH "Автор"
 .PP 
 Автоматически создано Doxygen для Yenot из исходного текста\&.

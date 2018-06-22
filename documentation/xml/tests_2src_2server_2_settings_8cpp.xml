@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="tests_2src_2server_2_settings_8cpp" kind="file" language="C++">
+    <compoundname>tests/src/server/Settings.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">gtest/gtest.h</includes>
+    <includes refid="_settings_8h" local="no">Settings.h</includes>
+    <includes refid="tests_2src_2server_2_settings_8cpp" local="no">Settings.cpp</includes>
+    <includedby refid="tests_2src_2server_2_settings_8cpp" local="no">Settings.cpp</includedby>
+    <incdepgraph>
+      <node id="54">
+        <label>string</label>
+      </node>
+      <node id="52">
+        <label>gtest/gtest.h</label>
+      </node>
+      <node id="51">
+        <label>iostream</label>
+      </node>
+      <node id="53">
+        <label>Settings.h</label>
+        <link refid="_settings_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Settings.cpp</label>
+        <link refid="tests_2src_2server_2_settings_8cpp"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="55">
+        <label>Settings.cpp</label>
+        <link refid="tests_2src_2server_2_settings_8cpp"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__settingscpp_1ga1313defba35762697f41324fbd47171d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(yenot_server_settings, inclusion)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>yenot_server_settings</type>
+        </param>
+        <param>
+          <type>inclusion</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="yenot/tests/src/server/Settings.cpp" line="19" column="1" bodyfile="yenot/tests/src/server/Settings.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>SavaLione </para></simplesect>
+<simplesect kind="date"><para>23 Jun 2018 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;gtest/gtest.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_settings_8h" kindref="compound">Settings.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tests_2src_2server_2_settings_8cpp" kindref="compound">Settings.cpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="group__settingscpp_1ga1313defba35762697f41324fbd47171d" refkind="member"><highlight class="normal"><ref refid="group__settingscpp_1ga1313defba35762697f41324fbd47171d" kindref="member">TEST</ref>(yenot_server_settings,<sp/>inclusion)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPECT_EQ(NULL,<sp/>NULL);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="yenot/tests/src/server/Settings.cpp"/>
+  </compounddef>
+</doxygen>

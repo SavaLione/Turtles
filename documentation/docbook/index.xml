@@ -13,21 +13,30 @@
         <title>Группы</title>
         <xi:include href="group__yenot.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="group__core.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="group__test.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
     <chapter>
         <title>Файлы</title>
-        <xi:include href="_core_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="server_2src_2_core_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="tests_2src_2server_2_core_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_core_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="_logger_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="server_2src_2_logger_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="tests_2src_2server_2_logger_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_logger_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="_settings_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="server_2src_2_settings_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="tests_2src_2server_2_settings_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_settings_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_test_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_yenot_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_yenot_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
     <chapter>
         <title>Директории</title>
-        <xi:include href="dir_aebb8dcc11953d78e620bbef0b9e2183.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="dir_68267d1309a1af8e8297ef4c3efbcdba.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_76f6fa3fd9e57b78c21cd37238297539.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_85eb7e850db59305492b283791b761af.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_47149ddf4d37e6ab9ee4bf65114eb69b.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_95501ef75b07d1869a7744b8bd301e60.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_1f39728e99d76504aeda9ef790893834.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dir_6bc5de928e63a344e52ce2541be8d89d.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
 </book>

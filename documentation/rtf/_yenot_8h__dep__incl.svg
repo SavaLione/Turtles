@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="$_core_8cpp.html" xlink:title="Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля ...">
+<g id="a_node2"><a xlink:href="$server_2src_2_core_8cpp.html" xlink:title="Ядро проекта. Содержит все главные и вспомогательные функции для определения марки автомобиля ...">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 56,-19.5 56,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="28" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Core.cpp</text>
 </a>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="$_logger_8cpp.html" xlink:title="Модуль логирования. Поддерживает логирование со временем и логирование с различными уровнями...">
+<g id="a_node3"><a xlink:href="$server_2src_2_logger_8cpp.html" xlink:title="Модуль логирования. Поддерживает логирование со временем и логирование с различными уровнями...">
 <polygon fill="white" stroke="black" points="74.5,-0.5 74.5,-19.5 139.5,-19.5 139.5,-0.5 74.5,-0.5"/>
 <text text-anchor="middle" x="107" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Logger.cpp</text>
 </a>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="$_settings_8cpp.html" xlink:title="Модуль работы с ini файлами ">
+<g id="a_node4"><a xlink:href="$server_2src_2_settings_8cpp.html" xlink:title="Модуль работы с ini файлами ">
 <polygon fill="white" stroke="black" points="157.5,-0.5 157.5,-19.5 228.5,-19.5 228.5,-0.5 157.5,-0.5"/>
 <text text-anchor="middle" x="193" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Settings.cpp</text>
 </a>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="server_2src_2_logger_8cpp">
+    <title>server/src/Logger.cpp File Reference</title>
+    <programlisting>#include &lt;Windows.h&gt;</programlisting>
+    <programlisting>#include &lt;fstream&gt;</programlisting>
+    <programlisting>#include &quot;Yenot.h&quot;</programlisting>
+    <programlisting>#include &quot;Settings.h&quot;</programlisting>
+<para>Include dependency diagram for server/src/Logger.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="server_2src_2_logger_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for server/src/Logger.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="server_2src_2_logger_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="group__loggercpp_1ga0d6abeb129096910c85ae6cba8bb59cf">logger</link> (
+char * level, char * text)<para><emphasis>Основная функция для логирования</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Подробное описание</title>
+
+<para>Модуль логирования. Поддерживает логирование со временем и логирование с различными уровнями. </para>
+
+<para><formalpara><title>Автор: </title>
+
+<para>SavaLione </para>
+</formalpara>
+<formalpara><title>Дата: </title>
+
+<para>1 Apr 2018 </para>
+</formalpara>
+</para>
+    <para>Definition in file Logger.cpp</para>
+    </simplesect>
+</section>

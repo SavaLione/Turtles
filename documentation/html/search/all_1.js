@@ -6,7 +6,6 @@ var searchData=
   ['checkfile',['checkFile',['../group__settingscpp.html#ga2dd1bc039652a0480c444957d416b6a6',1,'checkFile(char *filename):&#160;Settings.cpp'],['../group__settingscpp.html#ga64f8c9899c815dc180b2b564c0d05762',1,'checkFile(string filename):&#160;Settings.cpp'],['../group__settingsh.html#ga2dd1bc039652a0480c444957d416b6a6',1,'checkFile(char *filename):&#160;Settings.cpp'],['../group__settingsh.html#ga147bed619c6314e960320c1bcb40ed91',1,'checkFile(std::string filename):&#160;Settings.h']]],
   ['clearning',['clearning',['../group__corecpp.html#ga78cdbfbe907847e78cfb387df76d99f9',1,'clearning(string filename, string variable):&#160;Core.cpp'],['../group__coreh.html#gaebd676a1476aa4d75b280db8ae09d11c',1,'clearning(std::string filename, std::string variable):&#160;Core.h']]],
   ['core',['Core',['../group__core.html',1,'']]],
-  ['core_2ecpp',['Core.cpp',['../_core_8cpp.html',1,'']]],
   ['core_2eh',['Core.h',['../_core_8h.html',1,'']]],
   ['core_2ecpp',['Core.cpp',['../group__corecpp.html',1,'']]],
   ['core_2eh',['Core.h',['../group__coreh.html',1,'']]],

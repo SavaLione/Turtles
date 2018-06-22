@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_76f6fa3fd9e57b78c21cd37238297539" kind="dir">
+    <compoundname>server</compoundname>
+    <innerdir refid="dir_95501ef75b07d1869a7744b8bd301e60">src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="yenot/server/"/>
+  </compounddef>
+</doxygen>

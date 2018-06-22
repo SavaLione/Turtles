@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_yenot_8cpp">
     <title>Yenot.cpp File Reference</title>
-    <programlisting>#include &quot;..\core\Yenot.h&quot;</programlisting>
-    <programlisting>#include &quot;..\core\Core.h&quot;</programlisting>
-    <programlisting>#include &quot;..\core\Logger.h&quot;</programlisting>
-    <programlisting>#include &quot;..\core\Settings.h&quot;</programlisting>
+    <programlisting>#include &quot;Yenot.h&quot;</programlisting>
+    <programlisting>#include &quot;Core.h&quot;</programlisting>
+    <programlisting>#include &quot;Logger.h&quot;</programlisting>
+    <programlisting>#include &quot;Settings.h&quot;</programlisting>
 <para>Include dependency diagram for Yenot.cpp</para>
 <para>
     <figure>

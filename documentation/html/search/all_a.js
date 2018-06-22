@@ -1,7 +1,9 @@
 var searchData=
 [
+  ['core_2ecpp',['Core.cpp',['../server_2src_2_core_8cpp.html',1,'']]],
+  ['logger_2ecpp',['Logger.cpp',['../server_2src_2_logger_8cpp.html',1,'']]],
   ['setsettings',['setSettings',['../group__settingscpp.html#ga463e32ccb37f9478b0e62ee0d21c5999',1,'setSettings(char *block, char *value, char *text):&#160;Settings.cpp'],['../group__settingsh.html#ga463e32ccb37f9478b0e62ee0d21c5999',1,'setSettings(char *block, char *value, char *text):&#160;Settings.cpp']]],
-  ['settings_2ecpp',['Settings.cpp',['../_settings_8cpp.html',1,'']]],
+  ['settings_2ecpp',['Settings.cpp',['../server_2src_2_settings_8cpp.html',1,'']]],
   ['settings_2eh',['Settings.h',['../_settings_8h.html',1,'']]],
   ['settings_5fdetection',['SETTINGS_DETECTION',['../namespaceyenot.html#a6a7294929420d7790b72f733c98bcf56',1,'yenot']]],
   ['settings_5fdetection_5fvalue',['SETTINGS_DETECTION_VALUE',['../namespaceyenot.html#a7d631c2848347b1df2d133225075ced0',1,'yenot']]],

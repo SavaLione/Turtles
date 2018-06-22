@@ -3,49 +3,58 @@
   <compounddef id="_settings_8h" kind="file" language="C++">
     <compoundname>Settings.h</compoundname>
     <includes local="no">string</includes>
-    <includedby refid="_core_8cpp" local="yes">Core.cpp</includedby>
-    <includedby refid="_logger_8cpp" local="yes">Logger.cpp</includedby>
-    <includedby refid="_settings_8cpp" local="yes">Settings.cpp</includedby>
+    <includedby refid="server_2src_2_core_8cpp" local="yes">Core.cpp</includedby>
+    <includedby refid="server_2src_2_logger_8cpp" local="yes">Logger.cpp</includedby>
+    <includedby refid="server_2src_2_settings_8cpp" local="yes">Settings.cpp</includedby>
     <includedby refid="_yenot_8cpp" local="yes">Yenot.cpp</includedby>
+    <includedby refid="tests_2src_2server_2_settings_8cpp" local="no">Settings.cpp</includedby>
     <incdepgraph>
-      <node id="37">
+      <node id="57">
         <label>string</label>
       </node>
-      <node id="36">
+      <node id="56">
         <label>Settings.h</label>
         <link refid="_settings_8h"/>
-        <childnode refid="37" relation="include">
+        <childnode refid="57" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="41">
-        <label>Settings.cpp</label>
-        <link refid="_settings_8cpp"/>
-      </node>
-      <node id="39">
-        <label>Core.cpp</label>
-        <link refid="_core_8cpp"/>
-      </node>
-      <node id="40">
-        <label>Logger.cpp</label>
-        <link refid="_logger_8cpp"/>
-      </node>
-      <node id="38">
-        <label>Settings.h</label>
-        <link refid="_settings_8h"/>
-        <childnode refid="39" relation="include">
-        </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
-      </node>
-      <node id="42">
+      <node id="62">
         <label>Yenot.cpp</label>
         <link refid="_yenot_8cpp"/>
+      </node>
+      <node id="61">
+        <label>Settings.cpp</label>
+        <link refid="server_2src_2_settings_8cpp"/>
+      </node>
+      <node id="60">
+        <label>Logger.cpp</label>
+        <link refid="server_2src_2_logger_8cpp"/>
+      </node>
+      <node id="58">
+        <label>Settings.h</label>
+        <link refid="_settings_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Core.cpp</label>
+        <link refid="server_2src_2_core_8cpp"/>
+      </node>
+      <node id="63">
+        <label>Settings.cpp</label>
+        <link refid="tests_2src_2server_2_settings_8cpp"/>
+        <childnode refid="63" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">
@@ -95,7 +104,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="24" column="1" bodyfile="src/core/Settings.cpp" bodystart="30" bodyend="34"/>
+        <location file="yenot/server/src/Settings.h" line="24" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="30" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga0a2fe94de4037eda33c49fe332970891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -143,7 +152,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="33" column="1" bodyfile="src/core/Settings.cpp" bodystart="43" bodyend="45"/>
+        <location file="yenot/server/src/Settings.h" line="33" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="43" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga463e32ccb37f9478b0e62ee0d21c5999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -190,7 +199,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="41" column="1" bodyfile="src/core/Settings.cpp" bodystart="53" bodyend="55"/>
+        <location file="yenot/server/src/Settings.h" line="41" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="53" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga2dd1bc039652a0480c444957d416b6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -216,7 +225,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="48" column="1" bodyfile="src/core/Settings.cpp" bodystart="62" bodyend="70"/>
+        <location file="yenot/server/src/Settings.h" line="48" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="62" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga147bed619c6314e960320c1bcb40ed91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -242,7 +251,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="54" column="1"/>
+        <location file="yenot/server/src/Settings.h" line="54" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga912b67f6f6b05abadd055a379dd84864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -267,7 +276,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="60" column="1"/>
+        <location file="yenot/server/src/Settings.h" line="60" column="1"/>
       </memberdef>
       <memberdef kind="function" id="group__settingsh_1ga8f34a2030acfb5567678ab2bba25f3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -292,7 +301,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/Settings.h" line="66" column="1" bodyfile="src/core/Settings.cpp" bodystart="111" bodyend="114"/>
+        <location file="yenot/server/src/Settings.h" line="66" column="1" bodyfile="yenot/server/src/Settings.cpp" bodystart="111" bodyend="114"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -323,6 +332,6 @@
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SETTINGS_H</highlight></codeline>
     </programlisting>
-    <location file="src/core/Settings.h"/>
+    <location file="yenot/server/src/Settings.h"/>
   </compounddef>
 </doxygen>

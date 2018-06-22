@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_95501ef75b07d1869a7744b8bd301e60" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="server_2src_2_core_8cpp">server/src/Core.cpp</innerfile>
+    <innerfile refid="_core_8h">Core.h</innerfile>
+    <innerfile refid="server_2src_2_logger_8cpp">server/src/Logger.cpp</innerfile>
+    <innerfile refid="_logger_8h">Logger.h</innerfile>
+    <innerfile refid="server_2src_2_settings_8cpp">server/src/Settings.cpp</innerfile>
+    <innerfile refid="_settings_8h">Settings.h</innerfile>
+    <innerfile refid="_yenot_8cpp">Yenot.cpp</innerfile>
+    <innerfile refid="_yenot_8h">Yenot.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="yenot/server/src/"/>
+  </compounddef>
+</doxygen>

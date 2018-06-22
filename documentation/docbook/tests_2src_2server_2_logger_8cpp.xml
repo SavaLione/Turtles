@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tests_2src_2server_2_logger_8cpp">
+    <title>tests/src/server/Logger.cpp File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;gtest/gtest.h&gt;</programlisting>
+    <programlisting>#include &lt;Logger.h&gt;</programlisting>
+    <programlisting>#include &lt;Logger.cpp&gt;</programlisting>
+<para>Include dependency diagram for tests/src/server/Logger.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="tests_2src_2server_2_logger_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for tests/src/server/Logger.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="tests_2src_2server_2_logger_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="group__loggercpp_1ga10abf17037baa88fa1698c6759b8c4ad">TEST</link> (
+yenot_server_logger , inclusion )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Подробное описание</title>
+
+<para><formalpara><title>Автор: </title>
+
+<para>SavaLione </para>
+</formalpara>
+<formalpara><title>Дата: </title>
+
+<para>23 Jun 2018 </para>
+</formalpara>
+</para>
+    <para>Definition in file Logger.cpp</para>
+    </simplesect>
+</section>

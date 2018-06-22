@@ -1,0 +1,84 @@
+.TH "Core.cpp" 3 "Сб 23 Июн 2018" "Yenot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Core.cpp \- Ядро проекта\&. Содержит все главные и вспомогательные функции для определения марки автомобиля  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Windows\&.h>\fP
+.br
+\fC#include <direct\&.h>\fP
+.br
+\fC#include 'Yenot\&.h'\fP
+.br
+\fC#include 'Core\&.h'\fP
+.br
+\fC#include 'Logger\&.h'\fP
+.br
+\fC#include 'Settings\&.h'\fP
+.br
+
+.SS "Функции"
+
+.in +1c
+.ti -1c
+.RI "void \fBnoiseRemoval\fP (const Mat &mat_in, Mat &mat_out)"
+.br
+.RI "Функция для обработки изображений\&. "
+.ti -1c
+.RI "void \fBlineDetection\fP (const Mat &mat_in, Mat &mat_out)"
+.br
+.RI "Функция для обработки изображений\&. "
+.ti -1c
+.RI "void \fBdatabaseAdd\fP (string filename)"
+.br
+.RI "Функция для добавления файла с каскадом в файл с информацией о каскадах "
+.ti -1c
+.RI "void \fBclearning\fP (string filename, string variable)"
+.br
+.RI "Функция для очистки дубликатов в векторе "
+.ti -1c
+.RI "bool \fBdetectionLogo\fP (const Mat &mat_logo, string cascadefile)"
+.br
+.RI "Функция для поиска объекта на фото "
+.ti -1c
+.RI "void \fBdetection\fP (const Mat &mat_logo)"
+.br
+.RI "Модуль поиска объектов на фото "
+.ti -1c
+.RI "void \fBsettingsInitialization\fP ()"
+.br
+.RI "Модуль настроек\&. "
+.ti -1c
+.RI "string \fBdescription\fP (string value)"
+.br
+.RI "Функция для поиска описания марки по файлу с каскадом Хаара "
+.ti -1c
+.RI "void \fBcanny\fP (const Mat &mat_in, Mat &mat_out)"
+.br
+.RI "Функция для обработки изображений\&. "
+.in -1c
+.SH "Подробное описание"
+.PP 
+Ядро проекта\&. Содержит все главные и вспомогательные функции для определения марки автомобиля 
+
+
+.PP
+\fBАвтор:\fP
+.RS 4
+SavaLione 
+.RE
+.PP
+\fBДата:\fP
+.RS 4
+12 Apr 2018 
+.RE
+.PP
+
+.PP
+См\&. определение в файле \fBserver/src/Core\&.cpp\fP
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Yenot из исходного текста\&.

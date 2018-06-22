@@ -115,6 +115,14 @@ const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для 
                     </listitem>
                 </itemizedlist>
             </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="group__corecpp_1ga62ce880c53a3fc77fad8f0bfb8711fd9">TEST</link> (
+yenot_server_core , inclusion )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
         </section>
         <section>
             <title>Функции</title>
@@ -379,6 +387,10 @@ const Mat &amp; mat_in, Mat &amp; mat_out)<para><emphasis>Функция для 
                 </formalpara>
                 </para>
 
+            </section>
+            <section xml:id="group__corecpp_1ga62ce880c53a3fc77fad8f0bfb8711fd9">
+                <title>TEST (yenot_server_core, inclusion)</title> <emphasis></emphasis>
+                
             </section>
         </section>
 </section>
