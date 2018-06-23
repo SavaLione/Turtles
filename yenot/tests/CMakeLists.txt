@@ -12,10 +12,10 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
 
 cmake_policy(SET CMP0015 NEW)
-set_property( GLOBAL PROPERTY USE_FOLDERS ON )
-set( CMAKE_SUPPRESS_REGENERATION true)
-set( CMAKE_BUILD_TYPE RELEASE )
-set( CMAKE_CONFIGURATION_TYPES "Release" )
+set_property(GLOBAL PROPERTY USE_FOLDERS ON )
+set(CMAKE_SUPPRESS_REGENERATION true)
+set(CMAKE_BUILD_TYPE RELEASE )
+set(CMAKE_CONFIGURATION_TYPES "Release" )
 
 ################################
 # Sources
@@ -35,9 +35,9 @@ if(TEST_SERVER)
 endif()
 
 if(TEST_SERVER)
-add_executable (${YENOT_TEST_PROJECT} ${SOURCES_TEST} ${SOURCES_TEST_SERVER})
+add_executable(${YENOT_TEST_PROJECT} ${SOURCES_TEST} ${SOURCES_TEST_SERVER})
 else()
-add_executable (${YENOT_TEST_PROJECT} ${SOURCES_TEST})
+add_executable(${YENOT_TEST_PROJECT} ${SOURCES_TEST})
 endif()
 
 ################################

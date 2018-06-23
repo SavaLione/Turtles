@@ -5,10 +5,10 @@ project(${YENOT_SERVER_PROJECT})
 ################################
 
 cmake_policy(SET CMP0015 NEW)
-set_property( GLOBAL PROPERTY USE_FOLDERS ON )
-set( CMAKE_SUPPRESS_REGENERATION true)
-set( CMAKE_BUILD_TYPE RELEASE )
-set( CMAKE_CONFIGURATION_TYPES "Release" )
+set_property( GLOBAL PROPERTY USE_FOLDERS ON)
+set(CMAKE_SUPPRESS_REGENERATION true)
+set(CMAKE_BUILD_TYPE RELEASE)
+set(CMAKE_CONFIGURATION_TYPES "Release")
 
 ################################
 # Sources
@@ -27,7 +27,7 @@ set(SOURCES_SERVER
 		src/Settings.cpp
 )
 
-add_executable (${YENOT_SERVER_PROJECT} ${HEADERS_SERVER} ${SOURCES_SERVER})
+add_executable(${YENOT_SERVER_PROJECT} ${HEADERS_SERVER} ${SOURCES_SERVER})
 
 ################################
 # Lib
